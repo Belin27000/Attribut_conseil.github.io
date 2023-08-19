@@ -1,0 +1,15 @@
+.Carrousel {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.PictureLocation {
+    width: 50%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
