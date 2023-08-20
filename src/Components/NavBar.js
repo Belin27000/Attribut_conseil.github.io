@@ -7,6 +7,31 @@ const NavBar = () => {
 
     const [open, setOpen] = useState(false)
     const [openFormation, setOpenFormation] = useState(false)
+    const [openInge, setOpenInge] = useState(false)
+    const handleMouseEnter = () => {
+        setOpen(true);
+    };
+    const handleMouseLeave = () => {
+        setOpen(false);
+        setOpenFormation(false)
+    }
+
+    const handleMouseEnterFormation = () => {
+        setOpenFormation(true)
+
+    }
+    const handleMouseLeaveFormation = () => {
+        setOpenFormation(false)
+
+    }
+    const handleMouseEnterInge = () => {
+        setOpenInge(true)
+
+    }
+    const handleMouseLeaveInge = () => {
+        setOpenInge(false)
+
+    }
 
     return (
         <nav className='NavBar'>
@@ -14,10 +39,8 @@ const NavBar = () => {
                 <li className='NavLink'><Link to="/home">Acceuil</Link></li>
                 <li className='NavLink'><Link to="/ComingSoon">Qui sommes nous</Link></li>
                 <li className='NavLink'
-                    onMouseEnter={() => {
-                        setOpen(true);
-                        setOpenFormation(false)
-                    }}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                 ><div>Gestion emploi et carrière</div>
                     {open && (
                         <ul className='menuDetail' onMouseLeave={() => setOpen(false)}>
@@ -33,11 +56,8 @@ const NavBar = () => {
                     }
                 </li>
                 <li className='NavLink'
-                    onMouseEnter={() => {
-                        setOpenFormation(true);
-                        setOpen(false)
-                    }
-                    }
+                    onMouseEnter={handleMouseEnterFormation}
+                    onMouseLeave={handleMouseLeaveFormation}
                 ><div>Formation</div>
                     {openFormation && (
                         <ul className='menuDetail' onMouseLeave={() => setOpenFormation(false)}>
@@ -48,7 +68,20 @@ const NavBar = () => {
                     )
                     }
                 </li>
-                <li className='NavLink'><Link to="/ComingSoon">Ingenierie et administration de la formation</Link></li>
+                <li className='NavLink'
+                    onMouseEnter={handleMouseEnterInge}
+                    onMouseLeave={handleMouseLeaveInge}
+                ><div>Ingenierie et administration de la formation</div>
+                    {openInge && (
+                        <ul className='menuDetail' onMouseLeave={() => setOpenInge(false)}>
+                            <li><Link to="/ComingSoon">Pour l’entreprise</Link></li>
+                            <li><Link to="/ComingSoon">Pour l’organisme de formation</Link></li>
+
+                        </ul>
+
+                    )
+                    }
+                </li>
             </ul>
         </nav >
     );
