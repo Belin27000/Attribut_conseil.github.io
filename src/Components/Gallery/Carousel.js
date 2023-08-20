@@ -1,48 +1,50 @@
 // import carouselService from '@/_Services/carousel.service.js';
 import '@/Components/Gallery/carousel.css';
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa"
+import { useState } from 'react';
+// import { FaAngleLeft, FaAngleRight } from "react-icons/fa"
 
 
 
 
 const Carrousel = ({ images, key }) => {
 
-    console.log({ images, key });
-
-    // console.log(carouselService.allPictures());
-    // const getPictures = async () => {
-    //     await carouselService.allPictures()
-    //         // console.log(carouselService.allPictures());
-    //         .then((data) => {
-    //             if (data) {
-    //                 console.log(data);
-    //                 setPictureList(data);
-    //                 setIsLoading(false);
-    //             } else {
-    //                 navigate("/home");
-    //             }
-    //         })
-    //         .catch((error) => {
-    //             console.log(error);
-    //         })
-    // }
-    // console.log(pictureList);
-    // if (isLoading) return (<h3>Chargement...</h3>)
+    console.log(images);
+    const [slide, setSlide] = useState(0)
+    const [imageLoad, setImageLoad] = useState(images[slide].image)
+    const [title, setTitle] = useState(images[slide].title)
 
     return (
         <div className='Carrousel'>
 
-            <div className='PictureLocation'>Le Carousel sera ici</div>
-
             {
                 images?.map((image, key) => {
                     return (
-                        <img src={image} alt={'Présentation slide ' + key} key={key} className={'slide'} />
+                        <div className='PictureContainer'>
+                            <img src={imageLoad} alt={'Présentation slide ' + key} key={key} className={slide === key ? 'slide' : 'slide-hidden'} />
+                        </div>
                     )
                 })
             }
+            <span className='indicators'>
+                {
+                    images?.map((_, key) => {
+                        return (
+                            <button
+                                key={key}
+                                onClick={() => {
+                                    setSlide(key)
+                                    setImageLoad(images[key].image)
+                                    setTitle(images[key].title)
+                                }
+                                }
 
-
+                                className={slide === key ? 'indicator' : 'indicator indicator-inactive'}>
+                            </button>
+                        )
+                    }
+                    )}
+            </span>
+            <div className='CarouselTitle'>{title}</div>
         </div>
     );
 };

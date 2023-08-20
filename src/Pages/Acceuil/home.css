@@ -9,6 +9,9 @@
 
 .topSideHome {
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .PunchLine {
@@ -26,6 +29,7 @@
     text-align: start;
     font-size: 1.5rem;
     color: white;
+    margin-bottom: 2rem;
 }
 
 .DiffBlocColor {
@@ -45,7 +49,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
     color: black;
 }
 
@@ -75,8 +78,29 @@
 
 @media (max-width : 850px) {
 
-    .PunchLine {
+    .PunchLine,
+    .DiffBloc {
         font-size: 1rem;
         padding: 1rem;
+    }
+
+    .BlueBand {
+        width: 100%;
+        background-color: #5F9CBB;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .DiffBloc,
+    .BlueBand {
+        font-size: 1rem;
+    }
+
+    .BlueBand {
+        height: 3rem;
+
     }
 }

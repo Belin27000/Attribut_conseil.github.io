@@ -10,7 +10,48 @@ import OutPlacement from '@/Assets/CarouselPictures/outplacement.jpg'
 import Psycho from '@/Assets/CarouselPictures/psychologie_du_travail.jpg'
 import Vae from '@/Assets/CarouselPictures/VAE.jpg'
 
-let pictures = [CreaEnt, Search, Bilan, Coaching, Formation, Inge, Orient, OutPlacement, Psycho, Vae]
+const pictures = [
+    {
+        image: CreaEnt,
+        title: 'Accompagnement à la création d\'entreprise'
+    },
+    {
+        image: Search,
+        title: 'Accompagnement à la recherche d\'emploi'
+    },
+    {
+        image: Bilan,
+        title: 'Bilan de compétences'
+    },
+    {
+        image: Coaching,
+        title: 'Coaching'
+    },
+    {
+        image: Formation,
+        title: 'Formation'
+    },
+    {
+        image: Inge,
+        title: 'Ingenierie et administration de la formation'
+    },
+    {
+        image: Orient,
+        title: 'Orientation jeune'
+    },
+    {
+        image: OutPlacement,
+        title: 'Outplacement'
+    },
+    {
+        image: Psycho,
+        title: 'Psychologie du travail'
+    },
+    {
+        image: Vae,
+        title: 'Validation des acquis de l\'expérience'
+    },
+]
 
 let allPictures = () => {
 
