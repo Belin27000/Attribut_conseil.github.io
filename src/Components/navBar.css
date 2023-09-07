@@ -13,13 +13,14 @@
     display: flex;
     flex-direction: column;
     z-index: 10;
-    background-color: lightblue;
+    /* background-color: red; */
     background-color: var(--acWhite);
     top: 100%;
     width: 100%;
     /* padding: 1rem; */
     list-style-type: none;
     padding: unset;
+    border-radius: 0 0 10px 10px;
 }
 
 .menuDetail li {
@@ -28,6 +29,11 @@
 
 .menuDetail li:hover {
     background-color: var(--acYellow);
+}
+
+.menuDetail li:last-child {
+    border-radius: 0 0 10px 10px;
+
 }
 
 .NavBar {
@@ -53,6 +59,7 @@
 
 .NavBar ul li {
     width: 100%;
+    cursor: pointer;
 }
 
 .NavBar ul li div {
@@ -60,7 +67,9 @@
     font-weight: 500;
 }
 
-.NavLink a {
+
+.NavLink a,
+.NavLink div {
     color: var(--acDarkBlue);
     font-weight: 500;
     /* margin: 0 2rem; */

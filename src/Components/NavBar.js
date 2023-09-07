@@ -36,8 +36,8 @@ const NavBar = () => {
     return (
         <nav className='NavBar'>
             <ul className='allNavMainItems'>
-                <li className='NavLink'><Link to="/home">Acceuil</Link></li>
-                <li className='NavLink'><Link to="/ComingSoon">Qui sommes nous</Link></li>
+                <li className='NavLink'><Link to="/home">Accueil</Link></li>
+                <li className='NavLink'><Link to="/about">Qui sommes nous</Link></li>
                 <li className='NavLink'
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}

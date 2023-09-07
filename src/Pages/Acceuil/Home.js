@@ -3,6 +3,7 @@ import Carrousel from '@/Components/Gallery/Carousel.js';
 import carouselService from '@/_Services/carousel.service.js';
 
 import '@/Pages/Acceuil/home.css';
+import KeyNumber from '../../Components/KeyNumbers/KeyNumber.js';
 
 
 
@@ -21,7 +22,7 @@ const Home = () => {
                 <Carrousel images={pictures} />
             </section>
             <p className='BlueBand'><span className='CapName'>attri</span><span className='EndName'>but</span><span className='CapName '>conseils </span> <span className='BlueBandLastWord'> c'est :</span></p>
-
+            <KeyNumber />
         </div>
     );
 };

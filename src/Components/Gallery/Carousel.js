@@ -8,7 +8,6 @@ import { useState } from 'react';
 
 const Carrousel = ({ images, key }) => {
 
-    console.log(images);
     const [slide, setSlide] = useState(0)
     const [imageLoad, setImageLoad] = useState(images[slide].image)
     const [title, setTitle] = useState(images[slide].title)
