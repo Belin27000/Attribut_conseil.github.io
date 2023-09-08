@@ -1,7 +1,7 @@
 {
   "name": "site_attribut_react",
   "version": "0.1.0",
-  "homepage": "http://belin27000.github.io/attribut_conseil",
+  "homepage": "https://belin27000.github.io/attribut_conseil",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -17,12 +17,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run buildo",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "starto": "craco start",
-    "build": "react-scripts build",
-    "buildo": "craco build",
+    "start": "craco start",
+    "build": "craco build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
