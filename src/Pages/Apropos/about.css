@@ -14,7 +14,7 @@
     flex-direction: row-reverse;
 }
 
-.AboutPres-center {
+.Pres-center {
     /* display: flex;
     background-color: var(--acPurple);
     color: var(--acDarkBlue);
@@ -28,11 +28,11 @@
     color: white;
     /* border: 0.5px solid var(--acYellow); */
     border-radius: 15px;
-    box-shadow: 0px 0px 30px var(--acYellow);
+    box-shadow: 0px 0px 10px var(--acYellow);
 }
 
 
-.AboutPres-centeredText {
+.Pres-centeredText {
     width: 100%;
     display: flex;
     flex-direction: column !important;
@@ -40,25 +40,26 @@
     font-size: 1.5rem;
 }
 
-.AboutPres-centeredText p {
+.Pres-centeredText p {
     color: var(--acYellow);
     font-size: 2.5rem;
 }
 
-.AboutPres-center ul li {
+
+.Pres-center ul li {
     list-style-type: none;
     font-size: 1rem;
     line-height: 1.5rem;
 }
 
-.AboutPres p:nth-child(odd) {
+.Pres p:nth-child(odd) {
     font-size: 2rem;
     padding: 0 1rem;
     font-weight: 500;
 
 }
 
-.AboutPres p:nth-child(even) {
+.Pres p:nth-child(even) {
     width: 200%;
     background-color: var(--acPurple);
     color: var(--acDarkBlue);
@@ -67,6 +68,128 @@
     padding: 2rem;
 }
 
+.Certif {
+    width: 100%;
+    justify-content: space-between;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+.PresQualiopi {
+    width: 40%;
+    background-color: var(--acWhite);
+    padding: 1rem 2rem;
+    line-height: 1.5rem;
+    border-radius: 15px;
+    flex-direction: column !important;
+    flex: 1;
+}
+
+.PresQualiopi * {
+    color: black;
+    font-size: .8rem;
+
+}
+
+.PresQualiopi ul {
+    padding: 0;
+}
+
+.PresQualiopi li {
+    list-style-type: none;
+}
+
+span.QualName {
+    color: blue;
+    font-weight: bold;
+}
+
+.QualiopiContainer {
+    width: 100%;
+    flex-direction: initial !important;
+    justify-content: space-evenly;
+}
+
+.Qualiopi-validity {
+    font-weight: bold;
+}
+
+.QualiopiPresPic {
+    width: 30%;
+}
+
+.QualiopiScope {
+    margin-top: 2rem;
+    line-height: 1rem;
+    flex-direction: column !important;
+}
+
+.QualiopiScope p:nth-child(2) {
+    color: var(--acDarkBlue);
+    font-weight: bold;
+}
+
+.Certif .DataDocContainer {
+    width: 45%;
+    background-color: var(--acWhite);
+    display: flex;
+    flex-direction: column;
+    align-self: normal;
+    justify-content: space-around;
+
+}
+
+
+.Certif .DataDocContainer .DataDoc {
+    justify-content: center;
+}
+
+.DataDocContainer {
+    border-radius: 15px;
+    padding: 0 1rem;
+}
+
+.DataDocContainer * {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.DataDocContainer p:nth-child(3) {
+    font-weight: bold;
+    color: black;
+}
+
+.DataDocPic {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.FinalPres {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px var(--acPurple);
+}
+
+.FinalPres * {
+    color: black;
+    list-style-type: none;
+
+}
+
+.EndingWord {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column !important;
+}
+
+.EndingWord * {
+    list-style-type: none;
+
+}
 
 /* .About div,
 .About ul>*,

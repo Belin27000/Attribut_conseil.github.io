@@ -5,7 +5,7 @@ import '@/Components/KeyNumbers/keyNumber.css'
 const KeyNumber = () => {
 
     const [countYear, setCountYear] = useState(1)
-    const [countPeople, setCountPeople] = useState(1)
+    const [countPeople, setCountPeople] = useState(1000)
     const [countExpert, setCountExpert] = useState(1)
     const [ref, inView] = useInView({
         triggerOnce: true,
@@ -21,7 +21,7 @@ const KeyNumber = () => {
                 } else {
                     clearInterval(intervalYear); // Arrête l'incrémentation lorsque le compteur atteint 15
                 }
-            }, 800);
+            }, 400);
         }
 
         return () => {
