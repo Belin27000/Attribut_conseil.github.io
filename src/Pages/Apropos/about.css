@@ -1,3 +1,76 @@
 .About {
-    width: 75%;
+    width: 85%;
+    /* background-color: var(--acPurple); */
+    border-radius: 15px;
 }
+
+.About div {
+    display: flex;
+    align-items: center;
+}
+
+.About div:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.AboutPres-center {
+    /* display: flex;
+    background-color: var(--acPurple);
+    color: var(--acDarkBlue);
+    font-size: 1.5rem;
+    padding: 2rem; */
+    display: flex;
+    flex-direction: column !important;
+
+    font-size: 1.5rem;
+    padding: 2rem;
+    color: white;
+    /* border: 0.5px solid var(--acYellow); */
+    border-radius: 15px;
+    box-shadow: -10px 5px 30px var(--acYellow);
+}
+
+
+.AboutPres-centeredText {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.AboutPres-centeredText p {
+    color: var(--acYellow);
+    font-size: 2.5rem;
+}
+
+.AboutPres-center ul li {
+    list-style-type: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.AboutPres p:nth-child(odd) {
+    font-size: 2rem;
+    padding: 0 1rem;
+    font-weight: 500;
+
+}
+
+.AboutPres p:nth-child(even) {
+    width: 200%;
+    background-color: var(--acPurple);
+    color: var(--acDarkBlue);
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+
+/* .About div,
+.About ul>*,
+.About div>*,
+.About div ul>* {
+    color: var(--acDarkBlue);
+} */
