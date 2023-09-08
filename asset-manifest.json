@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/attribut_conseil/static/css/main.a065a260.css",
-    "main.js": "/attribut_conseil/static/js/main.af90c21c.js",
-    "static/js/787.a938de1d.chunk.js": "/attribut_conseil/static/js/787.a938de1d.chunk.js",
+    "main.js": "/attribut_conseil/static/js/main.e089c500.js",
     "static/media/coaching.jpg": "/attribut_conseil/static/media/coaching.fdfd93d2d9314984a095.jpg",
     "static/media/psychologie_du_travail.jpg": "/attribut_conseil/static/media/psychologie_du_travail.fdfd93d2d9314984a095.jpg",
     "static/media/accompagnement_et_recherche.jpg": "/attribut_conseil/static/media/accompagnement_et_recherche.30c81e43ffd0afb0dc0a.jpg",
@@ -22,11 +21,10 @@
     "static/media/Logo_Qualiopi.png": "/attribut_conseil/static/media/Logo_Qualiopi.42e47990ea704e45a9ce.png",
     "index.html": "/attribut_conseil/index.html",
     "main.a065a260.css.map": "/attribut_conseil/static/css/main.a065a260.css.map",
-    "main.af90c21c.js.map": "/attribut_conseil/static/js/main.af90c21c.js.map",
-    "787.a938de1d.chunk.js.map": "/attribut_conseil/static/js/787.a938de1d.chunk.js.map"
+    "main.e089c500.js.map": "/attribut_conseil/static/js/main.e089c500.js.map"
   },
   "entrypoints": [
     "static/css/main.a065a260.css",
-    "static/js/main.af90c21c.js"
+    "static/js/main.e089c500.js"
   ]
 }
