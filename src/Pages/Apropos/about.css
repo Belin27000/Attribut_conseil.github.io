@@ -28,7 +28,7 @@
     color: white;
     /* border: 0.5px solid var(--acYellow); */
     border-radius: 15px;
-    box-shadow: -10px 5px 30px var(--acYellow);
+    box-shadow: 0px 0px 30px var(--acYellow);
 }
 
 
