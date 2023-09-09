@@ -1,90 +1,89 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import '@/Components/navBar.css'
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import '../Components/navBar.css'
+
+const NavBarTest = () => {
+
+    const [toggleMenu, setToogleMenu] = useState(false)
+    const [toggleCarrer, setToggleCarrer] = useState(false)
+    const [toggleTraining, setToggleTraining] = useState(false)
+    const [screenWidth, setScreenWidth] = useState
+        (window.innerWidth)
 
 
-const NavBar = () => {
-
-    const [open, setOpen] = useState(false)
-    const [openFormation, setOpenFormation] = useState(false)
-    const [openInge, setOpenInge] = useState(false)
-    const handleMouseEnter = () => {
-        setOpen(true);
-    };
-    const handleMouseLeave = () => {
-        setOpen(false);
-        setOpenFormation(false)
+    const toggleNav = () => {
+        setToogleMenu(!toggleMenu)
+        if (toggleTraining) {
+            setToggleTraining(!toggleTraining)
+        }
+        if (toggleCarrer) {
+            setToggleCarrer(!toggleCarrer)
+        }
+    }
+    const toggleCarrerNav = () => {
+        setToggleCarrer(!toggleCarrer)
+        if (toggleTraining) {
+            setToggleTraining(!toggleTraining)
+        }
+    }
+    const toggleTrainingNav = () => {
+        if (toggleCarrer) {
+            setToggleCarrer(!toggleCarrer)
+        }
+        setToggleTraining(!toggleTraining)
     }
 
-    const handleMouseEnterFormation = () => {
-        setOpenFormation(true)
 
-    }
-    const handleMouseLeaveFormation = () => {
-        setOpenFormation(false)
 
-    }
-    const handleMouseEnterInge = () => {
-        setOpenInge(true)
-
-    }
-    const handleMouseLeaveInge = () => {
-        setOpenInge(false)
-
-    }
-
+    useEffect(() => {
+        const changeWidth = () => {
+            setScreenWidth(window.innerWidth);
+        }
+        window.addEventListener('resize', changeWidth)
+        return () => {
+            window.removeEventListener("resize", changeWidth)
+        }
+    }, [])
     return (
-        <nav className='NavBar'>
-            <ul className='allNavMainItems'>
-                <li className='NavLink'><Link to="/home">Accueil</Link></li>
-                <li className='NavLink'><Link to="/about">Qui sommes nous</Link></li>
-                <li className='NavLink'
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                ><div>Gestion emploi et carrière</div>
-                    {open && (
-                        <ul className='menuDetail' onMouseLeave={() => setOpen(false)}>
-                            <li><Link to="/ComingSoon">Bilan de compétences</Link></li>
-                            <li><Link to="/ComingSoon">VAE</Link></li>
-                            <li><Link to="/ComingSoon">Orientation jeunes</Link></li>
-                            <li><Link to="/ComingSoon">Outplacement</Link></li>
-                            <li><Link to="/ComingSoon">Accompagnement à la recherche d’emploi</Link></li>
-                            <li><Link to="/ComingSoon">Coaching</Link></li>
-                            <li><Link to="/ComingSoon">Psychologie du travail</Link></li>
-                        </ul>
-                    )
-                    }
-                </li>
-                <li className='NavLink'
-                    onMouseEnter={handleMouseEnterFormation}
-                    onMouseLeave={handleMouseLeaveFormation}
-                ><div>Formation</div>
-                    {openFormation && (
-                        <ul className='menuDetail' onMouseLeave={() => setOpenFormation(false)}>
-                            <li><Link to="/ComingSoon">Accompagnement à la création d’entreprise</Link></li>
-                            <li><Link to="/ComingSoon">Formation de formateur</Link></li>
-                            <li><Link to="/ComingSoon">Formation consultant en bilan/conseiller emploi</Link></li>
-                        </ul>
-                    )
-                    }
-                </li>
-                <li className='NavLink'
-                    onMouseEnter={handleMouseEnterInge}
-                    onMouseLeave={handleMouseLeaveInge}
-                ><div>Ingenierie et administration de la formation</div>
-                    {openInge && (
-                        <ul className='menuDetail' onMouseLeave={() => setOpenInge(false)}>
-                            <li><Link to="/ComingSoon">Pour l’entreprise</Link></li>
-                            <li><Link to="/ComingSoon">Pour l’organisme de formation</Link></li>
+        <nav>
+            {(toggleMenu || screenWidth > 500) && (
+                <ul className="list">
+                    <Link to="/home" onClick={toggleNav} className="items"><li >Accueil</li></Link>
+                    <Link to="/about" onClick={toggleNav} className="items"><li>Qui sommes nous</li></Link>
+                    <li className="items" onClick={toggleCarrerNav}>Gestion emploi et carrière
+                        {toggleCarrer && (
+                            <ul className='sub-list' >
+                                <Link to="/ComingSoon" onClick={toggleNav}><li>Bilan de compétences</li></Link>
+                                <Link to="/ComingSoon" onClick={toggleNav}><li>VAE</li></Link>
+                                <Link to="/ComingSoon" onClick={toggleNav}><li>Orientation jeunes</li></Link>
+                                <Link to="/ComingSoon" onClick={toggleNav}><li>Outplacement</li></Link>
+                                <Link to="/ComingSoon" onClick={toggleNav}><li>Accompagnement à la recherche d’emploi</li></Link>
+                                <Link to="/ComingSoon" onClick={toggleNav}><li>Coaching</li></Link>
+                                <Link to="/ComingSoon" onClick={toggleNav}><li>Psychologie du travail</li></Link>
+                            </ul>
+                        )}
+                    </li>
+                    <li className="items" onClick={toggleTrainingNav}>Formation
+                        {toggleTraining && (
+                            <ul className='sub-list'>
+                                <Link to="/ComingSoon" onClick={toggleNav}><li>Accompagnement à la création d’entreprise</li></Link>
+                                <Link to="/ComingSoon" onClick={toggleNav}><li>Formation de formateur</li></Link>
+                                <Link to="/ComingSoon" onClick={toggleNav}><li>Formation consultant en bilan/conseiller emploi</li></Link>
+                            </ul>
+                        )}
+                    </li>
+                    <Link to="/ComingSoon" onClick={toggleNav} className="items"><li>Ingenierie et administration de la formation</li></Link>
+                </ul>
+            )}
+            <button onClick={toggleNav} className="btn" >
+                <FaBars className={!toggleMenu ? 'iconMenu isActive' : 'iconMenu'} />
+                <FaTimes className={toggleMenu ? 'iconMenu isActive' : 'iconMenu'} />
+            </button>
 
-                        </ul>
-
-                    )
-                    }
-                </li>
-            </ul>
         </nav >
     );
 };
 
-export default NavBar;
+
+export default NavBarTest;

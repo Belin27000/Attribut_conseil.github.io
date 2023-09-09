@@ -1,110 +1,168 @@
-/* .NavBar .menuDetail::before {
-    content: '';
-    display: flex;
-    flex-direction: row;
-    right: 20px;
-    height: 500px;
-    top: -5px;
-    position: absolute;
-} */
-.menuDetail {
-    position: absolute;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    z-index: 10;
-    /* background-color: red; */
-    background-color: var(--acWhite);
-    top: 100%;
-    width: 100%;
-    /* padding: 1rem; */
-    list-style-type: none;
-    padding: unset;
-    border-radius: 0 0 10px 10px;
-}
-
-.menuDetail li {
-    padding: 1rem 0;
-}
-
-.menuDetail li:hover {
-    background-color: var(--acYellow);
-}
-
-.menuDetail li:last-child {
-    border-radius: 0 0 10px 10px;
-
-}
-
-.NavBar {
-    width: 100%;
-    background-color: var(--acWhite);
-    height: 30%;
-    display: flex;
-    align-items: center;
+nav {
     position: relative;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(45deg, var(--acYellow), var(--acDarkBlue))
 }
 
-.allNavMainItems {
-    padding: 0 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+.list {
+    list-style-type: none;
+    padding: 0;
+    background: linear-gradient(45deg, var(--acYellow), var(--acDarkBlue));
+    /* background: linear-gradient(45deg, rgb(156, 14, 156), midnightBlue); */
     height: 100%;
-    list-style-type: none;
-    font-size: 1rem;
-}
-
-.NavBar ul li {
-    width: 100%;
-    cursor: pointer;
-}
-
-.NavBar ul li div {
-    color: var(--acDarkBlue);
-    font-weight: 500;
-}
-
-
-.NavLink a,
-.NavLink div {
-    color: var(--acDarkBlue);
-    font-weight: 500;
-    /* margin: 0 2rem; */
-    cursor: pointer;
-    /* border: unset; */
-    font-size: 1rem;
-
-}
-
-.NavLink {
-    padding: 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
     position: relative;
+    margin: .5rem 0;
+}
+
+.items {
+    /* margin-right: 20px; */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    padding: unset;
-}
-
-.NavLink:hover {
-    background-color: var(--acYellow);
-}
-
-.NavLink div {
+    width: 15%;
+    /* margin: 1rem 0; */
+    font-size: .9rem;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
     position: relative;
-    top: 0;
 }
 
-@media (max-width: 650px) {
 
-    .NavBar {
-        height: 25%;
+
+.sub-list {
+    list-style-type: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    /* background-color: red; */
+    background: linear-gradient(45deg, var(--acYellow), var(--acDarkBlue));
+    padding: 0 0 1rem 0;
+    font-size: .6rem;
+    line-height: 2rem;
+    border-radius: 0 0 15px 15px;
+}
+
+.sub-list a:nth-child(1) {
+    border-top: none;
+}
+
+.sub-list a {
+    border-top: 1px solid#fff;
+}
+
+.sub-list a:hover {
+    background-color: var(--acDarkBlue);
+}
+
+
+.btn {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+@media screen and (max-width:1024px) {
+    .items {
+        font-size: .7rem;
     }
 
-    .NavBar ul {
+    .sub-list {
         font-size: .5rem;
+        padding: 0 .5rem;
+
+    }
+}
+
+@media screen and (max-width:769px) {
+    .items {
+        font-size: .6rem;
+    }
+
+    .sub-list {
+        font-size: .45rem;
+        padding: 0 .2rem;
+
+
+    }
+}
+
+@media screen and (max-width:500px) {
+    nav {
+        height: 50px;
+    }
+
+    .list {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .items:nth-child(1) {
+        border-top: none;
+        /* margin-top: 50px; */
+    }
+
+    .items {
+        width: 100%;
+        border-top: 1px solid#fff;
+        text-align: center;
+        margin-right: 0px;
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list ul {
+        list-style-type: none;
+        line-height: 2.5rem;
+        padding: 0;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    .iconMenu {
+        display: none;
+    }
+
+    .iconMenu.isActive {
+        fill: var(--acYellow);
+        display: block;
+        font-size: 2rem;
+    }
+
+
+    .sub-list {
+        position: relative;
+        background: transparent;
+    }
+
+    .sub-list a {
+        border-top: none;
+    }
+
+    .sub-list a:hover {
+        background-color: var(--acWhite);
+    }
+
+    .sub-list li {
+        color: var(--acDarkBlue);
+
     }
 }

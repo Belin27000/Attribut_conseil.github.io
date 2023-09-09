@@ -4,10 +4,9 @@ footer {
     /* display: flex;
     flex-direction: column;*/
     align-items: flex-end;
-    position: relative;
-    border-top: solid 1px #000000;
+    position: absolute;
+    bottom: 0;
     background-color: white;
-    /* padding-top: 1rem; */
 
 }
 

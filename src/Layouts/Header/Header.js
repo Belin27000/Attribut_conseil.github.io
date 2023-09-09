@@ -3,11 +3,12 @@ import Bandeau from '@/Assets/Images/Bandeau.jpg'
 import logo_Attribut from '@/Assets/Images/logo_Attribut.png'
 import logo_soleil from '@/Assets/Images/Logo_soleil.png'
 import '@/Layouts/Header/header.css'
-import NavBar from '../../Components/NavBar.js';
+import NavBar from '@/Components/NavBar.js';
 
 const Header = () => {
     return (
         <header className='Header'>
+            <NavBar />
             <div className='Logos'>
                 <div className='LogoContainer'>
                     <img className='LogoLeft' src={logo_Attribut} alt='Attribut Conseil Logo' />
@@ -20,7 +21,6 @@ const Header = () => {
             <div className='PictureFont'>
                 <img src={Bandeau} alt="Header font" />
             </div>
-            <NavBar />
         </header>
     );
 };
