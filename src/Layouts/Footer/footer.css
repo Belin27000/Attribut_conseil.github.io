@@ -109,11 +109,11 @@ footer p {
 
 @media (max-width: 500px) {
     footer {
-        height: 200px;
+        height: initial;
     }
 
     footer .FooterLogoContainer {
-        width: 100%;
+        width: 50%%;
         top: 1rem;
         background: white;
     }
@@ -123,7 +123,6 @@ footer p {
         width: 100%;
         transform: scaleX(-1);
         position: relative;
-        bottom: 2rem;
     }
 
     footer p {
@@ -134,6 +133,7 @@ footer p {
 
     .FooterPunchLine {
         font-size: .7rem;
+        margin: 0;
     }
 
     .Charte {
