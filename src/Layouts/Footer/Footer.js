@@ -2,7 +2,7 @@ import React from 'react';
 import Bandeau from '@/Assets/Images/Bandeau.jpg'
 import Qualiopi from '@/Assets/Images/Logo_Qualiopi.png'
 import Cpf from '@/Assets/Images/logo_CPF.png'
-import Charte from '@/Assets/Images/chartedeontologieCPF-1.jpeg'
+import Charte from '@/Assets/Images/chartedeontologieCPF-1.png'
 import '@/Layouts/Footer/footer.css'
 
 const Footer = () => {
