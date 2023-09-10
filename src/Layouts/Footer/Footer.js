@@ -8,7 +8,7 @@ import '@/Layouts/Footer/footer.css'
 const Footer = () => {
     return (
         <footer className='Footer'>
-            <div className='LogoContainer'>
+            <div className='FooterLogoContainer'>
                 <div>
                     <img className='Qualiopi' src={Qualiopi} alt='Logo Qualiopi' />
                 </div>
@@ -16,10 +16,10 @@ const Footer = () => {
                     <img className='Cpf' src={Cpf} alt='Logo Mon compte formation' />
                 </div>
                 <div>
-                    <img className='Cpf' src={Charte} alt='Logo Mon compte formation' />
+                    <img className='Charte' src={Charte} alt='Logo Mon compte formation' />
                 </div>
             </div>
-            <div className='PictureFont'>
+            <div className='FooterPictureFont'>
                 <img src={Bandeau} alt="Header font" />
                 <p className='FooterPunchLine'>Spécialiste de la gestion de carrière et de la relation Homme/Travail</p>
             </div>

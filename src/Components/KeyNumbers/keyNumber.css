@@ -3,7 +3,7 @@
     justify-content: space-evenly;
     padding: 0;
     width: 100%;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 .KeyNumber li {
@@ -18,21 +18,43 @@
     font-weight: bold;
     font-size: 4rem;
     color: var(--acYellow);
+    font-size: 3rem;
 }
 
 .AcText {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: .7rem;
     width: 100%;
+    color: var(--acWhite);
+    font-size: 1.5rem;
+
 }
 
-@media (max-width : 850px) {
+/* @media (max-width : 1024) {} */
+
+@media (max-width : 769px) {
     .AcNumber {
         font-size: 2rem;
     }
 
     .AcText {
         font-size: 1rem;
-        width: 50%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .KeyNumber {
+        flex-direction: column;
+
+    }
+
+    .AcNumber {
+        /* padding: 1.5rem 0; */
+    }
+
+    .AcText {
+
+        color: var(--acWhite);
     }
 }

@@ -51,6 +51,14 @@ nav {
     border-radius: 0 0 15px 15px;
 }
 
+.sub-list li {
+    color: white;
+}
+
+.sub-list a:hover {
+    background-color: var(--acDarkBlue);
+}
+
 .sub-list a:nth-child(1) {
     border-top: none;
 }
@@ -59,9 +67,7 @@ nav {
     border-top: 1px solid#fff;
 }
 
-.sub-list a:hover {
-    background-color: var(--acDarkBlue);
-}
+
 
 
 .btn {
@@ -76,8 +82,17 @@ nav {
 }
 
 @media screen and (max-width:1024px) {
+    nav {
+        background: transparent
+    }
+
+    nav .list {
+        margin: 0;
+        padding: 0;
+    }
+
     .items {
-        font-size: .7rem;
+        font-size: .8rem;
     }
 
     .sub-list {
@@ -88,21 +103,38 @@ nav {
 }
 
 @media screen and (max-width:769px) {
+    nav {
+        height: 70px;
+    }
+
+    nav .list {
+        margin: 0;
+        padding: 0;
+    }
+
     .items {
-        font-size: .6rem;
+        font-size: .7rem;
     }
 
     .sub-list {
         font-size: .45rem;
         padding: 0 .2rem;
 
+    }
 
+    .sub-list a:hover {
+        background-color: var(--acDarkBlue);
+    }
+
+    .sub-list a:last-child:hover {
+        border-radius: 0 0 15px 15px;
     }
 }
 
 @media screen and (max-width:500px) {
     nav {
         height: 50px;
+        background: white;
     }
 
     .list {
@@ -110,6 +142,7 @@ nav {
         height: auto;
         padding: 0;
         margin: 0;
+        z-index: 2;
     }
 
     .items:nth-child(1) {
@@ -135,6 +168,7 @@ nav {
 
     .btn {
         display: block;
+        z-index: 3;
     }
 
     .iconMenu {
@@ -142,9 +176,15 @@ nav {
     }
 
     .iconMenu.isActive {
-        fill: var(--acYellow);
+        fill: var(--acDarkBlue);
         display: block;
         font-size: 2rem;
+    }
+
+    .closeIconMenu {
+        display: block;
+        font-size: 2rem;
+        fill: var(--acWhite);
     }
 
 
@@ -157,8 +197,8 @@ nav {
         border-top: none;
     }
 
-    .sub-list a:hover {
-        background-color: var(--acWhite);
+    .sub-list a:last-child:hover {
+        border-radius: 0 0 0 0;
     }
 
     .sub-list li {

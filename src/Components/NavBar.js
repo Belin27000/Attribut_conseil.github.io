@@ -78,7 +78,7 @@ const NavBarTest = () => {
             )}
             <button onClick={toggleNav} className="btn" >
                 <FaBars className={!toggleMenu ? 'iconMenu isActive' : 'iconMenu'} />
-                <FaTimes className={toggleMenu ? 'iconMenu isActive' : 'iconMenu'} />
+                <FaTimes className={toggleMenu ? 'closeIconMenu isActive' : 'iconMenu'} />
             </button>
 
         </nav >

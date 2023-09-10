@@ -9,17 +9,17 @@ const Header = () => {
     return (
         <header className='Header'>
             <NavBar />
-            <div className='Logos'>
-                <div className='LogoContainer'>
-                    <img className='LogoLeft' src={logo_Attribut} alt='Attribut Conseil Logo' />
-                </div>
-                <p>expert de la relation homme/travail</p>
-                <div className='LogoContainer'>
-                    <img className='LogoRight' src={logo_soleil} alt='Attribut Conseil Logo sun' />
-                </div>
-            </div>
             <div className='PictureFont'>
-                <img src={Bandeau} alt="Header font" />
+                <img className='Bandeau' src={Bandeau} alt="Header font" />
+            </div>
+            <p className='HeaderText' >Expert de la relation homme/travail</p>
+            <div className='Logos'>
+                <div className='LogoContainerAc'>
+                    <img className='LogoAc' src={logo_Attribut} alt='Attribut Conseil Logo' />
+                </div>
+                <div className='LogoContainerSun'>
+                    <img className='LogoSun' src={logo_soleil} alt='Attribut Conseil Logo sun' />
+                </div>
             </div>
         </header>
     );
