@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import '@/Components/KeyNumbers/keyNumber.css'
+import '@/Components/KeyNumbers/keyNumber.scss'
 
 const KeyNumber = () => {
 

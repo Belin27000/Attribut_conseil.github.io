@@ -1,0 +1,120 @@
+.Home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: lightblue */
+}
+
+.topSideHome {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PunchLine {
+    font-size: 2rem;
+    padding: 2rem;
+    color: white;
+    font-weight: bold;
+    /* border: .5px solid var(--acYellow); */
+    /* border-radius: 15px; */
+    /* box-shadow: -10px 5px 30px var(--acYellow); */
+
+}
+
+.DiffBloc {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 2rem;
+
+    p:first-child {
+        font-weight: bold;
+    }
+}
+
+.DiffBlocColor {
+    color: #FEA500;
+    margin-left: .5rem;
+}
+
+
+
+
+.BlueBand {
+    width: 100%;
+    background-color: #5F9CBB;
+    height: 12rem;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+
+
+.CapName,
+.EndName {
+    text-transform: uppercase;
+    color: white;
+}
+
+.EndName {
+    margin-right: 1rem;
+    color: var(--acYellow)
+}
+
+.BlueBandLastWord {
+    margin-left: 1rem;
+    color: white;
+}
+
+/* .BlueBand p {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+} */
+
+@media (max-width : 1024px) {}
+
+@media (max-width : 769px) {
+    .topSideHome {
+        width: 95%;
+    }
+
+    .PunchLine,
+    .DiffBloc {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .BlueBand {
+        width: 100%;
+        background-color: #5F9CBB;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .DiffBloc,
+    .BlueBand {
+        font-size: 1rem;
+    }
+
+    .BlueBand {
+        height: 3rem;
+
+    }
+
+    .topSideHome {
+        width: 90%;
+    }
+
+}

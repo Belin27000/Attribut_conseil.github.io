@@ -2,7 +2,7 @@ import React from 'react';
 import Bandeau from '@/Assets/Images/Bandeau.jpg'
 import logo_Attribut from '@/Assets/Images/logo_Attribut.png'
 import logo_soleil from '@/Assets/Images/Logo_soleil.png'
-import '@/Layouts/Header/header.css'
+import '@/Layouts/Header/header.scss'
 import NavBar from '@/Components/NavBar.js';
 
 const Header = () => {

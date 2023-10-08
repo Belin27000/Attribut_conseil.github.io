@@ -3,7 +3,7 @@ import Bandeau from '@/Assets/Images/Bandeau.jpg'
 import Qualiopi from '@/Assets/Images/Logo_Qualiopi.png'
 import Cpf from '@/Assets/Images/logo_CPF.png'
 import Charte from '@/Assets/Images/chartedeontologieCPF-1.png'
-import '@/Layouts/Footer/footer.css'
+import '@/Layouts/Footer/footer.scss'
 
 const Footer = () => {
     return (
@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
             <div className='FooterPictureFont'>
                 <img src={Bandeau} alt="Header font" />
-                <p className='FooterPunchLine'>Spécialiste de la gestion de carrière et de la relation Homme/Travail</p>
+                {/* <p className='FooterPunchLine'>Spécialiste de la gestion de carrière et de la relation Homme/Travail</p> */}
             </div>
         </footer>
     );

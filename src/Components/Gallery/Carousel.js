@@ -1,5 +1,5 @@
 // import carouselService from '@/_Services/carousel.service.js';
-import '@/Components/Gallery/carousel.css';
+import '@/Components/Gallery/carousel.scss';
 import React, { useState } from 'react';
 // import { FaAngleLeft, FaAngleRight } from "react-icons/fa"
 

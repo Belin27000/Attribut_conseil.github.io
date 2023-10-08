@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '@/Pages/ComingSoon/comingSoon.css'
+import '@/Pages/ComingSoon/comingSoon.scss'
 import soleil from '@/Assets/Images/Logo_soleil.png'
 
 
