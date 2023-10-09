@@ -1,0 +1,95 @@
+.Vae {
+    width: 100%;
+
+    &-title {
+        font-size: 1.2rem;
+        color: white;
+        text-align: center;
+    }
+
+
+    &-article {
+        color: white;
+        font-size: .8rem;
+        line-height: 1.5rem;
+
+        p {
+            padding: 1rem;
+        }
+
+        &-title {
+            font-size: 1rem;
+            color: var(--acYellow);
+            padding: 0 1rem;
+
+            &_blue {
+                font-size: 1rem;
+                padding: 1rem;
+                color: var(--acDarkBlue);
+            }
+        }
+
+        &_bgWhite {
+            background-color: white;
+            padding-bottom: 2rem;
+
+            p {
+                color: var(--acDarkBlue);
+                padding: 0 1rem;
+                text-align: justify;
+            }
+        }
+
+        ul {
+            padding-right: 1rem;
+        }
+
+        a {
+            color: white;
+            text-decoration: underline;
+
+            &:hover {
+                color: var(--acYellow);
+            }
+        }
+
+        &-doc {
+            color: var(--acYellow);
+            font-weight: bold;
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .Vae {
+
+        &-title {
+            font-size: 2rem;
+        }
+
+
+        &-article {
+            padding: 0 5rem;
+            color: white;
+            text-align: start;
+            line-height: 2rem;
+
+            p {
+                font-size: 1rem;
+            }
+
+            &-title {
+                font-size: 1.5rem;
+                text-align: center;
+
+                &.left {
+                    text-align: left;
+                }
+            }
+
+            &_bgWhite p {
+                padding: 0 5rem;
+            }
+        }
+    }
+}

@@ -4,6 +4,7 @@ import carouselService from '@/_Services/carousel.service.js';
 
 import '@/Pages/Acceuil/home.scss';
 import KeyNumber from '../../Components/KeyNumbers/KeyNumber.js';
+import ScrollToTop from '../../Components/Button/ScrollButton/ScrollToTop.js';
 
 
 
@@ -22,6 +23,7 @@ const Home = () => {
             </section>
             <p className='BlueBand'><span className='CapName'>attri</span><span className='EndName'>but</span><span className='CapName '>conseils </span> <span className='BlueBandLastWord'> c'est :</span></p>
             <KeyNumber />
+            <ScrollToTop />
         </div>
     );
 };

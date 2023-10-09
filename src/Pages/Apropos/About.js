@@ -1,6 +1,7 @@
 import React from 'react';
 import '@/Pages/Apropos/about.scss'
 import { Qualiopi, DataDoc, dbPic } from '@/Pages/index.js'
+import ScrollToTop from '../../Components/Button/ScrollButton/ScrollToTop.js';
 
 const About = () => {
     return (
@@ -163,7 +164,7 @@ const About = () => {
 
                 </div>
             </div>
-
+            <ScrollToTop />
         </section>
     );
 };
