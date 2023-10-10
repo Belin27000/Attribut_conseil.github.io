@@ -37,7 +37,7 @@ const Vae = () => {
             </article>
             <article className="Vae-article_bgWhite">
                 <h3 className="Vae-article-title_blue">Réserver votre acccompagnement VAE dès maintenant, à distance ou en présentiel :</h3>
-                <ContactButton />
+                <ContactButton text='Je contacte Attribut conseil' />
             </article>
             <article className="Vae-article">
                 <h3 className="Vae-article-title">

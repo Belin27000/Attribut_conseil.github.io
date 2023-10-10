@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './contactButton.scss'
 
-const ContactButton = () => {
+const ContactButton = ({ text }) => {
     let navigate = useNavigate();
     const RouteChange = () => {
         navigate('/comingSoon')
@@ -10,7 +10,7 @@ const ContactButton = () => {
 
     return (
         <button className='ContactButton' onClick={RouteChange}>
-            Je contacte Attribut conseil
+            {text}
         </button>
     );
 };

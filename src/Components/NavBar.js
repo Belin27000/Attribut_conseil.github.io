@@ -54,7 +54,7 @@ const NavBarTest = () => {
                     <li className="items" onClick={toggleCarrerNav}>Gestion emploi et carrière
                         {toggleCarrer && (
                             <ul className='sub-list' >
-                                <Link to="/ComingSoon" onClick={toggleNav}><li>Bilan de compétences</li></Link>
+                                <Link to="/bilan-de-competence" onClick={toggleNav}><li>Bilan de compétences</li></Link>
                                 <Link to="/vae" onClick={toggleNav}><li>VAE</li></Link>
                                 <Link to="/ComingSoon" onClick={toggleNav}><li>Orientation jeunes</li></Link>
                                 <Link to="/ComingSoon" onClick={toggleNav}><li>Outplacement</li></Link>

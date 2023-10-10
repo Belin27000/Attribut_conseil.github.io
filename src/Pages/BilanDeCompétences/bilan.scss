@@ -1,0 +1,128 @@
+.Bilan {
+    width: 100%;
+    color: white;
+
+    &-Qualiopi {
+        width: 100%;
+
+        img {
+            width: 25%;
+            object-fit: contain;
+
+        }
+
+        h3 {
+            color: var(--acYellow);
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+    &-article {
+        &-title {
+            color: var(--acYellow);
+        }
+
+        p {
+            text-align: start;
+            padding: 0 1rem;
+        }
+
+        &_bgWhite {
+            background-color: white;
+            padding: 1rem 0;
+
+        }
+
+        &_blue {
+            color: var(--acDarkBlue);
+            font-size: 1rem;
+            padding: 0 1rem;
+            font-weight: bold;
+        }
+
+        &-list {
+
+            &-header {
+                margin-bottom: 2rem;
+                padding: 0 1rem;
+                font-weight: bold;
+
+                ul {
+                    list-style-type: '-';
+                    padding: 0;
+                    font-weight: initial;
+                    margin-top: 1rem;
+
+                    li {
+                        padding-left: .2rem;
+                        text-align: start;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .Bilan {
+        &-Qualiopi {
+            display: flex;
+
+            img {
+                padding: 0 5rem;
+                width: 15%;
+            }
+
+            div {
+                width: 50%;
+                padding-left: 3rem;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: start;
+            }
+        }
+
+        &-article {
+            p {
+                text-align: start;
+                padding: 0 5rem;
+            }
+
+            &_bgWhite {
+
+                button {
+                    width: 15%;
+                    margin-right: 2rem;
+                }
+            }
+
+            &.contenu {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &-list {
+                width: 75%;
+                display: flex;
+                justify-content: space-evenly;
+                padding: 0;
+
+                ul {
+                    padding: 0;
+                }
+
+                &-header {
+                    width: 25%;
+                    text-align: start;
+                }
+            }
+        }
+    }
+}

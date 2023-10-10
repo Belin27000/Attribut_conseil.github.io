@@ -160,9 +160,38 @@ const About = () => {
                     <li>Le partage</li>
                 </ul>
                 <div className='db_Pic'>
-                    <img width='960px' height='960px' src={dbPic} alt='Portrait De Daphné Battaglia ' />
-
+                    <div className="db_Pic-container">
+                        <img width='960px' height='960px' src={dbPic} alt='Portrait De Daphné Battaglia ' />
+                    </div>
+                    <div>
+                        <h3>Daphné BATTAGLIA - Fondatrice ATTRIBUT CONSEILS </h3>
+                        <p>Ma passion a toujours été d'apporter mon soutien aux hommes et aux femmes dans leur parcours professionnel, et faire connecter 2 mondes en mouvement: celui de l’entreprise et le nôtre.
+                        </p>
+                        <p>Pour moi, l'enjeu crucial est partagé : l'entreprise a un rôle essentiel à jouer en favorisant sa croissance grâce à des collaborateurs épanouis, dont le développement personnel est au cœur du projet.
+                        </p>
+                        <p>De même, chaque collaborateur peut envisager le travail comme un moyen d'atteindre ses propres objectifs de développement.
+                        </p>
+                        <p>Mon approche pédagogique se base sur le croisement des expertises en faisant intervenir des psychologues du travail spécialisés dans l'emploi, des experts de la formation et des pédagogues chevronnés.
+                        </p>
+                    </div>
                 </div>
+                <p>Je crois profondément en l'importance de la formation continue tout au long de la vie, une conviction que j'ai mise en pratique en me formant à différentes étapes de ma vie.
+                </p>
+                <p>Ce qui me porte particulièrement, ce sont les domaines de l'autoformation, des théories de l'apprentissage, de la pédagogie, de la psychologie du travail et de la dynamique des groupes.
+                </p>
+                <p>J'aime m'impliquer dans des projets existants ou en initier de nouveaux. Je suis active au sein de plusieurs associations professionnelles, ce qui me permet de rester constamment connectée aux évolutions du monde du travail.
+                </p>
+                <p>Mon bagage académique et professionnel comprend un <strong>DESS en Ingénierie de la formation</strong>, une formation approfondie en <strong>psychologie jusqu'au niveau Master 2</strong>, ainsi qu'une <strong>certification en audit de formation</strong>.
+                </p>
+                <p>
+                    J’ai complété ces formations par des certifications en thérapie brèves et systémiques, et par une longue formation en coaching qui me vaut le titre de <strong>coach senior</strong>. Je suis également titulaire d'un <strong>Diplôme Universitaire en audit de formation</strong> et j'ai obtenu la <strong>certification de l'INRS en Formation sur les Risques Psycho Sociaux</strong>.
+                </p>
+                <p>
+                    En outre, je possède le <strong>Titre professionnel de Certificat de Compétences RNCP France compétences en tant que chef de projet en ingénierie de la formation blended learning</strong>.
+                </p>
+                <p>Je vous l’ai dit, j’adore la formation!</p>
+                <p><strong>Mes valeurs fondamentales sont la qualité dans le travail, l’authenticité et le partage.
+                </strong></p>
             </div>
             <ScrollToTop />
         </section>

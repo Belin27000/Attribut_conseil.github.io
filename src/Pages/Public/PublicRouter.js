@@ -5,6 +5,7 @@ import Layout from '@/Layouts/Layout.js';
 import ComingSoon from '@/Pages/ComingSoon/ComingSoon.js';
 import About from '../Apropos/About.js';
 import Vae from '../Vae/Vae.js';
+import Bilan from '../BilanDeCompétences/Bilan.js';
 
 
 const PublicRouter = () => {
@@ -15,8 +16,9 @@ const PublicRouter = () => {
 
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
-
+                <Route path='/bilan-de-competence' element={<Bilan />} />
                 <Route path='/vae' element={<Vae />} />
+
                 <Route path="/ComingSoon" element={<ComingSoon />} />
 
             </Route>
