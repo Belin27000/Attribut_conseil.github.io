@@ -37,6 +37,55 @@
             background-color: white;
             padding: 1rem 0;
 
+            .experience {
+                width: 75%;
+                background-color: var(--acDarkBlue);
+                color: white;
+                padding: 2rem;
+                border-radius: 15px;
+                // border: solid 2px var(--acYellow);
+            }
+
+            .graph {
+                width: 100%;
+
+                .projectAnalyse {
+                    display: none;
+                }
+
+                h4 {
+                    margin-bottom: 0;
+                    color: var(--acDarkBlue);
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &.black {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: black;
+                padding: 1rem;
+                margin-bottom: 2rem;
+
+                p {
+                    margin: .5rem;
+                }
+
+                .Yellow {
+                    // color: var(--acDarkBlue);
+                    font-weight: bold;
+
+                    &.nbr {
+                        font-size: 2rem;
+                        margin: 0;
+                    }
+                }
+            }
+
         }
 
         &_blue {
@@ -44,6 +93,11 @@
             font-size: 1rem;
             padding: 0 1rem;
             font-weight: bold;
+        }
+
+        &_black {
+            font-size: 1.5rem;
+
         }
 
         &-list {
@@ -65,6 +119,15 @@
                     }
                 }
             }
+        }
+
+        &-doc {
+            color: var(--acYellow);
+            font-weight: bold;
+            margin: 0 1rem;
+            font-size: .9rem;
+            text-align: initial;
+            padding-bottom: 1rem;
         }
     }
 }
@@ -97,8 +160,30 @@
             &_bgWhite {
 
                 button {
-                    width: 15%;
+                    width: 25%;
                     margin-right: 2rem;
+                }
+
+                .allGraph {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+
+                    .roundedGraph,
+                    .afterBilan {
+                        width: 40%;
+                    }
+
+                }
+
+                .graph .projectAnalyse {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .experience {
+                    width: 25%;
+                    margin: 2rem;
                 }
             }
 
@@ -122,6 +207,10 @@
                     width: 25%;
                     text-align: start;
                 }
+            }
+
+            &-doc {
+                line-height: 2rem;
             }
         }
     }

@@ -1,8 +1,12 @@
 import React from 'react';
 import './bilan.scss'
 import Qualiopi from '../../Assets/Images/Logo_Qualiopi.png'
+import roundedGraph from '../../Assets/Images/stats/projectAnalyse.png'
+import afterBilan from '../../Assets/Images/stats/afterBilan.png'
+import projectAnalyse from '../../Assets/Images/stats/projectUsefull.png'
 import ContactButton from '../../Components/Button/ContactButton.js';
 import ExternButton from '../../Components/Button/ExternalButton/ExternButton.js';
+import ScrollToTop from '../../Components/Button/ScrollButton/ScrollToTop.js';
 
 const Bilan = () => {
     return (
@@ -94,7 +98,59 @@ const Bilan = () => {
                     </li>
                 </ol>
             </article>
+            <article className="Bilan-article">
+                <h3 className="Bilan-article-title">Les moyens :</h3>
+                <p>Le consultant que vous choisissez est votre référent unique responsable, il guide la démarche et la prise de conscience et fait émerger des « possibles » traduits en objectifs concrets et validés, il fournit de l’information, des références, des pistes, des contacts afin notamment que vous puissiez vous resituer dans le contexte évolutif et concurrentiel de l’emploi dans votre entreprise et/ou sur le marché du travail. Le consultant coordonne les étapes qui font intervenir le cas échéant d’autres consultants tels que la psychologue pour les tests ou des experts pour l’évaluation des connaissances spécifiques ou pour échanger sur un domaine d’expertise visé. Chaque bilan est spécifique à un individu, il s’appuie sur une méthode générale mais avec des outils adaptés au cas particulier.</p>
+            </article>
+            <article className="Bilan-article">
+                <h3 className="Bilan-article-title">Tarifs</h3>
+                <p>Le tarif d'un bilan de compétences se situe entre 1800€ et 2240€ net de taxes selon les modalités de prise en charge et vos besoins exprimés.</p>
+                <p>
+                    On peut avoir recours à un bilan de compétences soit par la voie d'une prise en charge par l'employeur (Plan de développement des compétences de l'entreprise), soit dans le cadre d'une démarche personnelle (Compte Personnel de Formation "CPF"). Quelle que soit la configuration, le bilan de compétences est, dans la majorité des cas, intégralement financé grâce aux fonds de la formation professionnelle.</p>
+            </article>
+            <article className="Bilan-article_bgWhite">
+                <h3 className="Bilan-article_blue">En savoir plus</h3>
+                <p className="Bilan-article_blue">Pour plus de renseignements sur les modalités de prise en charge :</p>
+                <ContactButton text='Je contacte Attribut conseils' />
+            </article>
+            <article className="Bilan-article">
+                <h3 className="Bilan-article-title">Notre éthique :</h3>
+                <p>Respect absolu des personnes, confidentialité des informations recueillies, et respect du cadre défini par la loi sur le bilan de compétences.</p>
+                <ul className='Bilan-article-doc'>
+                    <li>Programme</li>
+                    <li>Tarifs et conditions générales de vente</li>
+                    <li>Déontologie et étique</li>
+                </ul>
+            </article>
+            <article className="Bilan-article_bgWhite black">
+                <h3 className='Bilan-article_black'>NOS STATISTIQUES</h3>
+                <p>Analyse des évaluations réalisées par nos clients</p>
+                <p>La compilation des données et les statistiques portent sur l'année 2022/23 - Mise à jour : octobre 2023</p>
+                <div className='experience'>
+                    <p className='Yellow nbr'>100%</p>
+                    <p className='Yellow'>des répondants</p>
+                    <p>jugent le bilan comme</p>
+                    <p>une <strong> &laquo; expérience positive &raquo;</strong></p>
+                </div>
+                <div className="graph">
+                    <div className="allGraph">
+                        <div className="roundedGraph">
+                            <h4>&laquo; Votre projet à l'issue du bilan ? &raquo;</h4>
+                            <img src={roundedGraph} alt="Votre projet à l'issue du bilan" />
+                        </div>
+                        <div className="afterBilan">
+                            <h4>&laquo; Dans les 6 mois qui ont suivi la fin du bilan votre situation a t'elle écoluée ? &raquo;</h4>
+                            <img src={afterBilan} alt="Évolution de situation dans les 6 mois du bilan" />
+                        </div>
+                    </div>
+                    <div className="projectAnalyse">
+                        <h4>&laquo; Pour la mise en place de votre projet, qu'avez-vous jugé utile ? &raquo;</h4>
+                        <img src={projectAnalyse} alt="Évolution de situation dans les 6 mois du bilan" />
+                    </div>
+                </div>
+            </article>
 
+            <ScrollToTop />
         </section >
     );
 };
