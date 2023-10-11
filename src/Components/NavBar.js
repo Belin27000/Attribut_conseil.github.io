@@ -56,11 +56,13 @@ const NavBarTest = () => {
                             <ul className='sub-list' >
                                 <Link to="/bilan-de-competence" onClick={toggleNav}><li>Bilan de compétences</li></Link>
                                 <Link to="/vae" onClick={toggleNav}><li>VAE</li></Link>
+
                                 <Link to="/ComingSoon" onClick={toggleNav}><li>Orientation jeunes</li></Link>
-                                <Link to="/ComingSoon" onClick={toggleNav}><li>Outplacement</li></Link>
-                                <Link to="/ComingSoon" onClick={toggleNav}><li>Accompagnement à la recherche d’emploi</li></Link>
+                                <Link to="/outplacement" onClick={toggleNav}><li>Outplacement</li></Link>
+                                <Link to="/accompagnement_a_la_recherche_d'emploi" onClick={toggleNav}><li>Accompagnement à la recherche d’emploi</li></Link>
                                 <Link to="/ComingSoon" onClick={toggleNav}><li>Coaching</li></Link>
-                                <Link to="/ComingSoon" onClick={toggleNav}><li>Psychologie du travail</li></Link>
+                                <Link to="/psychologie_du_travail" onClick={toggleNav}><li>Psychologie du travail</li></Link>
+
                             </ul>
                         )}
                     </li>

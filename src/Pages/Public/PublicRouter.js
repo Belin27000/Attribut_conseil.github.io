@@ -6,6 +6,9 @@ import ComingSoon from '@/Pages/ComingSoon/ComingSoon.js';
 import About from '../Apropos/About.js';
 import Vae from '../Vae/Vae.js';
 import Bilan from '../BilanDeCompétences/Bilan.js';
+import FingJob from '../FindJob/FingJob.js';
+import PsyWork from '../PsyWork/PsyWork.js';
+import Outplacement from '../Outplacement/Outplacement.js';
 
 
 const PublicRouter = () => {
@@ -18,6 +21,9 @@ const PublicRouter = () => {
                 <Route path="/about" element={<About />} />
                 <Route path='/bilan-de-competence' element={<Bilan />} />
                 <Route path='/vae' element={<Vae />} />
+                <Route path="/accompagnement_a_la_recherche_d'emploi" element={<FingJob />} />
+                <Route path="/psychologie_du_travail" element={<PsyWork />} />
+                <Route path="/outplacement" element={<Outplacement />} />
 
                 <Route path="/ComingSoon" element={<ComingSoon />} />
 

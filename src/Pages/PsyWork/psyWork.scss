@@ -1,0 +1,43 @@
+.PsyWork {
+    width: 100%;
+    color: white;
+
+    &-article {
+
+
+        &_bgWhite {
+            padding: 1rem;
+            background-color: white;
+            color: var(--acDarkBlue);
+        }
+
+        &-title,
+        &-subtitle {
+            font-size: 1.1rem;
+            color: var(--acYellow);
+        }
+
+        p {
+            padding: 0 1rem;
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .PsyWork {
+
+        &-article {
+            padding: 1rem 5rem;
+
+            p {
+                padding: 0;
+                text-align: start;
+            }
+
+            &-subtitle {
+                text-align: start;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.FindJob {
+    width: 100%;
+    color: white;
+
+    &-article {
+
+        &-title,
+        &-subtitle {
+            color: var(--acYellow);
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+        }
+
+        &_bgWhite {
+            background-color: white;
+            padding: 1rem;
+            color: var(--acDarkBlue);
+        }
+
+        &_blue {
+            font-size: 1rem;
+            padding: 0 1rem;
+            font-weight: bold;
+        }
+
+        p {
+            text-align: start;
+            padding: 0 1rem;
+        }
+
+        &.withList {
+            padding: 0 1rem;
+        }
+
+    }
+}
+
+@media (min-width: 760px) {
+    .FindJob {
+        &-article {
+            p {
+                text-align: start;
+                padding: 0 5rem;
+            }
+
+            &.withList {
+                padding: 0 5rem;
+
+                p {
+                    padding: 0;
+                }
+            }
+
+            ul {
+                li {
+                    text-align: start;
+                }
+            }
+
+            &-subtitle {
+                text-align: start;
+            }
+
+            &_bgWhite {
+                padding: 1rem 5rem;
+
+                p {
+                    text-align: start;
+                }
+            }
+        }
+    }
+}

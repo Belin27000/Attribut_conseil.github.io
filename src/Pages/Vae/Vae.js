@@ -89,7 +89,7 @@ const Vae = () => {
                 <p>De façon complémentaire, ATTRIBUT CONSEILS vous accompagne dans la constitution de votre dossier. Un conseiller VAE vous guide dans l’explicitation des éléments attendus par téléphone, par mail ou en présentiel. Attribut Conseils vous aide à mettre en valeur les compétences acquises pour démontrer que vous détenez le socle de compétences. Une fois constitué, le dossier est examiné par une commission pédagogique de l’école ou l’université en charge d’évaluer votre potentiel et capacité à suivre avec succès la formation envisagée. Ensuite, nous vous aidons à préparer votre dossier d'inscription et vous préparons à l'oral du jury.</p>
             </article>
             <article className="Vae-article_bgWhite">
-                <h3 className="Vae-article-title_blue">Nos plus :</h3>
+                <h3 className="Vae-article-title_blue">NOS PLUS :</h3>
                 <p>
                     Tous nos consultants possèdent tous une vision claire et précise des problématiques actuelles dans une multiplicité de domaines. Experts bilan de compétences/VAE.
                 </p>
