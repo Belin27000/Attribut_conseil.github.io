@@ -1,4 +1,64 @@
 .Outplacement {
-    background-color: black;
+    width: 100%;
     color: white;
+
+    &-article {
+        padding: 0 1rem;
+
+        &-title,
+        &-subtitle {
+            color: var(--acYellow);
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+        }
+
+        .WinWin {
+
+            &-List {
+                padding: 1rem;
+                list-style-type: none;
+
+                &>li {
+                    padding: 1rem 0;
+
+                    ul {
+                        padding: 1rem;
+
+                        li {
+                            list-style-type: disc;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        p {
+            text-align: start;
+        }
+
+        &_bgWhite {
+            background-color: white;
+            padding: 1rem;
+            color: var(--acDarkBlue);
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .Outplacement {
+        .WinWin {
+            text-align: center;
+
+            &-List {
+                list-style-type: none;
+                display: flex;
+                justify-content: space-evenly;
+
+                li {
+                    text-align: start;
+                }
+            }
+        }
+    }
 }
