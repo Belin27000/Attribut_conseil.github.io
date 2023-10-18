@@ -1,14 +1,20 @@
 .YouthGuidance {
-    width: 100%;
+    // width: 100%;
     color: white;
-    padding: 0 5rem;
 
     &-article {
+        padding: 0 1rem;
 
-        &-title {
+
+        &-title,
+        &-subtitle {
             color: var(--acYellow);
             font-size: 1.1rem;
             line-height: 1.5rem;
+        }
+
+        &-subtitle {
+            text-align: start;
         }
 
         p {
@@ -20,9 +26,58 @@
             padding: 0;
             text-align: start;
 
+
             li {
                 margin-left: 1.5rem;
                 line-height: 1.5rem;
+            }
+        }
+
+        ol {
+            padding: 0;
+            text-align: start;
+
+            li {
+                margin-left: 1rem;
+                line-height: 2rem;
+                font-weight: bold;
+            }
+
+            p {
+                font-weight: initial;
+                margin: 0 0 1rem 0;
+            }
+
+        }
+
+
+        &_bgWhite {
+            background-color: white;
+            padding: 1rem 0;
+        }
+
+        &_blue {
+            color: var(--acDarkBlue);
+            font-size: 1.5rem;
+            padding: 0 1rem;
+            font-weight: bold;
+        }
+
+        &-doc {
+            color: var(--acYellow);
+            font-weight: bold;
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .YouthGuidance {
+        &-article {
+
+            padding: 0 10rem;
+
+            &_blue {
+                padding: 0 10rem;
             }
         }
     }
