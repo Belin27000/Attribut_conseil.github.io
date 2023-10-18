@@ -60,7 +60,7 @@ const NavBarTest = () => {
                                 <Link to="/orientation_des_jeunes" onClick={toggleNav}><li>Orientation jeunes</li></Link>
                                 <Link to="/outplacement" onClick={toggleNav}><li>Outplacement</li></Link>
                                 <Link to="/accompagnement_a_la_recherche_d'emploi" onClick={toggleNav}><li>Accompagnement à la recherche d’emploi</li></Link>
-                                <Link to="/ComingSoon" onClick={toggleNav}><li>Coaching</li></Link>
+                                <Link to="/coaching" onClick={toggleNav}><li>Coaching</li></Link>
                                 <Link to="/psychologie_du_travail" onClick={toggleNav}><li>Psychologie du travail</li></Link>
 
                             </ul>

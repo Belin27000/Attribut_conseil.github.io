@@ -13,12 +13,14 @@ const YouthGuidance = () => {
                 </p>
                 <p>&laquo; Quel est ton projet ? &raquo;</p>
                 <p>&laquo;Que veux-tu faire comme métier ? &raquo;</p>
-                <ul><strong>Parents :</strong>
+                <p><strong>Parents :</strong></p>
+                <ul>
                     <li>L'orientation de votre enfant vous préoccupe ?</li>
                     <li>Vous vous interrogez sur son projet ? Sur ses débouchés possibles ?</li>
                     <li>Vous ne savez pas où trouver l'information ?</li>
                 </ul>
-                <ul><strong>Élèves :</strong>
+                <p><strong>Élèves :</strong></p>
+                <ul>
                     <li>Vous vous interrogez sur votre avenir ?</li>
                     <li>Vos projets d'orientation restent flous ?</li>
                     <li>Vous doutez de vos capacités, de vos motivations ?</li>
@@ -67,14 +69,18 @@ const YouthGuidance = () => {
                 <p>Ce modèle inspiré des recherches conduites aux Etats Unis, est né au Quebec. Pelletier, Noiseux, Ujold s'attachent à rendre compte de la dynamique complexe de choix professionnel et avancent la notion de développement vocationnel.</p>
                 <p>Il s'agit d'appliquer à la séquence vocationnelle un questionnement opératoire nécessitant la réussite de quatre grandes tâches, à savoir :</p>
                 <ol>
-                    <li>L'exploration :</li>
-                    <p>Envisager toutes les possibilités sans tenir compte de la réalité par un processus d'essais et d'erreurs.</p>
-                    <li>La cristallisation :</li>
-                    <p>Réduire par rapport à l'exploration, choisir un champ d'intérêt en terme de grandes lignes directrices.</p>
-                    <li>La spécification :</li>
-                    <p>Identifier les valeurs et les critères, et les sélectionner vers une option plus spécifique, évaluer le projet en fonction du désirable et du probable.</p>
-                    <li>La réalisation :</li>
-                    <p>Faire passer ses intentions au niveau du réel, poser les problèmes en termes concrets et pratiques, planifier, réviser les étapes.</p>
+                    <li>L'exploration :
+                        <p>Envisager toutes les possibilités sans tenir compte de la réalité par un processus d'essais et d'erreurs.</p>
+                    </li>
+                    <li>La cristallisation :
+                        <p>Réduire par rapport à l'exploration, choisir un champ d'intérêt en terme de grandes lignes directrices.</p>
+                    </li>
+                    <li>La spécification :
+                        <p>Identifier les valeurs et les critères, et les sélectionner vers une option plus spécifique, évaluer le projet en fonction du désirable et du probable.</p>
+                    </li>
+                    <li>La réalisation :
+                        <p>Faire passer ses intentions au niveau du réel, poser les problèmes en termes concrets et pratiques, planifier, réviser les étapes.</p>
+                    </li>
                 </ol>
                 <p>A chacune des étapes correspondent des tâches définies et ordonnées. La démarche d'orientation peut être comprise comme un cheminement qui permet à l'individu de se reconnaître tel qu'il est et tel qu'il se modifie.</p>
             </article>
@@ -89,6 +95,7 @@ const YouthGuidance = () => {
                 <p>Ce faisant, elles permettent au jeune – <strong>de devenir acteur de son projet</strong> - de mieux utiliser les ressources de notre système de formation professionnelle ou initiale et de savoir naviguer ce système si complexe qu’est notre monde de l’emploi et de la formation.
                 </p>
                 <h3 className="YouthGuidance-article-title">Nos tarifs</h3>
+                <p>Le coût de l’accompagnement est évalué lors d'un entretien préliminaire gratuit et sans engagement et varie en fonction de la situation du client ainsi que des modalités de financement.</p>
                 <ul className='YouthGuidance-article-doc'>
                     <li>Déontologie et éthique</li>
                 </ul>

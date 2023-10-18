@@ -10,6 +10,7 @@ import FingJob from '../FindJob/FingJob.js';
 import PsyWork from '../PsyWork/PsyWork.js';
 import Outplacement from '../Outplacement/Outplacement.js';
 import YouthGuidance from '../youthGuidance/YouthGuidance.js';
+import Coaching from '../Coaching/Coaching.js';
 
 
 const PublicRouter = () => {
@@ -25,6 +26,7 @@ const PublicRouter = () => {
                 <Route path="/orientation_des_jeunes" element={<YouthGuidance />} />
                 <Route path="/outplacement" element={<Outplacement />} />
                 <Route path="/accompagnement_a_la_recherche_d'emploi" element={<FingJob />} />
+                <Route path="/coaching" element={<Coaching />} />
                 <Route path="/psychologie_du_travail" element={<PsyWork />} />
 
                 <Route path="/ComingSoon" element={<ComingSoon />} />
