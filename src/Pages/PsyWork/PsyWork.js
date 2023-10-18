@@ -1,7 +1,6 @@
 import React from 'react';
 import './psyWork.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
-import ScrollToTop from '../../Components/Button/ScrollButton/ScrollToTop.js';
 
 const PsyWork = () => {
     return (
@@ -51,7 +50,6 @@ const PsyWork = () => {
                 <p><strong>Retrouvez votre équilibre. Contactez notre équipe diplômée, psychologues du travail et Thérapie brèves pour bénéficier de notre accompagnement.
                 </strong></p>
             </article>
-            <ScrollToTop />
         </section>
     );
 };

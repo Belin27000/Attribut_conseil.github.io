@@ -6,7 +6,6 @@ import afterBilan from '../../Assets/Images/stats/afterBilan.png'
 import projectAnalyse from '../../Assets/Images/stats/projectUsefull.png'
 import ContactButton from '../../Components/Button/ContactButton.js';
 import ExternButton from '../../Components/Button/ExternalButton/ExternButton.js';
-import ScrollToTop from '../../Components/Button/ScrollButton/ScrollToTop.js';
 
 const Bilan = () => {
     return (
@@ -149,8 +148,6 @@ const Bilan = () => {
                     </div>
                 </div>
             </article>
-
-            <ScrollToTop />
         </section >
     );
 };

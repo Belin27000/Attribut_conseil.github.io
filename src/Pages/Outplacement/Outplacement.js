@@ -37,7 +37,7 @@ const Outplacement = () => {
                             </li>
                             <li>De définir et mettre en œuvre une stratégie de reclassement ou de reconversion
                             </li>
-                            <li>•D’être coaché dans l’intégration de son nouveau poste
+                            <li>D’être coaché dans l’intégration de son nouveau poste
                             </li>
                         </ul>
                     </li>

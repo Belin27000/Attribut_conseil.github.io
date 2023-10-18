@@ -1,6 +1,5 @@
 import React from 'react';
 import './findJob.scss'
-import ScrollToTop from '../../Components/Button/ScrollButton/ScrollToTop.js';
 import ContactButton from '../../Components/Button/ContactButton.js';
 
 const FingJob = () => {
@@ -94,7 +93,6 @@ const FingJob = () => {
                 <p>Le premier entretien d’analyse du besoin est gratuit et sans engagement. Le coût de l’accompagnement est évalué lors de l’entretien préliminaire et varie en fonction de la situation du client ainsi que des modalités de financement.
                 </p>
             </article>
-            <ScrollToTop />
         </section>
     );
 };

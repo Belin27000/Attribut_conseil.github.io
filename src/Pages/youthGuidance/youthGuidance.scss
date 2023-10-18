@@ -1,0 +1,29 @@
+.YouthGuidance {
+    width: 100%;
+    color: white;
+    padding: 0 5rem;
+
+    &-article {
+
+        &-title {
+            color: var(--acYellow);
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+        }
+
+        p {
+            text-align: start;
+            padding: 0;
+        }
+
+        ul {
+            padding: 0;
+            text-align: start;
+
+            li {
+                margin-left: 1.5rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}
