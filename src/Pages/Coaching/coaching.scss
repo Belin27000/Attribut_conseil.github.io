@@ -5,5 +5,26 @@
     p {
         text-align: start;
         padding: 0 1rem;
+
+    }
+
+    &-article {
+        &_center {
+            text-align: center;
+        }
+
+        &-title {
+            color: var(--acYellow);
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+        }
+
+
+    }
+
+    ul {
+        li {
+            text-align: start;
+        }
     }
 }
