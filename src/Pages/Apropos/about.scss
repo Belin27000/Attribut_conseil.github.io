@@ -132,6 +132,7 @@
     .db_Pic {
         width: 100%;
         display: flex;
+        align-items: flex-end;
 
         &-container {
             width: 25%;

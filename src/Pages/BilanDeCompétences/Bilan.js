@@ -57,7 +57,7 @@ const Bilan = () => {
             <article className='Bilan-article_bgWhite'>
                 <h3 className="Bilan-article_blue">Réserver votre bilan dès maintenant, à distance ou en présentiel : </h3>
                 <ExternButton text='Je suis éligible au CPF' />
-                <ContactButton text='Je contacte Attribut conseils' />
+                <ContactButton />
                 <p className='Bilan-article_blue'>Délais d’accès : 10 jours maximum</p>
             </article>
             <article className="Bilan-article">
@@ -110,7 +110,7 @@ const Bilan = () => {
             <article className="Bilan-article_bgWhite">
                 <h3 className="Bilan-article_blue">En savoir plus</h3>
                 <p className="Bilan-article_blue">Pour plus de renseignements sur les modalités de prise en charge :</p>
-                <ContactButton text='Je contacte Attribut conseils' />
+                <ContactButton />
             </article>
             <article className="Bilan-article">
                 <h3 className="Bilan-article-title">Notre éthique :</h3>

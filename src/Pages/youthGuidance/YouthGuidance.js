@@ -32,7 +32,7 @@ const YouthGuidance = () => {
             <article className="YouthGuidance-article_bgWhite">
                 <h3 className="YouthGuidance-article_blue">
                     Réserver votre bilan d’orientation dès maintenant, à distance ou en présentiel ou obtenez le programme :</h3>
-                <ContactButton text='Je contacte Attribut conseils' />
+                <ContactButton />
             </article>
             <article className="YouthGuidance-article">
                 <h3 className="YouthGuidance-article-title">LES ÉTAPES DE L’ACCOMPAGNEMENT</h3>

@@ -23,7 +23,7 @@ const PsyWork = () => {
             </article>
             <article className="PsyWork-article_bgWhite">
                 <h3 className="PsyWork-article_blue">Réserver votre accompagnement dès maintenant, à distance ou en présentiel : </h3>
-                <ContactButton text={'Je contacte Attribut conseils'} />
+                <ContactButton />
             </article>
             <article className="PsyWork-article">
                 <h3 className="PsyWork-article-title">LES ÉTAPES DE L’ACCOMPAGNEMENT</h3>

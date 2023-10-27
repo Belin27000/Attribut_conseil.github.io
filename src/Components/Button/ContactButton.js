@@ -10,7 +10,10 @@ const ContactButton = ({ text }) => {
 
     return (
         <button className='ContactButton' onClick={RouteChange}>
-            {text}
+            {
+
+                text ? text : "Je contacte Attribut conseils"
+            }
         </button>
     );
 };

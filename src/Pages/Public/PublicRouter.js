@@ -11,6 +11,7 @@ import PsyWork from '../PsyWork/PsyWork.js';
 import Outplacement from '../Outplacement/Outplacement.js';
 import YouthGuidance from '../youthGuidance/YouthGuidance.js';
 import Coaching from '../Coaching/Coaching.js';
+import CareerConsult from '../CareerManagementConsultant/CareerConsult.js';
 
 
 const PublicRouter = () => {
@@ -28,6 +29,7 @@ const PublicRouter = () => {
                 <Route path="/accompagnement_a_la_recherche_d'emploi" element={<FingJob />} />
                 <Route path="/coaching" element={<Coaching />} />
                 <Route path="/psychologie_du_travail" element={<PsyWork />} />
+                <Route path="/formation_metier_consultant_en_gestion_de_carrieres" element={<CareerConsult />} />
 
                 <Route path="/ComingSoon" element={<ComingSoon />} />
 

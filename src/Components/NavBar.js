@@ -71,7 +71,7 @@ const NavBarTest = () => {
                             <ul className='sub-list'>
                                 <Link to="/ComingSoon" onClick={toggleNav}><li>Accompagnement à la création d’entreprise</li></Link>
                                 <Link to="/ComingSoon" onClick={toggleNav}><li>Formation de formateur</li></Link>
-                                <Link to="/ComingSoon" onClick={toggleNav}><li>Formation consultant en bilan/conseiller emploi</li></Link>
+                                <Link to="/formation_metier_consultant_en_gestion_de_carrieres" onClick={toggleNav}><li>Formation consultant en bilan/conseiller emploi</li></Link>
                             </ul>
                         )}
                     </li>

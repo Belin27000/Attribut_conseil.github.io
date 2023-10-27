@@ -19,7 +19,7 @@ const FingJob = () => {
             </article>
             <article className="FindJob-article_bgWhite">
                 <h3 className="FindJob-article_blue">Réserver votre acccompagnement emploi dès maintenant, à distance ou en présentiel : </h3>
-                <ContactButton text={'Je contacte Attribut conseils'} />
+                <ContactButton />
             </article>
             <article className="FindJob-article withList">
                 <h3 className="FindJob-article-title">Stratégie marketing de la recherche d’emploi</h3>

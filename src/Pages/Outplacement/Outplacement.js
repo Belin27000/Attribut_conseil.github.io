@@ -92,7 +92,7 @@ const Outplacement = () => {
             </article>
             <article className="Outplacement-article_bgWhite">
                 <h3 className="Outplacement-article_blue"> Contactez nous dès maintenant pour l’analyse de vos besoins : </h3>
-                <ContactButton text={'Je contacte Attribut conseils'} />
+                <ContactButton />
             </article>
             <article className="Outplacement-article">
                 <h3 className="Outplacement-article-title">Nos tarifs</h3>
