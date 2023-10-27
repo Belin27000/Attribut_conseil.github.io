@@ -1,0 +1,138 @@
+.TrainingTrainer {
+    width: 100%;
+    color: white;
+
+    &-title {
+        padding: 0 1rem;
+    }
+
+    &-article {
+        p {
+            padding: 0 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0 1rem;
+        }
+
+        &-listTitle {
+            font-weight: bold;
+            color: var(--acYellow);
+
+            p {
+                font-weight: initial;
+                color: white;
+                text-align: start;
+            }
+
+            ul {
+                flex-direction: column;
+                list-style-type: initial;
+                color: white;
+                font-weight: initial;
+                padding: 1rem;
+
+                li {
+                    padding-bottom: 1rem;
+                    text-align: start;
+                }
+            }
+        }
+
+        &-title {
+            padding: 0 1rem;
+            color: var(--acYellow);
+        }
+
+        &-path {
+            text-align: start;
+            flex-direction: column;
+
+            p {
+                padding: 0;
+            }
+
+            &-detail {
+                margin: 1rem 0;
+                flex-direction: column;
+
+                li {
+                    list-style-type: initial;
+                    padding-bottom: .5rem;
+                }
+            }
+        }
+
+        &-pathIntro {
+            text-align: start;
+        }
+
+        &_bgWhite {
+            background-color: white;
+            padding: 1rem;
+            color: var(--acDarkBlue);
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .TrainingTrainer {
+        &-article {
+            width: 100%;
+
+            p {
+                padding: 0 5rem;
+            }
+
+            ul {
+                display: flex;
+                padding: 0 5rem;
+                justify-content: space-between;
+
+                // li {
+                //     height: 100%;
+                // }
+            }
+
+            &-listTitle {
+                width: 50%;
+
+                ul {
+                    display: flex;
+                    justify-content: space-evenly;
+                    height: 100%;
+                }
+
+            }
+
+            &-path {
+                padding: 0;
+
+                p {
+                    padding: 0;
+                }
+
+                &-detail {
+                    padding: 0 1rem !important
+                }
+            }
+
+            &-duration {
+                text-align: start;
+            }
+
+            &_bgWhite {
+                padding: 1rem 10rem;
+
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+
+            &-title {
+                padding: 0 25rem;
+            }
+        }
+    }
+}

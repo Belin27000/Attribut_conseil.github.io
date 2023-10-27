@@ -12,6 +12,7 @@ import Outplacement from '../Outplacement/Outplacement.js';
 import YouthGuidance from '../youthGuidance/YouthGuidance.js';
 import Coaching from '../Coaching/Coaching.js';
 import CareerConsult from '../CareerManagementConsultant/CareerConsult.js';
+import TrainingTrainer from '../TrainingTrainer/TrainingTrainer.js';
 
 
 const PublicRouter = () => {
@@ -30,6 +31,7 @@ const PublicRouter = () => {
                 <Route path="/coaching" element={<Coaching />} />
                 <Route path="/psychologie_du_travail" element={<PsyWork />} />
                 <Route path="/formation_metier_consultant_en_gestion_de_carrieres" element={<CareerConsult />} />
+                <Route path="/formation_metier_formateur_adultes" element={<TrainingTrainer />} />
 
                 <Route path="/ComingSoon" element={<ComingSoon />} />
 
