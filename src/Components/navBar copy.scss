@@ -46,31 +46,14 @@ nav {
     font-size: .6rem;
     line-height: 2rem;
     border-radius: 0 0 15px 15px;
-
-
-    .sous-menu {
-        list-style-type: none;
-        padding: 0;
-        background: linear-gradient(45deg, var(--acYellow), var(--acDarkBlue));
-        position: absolute;
-        right: 100%;
-        top: 0;
-        border-radius: 0 0 15px 15px;
-
-        li a {
-
-            color: white;
-        }
-    }
-
-    li a {
-        font-size: .8rem;
-        color: white;
-    }
 }
 
+li {
+    font-size: .8rem;
+    color: white;
+}
 
-.sub-list li:hover {
+.sub-list a:hover {
     background-color: var(--acDarkBlue);
 }
 
@@ -135,10 +118,6 @@ nav {
         font-size: .45rem;
         padding: 0 .2rem;
 
-        .sous-menu {
-            position: absolute;
-            right: 100%;
-        }
     }
 
     .sub-list a:hover {
@@ -148,7 +127,6 @@ nav {
     .sub-list a:last-child:hover {
         border-radius: 0 0 15px 15px;
     }
-
 }
 
 @media screen and (max-width:500px) {

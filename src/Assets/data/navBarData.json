@@ -1,0 +1,16 @@
+{
+    "NavBar": [
+        {
+            "Acceuil": "ACCEUIL",
+            "Link": "/home"
+        },
+        {
+            "Who": "Qui sommes nous",
+            "Link": "/about"
+        },
+        {
+            "Carreer": "Gestion emploi et carrière",
+            "Link": "/about"
+        }
+    ]
+}
