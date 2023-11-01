@@ -46,3 +46,20 @@
         }
     }
 }
+
+@media (min-width: 760px) {
+    .Qualiopi {
+        color: white;
+
+        &-article {
+            padding: 0 5rem;
+
+            &_bgWhite {
+                padding: 1rem 5rem;
+
+            }
+
+        }
+    }
+
+}
