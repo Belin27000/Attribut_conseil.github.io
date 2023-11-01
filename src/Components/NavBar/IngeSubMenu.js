@@ -8,8 +8,8 @@ const IngeSubMenu = () => {
 
     return (
         <ul className='sous-menu'>
-            <li><Link to="/ComingSoon" >Gestion externalisée de la formation</Link></li>
-            <li><Link to="/ComingSoon" >Qualiopi</Link></li>
+            <li><Link to="/ComingSoon" ><div>Gestion externalisée de la formation</div></Link></li>
+            <li><Link to="/ComingSoon" ><div>Qualiopi</div></Link></li>
         </ul>
     );
 };

@@ -74,27 +74,27 @@ const NavBarTest = () => {
         <nav>
             {(toggleMenu || screenWidth > 500) && (
                 <ul className="list">
-                    <li><Link to="/home" className="items" onClick={toggleNav}>Accueil</Link></li>
-                    <li><Link to="/about" className="items" onClick={toggleNav}>Qui sommes nous</Link></li>
+                    <li><Link to="/home" className="items" onClick={toggleNav}><div>Accueil</div></Link></li>
+                    <li><Link to="/about" className="items" onClick={toggleNav}><div>Qui sommes nous</div></Link></li>
                     <li className="items" onMouseEnter={toggleCarrerNav} onMouseLeave={toggleCarrerNav}>Gestion emploi et carrière
                         {toggleCarrer && (
                             <ul className='sub-list' >
-                                <li><Link to="/bilan-de-competence" onClick={toggleNav}>Bilan de compétences</Link></li>
-                                <li><Link to="/vae" onClick={toggleNav}>VAE</Link></li>
-                                <li><Link to="/orientation_des_jeunes" onClick={toggleNav}>Orientation jeunes</Link></li>
-                                <li><Link to="/outplacement" onClick={toggleNav}>Outplacement</Link></li>
-                                <li><Link to="/accompagnement_a_la_recherche_d'emploi" onClick={toggleNav}>Accompagnement à la recherche d’emploi</Link></li>
-                                <li><Link to="/coaching" onClick={toggleNav}>Coaching</Link></li>
-                                <li><Link to="/psychologie_du_travail" onClick={toggleNav}>Psychologie du travail</Link></li>                            </ul>
+                                <li><Link to="/bilan-de-competence" onClick={toggleNav}><div>Bilan de compétences</div></Link></li>
+                                <li><Link to="/vae" onClick={toggleNav}><div>VAE</div></Link></li>
+                                <li><Link to="/orientation_des_jeunes" onClick={toggleNav}><div>Orientation jeunes</div></Link></li>
+                                <li><Link to="/outplacement" onClick={toggleNav}><div>Outplacement</div></Link></li>
+                                <li><Link to="/accompagnement_a_la_recherche_d'emploi" onClick={toggleNav}><div>Accompagnement à la recherche d’emploi</div></Link></li>
+                                <li><Link to="/coaching" onClick={toggleNav}><div>Coaching</div></Link></li>
+                                <li><Link to="/psychologie_du_travail" onClick={toggleNav}><div>Psychologie du travail</div></Link></li>                            </ul>
                         )}
                     </li>
                     <li className="items" onMouseEnter={toggleTrainingNav} onMouseLeave={toggleTrainingNav} >Formation
                         {toggleTraining && (
                             <ul className='sub-list'>
-                                <li><Link to="/formation_creation_entreprise " onClick={toggleNav}>Accompagnement à la création d’entreprise</Link></li>
-                                <li><Link to="/formation_metier_formateur_adultes" onClick={toggleNav}>Formation de formateur</Link></li>
-                                <li><Link to="/formation_metier_consultant_en_gestion_de_carrieres" onClick={toggleNav}>Formation consultant en bilan/conseiller emploi</Link></li>
-                                <li><Link to="/ComingSoon" onClick={toggleNav}>Groupe analyse de pratiques</Link></li>
+                                <li><Link to="/formation_creation_entreprise " onClick={toggleNav}><div>Accompagnement à la création d’entreprise</div></Link></li>
+                                <li><Link to="/formation_metier_formateur_adultes" onClick={toggleNav}><div>Formation de formateur</div></Link></li>
+                                <li><Link to="/formation_metier_consultant_en_gestion_de_carrieres" onClick={toggleNav}><div>Formation consultant en bilan/conseiller emploi</div></Link></li>
+                                <li><Link to="/ComingSoon" onClick={toggleNav}><div>Groupe analyse de pratiques</div></Link></li>
                             </ul>
                         )}
                     </li>
@@ -114,7 +114,7 @@ const NavBarTest = () => {
                                         <EntrpriseSubMenu />
                                     )} */}
                                 </li>
-                                <li><Link to="/ingenierie_formation" className="items" onClick={toggleNav}>Ingénierie de la formation</Link></li>
+                                <li><Link to="/ingenierie_formation" className="items" onClick={toggleNav}><div>Ingénierie de la formation</div></Link></li>
                                 <li onMouseEnter={toggleOrganismeSubMenu} onMouseLeave={toggleOrganismeSubMenu} >
                                     <FaAngleLeft />
                                     Organisme de formation
