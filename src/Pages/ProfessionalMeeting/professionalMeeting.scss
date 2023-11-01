@@ -1,0 +1,46 @@
+.ProfessionalMeeting {
+    color: white;
+
+    &-article {
+        padding: 1rem;
+
+        &_bgWhite {
+            background-color: white;
+            padding: 1rem;
+        }
+
+        &_blue {
+            color: var(--acDarkBlue);
+            font-size: 1.5rem;
+            padding: 0 1rem;
+            font-weight: bold;
+        }
+
+        &-title {
+            color: var(--acYellow);
+        }
+
+        .yellowBold {
+            color: var(--acYellow);
+            font-weight: bold;
+        }
+
+        ol {
+            li {
+                font-weight: initial;
+                text-align: start;
+                padding-bottom: 1rem;
+            }
+        }
+
+        ul {
+            text-align: start;
+            list-style-type: none;
+
+            li {
+                padding-bottom: 1rem;
+            }
+        }
+
+    }
+}
