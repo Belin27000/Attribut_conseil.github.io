@@ -94,7 +94,7 @@ const NavBarTest = () => {
                                 <li><Link to="/formation_creation_entreprise " onClick={toggleNav}><div>Accompagnement à la création d’entreprise</div></Link></li>
                                 <li><Link to="/formation_metier_formateur_adultes" onClick={toggleNav}><div>Formation de formateur</div></Link></li>
                                 <li><Link to="/formation_metier_consultant_en_gestion_de_carrieres" onClick={toggleNav}><div>Formation consultant en bilan/conseiller emploi</div></Link></li>
-                                <li><Link to="/ComingSoon" onClick={toggleNav}><div>Groupe analyse de pratiques</div></Link></li>
+                                <li><Link to="/groupe_analyse_de_pratiques" onClick={toggleNav}><div>Groupe analyse de pratiques</div></Link></li>
                             </ul>
                         )}
                     </li>

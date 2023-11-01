@@ -1,0 +1,75 @@
+.PracticesAnalyse {
+    width: 100%;
+
+    color: white;
+
+    &-title {
+        font-size: 1.5rem;
+        padding: 0 1rem;
+    }
+
+
+    &-article {
+        padding: 0 1rem;
+
+        &-title {
+            color: var(--acYellow);
+        }
+
+        &_bgWhite {
+            background-color: white;
+            padding: 1rem 0;
+        }
+
+        &_blue {
+            color: var(--acDarkBlue);
+            font-size: 1.5rem;
+            padding: 0 1rem;
+            font-weight: bold;
+        }
+
+        ul {
+            padding: 1rem 0;
+
+            .listTitle {
+                list-style-type: none;
+                color: var(--acYellow);
+                font-weight: bold;
+
+                .listItems {
+                    list-style-type: none;
+                    color: white;
+                    font-weight: initial;
+                    text-align: start;
+
+                    &-Title {
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+
+        .globalList {
+            list-style-type: none;
+            text-align: start;
+
+            .Title {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .PracticesAnalyse {
+
+        &-article,
+        &-article_blue {
+            padding: 0 5rem;
+        }
+    }
+
+    .doubleList {
+        display: flex;
+    }
+}

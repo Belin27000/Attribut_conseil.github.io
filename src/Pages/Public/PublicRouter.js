@@ -16,6 +16,7 @@ import TrainingTrainer from '../TrainingTrainer/TrainingTrainer.js';
 import BusinessCreationTraining from '../BusinessCreationTraining/BusinessCreationTraining.js';
 import IngeTraining from '../IngeTraining/IngeTraining.js';
 import ExternRhManagment from '../ExternRhManagment/ExternRhManagment.js';
+import PracticesAnalyse from '../PracticesAnalyse/PracticesAnalyse.js';
 
 
 const PublicRouter = () => {
@@ -26,6 +27,7 @@ const PublicRouter = () => {
 
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
+
                 <Route path='/bilan-de-competence' element={<Bilan />} />
                 <Route path='/vae' element={<Vae />} />
                 <Route path="/orientation_des_jeunes" element={<YouthGuidance />} />
@@ -33,11 +35,14 @@ const PublicRouter = () => {
                 <Route path="/accompagnement_a_la_recherche_d'emploi" element={<FingJob />} />
                 <Route path="/coaching" element={<Coaching />} />
                 <Route path="/psychologie_du_travail" element={<PsyWork />} />
-                <Route path="/formation_metier_consultant_en_gestion_de_carrieres" element={<CareerConsult />} />
-                <Route path="/formation_metier_formateur_adultes" element={<TrainingTrainer />} />
+
                 <Route path="/formation_creation_entreprise" element={<BusinessCreationTraining />} />
-                <Route path="/ingenierie_formation" element={<IngeTraining />} />
+                <Route path="/formation_metier_formateur_adultes" element={<TrainingTrainer />} />
+                <Route path="/formation_metier_consultant_en_gestion_de_carrieres" element={<CareerConsult />} />
+                <Route path="/groupe_analyse_de_pratiques" element={<PracticesAnalyse />} />
+
                 <Route path="/gestion_RH_externalisee" element={<ExternRhManagment />} />
+                <Route path="/ingenierie_formation" element={<IngeTraining />} />
 
                 <Route path="/ComingSoon" element={<ComingSoon />} />
 
