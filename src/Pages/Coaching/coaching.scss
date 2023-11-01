@@ -2,14 +2,15 @@
     width: 100%;
     color: white;
 
-    p {
-        text-align: start;
-        padding: 0 1rem;
-
-    }
 
     &-article {
-        &_center {
+        p {
+            text-align: start;
+            padding: 0 1rem;
+
+        }
+
+        .center {
             text-align: center;
         }
 
@@ -17,6 +18,11 @@
             color: var(--acYellow);
             font-size: 1.1rem;
             line-height: 1.5rem;
+        }
+
+        &_bgWhite {
+            background-color: white;
+            padding: 1rem 0;
         }
 
 
