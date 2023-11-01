@@ -5,7 +5,7 @@ const EntrpriseSubMenu = () => {
     return (
         <ul className='sous-menu'>
             <li><Link to="/ComingSoon" >entretiens professionnels</Link></li>
-            <li><Link to="/ComingSoon" >gestion RH externalisée</Link></li>
+            <li><Link to="/gestion_RH_externalisee" >gestion RH externalisée</Link></li>
         </ul>
     );
 };

@@ -15,6 +15,7 @@ import CareerConsult from '../CareerManagementConsultant/CareerConsult.js';
 import TrainingTrainer from '../TrainingTrainer/TrainingTrainer.js';
 import BusinessCreationTraining from '../BusinessCreationTraining/BusinessCreationTraining.js';
 import IngeTraining from '../IngeTraining/IngeTraining.js';
+import ExternRhManagment from '../ExternRhManagment/ExternRhManagment.js';
 
 
 const PublicRouter = () => {
@@ -36,6 +37,7 @@ const PublicRouter = () => {
                 <Route path="/formation_metier_formateur_adultes" element={<TrainingTrainer />} />
                 <Route path="/formation_creation_entreprise" element={<BusinessCreationTraining />} />
                 <Route path="/ingenierie_formation" element={<IngeTraining />} />
+                <Route path="/gestion_RH_externalisee" element={<ExternRhManagment />} />
 
                 <Route path="/ComingSoon" element={<ComingSoon />} />
 

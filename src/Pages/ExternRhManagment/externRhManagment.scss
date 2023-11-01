@@ -1,0 +1,29 @@
+.ExternRhManagment {
+    width: 100%;
+    color: white;
+
+    &-article {
+        padding: 0 5rem;
+
+        &_bgWhite {
+            background-color: white;
+            padding: 1rem 0;
+
+            h3 {
+                padding: 0 5rem;
+            }
+        }
+
+        p {
+            text-align: start;
+
+            .yellowBold {
+                color: var(--acYellow);
+            }
+        }
+
+        &-title {
+            color: var(--acYellow);
+        }
+    }
+}
