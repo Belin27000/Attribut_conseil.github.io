@@ -91,7 +91,7 @@ const NavBarTest = () => {
                     <li className="items" onMouseEnter={toggleTrainingNav} onMouseLeave={toggleTrainingNav} >Formation
                         {toggleTraining && (
                             <ul className='sub-list'>
-                                <li><Link to="/ComingSoon" onClick={toggleNav}>Accompagnement à la création d’entreprise</Link></li>
+                                <li><Link to="/formation_creation_entreprise " onClick={toggleNav}>Accompagnement à la création d’entreprise</Link></li>
                                 <li><Link to="/formation_metier_formateur_adultes" onClick={toggleNav}>Formation de formateur</Link></li>
                                 <li><Link to="/formation_metier_consultant_en_gestion_de_carrieres" onClick={toggleNav}>Formation consultant en bilan/conseiller emploi</Link></li>
                                 <li><Link to="/ComingSoon" onClick={toggleNav}>Groupe analyse de pratiques</Link></li>
