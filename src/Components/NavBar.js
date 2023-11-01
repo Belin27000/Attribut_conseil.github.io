@@ -114,7 +114,7 @@ const NavBarTest = () => {
                                         <EntrpriseSubMenu />
                                     )} */}
                                 </li>
-                                <li>Ingénierie de la formation</li>
+                                <li><Link to="/ingenierie_formation" className="items" onClick={toggleNav}>Ingénierie de la formation</Link></li>
                                 <li onMouseEnter={toggleOrganismeSubMenu} onMouseLeave={toggleOrganismeSubMenu} >
                                     <FaAngleLeft />
                                     Organisme de formation

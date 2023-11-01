@@ -133,7 +133,7 @@ const NavBarTest = () => {
                                         </ul>
                                     )}
                                 </li>
-                                <li>Ingénierie de la formation</li>
+                                <Link to="/ComingSoon" onClick={toggleNav}><li>Groupe analyse de pratiques</li></Link>
                                 <li onClick={toggleOrganismeSubMenu}>
                                     {showOrganismeSubMenu ? <FaAngleDown /> : <FaAngleLeft />}
                                     {showOrganismeSubMenu && (

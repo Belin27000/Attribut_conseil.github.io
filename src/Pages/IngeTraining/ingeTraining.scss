@@ -1,0 +1,43 @@
+.IngeTraining {
+    width: 100%;
+    color: white;
+
+    &-article {
+        &-title {
+            color: var(--acYellow);
+        }
+
+        p {
+            text-align: start;
+            padding: 0 1rem;
+        }
+
+        &_bgWhite {
+            background-color: white;
+            padding: 1rem 0;
+
+        }
+
+        &_blue {
+            color: var(--acDarkBlue);
+            font-size: 1.5rem;
+            padding: 0 1rem;
+            font-weight: bold;
+        }
+
+        ul {
+            padding: 0 1rem;
+
+            li {
+                list-style-type: none;
+                text-align: start;
+
+                &::before {
+                    content: '- ';
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 760px) {}
