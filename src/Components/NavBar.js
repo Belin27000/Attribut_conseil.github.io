@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import '@/Components/navBar.scss'
 import { FaBars, FaTimes, FaAngleLeft } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import IngeSubMenu from './NavBar/IngeSubMenu.js';
-import EntrpriseSubMenu from './NavBar/EntrpriseSubMenu.js';
 
 const NavBarTest = () => {
 
@@ -76,7 +74,7 @@ const NavBarTest = () => {
                 <ul className="list">
                     <li><Link to="/home" className="items" onClick={toggleNav}><div>Accueil</div></Link></li>
                     <li><Link to="/about" className="items" onClick={toggleNav}><div>Qui sommes nous</div></Link></li>
-                    <li className="items" onMouseEnter={toggleCarrerNav} onMouseLeave={toggleCarrerNav}>Gestion emploi et carrière
+                    <li className="items" onMouseEnter={toggleCarrerNav} onMouseLeave={toggleCarrerNav}><div>Gestion emploi et carrière</div>
                         {toggleCarrer && (
                             <ul className='sub-list' >
                                 <li><Link to="/bilan-de-competence" onClick={toggleNav}><div>Bilan de compétences</div></Link></li>
@@ -108,18 +106,21 @@ const NavBarTest = () => {
                                     <FaAngleLeft />
                                     Entreprise
                                     {showEntrepriseSubMenu && (
-                                        <EntrpriseSubMenu />
+                                        <ul className='sous-menu'>
+                                            <li><Link to="/entretien_professionnel" onClick={toggleNav} ><div>entretiens professionnels</div></Link></li>
+                                            <li><Link to="/gestion_RH_externalisee" onClick={toggleNav} ><div>gestion RH externalisée</div></Link></li>
+                                        </ul>
                                     )}
-                                    {/* {true && (
-                                        <EntrpriseSubMenu />
-                                    )} */}
                                 </li>
                                 <li><Link to="/ingenierie_formation" className="items" onClick={toggleNav}><div>Ingénierie de la formation</div></Link></li>
                                 <li onMouseEnter={toggleOrganismeSubMenu} onMouseLeave={toggleOrganismeSubMenu} >
                                     <FaAngleLeft />
                                     Organisme de formation
                                     {showOrganismeSubMenu && (
-                                        <IngeSubMenu />
+                                        <ul className='sous-menu'>
+                                            <li><Link to="/ComingSoon" onClick={toggleNav} ><div>Gestion externalisée de la formation</div></Link></li>
+                                            <li><Link to="/qualiopi" onClick={toggleNav} ><div>Qualiopi</div></Link></li>
+                                        </ul>
                                     )}
                                 </li>
                             </ul>
