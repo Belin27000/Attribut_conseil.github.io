@@ -1,0 +1,193 @@
+.contact {
+    width: 100%;
+    margin-bottom: 1rem;
+
+
+    .sr-only {
+        color: var(--acDarkBlue);
+    }
+
+    .error {
+        font-size: .8rem;
+        margin: 0;
+        color: var(--thirdWhite);
+    }
+
+    &-title {
+        background-color: var(--mainBlue);
+        padding: 1rem 0;
+        margin: 0;
+        color: white;
+    }
+
+    p {
+        color: white;
+        font-weight: bold;
+        padding: 1rem;
+
+    }
+
+    .phone,
+    .mail {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 1rem;
+        flex-direction: column;
+
+
+        &-Logo {
+            color: white;
+            border: solid 1px #fff;
+            border-width: .2rem;
+            border-radius: 50px 50px 50px 50px;
+            font-size: 2rem;
+            display: flex;
+            padding: .51rem;
+            margin: 0 0 1rem 0;
+        }
+
+        &-List {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                color: white;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+
+    .form-container {
+        background-color: white;
+        border-radius: 50px;
+        margin: 1rem;
+    }
+
+    &-form {
+        background-color: var(--mainBlue);
+        margin: 2rem;
+        padding: 1rem;
+        border-radius: 10px;
+
+        &-check {
+            .check-wrapper {
+
+                margin-top: 1rem;
+            }
+
+            // display: flex;
+            // flex-direction: row;
+
+        }
+
+        .input-wrapper {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0;
+
+            label {
+                margin: 1rem 0;
+                color: var(--secondaryBeige);
+            }
+
+            input {
+                line-height: 1.5rem;
+                border-radius: 5px;
+                font-size: 1.2rem;
+            }
+
+            #Message {
+                height: 5rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        .contact-send {
+            background-color: var(--acDarkBlue);
+            color: white;
+            box-shadow: 0px 0px 2px var(--acDarkBlue);
+            font-weight: bold;
+            width: 50%;
+        }
+
+        &-sent {
+            padding: 1rem 0;
+
+        }
+    }
+
+    &-send {
+        width: 50%;
+        padding: .5rem;
+        border-radius: 50px;
+        color: var(--thirdWhite);
+        background-color: var(--mainBlue);
+    }
+}
+
+@media (min-width: 720px) {
+    .contact {
+        &-form {
+            padding: 1rem;
+            width: 100%;
+            margin: 0;
+            padding: 0 0 1rem 0;
+            // display: flex;
+
+            div {
+                display: flex;
+            }
+
+            // div {
+            //     display: flex;
+            //     justify-content: space-around;
+            //     width: 100%;
+
+            //     .input-wrapper {
+
+            //         input,
+            //         label {
+            //             margin: 0 2rem;
+            //             text-align: initial;
+            //             padding: .5rem 0;
+            //         }
+            //     }
+
+
+
+            // }
+
+            &-contact {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+
+                .check {
+                    display: flex;
+                    flex-direction: column;
+
+                }
+            }
+
+        }
+
+    }
+
+    #Message {
+        margin: 0 1rem;
+    }
+
+    .form-container {
+        padding: 1rem;
+    }
+
+
+}

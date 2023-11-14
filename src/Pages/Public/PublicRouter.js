@@ -19,7 +19,7 @@ import ExternRhManagment from '../ExternRhManagment/ExternRhManagment.js';
 import PracticesAnalyse from '../PracticesAnalyse/PracticesAnalyse.js';
 import ProfessionalMeeting from '../ProfessionalMeeting/ProfessionalMeeting.js';
 import Qualiopi from '../Qualiopi/Qualiopi.js';
-
+import Contact from '../Contact/Contact.js';
 
 const PublicRouter = () => {
     return (
@@ -49,6 +49,7 @@ const PublicRouter = () => {
                 <Route path="/ingenierie_formation" element={<IngeTraining />} />
 
                 <Route path="/qualiopi" element={<Qualiopi />} />
+                <Route path="/contact" element={<Contact />} />
                 <Route path="/ComingSoon" element={<ComingSoon />} />
 
             </Route>

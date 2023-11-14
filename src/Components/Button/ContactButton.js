@@ -5,7 +5,7 @@ import './contactButton.scss'
 const ContactButton = ({ text }) => {
     let navigate = useNavigate();
     const RouteChange = () => {
-        navigate('/comingSoon')
+        navigate('/contact')
     }
 
     return (
