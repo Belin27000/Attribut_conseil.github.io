@@ -85,6 +85,7 @@ const Contact = () => {
             {/* <h1 className='sr-only' tabIndex={0}>Attribut conseils bilans de compétences en Ile de France, Seine et marne et Essonne - contact</h1> */}
 
             <h2 className='contact-title'>Nous contacter</h2>
+            <p className='yellow'>Vous êtes intéressé par un de nos services ?</p>
             <p>Contactez nous ! Attribut conseils vous proposera un premier rendez-vous d’information gratuit. </p>
             <div className='mail'>
                 <div className='mail-Logo'>
@@ -106,17 +107,16 @@ const Contact = () => {
             <div className='form-container'>
                 {!formValid ? (
                     <form ref={form} className='contact-form' onSubmit={(e) => handleSubmit(e)}>
-                        <div>
-
+                        <div className='contact-form-all'>
                             <div className='contact-form-contact'>
                                 <div className='check'>
-                                    Je suis*
-                                    <div className="check-wrapper">
+                                    <label htmlFor="checkGroup">Je suis*</label>
+                                    <div className="check-wrapper" id="checkGroup" >
                                         <input name="individual" type="checkbox" id="individual" />
                                         <label htmlFor="individual">un particulier</label>
                                         {lastNameValid && <div id="lastNameErrorMSg" className="error">{lastNameValid}</div>}
                                     </div>
-                                    <div className="check-wrapper">
+                                    <div className="check-wrapper" id="checkGroup" >
                                         <input name="company" type="checkbox" id="company" />
                                         <label htmlFor="company">une entreprise</label>
                                         {lastNameValid && <div id="lastNameErrorMSg" className="error">{lastNameValid}</div>}
@@ -145,6 +145,26 @@ const Contact = () => {
                                     {phoneValid && <div id="emailErrorMSg" className="error">{phoneValid}</div>}
                                 </div>
                                 <div className="input-wrapper">
+                                    <label htmlFor="interestSelect">Je suis intéressé(e) par*</label>
+                                    <select id="interestSelect" name="interest">
+                                        <option value="bilan-de-compétences">bilan de compétences</option>
+                                        <option value="accompagnement-VAE">accompagnement VAE</option>
+                                        <option value="bilan-d’orientation-jeune">bilan d’orientation jeune</option>
+                                        <option value="Accompagnement-à-la-recherche-d’emploi">Accompagnement à la recherche d’emploi</option>
+                                        <option value="Coaching">Coaching</option>
+                                        <option value="Psychologie-du-travail">Psychologie du travail</option>
+                                        <option value="Accompagnement-à-la-création-d’entreprise">Accompagnement à la création d’entreprise</option>
+                                        <option value="Formation de formateurs">Formation de formateurs</option>
+                                        <option value="Formation de consultant en bilan / Conseiller emploi">Formation de consultant en bilan / Conseiller emploi</option>
+                                        <option value="Ingénierie et administration de la formation">Ingénierie et administration de la formation</option>
+                                        <option value="Je souhaite être recontacté(e) pour échanger">Je souhaite être recontacté(e) pour échanger</option>
+                                    </select>
+                                    <label htmlFor="phone">Téléphone*</label>
+                                    <input name="phone" type="tel" id="phone" />
+                                    {phoneValid && <div id="emailErrorMSg" className="error">{phoneValid}</div>}
+                                </div>
+
+                                <div className="input-wrapper">
                                     <label htmlFor="Message">Message</label>
                                     <textarea type="text" id="Message" name="Message" />
                                 </div>
@@ -158,7 +178,15 @@ const Contact = () => {
                     {/* <Button name={'Retour à l\'accueil'} path={'/home'} /> */}
                 </div>
                 )}
+
             </div>
+            <p className='yellow'>Siège social :</p>
+            <p className='adresse'>161 rue Saint Merry </p>
+            <p className='adresse'>77300 Fontainebleau</p>
+            <ul>
+                <li>Nos bureaux sont accessibles aux personnes en situation de handicap</li>
+                <li>Nous disposons de bureaux secondaires sur les villes de Melun, Varennes Jarcy et Milly la Forêt </li>
+            </ul>
         </div >
     );
 };

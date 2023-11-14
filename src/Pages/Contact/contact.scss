@@ -23,9 +23,25 @@
     p {
         color: white;
         font-weight: bold;
-        padding: 1rem;
-
+        padding: .1rem;
     }
+
+    .adresse {
+        padding: 0;
+        margin: 0;
+    }
+
+    ul {
+        margin-top: 2rem;
+        color: white;
+        text-align: start;
+        font-weight: bold;
+    }
+
+    .yellow {
+        color: var(--acYellow);
+    }
+
 
     .phone,
     .mail {
@@ -72,7 +88,7 @@
     }
 
     &-form {
-        background-color: var(--mainBlue);
+        // background-color: var(--mainBlue);
         margin: 2rem;
         padding: 1rem;
         border-radius: 10px;
@@ -95,13 +111,16 @@
 
             label {
                 margin: 1rem 0;
-                color: var(--secondaryBeige);
+                color: var(--acDarkBlue);
             }
 
-            input {
+            input,
+            select {
                 line-height: 1.5rem;
-                border-radius: 5px;
+                // border-radius: 5px;
                 font-size: 1.2rem;
+                border: solid 1px var(--acDarkBlue);
+                border-width: .1rem;
             }
 
             #Message {
@@ -140,11 +159,13 @@
             width: 100%;
             margin: 0;
             padding: 0 0 1rem 0;
-            // display: flex;
 
-            div {
+            // display: flex;
+            &-all {
                 display: flex;
+                justify-content: space-around;
             }
+
 
             // div {
             //     display: flex;
@@ -168,11 +189,16 @@
             &-contact {
                 display: flex;
                 flex-direction: column;
-                width: 50%;
+                width: 45%;
 
                 .check {
                     display: flex;
                     flex-direction: column;
+                    align-items: flex-start;
+
+                    &-wrapper {
+                        margin-top: 1rem;
+                    }
 
                 }
             }
