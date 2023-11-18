@@ -113,12 +113,21 @@
             &_width {
                 width: 50%;
 
-                img {
-                    width: 25%;
+                &-Qual {
+                    img {
+
+                        width: 50%;
+                    }
                 }
 
                 &_bold {
                     font-weight: bold;
+
+                    .Datadoc {
+                        img {
+                            width: 25%;
+                        }
+                    }
                 }
 
                 P {

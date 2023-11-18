@@ -99,7 +99,7 @@ const About = () => {
             </div>
             <div className='Pres-center-certif'>
                 <div className='Pres-center-certif_width'>
-                    <div >
+                    <div className='Pres-center-certif_width-Qual' >
                         <img src={Qualiopi} alt='Logo Qualiopi' />
                         <p className='Pres-center-certif_width_bold'>Validé jusqu'au 31/12/ 2024.</p>
                     </div>
