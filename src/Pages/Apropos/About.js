@@ -27,7 +27,7 @@ const About = () => {
             </div>
             <div className='Pres'>
                 <p>
-                    ATTRIBUT CONSEILS à plus de 16 ans maintenant, et reçoit plus de 300 salariés par an de tous secteurs, tous niveaux sur des problématiques très diverses liées au travail.
+                    ATTRIBUT CONSEILS a plus de 16 ans maintenant, et reçoit plus de 300 salariés par an de tous secteurs, tous niveaux sur des problématiques très diverses liées au travail.
                 </p>
                 <p>
                     Notre équipe est composée de psychologues du travail, de consultants experts bilan, de coachs et thérapeutes bref diplômés, d'ingénieurs de formation, de chef de projets blended learning, d’anciens RRH et dirigeants d’entreprise. Attribut conseils et son équipe attachent une grande importance à la formation continue et nous sommes en permanence dans un objectif de qualification par la formation et par la supervision.
@@ -109,7 +109,7 @@ const About = () => {
                             Bilan de compétences et actions de formation
                         </p>
                     </div>
-                    <div className='Pres-center-certif_width_bold'>
+                    <div className='Pres-center-certif_width_bold Datadoc'>
                         <p>ATTRIBUT CONSEILS est datadocké sous le numéro :</p>
                         <div className='Datadoc'>
                             <img className='DataDocPic' src={DataDoc} alt='Logo DadaDoc' />
@@ -174,21 +174,21 @@ const About = () => {
                         </p>
                     </div>
                 </div>
-                <p>Je crois profondément en l'importance de la formation continue tout au long de la vie, une conviction que j'ai mise en pratique en me formant à différentes étapes de ma vie.
+                <p className='Pres-Daph'>Je crois profondément en l'importance de la formation continue tout au long de la vie, une conviction que j'ai mise en pratique en me formant à différentes étapes de ma vie.
                 </p>
-                <p>Ce qui me porte particulièrement, ce sont les domaines de l'autoformation, des théories de l'apprentissage, de la pédagogie, de la psychologie du travail et de la dynamique des groupes.
+                <p className='Pres-Daph'>Ce qui me porte particulièrement, ce sont les domaines de l'autoformation, des théories de l'apprentissage, de la pédagogie, de la psychologie du travail et de la dynamique des groupes.
                 </p>
-                <p>J'aime m'impliquer dans des projets existants ou en initier de nouveaux. Je suis active au sein de plusieurs associations professionnelles, ce qui me permet de rester constamment connectée aux évolutions du monde du travail.
+                <p className='Pres-Daph_margin'>J'aime m'impliquer dans des projets existants ou en initier de nouveaux. Je suis active au sein de plusieurs associations professionnelles, ce qui me permet de rester constamment connectée aux évolutions du monde du travail.
                 </p>
-                <p>Mon bagage académique et professionnel comprend un <strong>DESS en Ingénierie de la formation</strong>, une formation approfondie en <strong>psychologie jusqu'au niveau Master 2</strong>, ainsi qu'une <strong>certification en audit de formation</strong>.
+                <p className='Pres-Daph'>Mon bagage académique et professionnel comprend un <strong>DESS en Ingénierie de la formation</strong>, une formation approfondie en <strong>psychologie jusqu'au niveau Master 2</strong>, ainsi qu'une <strong>certification en audit de formation</strong>.
                 </p>
-                <p>
+                <p className='Pres-Daph'>
                     J’ai complété ces formations par des certifications en thérapie brèves et systémiques, et par une longue formation en coaching qui me vaut le titre de <strong>coach senior</strong>. Je suis également titulaire d'un <strong>Diplôme Universitaire en audit de formation</strong> et j'ai obtenu la <strong>certification de l'INRS en Formation sur les Risques Psycho Sociaux</strong>.
                 </p>
-                <p>
+                <p className='Pres-Daph'>
                     En outre, je possède le <strong>Titre professionnel de Certificat de Compétences RNCP France compétences en tant que chef de projet en ingénierie de la formation blended learning</strong>.
                 </p>
-                <p>Je vous l’ai dit, j’adore la formation!</p>
+                <p className='Pres-Daph'>Je vous l’ai dit, j’adore la formation!</p>
                 <p><strong>Mes valeurs fondamentales sont la qualité dans le travail, l’authenticité et le partage.
                 </strong></p>
             </div>
