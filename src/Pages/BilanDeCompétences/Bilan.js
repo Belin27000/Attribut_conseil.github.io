@@ -41,15 +41,12 @@ const Bilan = () => {
                     Toutes personnes souhaitant bénéficier d’un accompagnement, d’une aide dans l’élaboration de ses projets professionnels à venir (orientation, évolution de poste, formation, V.A.E., repositionnement professionnel suite à un licenciement, …) quel que soit son statut : cadre, ETAM, employé, étudiant, jeunes …de tous horizons professionnels.</p>
                 <p>
                     Même si les motifs sont extrêmement variés, 4 grandes tendances se dégagent :</p>
-                <p>
-                    Enrichir ses compétences, obtenir un diplôme, creuser une idée ou une envie de changement, se reconvertir, se lancer dans la création d'une entreprise.</p>
-                <p>
-                    Changer quelque chose et quitter ce qu'on connait. Cet élan peut être provoqué par de la déception face à son activité professionnelle actuelle, ou bien une perte d'intérêt, de motivation ou de confiance.</p>
-                <p>
-                    Anticiper son repositionnement sur le marché de l'emploi face à un contexte de licenciement, de mutation, ou dans le cas d'un métier en voie de disparition.</p>
-                <p>
-                    Trouver des réponses quand on est perdu et qu'on ne sait pas dans quelle voie s'engager.
-                </p>
+                <ul>
+                    <li>Enrichir ses compétences, obtenir un diplôme, creuser une idée ou une envie de changement, se reconvertir, se lancer dans la création d'une entreprise.</li>
+                    <li>Changer quelque chose et quitter ce qu'on connait. Cet élan peut être provoqué par de la déception face à son activité professionnelle actuelle, ou bien une perte d'intérêt, de motivation ou de confiance.</li>
+                    <li>Anticiper son repositionnement sur le marché de l'emploi face à un contexte de licenciement, de mutation, ou dans le cas d'un métier en voie de disparition.</li>
+                    <li>Trouver des réponses quand on est perdu et qu'on ne sait pas dans quelle voie s'engager.</li>
+                </ul>
                 <p>
                     Quelle que soit la situation, le bilan de compétences est un dispositif puissant lorsqu'on souhaite explorer les meilleures options pour un avenir professionnel épanouissant.
                 </p>
@@ -142,10 +139,10 @@ const Bilan = () => {
                             <img src={afterBilan} alt="Évolution de situation dans les 6 mois du bilan" />
                         </div>
                     </div>
-                    <div className="projectAnalyse">
+                    {/* <div className="projectAnalyse">
                         <h4>&laquo; Pour la mise en place de votre projet, qu'avez-vous jugé utile ? &raquo;</h4>
                         <img src={projectAnalyse} alt="Évolution de situation dans les 6 mois du bilan" />
-                    </div>
+                    </div> */}
                 </div>
             </article>
         </section >

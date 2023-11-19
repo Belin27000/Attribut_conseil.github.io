@@ -3,6 +3,7 @@
     color: white;
 
     &-Qualiopi {
+        padding: 0 5rem;
         width: 100%;
 
         img {
@@ -24,6 +25,7 @@
     }
 
     &-article {
+        padding: 0 5rem;
 
         &-title {
             color: var(--acYellow);
@@ -153,9 +155,18 @@
         }
 
         &-article {
+            margin-bottom: 1rem;
+
             p {
                 text-align: start;
                 padding: 0 5rem;
+                margin: 0;
+            }
+
+            ul {
+                padding: 0 5rem;
+                text-align: start;
+
             }
 
             &_bgWhite {
