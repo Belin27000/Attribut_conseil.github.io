@@ -164,13 +164,13 @@ const About = () => {
                     </div>
                     <div>
                         <h3>Daphné BATTAGLIA - Fondatrice ATTRIBUT CONSEILS </h3>
-                        <p>Ma passion a toujours été d'apporter mon soutien aux hommes et aux femmes dans leur parcours professionnel, et faire connecter 2 mondes en mouvement: celui de l’entreprise et le nôtre.
+                        <p className='Pres-Daph'>Ma passion a toujours été d'apporter mon soutien aux hommes et aux femmes dans leur parcours professionnel, et faire connecter 2 mondes en mouvement: celui de l’entreprise et le nôtre.
                         </p>
-                        <p>Pour moi, l'enjeu crucial est partagé : l'entreprise a un rôle essentiel à jouer en favorisant sa croissance grâce à des collaborateurs épanouis, dont le développement personnel est au cœur du projet.
+                        <p className='Pres-Daph'>Pour moi, l'enjeu crucial est partagé : l'entreprise a un rôle essentiel à jouer en favorisant sa croissance grâce à des collaborateurs épanouis, dont le développement personnel est au cœur du projet.
                         </p>
-                        <p>De même, chaque collaborateur peut envisager le travail comme un moyen d'atteindre ses propres objectifs de développement.
+                        <p className='Pres-Daph'>De même, chaque collaborateur peut envisager le travail comme un moyen d'atteindre ses propres objectifs de développement.
                         </p>
-                        <p>Mon approche pédagogique se base sur le croisement des expertises en faisant intervenir des psychologues du travail spécialisés dans l'emploi, des experts de la formation et des pédagogues chevronnés.
+                        <p className='Pres-Daph_margin'>Mon approche pédagogique se base sur le croisement des expertises en faisant intervenir des psychologues du travail spécialisés dans l'emploi, des experts de la formation et des pédagogues chevronnés.
                         </p>
                     </div>
                 </div>
