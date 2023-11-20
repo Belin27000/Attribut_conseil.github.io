@@ -129,7 +129,7 @@ const NavBarTest = () => {
 
                 </ul>
             )}
-            <button onClick={toggleNav} className="btn" >
+            <button onClick={toggleNav} className="btn" aria-label="Menu">
                 <FaBars className={!toggleMenu ? 'iconMenu isActive' : 'iconMenu'} />
                 <FaTimes className={toggleMenu ? 'closeIconMenu isActive' : 'iconMenu'} />
             </button>
