@@ -40,7 +40,6 @@ const BusinessCreationTraining = () => {
                 <ol>
                     <li className="Bct-article-subtitle">UN ENTRETIEN PRÉLIMINAIRE</li>
                     <ul>
-
                         <li className='simpleText'><p>Sans engagement marque la première étape. C'est l'occasion de faire connaissance avec le consultant formateur, de poser des questions sur l’accompagnement et d'exposer le projet.
                         </p></li>
                         <li className='simpleText'><p>Le consultant :</p></li>
@@ -53,7 +52,6 @@ const BusinessCreationTraining = () => {
                     </ul>
                     <li className="Bct-article-subtitle">LE PROJET</li>
                     <ul>
-
                         <li className='simpleText'><p>L'objectif de cette étape est de prendre le temps de bien réfléchir à son projet personnel en amont, de faire le point sur ses compétences, de se fixer un cap, des objectifs personnels, d’identifier les différentes contraintes qui pèsent sur le projet, de quantifier les moyens à mettre en oeuvre pour se lancer et d’anticiper d’éventuelles difficultés.</p></li>
                         <li className='simpleText'><p>Il s'agit de :</p>
                             <ul>

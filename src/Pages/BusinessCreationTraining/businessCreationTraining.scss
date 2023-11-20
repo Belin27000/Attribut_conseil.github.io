@@ -24,13 +24,14 @@
     }
 
     &-article {
+        padding: 0 5rem;
+
         &-title {
             color: var(--acYellow);
         }
 
         p {
             text-align: start;
-            padding: 0 1rem;
         }
 
         &_bgWhite {
@@ -59,7 +60,8 @@
         }
 
         ol {
-            padding: 0 2rem;
+            padding: 0;
+            list-style-position: inside;
 
             p {
                 margin: 0;
@@ -113,8 +115,12 @@
                 width: 100%;
                 // padding-left: 3rem;
                 flex-direction: column;
-                justify-content: space-between;
+
                 text-align: start;
+
+                p {
+                    margin: 0;
+                }
             }
 
             h3 {
@@ -123,6 +129,29 @@
         }
 
         &-article {
+            margin-bottom: 1rem;
+
+            p {
+                margin: 0;
+                text-align: justify;
+            }
+
+            ol ul {
+                padding: 0 0 1rem 0;
+
+                li {
+
+                    padding: 0;
+
+                    // .simpleText {
+                    //     padding: 0 1rem;
+                    // }
+                    &.sublist {
+                        padding-left: 1rem;
+                    }
+                }
+            }
+
             &_bgWhite {
                 align-items: center;
 
