@@ -59,9 +59,9 @@ const Bilan = () => {
             </article>
             <article className="Bilan-article">
                 <h3 className="Bilan-article-title">Déroulement :</h3>
-                <p>Nous proposons un accompagnement sur une durée de 3 mois en moyenne, avec des entretiens et des temps d'investigation personnelle. Les entretiens se déroulent en face à face avec un consultant spécialisé ou à distance en visio.</p>
+                <p>Nous proposons un accompagnement<strong>sur une durée de 3 mois en moyenne, avec des entretiens et des temps d'investigation personnelle. Les entretiens se déroulent en face à face avec un consultant spécialisé ou à distance en visio.</strong></p>
                 <p>
-                    Un entretien préliminaire gratuit et sans engagement marque la première étape. C'est l'occasion pour vous de rencontrer le consultant, de poser des questions sur son profil ou sur l'accompagnement lui-même, et d'exposer les raisons de votre démarche.</p>
+                    Un entretien préliminaire <strong>gratuit et sans engagement</strong> marque la première étape. C'est l'occasion pour vous de rencontrer le consultant, de poser des questions sur son profil ou sur l'accompagnement lui-même, et d'exposer les raisons de votre démarche.</p>
                 <p>                    Le bilan est conduit par un consultant et se déroule sur 24H ; dont 16H d’entretiens individuels au minimum, 2 H de tests et 6 H de travail personnel (recherche documentaire, enquêtes …)</p>
                 <p>À l'issue du bilan, une synthèse est réalisée par notre Cabinet. Même si le bilan de compétences est financé par votre employeur, la synthèse est confidentielle et vous appartient. Vous pouvez choisir de la transmettre ou non à votre employeur.
                 </p>
@@ -116,6 +116,7 @@ const Bilan = () => {
                     <li>Programme</li>
                     <li>Tarifs et conditions générales de vente</li>
                     <li>Déontologie et étique</li>
+                    <li>Statistiques</li>
                 </ul>
             </article>
             <article className="Bilan-article_bgWhite black">

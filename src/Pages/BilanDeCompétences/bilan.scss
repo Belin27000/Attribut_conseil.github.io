@@ -16,6 +16,11 @@
             color: var(--acYellow);
             font-size: 1.1rem;
             line-height: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin: 0;
         }
 
         div {
@@ -139,6 +144,7 @@
     .Bilan {
         &-Qualiopi {
             display: flex;
+            align-items: flex-start;
 
             img {
                 padding: 0 5rem;
@@ -158,13 +164,14 @@
             margin-bottom: 1rem;
 
             p {
-                text-align: start;
+                text-align: justify;
                 padding: 0 5rem;
                 margin: 0;
             }
 
             ul {
                 padding: 0 5rem;
+                list-style-position: inside;
                 text-align: start;
 
             }
