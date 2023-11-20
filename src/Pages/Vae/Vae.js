@@ -14,10 +14,10 @@ const Vae = () => {
                     Vous voulez faire reconnaitre vos compétences par un CAP, BTS, Licence Pro, titres professionnels, Master,...? Vous voulez accéder à des emplois supérieurs nécessitant un diplôme spécifique ?... Certains concours de la fonction publique vous tentent ?... Vous voulez vous inscrire à une formation exigeant un niveau de diplôme supérieur à celui que vous possédez ?...
                 </p>
                 <p>Faire la différence entre VAE et VAP85 :</p>
-                <p>
+                <p className='noPadding'>
                     <strong>VAE : </strong>Personne de tout âge ayant au moins 1 an d'expérience en rapport avec la certification visée. Son objectif est de valider un diplôme en lien avec son expérience.
                 </p>
-                <p>
+                <p className='noPadding'>
                     <strong>VAP85 : </strong>Avoir interrompu ses études depuis au moins 2 ans et avoir minimum 5 années d'expérience professionnelle quelque soit le secteur d'activité. Son objectif est d’obtenir l’accès dérogatoire à une formation pour laquelle vous n’avez pas le niveau de formation requis.
                 </p>
             </article>
@@ -101,7 +101,7 @@ const Vae = () => {
                 <p>Vous pouvez également demander une prise en charge par votre employeur <Link target='_blank' rel='noreferrer' to="https://travail-emploi.gouv.fr/formation-professionnelle/entreprise-et-formation/article/plan-de-developpement-des-competences">(Plan de développement des compétences)
                 </Link>
                 </p>
-                <p>Quelle que soit la configuration, la VAE est, dans la majorité des cas, intégralement financée grâce aux fonds de la formation professionnelle. N'hésitez pas à nous contacter au <a href='tel:09 84 36 12 37'>09 84 36 12 37</a> pour en savoir plus sur les modalités de prise en charge.</p>
+                <p>Quelle que soit la configuration, la VAE est, dans la majorité des cas, intégralement financée grâce aux fonds de la formation professionnelle. N'hésitez pas à nous contacter au <a href='tel:06.98.88.15.55'>06 98 88 15 55</a> pour en savoir plus sur les modalités de prise en charge.</p>
                 <ul className='Vae-article-doc'>
                     <li>Programme</li>
                     <li>Tarifs et conditions générales de vente</li>
