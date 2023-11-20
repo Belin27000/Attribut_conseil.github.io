@@ -3,7 +3,7 @@ import './bilan.scss'
 import Qualiopi from '../../Assets/Images/Logo_Qualiopi.png'
 import roundedGraph from '../../Assets/Images/stats/projectAnalyse.png'
 import afterBilan from '../../Assets/Images/stats/afterBilan.png'
-import projectAnalyse from '../../Assets/Images/stats/projectUsefull.png'
+// import projectAnalyse from '../../Assets/Images/stats/projectUsefull.png'
 import ContactButton from '../../Components/Button/ContactButton.js';
 import ExternButton from '../../Components/Button/ExternalButton/ExternButton.js';
 

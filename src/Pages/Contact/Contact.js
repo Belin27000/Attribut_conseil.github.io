@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './contact.scss'
-import { Link } from 'react-router-dom';
 // import Button from '@/components/Buttons/Button/Button.js';
 import { FaPhone } from "react-icons/fa6";
 import { FaRegEnvelope } from "react-icons/fa";
@@ -100,7 +99,6 @@ const Contact = () => {
                     <FaPhone />
                 </div>
                 <div className='phone-List'>
-                    <a href='tel:09.84.36.12.37'>09.84.36.12.37</a>
                     <a href='tel:06.98.88.15.55'>06.98.88.15.55</a>
                 </div>
             </div>

@@ -5,7 +5,7 @@ import Layout from '@/Layouts/Layout.js';
 import ComingSoon from '@/Pages/ComingSoon/ComingSoon.js';
 import About from '../Apropos/About.js';
 import Vae from '../Vae/Vae.js';
-import Bilan from '../BilanDeCompétences/Bilan.js';
+import Bilan from '../BilanDeComp/Bilan.js';
 import FingJob from '../FindJob/FingJob.js';
 import PsyWork from '../PsyWork/PsyWork.js';
 import Outplacement from '../Outplacement/Outplacement.js';

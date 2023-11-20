@@ -16,6 +16,7 @@ const Carrousel = ({ images, key }) => {
 
     useEffect(() => {
         picturesIndex(images, slide)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [slide])
 
     const picturesIndex = (slide) => {
