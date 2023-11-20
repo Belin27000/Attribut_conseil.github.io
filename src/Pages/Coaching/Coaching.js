@@ -25,9 +25,9 @@ const Coaching = () => {
                 </ul>
                 <p className='Coaching-article center'><strong>Performance excellente dans le long terme
                 </strong></p>
-                <p className='Coaching-article center'><strong>Auto - correction
+                <p className='Coaching-article center noMargin'><strong>Auto - correction
                 </strong></p>
-                <p className='Coaching-article center'><strong>Auto - génération
+                <p className='Coaching-article center noMargin'><strong>Auto - génération
                 </strong></p>
                 <h3 className="Coaching-article-title">APPROCHE DE NOTRE DÉMARCHE SYSTÉMIQUE</h3>
                 <p>L’approche proposée par ATTRIBUT CONSEILS est à la fois systémique, paradoxale, stratégique et non normative :</p>

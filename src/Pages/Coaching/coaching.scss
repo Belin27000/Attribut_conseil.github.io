@@ -4,14 +4,19 @@
 
 
     &-article {
+        padding: 0 5rem;
+
         p {
             text-align: start;
-            padding: 0 1rem;
 
         }
 
         .center {
             text-align: center;
+
+            &.noMargin {
+                margin: 0;
+            }
         }
 
         &-title {
@@ -24,13 +29,14 @@
             background-color: white;
             padding: 1rem 0;
         }
-
-
     }
 
     ul {
+        padding: 0;
+
         li {
             text-align: start;
+            list-style-position: inside;
         }
     }
 }
