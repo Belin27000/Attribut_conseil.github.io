@@ -29,7 +29,7 @@
 
             li {
                 margin-left: 1.5rem;
-                line-height: 1.5rem;
+                // line-height: 1.5rem;
             }
         }
 
@@ -73,8 +73,13 @@
 @media (min-width: 760px) {
     .YouthGuidance {
         &-article {
+            margin: 1rem 0;
+            padding: 0 5rem;
 
-            padding: 0 10rem;
+            p {
+                text-align: justify;
+                margin: 0;
+            }
 
             &_blue {
                 padding: 0 10rem;
