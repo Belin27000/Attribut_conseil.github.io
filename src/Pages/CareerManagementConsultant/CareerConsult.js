@@ -90,11 +90,13 @@ const CareerConsult = () => {
                             </li>
                         </ul></li>
                     <li>Module 5 - <strong>Expertise en Stratégie Marketing Emploi :</strong>
-                        <p>Clarifier les projets d'emploi des clients et structurer leurs décisions en conséquence.
-                        </p>
-                        <p>Maîtriser les stratégies avancées de recherche d'emploi et effectuer une analyse approfondie du marché du travail.</p>
-                        <p>Connaître et utiliser efficacement les outils pertinents pour aider les clients à atteindre leurs objectifs professionnels.</p>
-                        <p>Ce programme de formation vise à doter les participants des connaissances, des compétences et de l'expertise nécessaires pour accompagner les clients de manière holistique, en tenant compte de leurs besoins individuels, de leurs aspirations professionnelles et des défis psychologiques auxquels ils peuvent être confrontés.</p>
+                        <ul className="CareerConsult-article-path-detail">
+                            <li>Clarifier les projets d'emploi des clients et structurer leurs décisions en conséquence.
+                            </li>
+                            <li>Maîtriser les stratégies avancées de recherche d'emploi et effectuer une analyse approfondie du marché du travail.</li>
+                            <li>Connaître et utiliser efficacement les outils pertinents pour aider les clients à atteindre leurs objectifs professionnels.</li>
+                            <li>Ce programme de formation vise à doter les participants des connaissances, des compétences et de l'expertise nécessaires pour accompagner les clients de manière holistique, en tenant compte de leurs besoins individuels, de leurs aspirations professionnelles et des défis psychologiques auxquels ils peuvent être confrontés.</li>
+                        </ul>
                     </li>
                 </ul>
                 <p className='CareerConsult-article-duration'><strong>Durée : 105 heures de formation</strong></p>

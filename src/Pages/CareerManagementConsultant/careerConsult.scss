@@ -78,8 +78,10 @@
 
 @media (min-width: 760px) {
     .CareerConsult {
+
         &-article {
-            width: 100%;
+            padding: 0 5rem;
+            // width: 100%;
 
             p {
                 padding: 0 5rem;
@@ -123,7 +125,7 @@
             }
 
             &_bgWhite {
-                padding: 1rem 10rem;
+                padding: 1rem 5rem;
 
                 p {
                     font-size: 1.5rem;
