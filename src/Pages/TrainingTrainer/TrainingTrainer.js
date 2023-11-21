@@ -85,11 +85,13 @@ const TrainingTrainer = () => {
                     </li>
                     <li>Module 3 - <strong>Contribuer à l’évaluation d’un dispositif et rendre compte
                     </strong>
-                        <p>Connaitre les partenaires de la formation professionnelle</p>
-                        <p>Mettre en place la qualité selon la certification en vigueur</p>
-                        <p>Assurer le suivi et s’assurer de sa conformité au regard des certifications qualité</p>
-                        <p>Analyser l’impact de la formation par rapport à la commande sur les postes de travail</p>
-                        <p>Faire le bilan de la formation et le présenter au commanditaire </p>
+                        <ul className="TrainingTrainer-article-path-detail">
+                            <li>Connaitre les partenaires de la formation professionnelle</li>
+                            <li>Mettre en place la qualité selon la certification en vigueur</li>
+                            <li>Assurer le suivi et s’assurer de sa conformité au regard des certifications qualité</li>
+                            <li>Analyser l’impact de la formation par rapport à la commande sur les postes de travail</li>
+                            <li>Faire le bilan de la formation et le présenter au commanditaire </li>
+                        </ul>
                     </li>
                 </ul>
                 <p className='TrainingTrainer-article-duration'><strong>Durée : 3 semaines</strong></p>
