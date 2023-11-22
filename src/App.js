@@ -5,7 +5,7 @@ import PublicRouter from './Pages/Public/PublicRouter.js';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename='/attribut_conseil'>
+      <BrowserRouter>
         <Routes>
           <Route path="*" element={<PublicRouter />} />
         </Routes>

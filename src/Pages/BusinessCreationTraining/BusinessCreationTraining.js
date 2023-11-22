@@ -3,9 +3,12 @@ import './businessCreationTraining.scss'
 import Qualiopi from '../../Assets/Images/Logo_Qualiopi.png'
 import ExternButton from '../../Components/Button/ExternalButton/ExternButton.js';
 import ContactButton from '../../Components/Button/ContactButton.js';
+import data from '../../Assets/data/data.json'
 
 
 const BusinessCreationTraining = () => {
+    const QualiopiValidity = data.Qualiopi.validationDate
+
     return (
         <section className='Bct'>
             <h2 className="Bct-title">FORMATION CRÉATION D‘ENTREPRISE INDIVIDUALISÉE </h2>
@@ -15,7 +18,7 @@ const BusinessCreationTraining = () => {
                     <h3>La certification Qualiopi a été délivrée pour la catégorie d'action suivante :
                         Bilan de compétences et actions de formation
                     </h3>
-                    <p>Valable jusqu’au 31/12/2024</p>
+                    <p>Valable jusqu’au {QualiopiValidity}</p>
                 </div>
             </div>
             <article className="Bct-article">

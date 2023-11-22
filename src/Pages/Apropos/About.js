@@ -1,8 +1,11 @@
 import React from 'react';
 import '@/Pages/Apropos/about.scss'
 import { Qualiopi, DataDoc, dbPic } from '@/Pages/index.js'
+import data from '../../Assets/data/data.json'
 
 const About = () => {
+    const QualiopiValidity = data.Qualiopi.validationDate
+    console.log(QualiopiValidity);
     return (
         <section className='About'>
 
@@ -101,7 +104,7 @@ const About = () => {
                 <div className='Pres-center-certif_width'>
                     <div className='Pres-center-certif_width-Qual' >
                         <img src={Qualiopi} alt='Logo Qualiopi' />
-                        <p className='Pres-center-certif_width_bold'>Validé jusqu'au 31/12/ 2024.</p>
+                        <p className='Pres-center-certif_width_bold'>Validé jusqu'au {QualiopiValidity}.</p>
                     </div>
                     <div className='Pres-center-certif_width_bold'>
                         <p>La certification Qualiopi a été délivrée pour la catégorie d'action suivante :                     </p>

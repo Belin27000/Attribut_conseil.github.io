@@ -6,8 +6,12 @@ import afterBilan from '../../Assets/Images/stats/afterBilan.png'
 // import projectAnalyse from '../../Assets/Images/stats/projectUsefull.png'
 import ContactButton from '../../Components/Button/ContactButton.js';
 import ExternButton from '../../Components/Button/ExternalButton/ExternButton.js';
+import data from '../../Assets/data/data.json'
+
 
 const Bilan = () => {
+    const QualiopiValidity = data.Qualiopi.validationDate
+
     return (
         <section className='Bilan'>
             <h2 className="Bilan-title">Bilan de compétences</h2>
@@ -17,7 +21,7 @@ const Bilan = () => {
                     <h3>La certification Qualiopi a été délivrée pour la catégorie d'action suivante :
                         Bilan de compétences et actions de formation
                     </h3>
-                    <p>Valable jusqu’au 31/12/2024</p>
+                    <p>Valable jusqu’au {QualiopiValidity}</p>
                 </div>
             </div>
             <article className="Bilan-article">

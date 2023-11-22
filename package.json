@@ -1,8 +1,8 @@
 {
   "name": "site_attribut_react",
   "version": "0.1.0",
-  "homepage": "https://belin27000.github.io/attribut_conseil",
-  "private": false,
+  "homepage": "https://2023.attribut-conseils.com",
+  "private": true,
   "dependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.22.11",
     "@emailjs/browser": "^3.11.0",
