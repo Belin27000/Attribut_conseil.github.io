@@ -2,14 +2,13 @@
 import '@/Components/Gallery/carousel.scss';
 // import React, { useEffect, useRef, useState } from 'react';
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa"
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 // import HeroSlider, { Slide } from 'hero-slider/dist/HeroSlider';
 
 
 
 const Carrousel = ({ images, key }) => {
     const imgNbr = parseInt(images.length)
-    const image = images[2].image
     const timerRef = useRef(null)
     const [currentIndex, setCurrentIndex] = useState(0)
     const [slide, setSlide] = useState(images[currentIndex].image)
@@ -21,27 +20,30 @@ const Carrousel = ({ images, key }) => {
         const newIndex = isFirstSlide ? imgNbr - 1 : currentIndex - 1
         setCurrentIndex(newIndex)
         setSlide(images[newIndex].image)
-        setTitle(images[currentIndex].title)
-        console.log(newIndex);
+        setTitle(images[newIndex].title)
     }
-    const goToNext = () => {
+    const goToNext = useCallback(() => {
         const isLastSlide = currentIndex === imgNbr - 1;
         const newIndex = isLastSlide ? 0 : currentIndex + 1
         setCurrentIndex(newIndex)
         setSlide(images[newIndex].image)
-        setTitle(images[currentIndex].title)
-        console.log(newIndex);
-    }
-    // useEffect(() => {
-    //     if (timerRef.current) {
-    //         clearTimeout(timerRef.current)
-    //     }
-    //     console.log(currentIndex);
-    //     timerRef.current = setTimeout(() => {
-    //         goToNext()
-    //     }, 2000)
-    //     return () => clearTimeout(timerRef.current)
-    // }, [goToNext])
+        setTitle(images[newIndex].title)
+    }, [currentIndex, images, imgNbr]);
+    const goToSlide = (slideIndex) => {
+        setCurrentIndex(slideIndex)
+        setSlide(images[slideIndex].image)
+        setTitle(images[slideIndex].title)
+    };
+    useEffect(() => {
+        if (timerRef.current) {
+            clearTimeout(timerRef.current)
+        }
+        timerRef.current = setTimeout(() => {
+            goToNext()
+        }, 2000)
+        return () => clearTimeout(timerRef.current)
+    }, [goToNext])
+
     return (
         <div className='Carrousel'>
             <div className="Carrousel-container">
@@ -56,6 +58,11 @@ const Carrousel = ({ images, key }) => {
                     <div className='arrow' onClick={goToNext}>
                         <FaAngleRight />
                     </div>
+                </div>
+                <div className='dots-container'>
+                    {images.map((slide, slideIndex) => (
+                        <div key={slideIndex} onClick={() => goToSlide(slideIndex)}>•</div>
+                    ))}
                 </div>
             </div>
         </div>
