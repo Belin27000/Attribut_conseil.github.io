@@ -15,12 +15,12 @@ nav {
     margin: 0;
     align-items: center;
 
-    li {
+    // li {
 
-        a {
-            width: 100%
-        }
-    }
+    //     a {
+    //         width: 100%
+    //     }
+    // }
 }
 
 .items {
@@ -71,11 +71,11 @@ nav {
     }
 
     li {
-        padding: 0 1rem;
+        padding: 0 .2rem;
         border-top: dashed 1px white;
 
         a {
-            font-size: .6rem;
+            font-size: .4rem;
             color: white;
 
         }
@@ -121,12 +121,12 @@ nav {
     }
 
     .items {
-        font-size: .8rem;
+        font-size: .5rem;
     }
 
     .sub-list {
         font-size: .5rem;
-        padding: 0 .5rem;
+        // padding: 0 .5rem;
 
     }
 }
