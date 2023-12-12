@@ -7,11 +7,13 @@ import afterBilan from '../../Assets/Images/stats/afterBilan.png'
 import ContactButton from '../../Components/Button/ContactButton.js';
 import ExternButton from '../../Components/Button/ExternalButton/ExternButton.js';
 import data from '../../Assets/data/data.json'
+import DownloadFile from '../../Components/FileLink/DownloadFile.js';
+import allFiles from '../../_Services/fileToDownload.service.js';
 
 
 const Bilan = () => {
     const QualiopiValidity = data.Qualiopi.validationDate
-
+        ;
     return (
         <section className='Bilan'>
             <h2 className="Bilan-title">Bilan de compétences</h2>
@@ -116,12 +118,7 @@ const Bilan = () => {
             <article className="Bilan-article">
                 <h3 className="Bilan-article-title">Notre éthique :</h3>
                 <p>Respect absolu des personnes, confidentialité des informations recueillies, et respect du cadre défini par la loi sur le bilan de compétences.</p>
-                <ul className='Bilan-article-doc'>
-                    <li>Programme</li>
-                    <li>Tarifs et conditions générales de vente</li>
-                    <li>Déontologie et étique</li>
-                    <li>Statistiques</li>
-                </ul>
+                <DownloadFile file={allFiles.fileList()} />
             </article>
             <article className="Bilan-article_bgWhite black">
                 <h3 className='Bilan-article_black'>NOS STATISTIQUES</h3>

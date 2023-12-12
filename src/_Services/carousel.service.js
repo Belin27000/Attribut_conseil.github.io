@@ -54,9 +54,7 @@ const pictures = [
 ]
 
 let allPictures = () => {
-
     return pictures
-
 }
 
 export const carouselService = {

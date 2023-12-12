@@ -136,6 +136,10 @@
             font-size: .9rem;
             text-align: initial;
             padding-bottom: 1rem;
+
+            a {
+                color: var(--acYellow)
+            }
         }
     }
 }

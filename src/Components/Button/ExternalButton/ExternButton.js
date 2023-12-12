@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './externButton.scss'
 
-const ExternButton = ({ text, goto }) => {
-    let navigate = useNavigate();
-    const RouteChange = () => {
-        navigate('/comingSoon')
-    }
+const ExternButton = ({ text }) => {
+    // let navigate = useNavigate();
+    // const RouteChange = () => {
+    //     navigate('/comingSoon')
+    // }
 
     return (
         <button className='ExternButton'>
