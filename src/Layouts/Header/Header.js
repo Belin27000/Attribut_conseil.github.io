@@ -12,7 +12,7 @@ const Header = () => {
             <div className='PictureFont'>
                 <img className='Bandeau' src={Bandeau} alt="Header font" />
             </div>
-            <p className='HeaderText' >Expert de la relation homme/travail</p>
+            <p className='HeaderText' >Expert de la relation homme:travail</p>
             <div className='Logos'>
                 <div className='LogoContainerAc'>
                     <img className='LogoAc' src={logo_Attribut} alt='Attribut Conseil Logo' />
