@@ -1,6 +1,9 @@
 import React from 'react';
 import './outplacement.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
+import DownloadFile from '../../Components/FileLink/DownloadFile.js';
+import allFiles from '../../_Services/fileToDownload.service.js';
+
 const Outplacement = () => {
     return (
         <section className='Outplacement'>
@@ -98,6 +101,7 @@ const Outplacement = () => {
                 <h3 className="Outplacement-article-title">Nos tarifs</h3>
                 <p>Le coût de l’outplacement est évalué en fonction de vos besoins. Un devis sera alors établit.
                 </p>
+                <DownloadFile file={allFiles.outplacementFile()} />
             </article>
         </section>
     );

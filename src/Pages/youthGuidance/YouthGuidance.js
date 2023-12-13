@@ -1,6 +1,8 @@
 import React from 'react';
 import './youthGuidance.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
+import DownloadFile from '../../Components/FileLink/DownloadFile.js';
+import allFiles from '../../_Services/fileToDownload.service.js';
 
 const YouthGuidance = () => {
     return (
@@ -96,9 +98,10 @@ const YouthGuidance = () => {
                 </p>
                 <h3 className="YouthGuidance-article-title">Nos tarifs</h3>
                 <p>Le coût de l’accompagnement est évalué lors d'un entretien préliminaire gratuit et sans engagement et varie en fonction de la situation du client ainsi que des modalités de financement.</p>
-                <ul className='YouthGuidance-article-doc'>
+                <DownloadFile file={allFiles.jeune()} />
+                {/* <ul className='YouthGuidance-article-doc'>
                     <li>Déontologie et éthique</li>
-                </ul>
+                </ul> */}
             </article>
         </section>
     );

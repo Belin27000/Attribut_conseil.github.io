@@ -3,6 +3,8 @@ import './vae.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
 // import { Link } from 'react-router-dom';
 import ScrollToTop from '../../Components/Button/ScrollButton/ScrollToTop.js';
+import DownloadFile from '../../Components/FileLink/DownloadFile.js';
+import allFiles from '../../_Services/fileToDownload.service.js';
 
 const Vae = () => {
     return (
@@ -104,10 +106,11 @@ const Vae = () => {
                 </Link>
                 </p> */}
                 <p>Quelle que soit la configuration, la VAE est, dans la majorité des cas, intégralement financée grâce aux fonds de la formation professionnelle. N'hésitez pas à nous contacter au <a href='tel:06.98.88.15.55'>06 98 88 15 55</a> pour en savoir plus sur les modalités de prise en charge.</p>
-                <ul className='Vae-article-doc'>
+                {/* <ul className='Vae-article-doc'>
                     <li>Programme</li>
                     <li>Tarifs et conditions générales de vente</li>
-                </ul>
+                </ul> */}
+                <DownloadFile file={allFiles.vae()} />
             </article>
             <ScrollToTop />
         </section >

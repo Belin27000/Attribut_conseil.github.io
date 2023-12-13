@@ -4,6 +4,8 @@ import Qualiopi from '../../Assets/Images/Logo_Qualiopi.png'
 import ExternButton from '../../Components/Button/ExternalButton/ExternButton.js';
 import ContactButton from '../../Components/Button/ContactButton.js';
 import data from '../../Assets/data/data.json'
+import DownloadFile from '../../Components/FileLink/DownloadFile.js';
+import allFiles from '../../_Services/fileToDownload.service.js';
 
 
 const BusinessCreationTraining = () => {
@@ -157,12 +159,13 @@ const BusinessCreationTraining = () => {
                     <li className="Bct-article-subtitle">SUIVI À 6 MOIS</li>
                     <li className='simpleText'><p>Il s'agit d'un rdv 6 mois après le dernier entretien, afin d'évaluer l'avancement du projet et d'apporter des conseils et informations selon les besoins exprimés.</p></li>
                 </ol>
-                <ul className='Bct-article-doc'>
+                <DownloadFile file={allFiles.CreaCompanyFiles()} />
+                {/* <ul className='Bct-article-doc'>
                     <li>Programme</li>
                     <li>Tarifs et conditions générales de vente</li>
                     <li>Déontologie et éthique</li>
                     <li>Chiffres clés de ma satisfaction clients 2023</li>
-                </ul>
+                </ul> */}
             </article>
 
         </section >

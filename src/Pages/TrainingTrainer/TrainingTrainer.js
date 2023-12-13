@@ -1,6 +1,8 @@
 import React from 'react';
 import './trainingTrainer.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
+import DownloadFile from '../../Components/FileLink/DownloadFile.js';
+import allFiles from '../../_Services/fileToDownload.service.js';
 
 const TrainingTrainer = () => {
     return (
@@ -97,6 +99,7 @@ const TrainingTrainer = () => {
                 <p className='TrainingTrainer-article-duration'><strong>Durée : 3 semaines</strong></p>
                 <p className='TrainingTrainer-article-duration'><strong>3800 TTC (prise en charge par votre employeur – Plan de développement des compétences)</strong></p>
                 <p className='TrainingTrainer-article-duration'><strong>2700 TCC (pour les particuliers)</strong></p>
+                <DownloadFile file={allFiles.TrainingTrainerFiles()} />
             </article>
             <article className="TrainingTrainer-article_bgWhite">
                 <p><strong>Pédagogie par projet!

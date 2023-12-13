@@ -1,0 +1,15 @@
+.Download-link {
+    color: var(--acYellow);
+
+    li {
+        text-align: start;
+        list-style-type: disc;
+
+        a {
+            color: var(--acYellow);
+            font-weight: bold;
+            text-decoration: none;
+            line-height: 1.5rem;
+        }
+    }
+}
