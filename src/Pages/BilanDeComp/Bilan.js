@@ -120,7 +120,7 @@ const Bilan = () => {
                 <p>Respect absolu des personnes, confidentialité des informations recueillies, et respect du cadre défini par la loi sur le bilan de compétences.</p>
                 <DownloadFile file={allFiles.fileList()} />
             </article>
-            <article className="Bilan-article_bgWhite black">
+            {/* <article className="Bilan-article_bgWhite black">
                 <h3 className='Bilan-article_black'>NOS STATISTIQUES</h3>
                 <p>Analyse des évaluations réalisées par nos clients</p>
                 <p>La compilation des données et les statistiques portent sur l'année 2022/23 - Mise à jour : octobre 2023</p>
@@ -141,12 +141,8 @@ const Bilan = () => {
                             <img src={afterBilan} alt="Évolution de situation dans les 6 mois du bilan" />
                         </div>
                     </div>
-                    {/* <div className="projectAnalyse">
-                        <h4>&laquo; Pour la mise en place de votre projet, qu'avez-vous jugé utile ? &raquo;</h4>
-                        <img src={projectAnalyse} alt="Évolution de situation dans les 6 mois du bilan" />
-                    </div> */}
                 </div>
-            </article>
+            </article> */}
         </section >
     );
 };
