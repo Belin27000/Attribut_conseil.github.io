@@ -10,7 +10,7 @@
 
     &-article {
         color: white;
-        font-size: .8rem;
+        // font-size: .8rem;
         line-height: 1.5rem;
 
         p {
@@ -65,6 +65,7 @@
 
         &-title {
             font-size: 2rem;
+            text-transform: uppercase;
         }
 
 

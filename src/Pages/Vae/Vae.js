@@ -98,9 +98,11 @@ const Vae = () => {
                 <h3 className="Vae-article-title">Tarifs Validation des Acquis de l’Expérience (VAE)</h3>
                 <p>Le tarif d'une VAE se situe entre 1500€ et 5000€ net de taxes, en fonction des besoins exprimés et selon les modalités de prise en charge. Détail des tarifs (conditions générales de ventes)
                 </p>
-                <p>Vous pouvez également demander une prise en charge par votre employeur <Link target='_blank' rel='noreferrer' to="https://travail-emploi.gouv.fr/formation-professionnelle/entreprise-et-formation/article/plan-de-developpement-des-competences">(Plan de développement des compétences)
-                </Link>
+                <p>Vous pouvez également demander une prise en charge par votre employeur (Plan de développement des compétences)
                 </p>
+                {/* <p>Vous pouvez également demander une prise en charge par votre employeur <Link target='_blank' rel='noreferrer' to="https://travail-emploi.gouv.fr/formation-professionnelle/entreprise-et-formation/article/plan-de-developpement-des-competences">(Plan de développement des compétences)
+                </Link>
+                </p> */}
                 <p>Quelle que soit la configuration, la VAE est, dans la majorité des cas, intégralement financée grâce aux fonds de la formation professionnelle. N'hésitez pas à nous contacter au <a href='tel:06.98.88.15.55'>06 98 88 15 55</a> pour en savoir plus sur les modalités de prise en charge.</p>
                 <ul className='Vae-article-doc'>
                     <li>Programme</li>
