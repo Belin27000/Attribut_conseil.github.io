@@ -118,8 +118,8 @@ const NavBarTest = () => {
                                     Organisme de formation
                                     {showOrganismeSubMenu && (
                                         <ul className='sous-menu'>
-                                            <li><Link to="/ComingSoon" onClick={toggleNav} ><div>Gestion externalisée de la formation</div></Link></li>
-                                            <li><Link to="/qualiopi" onClick={toggleNav} ><div>Qualiopi</div></Link></li>
+                                            <li><Link to="/gestion_Formation_externalisee" onClick={toggleNav} ><div>Gestion externalisée de la formation</div></Link></li>
+                                            {/* <li><Link to="/qualiopi" onClick={toggleNav} ><div>Qualiopi</div></Link></li> */}
                                         </ul>
                                     )}
                                 </li>

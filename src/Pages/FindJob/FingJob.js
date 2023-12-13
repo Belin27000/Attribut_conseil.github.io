@@ -7,7 +7,7 @@ const FingJob = () => {
         <section className='FindJob'>
             <h2 className="FindJob-title">Accompagnement  à la recherche d‘emploi </h2>
             <article className="FindJob-article">
-                <h3 className="FindJob-article-title">Accompagnement emploi</h3>
+                {/* <h3 className="FindJob-article-title">Accompagnement emploi</h3> */}
                 <p>Notre accompagnement commence par un bilan personnel et professionnel, visant à faire émerger vos traits de personnalité marquants et vos potentialités. Nous <strong>analysons vos intérêts, aspirations, motivations et compétences transférables</strong> afin de mieux vous connaître et de définir une direction professionnelle qui vous correspond.
                 </p>
                 <p>Nous vous aidons à repérer les activités et les contextes qui vous conviennent le mieux afin de mieux <strong>cibler votre recherche d’emploi</strong>.

@@ -1,0 +1,65 @@
+.Train {
+    color: white;
+
+    &-article {
+        padding: 0 1rem;
+
+        ul {
+            list-style-type: none;
+            text-align: start;
+            padding-left: 1rem;
+
+            .ListTitle {
+                font-weight: bold;
+                padding-top: 1rem;
+
+                ol {
+                    padding-top: 1rem;
+                    font-weight: initial;
+
+                    li {
+                        padding-bottom: .5rem;
+                    }
+                }
+
+                ul {
+                    list-style-type: initial;
+
+                    li {
+                        font-weight: initial;
+                    }
+                }
+            }
+        }
+
+        &_bgWhite {
+            background-color: white;
+            padding: 1rem 0;
+
+        }
+
+        &_blue {
+            color: var(--acDarkBlue);
+            font-size: 1.5rem;
+            padding: 0 1rem;
+            font-weight: bold;
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .Train {
+        color: white;
+
+        &-article {
+            padding: 0 5rem;
+
+            &_bgWhite {
+                padding: 1rem 5rem;
+
+            }
+
+        }
+    }
+
+}
