@@ -1,5 +1,5 @@
 import React from 'react';
-import Bandeau from '@/Assets/Images/Bandeau.jpg'
+import Bandeau from '@/Assets/Images/Bandeau.webp'
 import Qualiopi200 from '@/Assets/Images/Logo_Qualiopi/Logo_Qualiopi_200.webp'
 import Qualiopi634 from '@/Assets/Images/Logo_Qualiopi/Logo_Qualiopi_634.webp'
 import Cpf200 from '@/Assets/Images/logo_CPF/logo_CPF_200.webp'
@@ -57,7 +57,8 @@ const Footer = () => {
                 </div>
             </div>
             <div className='FooterPictureFont'>
-                <img src={Bandeau} alt="Header font" />
+                <img width='2480'
+                    height='797' src={Bandeau} alt="Header font" />
                 {/* <p className='FooterPunchLine'>Spécialiste de la gestion de carrière et de la relation Homme/Travail</p> */}
                 <div className="FooterPictureFont-mention">
                     <Link>Mention legale</Link>

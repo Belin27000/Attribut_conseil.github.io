@@ -14,20 +14,12 @@ nav {
     position: relative;
     margin: 0;
     align-items: center;
-
-    // li {
-
-    //     a {
-    //         width: 100%
-    //     }
-    // }
 }
 
 .items {
     display: flex;
     align-items: center;
     justify-content: center;
-    // width: 15%;
     font-size: .9rem;
     padding: 1rem;
     text-transform: uppercase;
@@ -48,7 +40,6 @@ nav {
     top: 100%;
     width: 100%;
     left: 0;
-    /* background-color: red; */
     background: linear-gradient(45deg, var(--acYellow), var(--acDarkBlue));
     padding: 0 0 1rem 0;
     font-size: .6rem;
@@ -128,7 +119,6 @@ nav {
 
     .sub-list {
         font-size: .5rem;
-        // padding: 0 .5rem;
 
     }
 }
@@ -179,15 +169,10 @@ nav {
         padding: 0;
         margin: 0;
         z-index: 2;
-
-        // li {
-        //     width: 100%;
-        // }
     }
 
     .items:nth-child(1) {
         border-top: none;
-        /* margin-top: 50px; */
     }
 
     .items {
@@ -251,9 +236,5 @@ nav {
     .sub-list li {
         font-size: .7rem;
         padding: 0;
-        // color: var(--acDarkBlue);
-
     }
-
-
 }

@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './contact.scss'
-// import Button from '@/components/Buttons/Button/Button.js';
 import { FaPhone } from "react-icons/fa6";
 import { FaRegEnvelope } from "react-icons/fa";
 
@@ -14,7 +13,6 @@ const Contact = () => {
     const [emailValid, setEmailValid] = useState('')
     const [phoneValid, setPhoneValid] = useState('')
     const stringRegex = /^[a-zA-Z-]+$/; //Regex champs nom & prénom
-    // eslint-disable-next-line no-useless-escape
     const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/; //Regex email
     const phoneRegex = /^(?:(?:(?:\+|00)33[ ]?(?:\(0\)[ ]?)?)|0){1}[1-9]{1}([ .-]?)(?:\d{2}\1?){3}\d{2}$/; //Regex phone number
 
@@ -26,7 +24,6 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
         emailjs.sendForm(emailjsServiceId, emailjsTemplateId, form.current, emailjsPublicKey)
             .then((result) => {
                 console.log(result.text);
@@ -76,7 +73,6 @@ const Contact = () => {
             sendEmail(e)
             setFormValid(true)
         }
-        // form.reset()
     }
 
     return (

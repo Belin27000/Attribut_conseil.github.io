@@ -1,7 +1,6 @@
 import React from 'react';
 import './vae.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
-// import { Link } from 'react-router-dom';
 import ScrollToTop from '../../Components/Button/ScrollButton/ScrollToTop.js';
 import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import allFiles from '../../_Services/fileToDownload.service.js';

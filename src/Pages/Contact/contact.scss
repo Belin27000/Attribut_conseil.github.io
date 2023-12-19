@@ -88,7 +88,6 @@
     }
 
     &-form {
-        // background-color: var(--mainBlue);
         margin: 2rem;
         padding: 1rem;
         border-radius: 10px;
@@ -98,9 +97,6 @@
 
                 margin-top: 1rem;
             }
-
-            // display: flex;
-            // flex-direction: row;
 
         }
 
@@ -117,7 +113,6 @@
             input,
             select {
                 line-height: 1.5rem;
-                // border-radius: 5px;
                 font-size: 1.2rem;
                 border: solid 1px var(--acDarkBlue);
                 border-width: .1rem;
@@ -160,31 +155,10 @@
             margin: 0;
             padding: 0 0 1rem 0;
 
-            // display: flex;
             &-all {
                 display: flex;
                 justify-content: space-around;
             }
-
-
-            // div {
-            //     display: flex;
-            //     justify-content: space-around;
-            //     width: 100%;
-
-            //     .input-wrapper {
-
-            //         input,
-            //         label {
-            //             margin: 0 2rem;
-            //             text-align: initial;
-            //             padding: .5rem 0;
-            //         }
-            //     }
-
-
-
-            // }
 
             &-contact {
                 display: flex;

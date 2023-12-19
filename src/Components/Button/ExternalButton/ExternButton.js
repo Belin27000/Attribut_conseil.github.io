@@ -3,10 +3,7 @@ import { Link } from 'react-router-dom';
 import './externButton.scss'
 
 const ExternButton = ({ text }) => {
-    // let navigate = useNavigate();
-    // const RouteChange = () => {
-    //     navigate('/comingSoon')
-    // }
+
 
     return (
         <button className='ExternButton'>

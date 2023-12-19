@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from '@/Pages/Acceuil/Home.js';
 import Layout from '@/Layouts/Layout.js';
-// import ComingSoon from '@/Pages/ComingSoon/ComingSoon.js';
 import About from '../Apropos/About.js';
 import Vae from '../Vae/Vae.js';
 import Bilan from '../BilanDeComp/Bilan.js';
@@ -18,7 +17,6 @@ import IngeTraining from '../IngeTraining/IngeTraining.js';
 import ExternRhManagment from '../ExternRhManagment/ExternRhManagment.js';
 import PracticesAnalyse from '../PracticesAnalyse/PracticesAnalyse.js';
 import ProfessionalMeeting from '../ProfessionalMeeting/ProfessionalMeeting.js';
-// import Qualiopi from '../Qualiopi/Qualiopi.js';
 import Contact from '../Contact/Contact.js';
 import ExternTrainManagement from '../ExternTrainManagement/ExternTrainManagement.js';
 
@@ -49,7 +47,6 @@ const PublicRouter = () => {
 
                 <Route path="/ingenierie_formation" element={<IngeTraining />} />
 
-                {/* <Route path="/qualiopi" element={<Qualiopi />} /> */}
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/gestion_Formation_externalisee" element={<ExternTrainManagement />} />
 

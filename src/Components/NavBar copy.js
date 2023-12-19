@@ -24,16 +24,6 @@ const NavBarTest = () => {
         setShowOrganismeSubMenu(!showOrganismeSubMenu);
     };
 
-
-    // const toggleNav = () => {
-    //     setToogleMenu(!toggleMenu)
-    //     if (toggleTraining) {
-    //         setToggleTraining(!toggleTraining)
-    //     }
-    //     if (toggleCarrer) {
-    //         setToggleCarrer(!toggleCarrer)
-    //     }
-    // }
     const toggleNav = () => {
         setToogleMenu(!toggleMenu);
         setToggleCarrer(false);
@@ -59,17 +49,6 @@ const NavBarTest = () => {
         setShowOrganismeSubMenu(false);
     };
 
-
-    // const toggleCarrerNav = () => {
-    //     setToggleCarrer(!toggleCarrer)
-    //     setToggleInge(false)
-    //     setToggleTraining(false)
-    // }
-    // const toggleTrainingNav = () => {
-    //     setToggleCarrer(false)
-    //     setToggleInge(false)
-    //     setToggleTraining(!toggleTraining)
-    // }
     const toggleIngeNav = () => {
         setToggleCarrer(false)
         setToggleTraining(false)
