@@ -1,7 +1,7 @@
 // import data from '../Assets/CarouselPictures/data.json'
 import CreaEnt from '@/Assets/CarouselPictures/accompagnement_creation_entreprise.jpg'
 // import Search from '@/Assets/CarouselPictures/accompagnement_et_recherche.jpg'
-import Bilan from '@/Assets/CarouselPictures/Bilan_de_compétence.jpg'
+import Bilan from '@/Assets/CarouselPictures/Bilan_de_comp.jpg'
 // import Coaching from '@/Assets/CarouselPictures/coaching.jpg'
 import Formation from '@/Assets/CarouselPictures/formation.jpg'
 import Inge from '@/Assets/CarouselPictures/ingenirie_et_admin.png'

@@ -1,7 +1,7 @@
 import React from 'react';
 import Bandeau from '@/Assets/Images/Bandeau.jpg'
-import logo_Attribut from '@/Assets/Images/logo_Attribut.png'
-import logo_soleil from '@/Assets/Images/Logo_soleil.png'
+import logo_Attribut from '@/Assets/Images/logo_Attribut.webp'
+import logo_soleil from '@/Assets/Images/Logo_soleil.webp'
 import '@/Layouts/Header/header.scss'
 import NavBar from '@/Components/NavBar.js';
 
