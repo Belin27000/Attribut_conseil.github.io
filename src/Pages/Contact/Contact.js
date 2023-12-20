@@ -3,9 +3,11 @@ import emailjs from '@emailjs/browser';
 import './contact.scss'
 import { FaPhone } from "react-icons/fa6";
 import { FaRegEnvelope } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 const Contact = () => {
+    const form = useRef();
 
     const [formValid, setFormValid] = useState(false)
     const [firstNameValid, setFirstNameValid] = useState('')
@@ -19,15 +21,22 @@ const Contact = () => {
     const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/; //Regex email
     const phoneRegex = /^(?:(?:(?:\+|00)33[ ]?(?:\(0\)[ ]?)?)|0){1}[1-9]{1}([ .-]?)(?:\d{2}\1?){3}\d{2}$/; //Regex phone number
 
-    const emailjsServiceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-    const emailjsTemplateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-    const emailjsPublicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
-    const form = useRef();
+    // const emailjsServiceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const emailjsServiceId = 'service_b5eblol';
+    // const emailjsTemplateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const emailjsTemplateId = 'template_v4zfbmw';
+    // const emailjsPublicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+    const emailjsPublicKey = 'co2IW4LcdoDCQpEws'
 
     const sendEmail = (e) => {
-        e.preventDefault();
 
+        e.preventDefault();
+        // console.log('serviceId', emailjsServiceId);
+        // console.log('Template', emailjsTemplateId);
+        // console.log('form', form.current);
+        // console.log('publicKey', emailjsPublicKey);
         emailjs.sendForm(emailjsServiceId, emailjsTemplateId, form.current, emailjsPublicKey)
+            // emailjs.send(emailjsServiceId, emailjsTemplateId, templateParams, emailjsPublicKey)
             .then((result) => {
                 // console.log(result.text);
             }, (error) => {
@@ -42,7 +51,6 @@ const Contact = () => {
         const phone = formData.get("phone")
         const email = formData.get("email")
         const whomAmI = !whom
-        console.log(whomAmI);
         if (whomAmI) {
             setWhomValid("Merci de choisir une des options ci-dessus")
             isValid = false;
@@ -78,14 +86,15 @@ const Contact = () => {
     }
     const handleSubmit = async (e) => {
         e.preventDefault();
+        const form = e.target
+        console.log(form);
+        const formData = new FormData(form)
+        console.log(form);
+        const isValid = await validate(formData)
         setFirstNameValid('')
         setLastNameValid('')
         setEmailValid('')
         setPhoneValid('')
-        const form = e.target
-        const formData = new FormData(form)
-        console.log(form);
-        const isValid = await validate(formData)
 
 
         console.log(isValid);
@@ -127,12 +136,12 @@ const Contact = () => {
                                     Je suis*
                                     <div>
                                         <div>
-                                            <input name="whom" type="radio" id="individual" value="individual" onChange={e => setWhom(e.target.value)} />
-                                            <label htmlFor="individual">un particulier</label>
+                                            <input name="whom" type="radio" id="particulier" value="particulier" onChange={e => setWhom(e.target.value)} />
+                                            <label htmlFor="particulier">un particulier</label>
                                         </div>
                                         <div>
-                                            <input name="whom" type="radio" id="company" value="entreprise" onChange={e => setWhom(e.target.value)} />
-                                            <label htmlFor="company">une entreprise</label>
+                                            <input name="whom" type="radio" id="entreprise" value="entreprise" onChange={e => setWhom(e.target.value)} />
+                                            <label htmlFor="entreprise">une entreprise</label>
                                         </div>
                                     </div>
                                     {whomValid && <div id="whomErrorMSg" className="error">{whomValid}</div>}
@@ -174,9 +183,7 @@ const Contact = () => {
                                         <option value="Ingénierie et administration de la formation">Ingénierie et administration de la formation</option>
                                         <option value="Je souhaite être recontacté(e) pour échanger">Je souhaite être recontacté(e) pour échanger</option>
                                     </select>
-                                    <label htmlFor="phone">Téléphone*</label>
-                                    <input name="phone" type="tel" id="phone" />
-                                    {phoneValid && <div id="emailErrorMSg" className="error">{phoneValid}</div>}
+
                                 </div>
 
                                 <div className="input-wrapper">
@@ -190,6 +197,7 @@ const Contact = () => {
                     </form>
                 ) : (<div className='contact-form-sent'>
                     <p>Le formulaire a bien été envoyé</p>
+                    <Link to={'/home'}>Retour à l'acceuil</Link>
                     {/* <Button name={'Retour à l\'accueil'} path={'/home'} /> */}
                 </div>
                 )}

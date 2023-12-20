@@ -12,6 +12,8 @@ import data from '../../Assets/data/data.json'
 import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import allFiles from '../../_Services/fileToDownload.service.js';
 import Handi from '../../Assets/Images/Handicapped.png'
+import { FaHeart } from 'react-icons/fa';
+
 const Footer = () => {
     const QualiopiValidity = data.Qualiopi.validationDate
 
@@ -72,6 +74,9 @@ const Footer = () => {
                         <DownloadFile image={Handi} className='FooterFiles' file={allFiles.HandiFiles()} />
                     </div>
                     <DownloadFile className='FooterFiles' file={allFiles.CGUFiles()} />
+                    <div className='builderRef'>
+                        <p>Made with <FaHeart /> By <a href="https://conseilsandtechs.com/" rel="noreferrer" target="_blank">Yann LECERF from Conseils & Tech</a></p>
+                    </div>
                 </div>
             </div>
         </footer>
