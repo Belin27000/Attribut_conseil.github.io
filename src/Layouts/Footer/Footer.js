@@ -8,7 +8,10 @@ import Charte200 from '@/Assets/Images/chartedeontologieCPF/charte200.webp'
 import Charte800 from '@/Assets/Images/chartedeontologieCPF/charte800.webp'
 import '@/Layouts/Footer/footer.scss'
 import data from '../../Assets/data/data.json'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import DownloadFile from '../../Components/FileLink/DownloadFile.js';
+import allFiles from '../../_Services/fileToDownload.service.js';
+import Handi from '../../Assets/Images/Handicapped.png'
 const Footer = () => {
     const QualiopiValidity = data.Qualiopi.validationDate
 
@@ -56,14 +59,19 @@ const Footer = () => {
                         alt="Logo Charte CPF" />
                 </div>
             </div>
+            {/* <div className="Handi">
+                <img src={Handi} alt='Handicapped logo' width='220' height='220' />
+            </div> */}
             <div className='FooterPictureFont'>
                 <img width='2480'
                     height='797' src={Bandeau} alt="Header font" />
                 {/* <p className='FooterPunchLine'>Spécialiste de la gestion de carrière et de la relation Homme/Travail</p> */}
                 <div className="FooterPictureFont-mention">
-                    <Link>Mention legale</Link>
-                    <Link>Mention legale</Link>
-
+                    <div className="Handi">
+                        <img className='handicap-picture' src={Handi} alt='Handicap log' width='220' height='220' />
+                        <DownloadFile image={Handi} className='FooterFiles' file={allFiles.HandiFiles()} />
+                    </div>
+                    <DownloadFile className='FooterFiles' file={allFiles.CGUFiles()} />
                 </div>
             </div>
         </footer>

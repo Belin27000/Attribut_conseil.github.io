@@ -21,6 +21,22 @@
             }
         }
 
+
+    }
+
+    .Handi {
+        display: flex;
+        flex-direction: column;
+        // position: absolute;
+        // bottom: 0;
+        z-index: 2;
+        width: 100%;
+        align-items: center;
+
+        .handicap-picture {
+            width: 20%;
+            height: auto;
+        }
     }
 
     .FooterPictureFont {
@@ -37,10 +53,17 @@
             bottom: 0;
             width: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: space-around;
 
+            transform: scaleX(-1);
+
+            ul li {
+
+                list-style-type: none;
+            }
+
             a {
-                transform: scaleX(-1);
                 margin-bottom: .5rem;
                 color: white;
                 font-size: .7rem;
@@ -55,13 +78,28 @@
     margin: 0;
 }
 
-@media screen and (min-width:750px) {
+@media screen and (min-width:650px) {
     .Footer {
 
         .FooterLogoContainer {
             width: 50%;
             position: absolute;
             z-index: 1;
+        }
+
+        .FooterPictureFont-mention {
+            transform: scalex(-1);
+            flex-direction: row;
+            align-items: flex-end;
+            padding-bottom: 1rem;
+
+            .handicap-picture {
+                width: 10%;
+            }
+
+            ul li {
+                list-style-type: none;
+            }
         }
     }
 

@@ -13,6 +13,7 @@ const Contact = () => {
     const [emailValid, setEmailValid] = useState('')
     const [phoneValid, setPhoneValid] = useState('')
     const stringRegex = /^[a-zA-Z-]+$/; //Regex champs nom & prénom
+    // eslint-disable-next-line no-useless-escape
     const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/; //Regex email
     const phoneRegex = /^(?:(?:(?:\+|00)33[ ]?(?:\(0\)[ ]?)?)|0){1}[1-9]{1}([ .-]?)(?:\d{2}\1?){3}\d{2}$/; //Regex phone number
 

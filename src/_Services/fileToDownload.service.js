@@ -12,6 +12,8 @@ import CreaCompanyPrice from '../Assets/FileToDownload/CreaCompany/CreaCompanyPr
 import CreaCompanyEthique from '../Assets/FileToDownload/CreaCompany/CreaCompanyEthique.pdf'
 import CreaCompanyStats from '../Assets/FileToDownload/CreaCompany/CreaCompanyStats.pdf'
 import TrainingTrainerProg from '../Assets/FileToDownload/TrainingTrainer/TrainingTrainerProg.pdf'
+import CGU from '../Assets/FileToDownload/CGU.pdf'
+import Handi from '../Assets/FileToDownload/Handi.pdf'
 
 const bilanDeCompFiles = [
     {
@@ -81,6 +83,19 @@ const TrainingTrainerFile = [
         pdfFile: TrainingTrainerProg
     }
 ]
+const CGUFile = [
+    {
+        name: 'Conditions générales d\'utilisation du site',
+        pdfFile: CGU
+    }
+]
+const HandiFile = [
+    {
+        name: 'Personnes en situation de handicap',
+        pdfFile: Handi,
+        picture: './Assets/Images/Handicapped.png'
+    }
+]
 
 let fileList = () => {
     return bilanDeCompFiles
@@ -100,6 +115,12 @@ let CreaCompanyFiles = () => {
 let TrainingTrainerFiles = () => {
     return TrainingTrainerFile
 }
+let CGUFiles = () => {
+    return CGUFile
+}
+let HandiFiles = () => {
+    return HandiFile
+}
 
 export const allFiles = {
     fileList,
@@ -108,5 +129,7 @@ export const allFiles = {
     outplacementFile,
     CreaCompanyFiles,
     TrainingTrainerFiles,
+    CGUFiles,
+    HandiFiles,
 }
 export default allFiles
