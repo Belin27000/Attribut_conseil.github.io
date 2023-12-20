@@ -99,7 +99,11 @@ const TrainingTrainer = () => {
                 <p className='TrainingTrainer-article-duration'><strong>Durée : 3 semaines</strong></p>
                 <p className='TrainingTrainer-article-duration'><strong>3800 TTC (prise en charge par votre employeur – Plan de développement des compétences)</strong></p>
                 <p className='TrainingTrainer-article-duration'><strong>2700 TCC (pour les particuliers)</strong></p>
-                <DownloadFile file={allFiles.TrainingTrainerFiles()} />
+                <ul className='Link-List'>
+                    <li>
+                        <DownloadFile file={allFiles.TrainingTrainerFiles()} />
+                    </li>
+                </ul>
             </article>
             <article className="TrainingTrainer-article_bgWhite">
                 <p><strong>Pédagogie par projet!

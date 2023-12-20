@@ -140,5 +140,15 @@
                 text-align: start;
             }
         }
+
+        .Link-List {
+            list-style-type: disc;
+            color: var(--acYellow);
+
+            a {
+                color: var(--acYellow);
+                list-style-type: disc;
+            }
+        }
     }
 }
