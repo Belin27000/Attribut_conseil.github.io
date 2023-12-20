@@ -61,6 +61,12 @@ const Footer = () => {
                         alt="Logo Charte CPF" />
                 </div>
             </div>
+            <div className='Map'>
+                <h2>
+                    Ou nous trouver
+                </h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10594.503031689123!2d2.6953754!3d48.4061297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5de5466d64191%3A0xcd129d3981711195!2sAttribut%20Conseils!5e0!3m2!1sfr!2sfr!4v1703104076596!5m2!1sfr!2sfr" width="450" height="330" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             {/* <div className="Handi">
                 <img src={Handi} alt='Handicapped logo' width='220' height='220' />
             </div> */}

@@ -97,6 +97,10 @@
             }
         }
     }
+
+    .Map {
+        display: none;
+    }
 }
 
 .QualContainer-Data {
@@ -153,6 +157,19 @@
                         text-decoration: underline;
                     }
                 }
+            }
+        }
+
+        .Map {
+            display: block;
+            position: absolute;
+            bottom: 15%;
+            z-index: 1;
+            right: 10%;
+
+            iframe {
+
+                border-radius: 15px;
             }
         }
     }
