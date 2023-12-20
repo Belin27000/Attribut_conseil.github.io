@@ -12,6 +12,8 @@ const Contact = () => {
     const [lastNameValid, setLastNameValid] = useState('')
     const [emailValid, setEmailValid] = useState('')
     const [phoneValid, setPhoneValid] = useState('')
+    const [whom, setWhom] = useState('')
+    const [whomValid, setWhomValid] = useState('')
     const stringRegex = /^[a-zA-Z-]+$/; //Regex champs nom & prénom
     // eslint-disable-next-line no-useless-escape
     const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/; //Regex email
@@ -27,9 +29,9 @@ const Contact = () => {
 
         emailjs.sendForm(emailjsServiceId, emailjsTemplateId, form.current, emailjsPublicKey)
             .then((result) => {
-                console.log(result.text);
+                // console.log(result.text);
             }, (error) => {
-                console.log(error.text);
+                // console.log(error.text);
             });
     };
 
@@ -39,21 +41,37 @@ const Contact = () => {
         const lastName = formData.get("lastName")
         const phone = formData.get("phone")
         const email = formData.get("email")
+        const whomAmI = !whom
+        console.log(whomAmI);
+        if (whomAmI) {
+            setWhomValid("Merci de choisir une des options ci-dessus")
+            isValid = false;
+        } else {
+            setWhomValid(false)
+        }
         if (!firstName.match(stringRegex)) {
             setFirstNameValid("Merci de préciser votre prénom sans chiffre ou caractère spéciaux")
             isValid = false;
+        } else {
+            setFirstNameValid(false)
         }
         if (!lastName.match(stringRegex)) {
             setLastNameValid("Merci de préciser votre nom sans chiffre ou caractère spéciaux")
             isValid = false;
+        } else {
+            setLastNameValid(false)
         }
         if (!email.match(emailRegex)) {
             setEmailValid("Merci de préciser un email valide")
             isValid = false;
+        } else {
+            setEmailValid(false)
         }
         if (!phone.match(phoneRegex)) {
             setPhoneValid("Merci de préciser un numero de téléphone valide")
             isValid = false;
+        } else {
+            setPhoneValid(false)
         }
         return isValid
 
@@ -66,6 +84,7 @@ const Contact = () => {
         setPhoneValid('')
         const form = e.target
         const formData = new FormData(form)
+        console.log(form);
         const isValid = await validate(formData)
 
 
@@ -105,17 +124,18 @@ const Contact = () => {
                         <div className='contact-form-all'>
                             <div className='contact-form-contact'>
                                 <div className='check'>
-                                    <label htmlFor="checkGroup">Je suis*</label>
-                                    <div className="check-wrapper" id="checkGroup" >
-                                        <input name="individual" type="checkbox" id="individual" />
-                                        <label htmlFor="individual">un particulier</label>
-                                        {lastNameValid && <div id="lastNameErrorMSg" className="error">{lastNameValid}</div>}
+                                    Je suis*
+                                    <div>
+                                        <div>
+                                            <input name="whom" type="radio" id="individual" value="individual" onChange={e => setWhom(e.target.value)} />
+                                            <label htmlFor="individual">un particulier</label>
+                                        </div>
+                                        <div>
+                                            <input name="whom" type="radio" id="company" value="entreprise" onChange={e => setWhom(e.target.value)} />
+                                            <label htmlFor="company">une entreprise</label>
+                                        </div>
                                     </div>
-                                    <div className="check-wrapper" id="checkGroup" >
-                                        <input name="company" type="checkbox" id="company" />
-                                        <label htmlFor="company">une entreprise</label>
-                                        {lastNameValid && <div id="lastNameErrorMSg" className="error">{lastNameValid}</div>}
-                                    </div>
+                                    {whomValid && <div id="whomErrorMSg" className="error">{whomValid}</div>}
                                 </div>
                                 <div className="input-wrapper">
                                     <label htmlFor="lastName">Nom*</label>
