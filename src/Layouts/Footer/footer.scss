@@ -6,19 +6,28 @@
     .FooterLogoContainer {
         width: 100%;
         display: flex;
+        // flex-direction: column;
         justify-content: space-evenly;
         background-color: white;
         align-items: center;
 
+
+
         div {
-            width: 25%;
+            // width: 100%;
 
             img {
+                display: flex;
+                object-fit: contain;
                 width: 100%;
                 height: 100%;
 
                 z-index: 2;
             }
+        }
+
+        .LogoContainer {
+            display: flex;
         }
 
 
@@ -105,6 +114,7 @@
 
 .QualContainer-Data {
     font-size: .5rem;
+    // font-weight: bold;
     margin: 0;
 }
 
@@ -132,7 +142,7 @@
             }
 
             div {
-                width: 30%;
+                width: 25%;
             }
 
             .Handi .Single-Link {
@@ -141,7 +151,7 @@
 
             .Single-Link a {
 
-                font-size: 1rem;
+                font-size: .75rem;
             }
 
             .builderRef {
@@ -149,7 +159,7 @@
 
                 p {
                     margin: 0;
-                    font-size: 1rem;
+                    font-size: .75rem;
 
                     a {
                         font-size: .8rem;
@@ -174,8 +184,29 @@
         }
     }
 
-    .QualContainer-Data {
-        font-size: 1rem;
-        margin: 0;
+    .LogoContainer {
+        justify-content: space-between;
+
+        .CpfContainer,
+        .QualioContainer,
+        .CharteContainer {
+            width: 20%;
+        }
+    }
+
+    .QualContainer {
+        width: 100%;
+
+        &-Pic {
+            width: 20%;
+            object-fit: contain;
+            height: auto;
+        }
+
+        &-Data {
+            font-size: .7rem;
+            font-weight: bold;
+            margin: 0;
+        }
     }
 }

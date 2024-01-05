@@ -14,6 +14,7 @@ import CreaCompanyStats from '../Assets/FileToDownload/CreaCompany/CreaCompanySt
 import TrainingTrainerProg from '../Assets/FileToDownload/TrainingTrainer/TrainingTrainerProg.pdf'
 import CGU from '../Assets/FileToDownload/CGU.pdf'
 import Handi from '../Assets/FileToDownload/Handi.pdf'
+import RGPD from '../Assets/FileToDownload/RGPD.pdf'
 
 const bilanDeCompFiles = [
     {
@@ -89,6 +90,12 @@ const CGUFile = [
         pdfFile: CGU
     }
 ]
+const RGPDFile = [
+    {
+        name: 'RGPD (délais d\'acces 10 jours maximum) ',
+        pdfFile: RGPD
+    }
+]
 const HandiFile = [
     {
         name: 'Personnes en situation de handicap',
@@ -118,6 +125,9 @@ let TrainingTrainerFiles = () => {
 let CGUFiles = () => {
     return CGUFile
 }
+let RGPDFiles = () => {
+    return RGPDFile
+}
 let HandiFiles = () => {
     return HandiFile
 }
@@ -130,6 +140,7 @@ export const allFiles = {
     CreaCompanyFiles,
     TrainingTrainerFiles,
     CGUFiles,
+    RGPDFiles,
     HandiFiles,
 }
 export default allFiles

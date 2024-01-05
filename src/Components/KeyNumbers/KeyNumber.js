@@ -5,8 +5,11 @@ import '@/Components/KeyNumbers/keyNumber.scss'
 const KeyNumber = () => {
 
     const [countYear, setCountYear] = useState(1)
-    const [countPeople, setCountPeople] = useState(1000)
+    const [countPeople, setCountPeople] = useState(2500)
     const [countExpert, setCountExpert] = useState(1)
+    const yearNumber = 16
+    const peopleHelped = 4800
+    const teamNumber = 6
     const [ref, inView] = useInView({
         triggerOnce: true,
     })
@@ -16,7 +19,7 @@ const KeyNumber = () => {
 
         if (inView) {
             intervalYear = setInterval(() => {
-                if (countYear < 15) {
+                if (countYear < yearNumber) {
                     setCountYear((prevCount) => prevCount + 1);
                 } else {
                     clearInterval(intervalYear); // Arrête l'incrémentation lorsque le compteur atteint 15
@@ -34,10 +37,10 @@ const KeyNumber = () => {
 
         if (inView) {
             intervalPeople = setInterval(() => {
-                if (countPeople < 2100) {
+                if (countPeople < peopleHelped) {
                     setCountPeople((prevCount) => prevCount + 1);
                 } else {
-                    clearInterval(intervalPeople); // Arrête l'incrémentation lorsque le compteur atteint 2100
+                    clearInterval(intervalPeople); // Arrête l'incrémentation lorsque le compteur atteint 4800
                 }
             }, 4);
         }
@@ -50,7 +53,7 @@ const KeyNumber = () => {
     useEffect(() => {
         let intervalExpert;
 
-        if (inView && countExpert < 6) {
+        if (inView && countExpert < teamNumber) {
             intervalExpert = setInterval(() => {
                 setCountExpert((prevCount) => prevCount + 1);
             }, 1200);
@@ -64,19 +67,19 @@ const KeyNumber = () => {
     return (
 
         <ul className='KeyNumber' ref={ref}>
-            {inView && countYear <= 15 && (
+            {inView && countYear <= yearNumber && (
                 <li>
                     <span className='AcNumber'>+{countYear}</span>
                     <span className='AcText'>années d'expérience</span>
                 </li>
             )}
-            {inView && countPeople <= 2100 && (
+            {inView && countPeople <= peopleHelped && (
                 <li>
                     <span className='AcNumber'>+{countPeople}</span>
                     <span className='AcText'>personnes accompagnées</span>
                 </li>
             )}
-            {inView && countExpert <= 6 && (
+            {inView && countExpert <= teamNumber && (
                 <li>
                     <span className='AcNumber'>{countExpert}</span>
                     <span className='AcText'>formateurs, consultants experts, coachs</span>
