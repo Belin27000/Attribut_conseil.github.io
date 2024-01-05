@@ -101,7 +101,11 @@ const Outplacement = () => {
                 <h3 className="Outplacement-article-title">Nos tarifs</h3>
                 <p>Le coût de l’outplacement est évalué en fonction de vos besoins. Un devis sera alors établit.
                 </p>
-                <DownloadFile file={allFiles.outplacementFile()} />
+                <ul className='fileLink'>
+                    <li>
+                        <DownloadFile file={allFiles.outplacementFile()} />
+                    </li>
+                </ul>
             </article>
         </section>
     );

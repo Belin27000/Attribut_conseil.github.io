@@ -205,8 +205,10 @@ const Contact = () => {
 
             </div>
             <p className='yellow'>Siège social :</p>
-            <p className='adresse'>161 rue Saint Merry </p>
-            <p className='adresse'>77300 Fontainebleau</p>
+            <Link className='adresseLink' rel='nofollow noopener noreferrer' target='_blank' to={'https://www.google.com/maps/place/Attribut+Conseils/@48.4061297,2.6953754,15z/data=!4m2!3m1!1s0x0:0xcd129d3981711195?sa=X&ved=2ahUKEwjPo86kwMaDAxVmVqQEHXt6BtgQ_BJ6BAg8EAA'} >
+                <p className='adresse'>161 rue Saint Merry </p>
+                <p className='adresse'>77300 Fontainebleau</p>
+            </Link>
             <ul>
                 <li>Nos bureaux sont accessibles aux personnes en situation de handicap</li>
                 <li>Nous disposons de bureaux secondaires sur les villes de Melun, Varennes Jarcy et Milly la Forêt </li>

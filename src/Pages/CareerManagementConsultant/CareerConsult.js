@@ -1,6 +1,9 @@
 import React from 'react';
 import './careerConsult.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
+import DownloadFile from '../../Components/FileLink/DownloadFile.js';
+import allFiles from '../../_Services/fileToDownload.service.js';
+
 
 const CareerConsult = () => {
     return (
@@ -146,6 +149,7 @@ const CareerConsult = () => {
                 <p className='CareerConsult-article-duration'><strong>Tarifs :</strong></p>
                 <p className='CareerConsult-article-duration'>- 5295 € TTC (prise en charge par l'employeur – Plan de développement des compétences)</p>
                 <p className='CareerConsult-article-duration'>   - 3295 € TTC (particuliers)</p>
+                <DownloadFile file={allFiles.careerConsultFiles()} />
             </article>
             <article className="CareerConsult-article_bgWhite">
                 <p><strong>Ces formations intensives offre un parcours complet dans le domaine de l'accompagnement en bilan de compétences et en gestion de carrière. En mettant l'accent sur la compréhension approfondie des clients, le développement des compétences du consultant, et l'intégration des fondamentaux, elle prépare les participants à exceller dans ce domaine en constante évolution. Grâce à des méthodes pédagogiques actives, interactives et une approche pratique, les participants seront prêts à guider leurs clients vers des solutions professionnelles et personnelles épanouissantes. Cette formation constitue un investissement essentiel pour tous ceux cherchant à se démarquer en tant que consultants.

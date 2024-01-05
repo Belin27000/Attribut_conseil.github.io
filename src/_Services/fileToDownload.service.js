@@ -4,6 +4,7 @@ import Ethique from '../Assets/FileToDownload/BilanDeComp/Ethique.pdf'
 import Stats from '../Assets/FileToDownload/BilanDeComp/Stats.pdf'
 import VaeProg from '../Assets/FileToDownload/Vae/PROGVae.pdf'
 import VaePrice from '../Assets/FileToDownload/Vae/PriceVae.pdf'
+import VaeEthique from '../Assets/FileToDownload/Vae/EthiqueVae.pdf'
 import OrientationJeuneProg from '../Assets/FileToDownload/OrientationJeune/ProgOrientationJeune.pdf'
 import OrientationJeuneEthique from '../Assets/FileToDownload/OrientationJeune/EthiqueJeune.pdf'
 import OutplacementProg from '../Assets/FileToDownload/Outplacement/OutplacementProg.pdf'
@@ -12,9 +13,12 @@ import CreaCompanyPrice from '../Assets/FileToDownload/CreaCompany/CreaCompanyPr
 import CreaCompanyEthique from '../Assets/FileToDownload/CreaCompany/CreaCompanyEthique.pdf'
 import CreaCompanyStats from '../Assets/FileToDownload/CreaCompany/CreaCompanyStats.pdf'
 import TrainingTrainerProg from '../Assets/FileToDownload/TrainingTrainer/TrainingTrainerProg.pdf'
+import TrainingTrainerPrice from '../Assets/FileToDownload/TrainingTrainer/TrainingTrainerPrice.pdf'
 import CGU from '../Assets/FileToDownload/CGU.pdf'
 import Handi from '../Assets/FileToDownload/Handi.pdf'
 import RGPD from '../Assets/FileToDownload/RGPD.pdf'
+import careerConsultProg from '../Assets/FileToDownload/careerConsult/careerConsultProg.pdf'
+import careerConsultPrice from '../Assets/FileToDownload/careerConsult/careerConsultPrice.pdf'
 
 const bilanDeCompFiles = [
     {
@@ -42,6 +46,10 @@ const vaeFiles = [
     {
         name: 'Tarifs et conditions générales de vente',
         pdfFile: VaePrice
+    },
+    {
+        name: 'Déontologie et étique',
+        pdfFile: VaeEthique
     },
 ]
 const OrientationJeuneFiles = [
@@ -82,6 +90,10 @@ const TrainingTrainerFile = [
     {
         name: 'Programme',
         pdfFile: TrainingTrainerProg
+    },
+    {
+        name: 'Tarifs et conditions générales de vente',
+        pdfFile: TrainingTrainerPrice
     }
 ]
 const CGUFile = [
@@ -101,6 +113,16 @@ const HandiFile = [
         name: 'Personnes en situation de handicap',
         pdfFile: Handi,
         picture: './Assets/Images/Handicapped.png'
+    }
+]
+const careerConsultFile = [
+    {
+        name: 'Programme',
+        pdfFile: careerConsultProg,
+    },
+    {
+        name: 'Tarifs et conditions générales de vente',
+        pdfFile: careerConsultPrice,
     }
 ]
 
@@ -131,6 +153,9 @@ let RGPDFiles = () => {
 let HandiFiles = () => {
     return HandiFile
 }
+let careerConsultFiles = () => {
+    return careerConsultFile
+}
 
 export const allFiles = {
     fileList,
@@ -142,5 +167,6 @@ export const allFiles = {
     CGUFiles,
     RGPDFiles,
     HandiFiles,
+    careerConsultFiles,
 }
 export default allFiles
