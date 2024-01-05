@@ -85,7 +85,7 @@ const About = () => {
             </div>
             <div className='Pres'>
                 <p>
-                    AtTRIBUt représente une communauté de partenaires privés et publics et est en prise sur le marché du travail et ses mutations.
+                    AttriBUT représente une communauté de partenaires privés et publics et est en prise sur le marché du travail et ses mutations.
                     L’une de nos forces :
                     La mise en réseau.
                 </p>
@@ -186,10 +186,11 @@ const About = () => {
                 <p className='Pres-Daph'>Mon bagage académique et professionnel comprend un <strong>DESS en Ingénierie de la formation</strong>, une formation approfondie en <strong>psychologie jusqu'au niveau Master 2</strong>, ainsi qu'une <strong>certification en audit de formation</strong>.
                 </p>
                 <p className='Pres-Daph'>
-                    J’ai complété ces formations par des certifications en thérapie brèves et systémiques, et par une longue formation en coaching qui me vaut le titre de <strong>coach senior</strong>. Je suis également titulaire d'un <strong>Diplôme Universitaire en audit de formation</strong> et j'ai obtenu la <strong>certification de l'INRS en Formation sur les Risques Psycho Sociaux</strong>.
+                    J’ai complété ces formations par des certifications en thérapie brèves et systémiques, et par une longue formation en coaching qui me vaut le titre de <strong>coach senior</strong>.
+                    {/* Je suis également titulaire d'un <strong>Diplôme Universitaire en audit de formation</strong> et j'ai obtenu la <strong>certification de l'INRS en Formation sur les Risques Psycho Sociaux</strong>. */}
                 </p>
                 <p className='Pres-Daph'>
-                    En outre, je possède le <strong>Titre professionnel de Certificat de Compétences RNCP France compétences en tant que chef de projet en ingénierie de la formation blended learning</strong>.
+                    En outre, je possède le <strong>Titre professionnel en tant que chef de projet en ingénierie de la formation blended learning</strong>.
                 </p>
                 <p className='Pres-Daph'>Je vous l’ai dit, j’adore la formation!</p>
                 <p><strong>Mes valeurs fondamentales sont la qualité dans le travail, l’authenticité et le partage.
