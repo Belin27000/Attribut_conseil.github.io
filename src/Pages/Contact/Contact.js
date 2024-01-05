@@ -109,7 +109,7 @@ const Contact = () => {
             {/* <h1 className='sr-only' tabIndex={0}>Attribut conseils bilans de compétences en Ile de France, Seine et marne et Essonne - contact</h1> */}
 
             <h2 className='contact-title'>Nous contacter</h2>
-            <p className='yellow'>Vous êtes intéressé par un de nos services ?</p>
+            <p className='yellow'>Vous êtes intéressé(e) par un de nos services ?</p>
             <p>Contactez nous ! Attribut conseils vous proposera un premier rendez-vous d’information gratuit. </p>
             <div className='mail'>
                 <div className='mail-Logo'>
@@ -171,14 +171,15 @@ const Contact = () => {
                                 <div className="input-wrapper">
                                     <label htmlFor="interestSelect">Je suis intéressé(e) par*</label>
                                     <select id="interestSelect" name="interest">
-                                        <option value="bilan-de-compétences">bilan de compétences</option>
-                                        <option value="accompagnement-VAE">accompagnement VAE</option>
-                                        <option value="bilan-d’orientation-jeune">bilan d’orientation jeune</option>
+                                        <option value="Bilan-de-compétences">Bilan de compétences</option>
+                                        <option value="accompagnement-VAE">Accompagnement VAE</option>
+                                        <option value="Bilan-d’orientation-jeune">Bilan d’orientation jeune</option>
                                         <option value="Accompagnement-à-la-recherche-d’emploi">Accompagnement à la recherche d’emploi</option>
-                                        <option value="Coaching">Coaching</option>
+                                        <option value="encadrement">Encadrement</option>
                                         <option value="Psychologie-du-travail">Psychologie du travail</option>
                                         <option value="Accompagnement-à-la-création-d’entreprise">Accompagnement à la création d’entreprise</option>
                                         <option value="Formation de formateurs">Formation de formateurs</option>
+                                        <option value="outplacement">Outplacement</option>
                                         <option value="Formation de consultant en bilan / Conseiller emploi">Formation de consultant en bilan / Conseiller emploi</option>
                                         <option value="Ingénierie et administration de la formation">Ingénierie et administration de la formation</option>
                                         <option value="Je souhaite être recontacté(e) pour échanger">Je souhaite être recontacté(e) pour échanger</option>
