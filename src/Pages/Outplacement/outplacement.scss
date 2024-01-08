@@ -2,8 +2,13 @@
     width: 100%;
     color: white;
 
+    &-title {
+        padding: 0 1rem;
+    }
+
     &-article {
-        padding: 0 5rem;
+        padding: 0 1rem;
+
 
         &-title,
         &-subtitle {

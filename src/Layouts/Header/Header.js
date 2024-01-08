@@ -16,7 +16,7 @@ const Header = () => {
             <NavBar />
             <Link to={'/home'} className='PictureFont'>
                 <img fetchpriority="high" className='Bandeau' src={Bandeau} alt="Header font" />
-                <p className='HeaderText' >Expert de la relation homme:travail</p>
+                <p className='HeaderText' >Expert de la relation homme/travail</p>
             </Link>
             <Link to={'/home'} className='Logos'>
                 <div className='LogoContainerAc'>

@@ -22,11 +22,11 @@ const Contact = () => {
     const phoneRegex = /^(?:(?:(?:\+|00)33[ ]?(?:\(0\)[ ]?)?)|0){1}[1-9]{1}([ .-]?)(?:\d{2}\1?){3}\d{2}$/; //Regex phone number
 
     // const emailjsServiceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-    const emailjsServiceId = 'service_b5eblol';
+    const emailjsServiceId = 'service_8wqvza6';
     // const emailjsTemplateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-    const emailjsTemplateId = 'template_v4zfbmw';
+    const emailjsTemplateId = 'template_lmikvzt';
     // const emailjsPublicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
-    const emailjsPublicKey = 'co2IW4LcdoDCQpEws'
+    const emailjsPublicKey = 'uUGu6m65-ODNdU7aI'
 
     const sendEmail = (e) => {
 
@@ -108,7 +108,7 @@ const Contact = () => {
         <div className='contact'>
             {/* <h1 className='sr-only' tabIndex={0}>Attribut conseils bilans de compétences en Ile de France, Seine et marne et Essonne - contact</h1> */}
 
-            <h2 className='contact-title'>Nous contacter</h2>
+            <h2 className='contact-title' translate="no">Nous contacter</h2>
             <p className='yellow'>Vous êtes intéressé(e) par un de nos services ?</p>
             <p>Contactez nous ! Attribut conseils vous proposera un premier rendez-vous d’information gratuit. </p>
             <div className='mail'>
@@ -175,7 +175,7 @@ const Contact = () => {
                                         <option value="accompagnement-VAE">Accompagnement VAE</option>
                                         <option value="Bilan-d’orientation-jeune">Bilan d’orientation jeune</option>
                                         <option value="Accompagnement-à-la-recherche-d’emploi">Accompagnement à la recherche d’emploi</option>
-                                        <option value="encadrement">Encadrement</option>
+                                        <option value="Coaching" translate="no">Coaching</option>
                                         <option value="Psychologie-du-travail">Psychologie du travail</option>
                                         <option value="Accompagnement-à-la-création-d’entreprise">Accompagnement à la création d’entreprise</option>
                                         <option value="Formation de formateurs">Formation de formateurs</option>

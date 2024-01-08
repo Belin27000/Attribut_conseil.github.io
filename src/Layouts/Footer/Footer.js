@@ -60,8 +60,12 @@ const Footer = () => {
                                 alt="Logo Charte CPF" />
                         </div>
                     </div>
-                    <p className='QualContainer-Data'>Validé jusqu'au {QualiopiValidity}.</p>
-                    <p className='QualContainer-Data'>La certification Qualiopi a été délivrée pour la catégorie d'action suivante : Actions de formation et Bilan de compétences</p>
+                    <div className='QualContainer-Bloc'>
+                        <p className='QualContainer-Data'>Validé jusqu'au {QualiopiValidity}.</p>
+                        <p className='QualContainer-Data'>La certification Qualiopi a été délivrée pour la catégorie d'action suivante :</p>
+                        <p className='QualContainer-Data'>Actions de formation et Bilan de compétences</p>
+                        <p className='QualContainer-Data'>Délais d'acces aux formations 10 jours maximum</p>
+                    </div>
                 </div>
 
                 <div className='LogoContainer'>
@@ -95,7 +99,7 @@ const Footer = () => {
             </div>
             <div className='Map'>
                 <h2>
-                    Ou nous trouver
+                    Où nous trouver
                 </h2>
                 <iframe title="location" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10594.503031689123!2d2.6953754!3d48.4061297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5de5466d64191%3A0xcd129d3981711195!2sAttribut%20Conseils!5e0!3m2!1sfr!2sfr!4v1703104076596!5m2!1sfr!2sfr" width="450" height="330" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>

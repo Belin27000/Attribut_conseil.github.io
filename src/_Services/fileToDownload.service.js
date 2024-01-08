@@ -104,7 +104,7 @@ const CGUFile = [
 ]
 const RGPDFile = [
     {
-        name: 'RGPD (délais d\'acces 10 jours maximum) ',
+        name: 'RGPD',
         pdfFile: RGPD
     }
 ]

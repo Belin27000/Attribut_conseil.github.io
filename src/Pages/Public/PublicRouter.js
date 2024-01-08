@@ -33,7 +33,7 @@ const PublicRouter = () => {
                 <Route path='/vae' element={<Vae />} />
                 <Route path="/orientation_des_jeunes" element={<YouthGuidance />} />
                 <Route path="/outplacement" element={<Outplacement />} />
-                <Route path="/accompagnement_a_la_recherche_d'emploi" element={<FingJob />} />
+                <Route path="/accompagnement_a_la_recherche_emploi" element={<FingJob />} />
                 <Route path="/coaching" element={<Coaching />} />
                 <Route path="/psychologie_du_travail" element={<PsyWork />} />
 

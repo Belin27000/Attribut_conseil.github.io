@@ -4,7 +4,7 @@
 
 
     &-article {
-        padding: 0 5rem;
+        padding: 0 1rem;
 
         p {
             text-align: start;
@@ -37,6 +37,15 @@
         li {
             text-align: start;
             list-style-position: inside;
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .Coaching {
+        &-article {
+            padding: 0 5rem;
+
         }
     }
 }

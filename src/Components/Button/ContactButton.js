@@ -9,7 +9,7 @@ const ContactButton = ({ text }) => {
     }
 
     return (
-        <button className='ContactButton' onClick={RouteChange}>
+        <button translate="no" className='ContactButton' onClick={RouteChange}>
             {
 
                 text ? text : "Je contacte Attribut conseils"

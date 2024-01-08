@@ -1,7 +1,7 @@
 {
   "name": "site_attribut_react",
   "version": "0.1.0",
-  "homepage": "https://2023.attribut-conseils.com",
+  "homepage": "https://attribut-conseils.com",
   "private": true,
   "dependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.22.11",

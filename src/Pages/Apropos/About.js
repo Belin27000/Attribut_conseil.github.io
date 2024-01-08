@@ -145,8 +145,8 @@ const About = () => {
                     La transformation, le renouvellement, la mutation, le mouvement nécessitent une conduite de projet avec une méthodologie qui prend en compte deux résistances :
                 </p>
                 <ul>
-                    <li>Celle de l’individu</li>
-                    <li>Celle du système</li>
+                    <li translate="no">Celle de l’individu</li>
+                    <li translate="no">Celle du système</li>
                 </ul>
 
                 <p>
@@ -166,7 +166,7 @@ const About = () => {
                         <img width='960px' height='960px' src={dbPic} alt='Portrait De Daphné Battaglia ' />
                     </div>
                     <div>
-                        <h3>Daphné BATTAGLIA - Fondatrice ATTRIBUT CONSEILS </h3>
+                        <h3 translate="no">Daphné BATTAGLIA - Fondatrice ATTRIBUT CONSEILS </h3>
                         <p className='Pres-Daph'>Ma passion a toujours été d'apporter mon soutien aux hommes et aux femmes dans leur parcours professionnel, et faire connecter 2 mondes en mouvement: celui de l’entreprise et le nôtre.
                         </p>
                         <p className='Pres-Daph'>Pour moi, l'enjeu crucial est partagé : l'entreprise a un rôle essentiel à jouer en favorisant sa croissance grâce à des collaborateurs épanouis, dont le développement personnel est au cœur du projet.
