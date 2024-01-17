@@ -1,6 +1,8 @@
 import React from 'react';
 import Bandeau from '@/Assets/Images/Bandeau.jpg'
-import logo_Attribut from '@/Assets/Images/logo_Attribut.webp'
+// import logo_Attribut from '@/Assets/Images/logo_Attribut.png'
+import logo_Attribut from '@/Assets/Images/logo_Attribut_Blanc.png'
+// import logo_Attribut from '@/Assets/Images/logo_Attribut.webp'
 import logo_soleil from '@/Assets/Images/Logo_soleil.webp'
 import '@/Layouts/Header/header.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';

@@ -9,8 +9,10 @@ header {
     position: absolute;
     z-index: 10;
     width: 15%;
-    bottom: 30%;
-    left: 3%;
+    // bottom: 30%;
+    top: 10%;
+    right: 0%;
+    // left: 3%;
 
     .ContactButton {
         // margin-Left: 30%;
@@ -84,11 +86,11 @@ header {
 
 @media screen and (max-width:1750px) {
     .LogoAc {
-        width: 25%;
+        width: 45%;
     }
 
     .LogoSun {
-        width: 55%;
+        width: 65%;
     }
 }
 

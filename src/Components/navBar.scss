@@ -1,5 +1,6 @@
 nav {
     position: relative;
+    z-index: 2;
     top: 0;
     width: 100%;
     background: linear-gradient(45deg, var(--acYellow), var(--acDarkBlue))
