@@ -8,10 +8,12 @@ header {
 .headerContact {
     position: absolute;
     z-index: 10;
-    width: 15%;
+    width: 100%;
     // bottom: 30%;
-    top: 10%;
-    right: 0%;
+    top: 15%;
+    // right: 0%;
+    right: auto;
+    left: auto;
     // left: 3%;
 
     .ContactButton {
@@ -90,7 +92,17 @@ header {
     }
 
     .LogoSun {
-        width: 65%;
+        width: 60%;
+    }
+
+    .headerContact {
+
+
+        .ContactButton {
+            font-size: .65rem;
+            background-color: var(--acDarkBlue);
+            color: var(--acYellow);
+        }
     }
 }
 
@@ -144,7 +156,7 @@ header {
     }
 
     .LogoAc {
-        width: 38%;
+        width: 61%;
     }
 
     .LogoSun {
@@ -164,15 +176,15 @@ header {
     .headerContact {
         position: absolute;
         z-index: 1;
-        width: 50%;
-        top: 1rem;
-        right: 15%;
-        left: 35%;
+        width: 100%;
+        top: 15%;
+        right: auto;
+        left: auto;
 
         .ContactButton {
             font-size: .65rem;
-            background-color: var(--acDarkBlue);
-            color: var(--acYellow);
+            // background-color: var(--acDarkBlue);
+            // color: var(--acYellow);
         }
     }
 
@@ -214,7 +226,9 @@ header {
     }
 
     .LogoAc {
-        width: 52%;
+        width: 90%;
+        position: relative;
+        bottom: 1.1rem;
     }
 
     .LogoSun {
@@ -265,65 +279,34 @@ header {
     }
 
     .Logos .LogoContainerAc {
-        width: 30%;
+        width: 40%;
+        position: relative;
+        top: 30%;
     }
 
     .LogoAc {
-        width: 200%;
+        width: 160%;
+        position: relative;
+        top: .1rem;
     }
 
     .LogoSun {
         display: none;
     }
 
-    /* .PictureFont img {
-        width: 100%;
-        transform: scaleX(-1);
-        position: relative;
-        bottom: 0;
-        object-fit: cover;
+    .headerContact {
+        // position: absolute;
+        // z-index: 1;
+        width: 40%;
+        top: 30%;
+        right: 5%;
+        // left: 25%;
 
-    } */
-
-
-    /* 
-    header p {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        font-size: .8rem;
-        color: var(--acDarkBlue);
-        font-weight: bold;
-        z-index: -1;
+        // .ContactButton {
+        //     font-size: .65rem;
+        //     background-color: var(--acDarkBlue);
+        //     color: var(--acYellow);
+        // }
     }
-
-    .PictureFont {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        bottom: 30%;
-        z-index: -1;
-    }
-
-    .PictureFont img {
-        display: none;
-    }
-
-    .LogoContainerAc {
-        z-index: -1;
-        width: 100%;
-        position: absolute;
-        top: 0;
-    }
-
-    .LogoLeft {
-        width: 10%;
-        display: flex;
-        padding: 0.9rem;
-    }
-
-    .LogoContainerSun {
-        display: none;
-    } */
 
 }

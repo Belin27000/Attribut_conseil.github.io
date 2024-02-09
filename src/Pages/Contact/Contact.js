@@ -13,6 +13,8 @@ const Contact = () => {
     const [firstNameValid, setFirstNameValid] = useState('')
     const [lastNameValid, setLastNameValid] = useState('')
     const [emailValid, setEmailValid] = useState('')
+    const [sentFromEmail, setSentFromEmail] = useState('')
+    const [sentFromPhone, setSentFromPhone] = useState('')
     const [phoneValid, setPhoneValid] = useState('')
     const [whom, setWhom] = useState('')
     const [whomValid, setWhomValid] = useState('')
@@ -81,6 +83,8 @@ const Contact = () => {
         } else {
             setPhoneValid(false)
         }
+        setSentFromEmail(email)
+        setSentFromPhone(phone)
         return isValid
 
     }
@@ -198,8 +202,9 @@ const Contact = () => {
                     </form>
                 ) : (<div className='contact-form-sent'>
                     <p>Le formulaire a bien été envoyé</p>
+                    <p>Nous vous contacterons à l'adresse {sentFromEmail}</p>
+                    <p> ou au numéro suivant: {sentFromPhone} </p>
                     <Link to={'/home'}>Retour à l'acceuil</Link>
-                    {/* <Button name={'Retour à l\'accueil'} path={'/home'} /> */}
                 </div>
                 )}
 
@@ -218,3 +223,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

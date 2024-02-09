@@ -3,7 +3,8 @@ import Bandeau from '@/Assets/Images/Bandeau.jpg'
 // import logo_Attribut from '@/Assets/Images/logo_Attribut.png'
 import logo_Attribut from '@/Assets/Images/logo_Attribut_Blanc.png'
 // import logo_Attribut from '@/Assets/Images/logo_Attribut.webp'
-import logo_soleil from '@/Assets/Images/Logo_soleil.webp'
+import logo_soleil from '@/Assets/Images/Logo_soleil.png'
+// import logo_soleil from '@/Assets/Images/Logo_soleil.webp'
 import '@/Layouts/Header/header.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
 import NavBar from '@/Components/NavBar.js';
@@ -27,8 +28,8 @@ const Header = () => {
                 </div>
                 <div className='LogoContainerSun'>
                     <img
-                        width='1172'
-                        height='1072' className='LogoSun' src={logo_soleil} alt='Attribut Conseil Logo sun' />
+                        width='500'
+                        height='500' className='LogoSun' src={logo_soleil} alt='Attribut Conseil Logo sun' />
                 </div>
             </Link>
         </header>
