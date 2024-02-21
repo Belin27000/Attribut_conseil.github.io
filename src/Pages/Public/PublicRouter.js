@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Home from '@/Pages/Acceuil/Home.js';
 import Layout from '@/Layouts/Layout.js';
 import About from '../Apropos/About.js';
@@ -26,10 +26,10 @@ const PublicRouter = () => {
             <Route element={<Layout />}>
                 <Route index element={<Home />} />
 
-                <Route path="/qui-sommes-nous" element={<About />} />
-                <Route path="/temoignages" element={<About />} />
-                <Route path='/bilan-de-competences' element={<Bilan />} />
-                <Route path="/fr/home" element={<Home />} />
+                <Route path="/qui-sommes-nous" element={<Navigate to="/about" />} />
+                <Route path="/temoignages" element={<Navigate to="/about" />} />
+                <Route path='/bilan-de-competences' element={<Navigate to="/bilan-de-competence" />} />
+                <Route path="/fr/home" element={<Navigate to="/home" />} />
 
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
