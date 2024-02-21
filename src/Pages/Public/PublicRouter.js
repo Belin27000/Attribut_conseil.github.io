@@ -26,6 +26,11 @@ const PublicRouter = () => {
             <Route element={<Layout />}>
                 <Route index element={<Home />} />
 
+                <Route path="/qui-sommes-nous" element={<About />} />
+                <Route path="/temoignages" element={<About />} />
+                <Route path='/bilan-de-competences' element={<Bilan />} />
+                <Route path="/fr/home" element={<Home />} />
+
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
 
