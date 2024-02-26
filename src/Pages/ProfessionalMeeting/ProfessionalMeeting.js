@@ -5,6 +5,7 @@ import ContactButton from '../../Components/Button/ContactButton.js';
 const ProfessionalMeeting = () => {
     return (
         <section className='ProfessionalMeeting'>
+            <h1 className='sr-only'>Entretien professionnel Fontainebleau</h1>
             <h2 className="ProfessionalMeeting-title">FOCUS SUR L‘ENTRETIEN PROFESSIONNEL</h2>
             <article className='ProfessionalMeeting-article_bgWhite'>
                 <p className='ProfessionalMeeting-article_blue'>L'article L.6315-1 du Code du travail stipule : "Tous les deux ans, l'employeur assure un entretien professionnel à chaque salarié. Cet entretien a pour objet de permettre au salarié d'être acteur de son évolution professionnelle, notamment en favorisant la construction d'un parcours professionnel personnalisé."</p>

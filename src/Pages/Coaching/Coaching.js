@@ -5,6 +5,7 @@ import ContactButton from '../../Components/Button/ContactButton.js';
 const Coaching = () => {
     return (
         <section className='Coaching'>
+            <h1 className='sr-only'>Coaching Fontainebleau</h1>
             <h2 className="Coaching-title" translate="no">COACHING</h2>
             <article className="Coaching-article">
                 <p>Notre service d'accompagnement en coaching axé sur la systémie est conçu pour vous aider à comprendre les relations et les dynamiques qui vous entourent, et à les utiliser de manière constructive pour atteindre vos objectifs.

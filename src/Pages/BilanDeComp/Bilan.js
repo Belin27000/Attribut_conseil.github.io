@@ -13,6 +13,7 @@ const Bilan = () => {
         ;
     return (
         <section className='Bilan'>
+            <h1 className='sr-only'>Centre de bilan de compétences Fontainebleau</h1>
             <h2 className="Bilan-title">Bilan de compétences</h2>
             <div className="Bilan-Qualiopi">
                 <img src={Qualiopi} alt='qualiopi' />

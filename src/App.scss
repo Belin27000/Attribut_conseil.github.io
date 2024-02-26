@@ -40,6 +40,14 @@ main {
 
 }
 
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* @media (max-width: 500px) {
   main {
     margin: 1rem 0;

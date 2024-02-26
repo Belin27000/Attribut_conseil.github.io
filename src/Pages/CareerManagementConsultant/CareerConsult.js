@@ -8,6 +8,7 @@ import allFiles from '../../_Services/fileToDownload.service.js';
 const CareerConsult = () => {
     return (
         <section className='CareerConsult'>
+            <h1 className='sr-only'>Attribut Conseils forme au metier de cultant en gestion de carrières</h1>
             <h2 className="CareerConsult-title">FORMATION METIER CONSULTANT EN GESTION DE CARRIERES</h2>
             <article className="CareerConsult-article">
                 <p>Ce programme exhaustif est divisé en deux niveaux distincts : Consultant Niveau 1 et Consultant Niveau 2  axé expert bilan. Chez Attribut Conseils, nous comprenons que chaque apprenant est unique. C'est pourquoi nous offrons la possibilité de personnaliser votre formation selon vos besoins spécifiques. Nous pouvons également créer des modules de perfectionnement de courtes durées et sur mesure pour répondre à vos attentes particulières. N'hésitez pas à nous contacter pour discuter de vos besoins et élaborer ensemble un programme de formation adapté à vos objectifs. Ces formations sont accessibles en classe virtuelle ou en présentiel.

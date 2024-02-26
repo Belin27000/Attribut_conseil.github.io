@@ -5,12 +5,12 @@ import ContactButton from '../../Components/Button/ContactButton.js';
 const PracticesAnalyse = () => {
     return (
         <section className='PracticesAnalyse'>
-            <h3 className="PracticesAnalyse-title">ANALYSES DES PRATIQUES PROFESSIONNELLES - SUPERVISION </h3>
+            <h1 className="PracticesAnalyse-title">ANALYSES DES PRATIQUES PROFESSIONNELLES - SUPERVISION </h1>
             <article className='PracticesAnalyse-article_bgWhite'>
                 <p className='PracticesAnalyse-article_blue'>Cette formation vise à offrir aux professionnels un espace de réflexion et d'apprentissage, favorisant le développement de compétences essentielles dans leur pratique. L’analyse de pratiques permet de maintenir les apprentissages présents: poser le cadre, tenir la posture, revisiter les théories, naviguer dans la dynamique de séance, réviser les outils ou en découvrir…</p>
             </article>
             <article className="PracticesAnalyse-article">
-                <h3 className="PracticesAnalyse-article-title">POUR QUI?</h3>
+                <h2 className="PracticesAnalyse-article-title">POUR QUI?</h2>
                 <p>Cette formation est spécialement conçue pour répondre aux besoins de tous les professionnels travaillant avec divers publics, que ce soit dans le domaine du management, de la thérapie, de l'insertion, du coaching ou de l'accompagnement au changement, formateurs. Vous êtes constamment sur le terrain, confrontés à une multitude de problématiques. Notre formation se déroule en groupe, avec un minimum de 5 personnes, en visioconférence ou en présentiel.
                 </p>
                 <ul className='doubleList'>
@@ -39,7 +39,7 @@ const PracticesAnalyse = () => {
                         </ul>
                     </li>
                 </ul>
-                <h3 className="PracticesAnalyse-article-title">PROGRAMME</h3>
+                <h2 className="PracticesAnalyse-article-title">PROGRAMME</h2>
                 <p>Les séances d'analyse permettront d’exposer vos cas, de recevoir du feed back sur vos pratiques ainsi que des pistes de travail et d’amélioration et de trouver une solution à la situation que vous présentez. Au-delà du cas traité, votre difficulté “personnelle” liée au cas pourra être évoquée.</p>
                 <p>Vous vous enrichirez également en assistant au traitement des cas apportés par les autres participants.</p>
                 <ul className='globalList'>
@@ -51,7 +51,7 @@ const PracticesAnalyse = () => {
                     <li className='Title'><strong> Co construction des solutions: </strong>Partage des connaissances ou solutions pour aider à résoudre la problématiques</li>
                     <li>Découverte d’outils de résolution de problèmes</li>
                 </ul>
-                <h3 className="PracticesAnalyse-article-title">MODALITÉS DE PARTICIPATION</h3>
+                <h2 className="PracticesAnalyse-article-title">MODALITÉS DE PARTICIPATION</h2>
                 <p>“L’animateur” expert des groupes d’analyses de pratiques est  garant:</p>
                 <ul className='globalList'>
                     <li className='Title'><strong> du cadre structuré :</strong></li>

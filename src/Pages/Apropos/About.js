@@ -9,7 +9,7 @@ const About = () => {
     return (
         <section className='About'>
 
-            {/* QUI SOMMES NOUS */}
+            <h1 className='sr-only'>Bilan de compétences Fontainebleau - qui sommes nous</h1>
             <h2>Qui sommes nous ?</h2>
 
             <div className='Pres'>

@@ -13,25 +13,26 @@ const BusinessCreationTraining = () => {
 
     return (
         <section className='Bct'>
-            <h2 className="Bct-title">FORMATION CRÉATION D‘ENTREPRISE INDIVIDUALISÉE </h2>
+
+            <h1 className="Bct-title">FORMATION CRÉATION D‘ENTREPRISE INDIVIDUALISÉE </h1>
             <div className="Bct-Qualiopi">
                 <img src={Qualiopi} alt='qualiopi' />
                 <div>
-                    <h3>La certification Qualiopi a été délivrée pour la catégorie d'action suivante :
+                    <h2>La certification Qualiopi a été délivrée pour la catégorie d'action suivante :
                         Bilan de compétences et actions de formation
-                    </h3>
+                    </h2>
                     <p>Valable jusqu’au {QualiopiValidity}</p>
                 </div>
             </div>
             <article className="Bct-article">
-                <h3 className="Bct-article-title">FINALITÉS</h3>
+                <h2 className="Bct-article-title">FINALITÉS</h2>
                 <p>A l'issue de ce parcours de formation, le créateur ou repreneur d'entreprise aura vérifié la fiabilité de son projet grâce a un diagnostic et sera bien informé sur toutes les étapes de la création d'entreprise.</p>
                 <p>Il aura été guidé, par des outils, du conseil et de l'accompagnement personnel, pour construire son rétroplanning et savoir quelles étapes il doit suivre pour créer son entreprise.</p>
                 <p>Plus particulièrement, il aura compris comment réaliser une étude de marché, comment rédiger un business plan. Mais aussi, il aura reçu les informations nécessaires pour faire son choix de statut juridique et saura comment se diriger vers les professionnels adéquats pour confirmer ce choix (comptable, avocat, notaire, ...).</p>
                 <p>Enfin, il aura été informé sur la marche à suivre pour effectuer les démarches administratives de la création d'entreprise auprès du cfe ou de l'urssaf.</p>
             </article>
             <article className="Bct-article_bgWhite">
-                <h3 className="Bct-article_blue">Réserver votre formation dès maintenant, à distance ou en présentiel :</h3>
+                <h2 className="Bct-article_blue">Réserver votre formation dès maintenant, à distance ou en présentiel :</h2>
                 <div>
                     <ExternButton text='Je suis éligible au CPF' />
                     <ContactButton />
@@ -39,7 +40,7 @@ const BusinessCreationTraining = () => {
                 <p className="Bct-article_blue">Délais d’accès : 10 jours maximum</p>
             </article>
             <article className="Bct-article">
-                <h3 className="Bct-article-title">PROGRAMME</h3>
+                <h2 className="Bct-article-title">PROGRAMME</h2>
                 <p>Chaque formation à la création d’entreprise est spécifique à un individu, c’est une formation individualisée. Cette formation s’appuie sur une méthode générale mais avec des contenus et outils adaptés au cas particulier (Situation et contexte du client, objectif, niveau, fonction...).
                 </p>
                 <ol>

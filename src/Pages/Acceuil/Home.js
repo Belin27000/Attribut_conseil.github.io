@@ -12,6 +12,7 @@ const Home = () => {
     console.log(pictures.pictures);
     return (
         <div className='Home'>
+            <h1 className='sr-only'>Bilan de compétences Fontainebleau - acceuil</h1>
             <section className='topSideHome'>
                 <div translate="no" className='PunchLine'>"Le travail nous travaille, ensemble faisons en sorte qu'il nous travaille bien"</div>
                 <div className='DiffBloc'>

@@ -7,6 +7,7 @@ import allFiles from '../../_Services/fileToDownload.service.js';
 const TrainingTrainer = () => {
     return (
         <section className='TrainingTrainer'>
+            <h1 className='sr-only'>Formation metier de formateur - Attribut conseils</h1>
             <h2 className="TrainingTrainer-title">FORMATION METIER FORMATEUR ADULTES
             </h2>
             <article className="TrainingTrainer-article">

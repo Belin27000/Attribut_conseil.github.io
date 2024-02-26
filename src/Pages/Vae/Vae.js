@@ -8,6 +8,8 @@ import allFiles from '../../_Services/fileToDownload.service.js';
 const Vae = () => {
     return (
         <section className='Vae'>
+            <h1 className='sr-only'>Vae Fontainebleau</h1>
+
             <h2 className='Vae-title'>Accompagnement VAE - VAPP</h2>
             <article className='Vae-article'>
                 <h3 className='Vae-article-title'>Et si je validais mes compétences par un diplôme… La VAE/La VAPP</h3>

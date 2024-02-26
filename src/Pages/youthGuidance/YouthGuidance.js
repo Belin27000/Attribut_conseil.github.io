@@ -7,6 +7,7 @@ import allFiles from '../../_Services/fileToDownload.service.js';
 const YouthGuidance = () => {
     return (
         <section className='YouthGuidance'>
+            <h1 className='sr-only'>Orientation des jeunes générations</h1>
             <h2 className="YouthGuidance-title">ORIENTATION JEUNES</h2>
             <h3 className="YouthGuidance-article-title">L’ORIENTATION: ÇA S’ÉDUQUE!</h3>
             <article className="YouthGuidance-article">

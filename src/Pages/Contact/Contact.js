@@ -111,6 +111,7 @@ const Contact = () => {
     return (
         <div className='contact'>
             {/* <h1 className='sr-only' tabIndex={0}>Attribut conseils bilans de compétences en Ile de France, Seine et marne et Essonne - contact</h1> */}
+            <h1 className='sr-only'>Bilan de compétences Fontainebleau - contact</h1>
 
             <h2 className='contact-title' translate="no">Nous contacter</h2>
             <p className='yellow'>Vous êtes intéressé(e) par un de nos services ?</p>
