@@ -48,8 +48,16 @@ main {
   overflow: hidden;
 }
 
-.breadcrumb>* {
-  color: white;
+.breadcrumb {
+  margin-top: 1rem;
+
+  >* {
+    color: white;
+
+    :visited {
+      color: white;
+    }
+  }
 }
 
 /* @media (max-width: 500px) {

@@ -59,7 +59,7 @@ const PublicRouter = () => {
                 <Route path="/gestion_Formation_externalisee" element={<ExternTrainManagement />} />
 
                 {/* PAGES - SEO */}
-                <Route path="/bilan-de-competence-fontainebleau" element={<Fontainebleau />} />
+                <Route path="/bilan-de-competence/bilan-de-competence-fontainebleau" element={<Fontainebleau />} />
             </Route>
         </Routes>
     );

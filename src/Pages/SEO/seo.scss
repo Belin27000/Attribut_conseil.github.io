@@ -1,0 +1,171 @@
+.Bilan-Bleau {
+    margin: 0 2rem;
+    padding-bottom: 2rem;
+    color: white;
+
+    h1 {
+        margin-top: 0;
+        text-align: left;
+        width: 100%;
+        font-size: 2rem;
+
+        span {
+            color: var(--acYellow);
+        }
+
+    }
+
+    &_Yellow {
+        color: var(--acYellow);
+        font-size: 29px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    &-article {
+        line-height: 2rem;
+
+        p {
+            font-size: 20px;
+            text-align: left;
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .Bilan-Bleau {
+        .ContactButton {
+            // width: 40%;
+            background-color: #DBBE3F;
+            font-size: 1.5rem;
+            margin: 2rem 0;
+            padding: 1rem 3rem;
+        }
+
+        h1 {
+            width: 55%;
+            font-size: 5rem;
+        }
+
+        &-article {
+            margin: 1rem 13rem;
+
+            .stars {
+                color: #DBBE3F;
+                margin-left: 1rem;
+
+                >* {
+                    margin-left: .1rem;
+                }
+            }
+
+            li {
+                text-align: start;
+            }
+
+        }
+
+        .timeline {
+            position: relative;
+            margin-bottom: 5rem;
+            text-align: start;
+
+            h2,
+            h3 {
+                font-size: 2rem;
+                margin: 1rem 13rem;
+            }
+
+            p {
+                font-size: 1.6em;
+                margin: 1rem 13rem;
+                line-height: 2rem;
+            }
+
+            .text-end {
+                text-align: end;
+            }
+
+            .text-centered {
+                text-align: center;
+            }
+
+
+            &.right-container::before {
+                content: "";
+                position: absolute;
+                /* positionner les ronds par rapport à chaque article */
+                top: 9%;
+                /* positionner le rond au milieu de l'article */
+                left: 10%;
+                /* ajustez la position du rond par rapport au côté gauche de l'article */
+                transform: translateY(-50%);
+                /* centrez le rond verticalement */
+                width: 55px;
+                /* largeur du rond */
+                height: 55px;
+                /* hauteur du rond */
+                background-color: var(--acYellow);
+                /* couleur jaune */
+                border-radius: 50%;
+                /* pour obtenir un cercle */
+            }
+
+            &.right-container::after {
+                content: "";
+                position: absolute;
+                top: calc(9% + 25px);
+                /* positionner le trait à partir du centre du rond */
+                left: calc(10% + 25px);
+                /* aligner le trait avec le bord gauche de l'article */
+                width: 5px;
+                /* épaisseur du trait */
+                height: calc(100% + 45px);
+                /* hauteur du trait, ajustée pour atteindre le bas de l'article */
+                background-color: var(--acYellow);
+                /* couleur jaune */
+            }
+
+            &.left-container::before {
+                content: "";
+                position: absolute;
+                /* positionner les ronds par rapport à chaque article */
+                top: 9%;
+                /* positionner le rond au milieu de l'article */
+                right: 10%;
+                /* ajustez la position du rond par rapport au côté gauche de l'article */
+                transform: translateY(-50%);
+                /* centrez le rond verticalement */
+                width: 55px;
+                /* largeur du rond */
+                height: 55px;
+                /* hauteur du rond */
+                background-color: var(--acYellow);
+                /* couleur jaune */
+                border-radius: 50%;
+                /* pour obtenir un cercle */
+            }
+
+            &.left-container::after {
+                content: "";
+                position: absolute;
+                top: calc(9% + 25px);
+                /* positionner le trait à partir du centre du rond */
+                right: calc(10% + 25px);
+                /* aligner le trait avec le bord gauche de l'article */
+                width: 5px;
+                /* épaisseur du trait */
+                height: calc(100% + 48px);
+                /* hauteur du trait, ajustée pour atteindre le bas de l'article */
+                background-color: var(--acYellow);
+                /* couleur jaune */
+            }
+
+            position: relative;
+            /* assurez-vous que les éléments positionnés à l'intérieur de .timeline sont positionnés par rapport à elle */
+            padding-left: 30px;
+            /* espace pour le rond jaune */
+
+        }
+    }
+}
