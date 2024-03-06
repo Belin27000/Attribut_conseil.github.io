@@ -48,6 +48,10 @@ main {
   overflow: hidden;
 }
 
+.breadcrumb>* {
+  color: white;
+}
+
 /* @media (max-width: 500px) {
   main {
     margin: 1rem 0;

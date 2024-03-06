@@ -1,0 +1,32 @@
+.Bilan-Bleau {
+    margin: 2rem;
+    color: white;
+
+    h1 {
+        text-align: left;
+        width: 55%;
+        font-size: 60px;
+
+        span {
+            color: var(--acYellow);
+        }
+
+    }
+
+    &_Yellow {
+        color: var(--acYellow);
+        font-size: 29px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    &-article {
+        line-height: 2rem;
+
+        p {
+            font-size: 20px;
+            text-align: left;
+            margin: 1rem 13rem;
+        }
+    }
+}

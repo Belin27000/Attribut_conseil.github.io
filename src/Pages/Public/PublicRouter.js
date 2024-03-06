@@ -19,6 +19,8 @@ import PracticesAnalyse from '../PracticesAnalyse/PracticesAnalyse.js';
 import ProfessionalMeeting from '../ProfessionalMeeting/ProfessionalMeeting.js';
 import Contact from '../Contact/Contact.js';
 import ExternTrainManagement from '../ExternTrainManagement/ExternTrainManagement.js';
+//SEO
+import Fontainebleau from '../SEO/Fontainebleau.js';
 
 const PublicRouter = () => {
     return (
@@ -30,6 +32,7 @@ const PublicRouter = () => {
                 <Route path="/temoignages" element={<Navigate to="/about" />} />
                 <Route path='/bilan-de-competences' element={<Navigate to="/bilan-de-competence" />} />
                 <Route path="/fr/home" element={<Navigate to="/home" />} />
+
 
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
@@ -55,6 +58,8 @@ const PublicRouter = () => {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/gestion_Formation_externalisee" element={<ExternTrainManagement />} />
 
+                {/* PAGES - SEO */}
+                <Route path="/bilan-de-competence-fontainebleau" element={<Fontainebleau />} />
             </Route>
         </Routes>
     );
