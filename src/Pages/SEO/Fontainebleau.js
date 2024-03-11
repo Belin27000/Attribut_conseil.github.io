@@ -9,10 +9,10 @@ import { FaStar } from "react-icons/fa";
 
 const Fontainebleau = () => {
     return (
-        <section className='Bilan-Bleau'>
+        <section className='Seo'>
             <h1><span>Votre</span><br /> BILAN DE COMPÉTENCES A FONTAINEBLEAU</h1>
-            <p className='Bilan-Bleau_Yellow'>Vous cherchez à réaliser un bilan de compétences à Fontainebleau ? Contactez notre cabinet spécialisé en Seine-et-Marne, retour rapide assuré !</p>
-            <article className="Bilan-Bleau-article">
+            <p className='Seo_Yellow'>Vous cherchez à réaliser un bilan de compétences à Fontainebleau ? Contactez notre cabinet spécialisé en Seine-et-Marne, retour rapide assuré !</p>
+            <article className="Seo-article">
                 <p>Le bilan de compétences est un dispositif puissant pour (re)positionner professionnellement, après avoir identifié vos potentialités et vos aspirations et de les avoir confrontés aux réalités du marché ou du contexte de votre entreprise.
                 </p>
                 <p>A travers l'analyse dynamique de votre parcours personnel et professionnel dans un objectif de réussite et pour atteindre un résultat concret ! Il permet également d'agir en s'appuyant sur une meilleure connaissance de soi, à partir d'un projet clair et un plan d'action défini.
@@ -65,10 +65,10 @@ const Fontainebleau = () => {
             <article className="timeline left-container">
                 <h3 className='text-centered'>La création d'entreprise</h3>
                 <p className='text-end'>Composé de plusieurs tests, le bilan de compétences se distingue également comme un levier pertinent pour le professionnel qui désire mieux appréhender son <b>projet de création d'entreprise</b>. Un accompagnement personnel vous permet de mieux connaître votre profil d'entrepreneur. Vos différentes facultés sont clairement identifiées et vous savez quels sont vos points forts et les éléments sur lesquels vous devez encore travailler.</p>
-                <p className='text-end'>Les entretiens pour votre <b>bilan de compétences</b> à Fontainebleau permettent par ailleurs de consolider votre projet. Vous obtenez des informations précieuses sur les dispositifs d'aides accessibles aux nouveaux entrepreneurs. Tout cela est déterminant si vous souhaitez créer les meilleures conditions pour mettre en place votre activité entrepreneuriale. Il est d'ailleurs possible d'opter pour <Link to="/formation_creation_entreprise">une formation à la création d'entreprise en Seine-et-Marne</Link> pour aller plus loin sur le sujet. Vous ressortez avec une feuille de route précisant les actions indispensables au bon développement de votre projet.</p>
+                <p className='text-end'>Les entretiens pour votre <b>bilan de compétences</b> à Fontainebleau permettent par ailleurs de consolider votre projet. Vous obtenez des informations précieuses sur les dispositifs d'aides accessibles aux nouveaux entrepreneurs. Tout cela est déterminant si vous souhaitez créer les meilleures conditions pour mettre en place votre activité entrepreneuriale. Il est d'ailleurs possible d'opter pour <Link to="/formation_creation_entreprise#top">une formation à la création d'entreprise en Seine-et-Marne</Link> pour aller plus loin sur le sujet. Vous ressortez avec une feuille de route précisant les actions indispensables au bon développement de votre projet.</p>
             </article>
             <ContactButton text="Contactez-nous" />
-            <article className="Bilan-Bleau-article">
+            <article className="Seo-article">
                 <h2>Bilan de compétences à Fontainebleau </h2>
                 <p>Faites confiance à Attribut Conseils - C’est 170 avis google<span className='stars'><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></span></p>
                 <p>Réaliser des bilans de compétences à Fontainebleau, c'est faire le point de vos aptitudes, vos <b>pistes d'évolution</b> complétés par ainsi que les améliorations nécessaires. Les résultats vous aident à identifier vos besoins en termes de formation. Vous apprenez à avoir confiance en vos capacités et à travailler sur vos points faibles pour une meilleure intégration professionnelle. Chez Attribut Conseils, cela passe par trois principales étapes qui sont : </p>

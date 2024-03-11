@@ -1,0 +1,83 @@
+.GoogleRate {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .GoogleRate {
+        background-color: white;
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        // position: relative;
+        color: black;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        bottom: 20%;
+        left: 37%;
+        box-shadow: 0 0 5px 0px black;
+        padding: 1rem;
+
+        a {
+            text-decoration: none;
+        }
+
+        .globalRate {
+            padding: .5rem 0;
+        }
+
+        h1 {
+            color: var(--acDarkBlue);
+            width: 100%;
+            font-size: 1.3rem;
+            // position: relative;
+            top: 10%;
+            margin-top: 0;
+        }
+
+        .rateStars {
+            font-size: 1.5rem;
+            color: #FB8E28;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 50%;
+            flex-direction: column;
+
+            .GoogleRate_Logo {
+                width: 35%;
+                height: auto;
+            }
+
+            img {
+                height: 100%;
+            }
+        }
+
+        button {
+            // position: relative;
+            width: 70%;
+            top: 20%;
+            border-radius: 15px;
+            border: 0;
+            background-color: #2067e7;
+            padding: 0.3rem .51rem;
+            align-content: center;
+
+            a {
+                color: white;
+            }
+
+
+            img {
+                height: 15px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+}

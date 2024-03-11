@@ -13,6 +13,8 @@ import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import allFiles from '../../_Services/fileToDownload.service.js';
 import Handi from '../../Assets/Images/Handicapped.png'
 import { FaHeart } from 'react-icons/fa';
+// import GoogleRate from '../../Components/Google/GlobalRate/GoogleRate.js';
+// import GoogleMobile from '../../Components/Google/MobileRate/GoogleMobile.js';
 
 const Footer = () => {
     const QualiopiValidity = data.Qualiopi.validationDate
@@ -122,6 +124,10 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            {/* <GoogleRate /> */}
+            {/* <div className="ReviewPad">
+                <GoogleMobile />
+            </div> */}
         </footer>
     );
 };

@@ -1,4 +1,8 @@
 .Footer {
+    .ReviewPad {
+        display: none;
+    }
+
     width: 100%;
     position: relative;
     bottom: 0;
@@ -123,6 +127,9 @@
 
 @media screen and (min-width:768px) {
     .Footer {
+        .ReviewPad {
+            display: block;
+        }
 
         .FooterLogoContainer {
             width: 45%;
@@ -219,9 +226,23 @@
             margin: 0;
         }
     }
+
+
 }
 
 @media screen and (min-width: 992px) {
+    // .GoogleRate {
+    //     position: absolute;
+    //     bottom: 10px;
+    //     left: 15rem;
+    //     box-shadow: 0 0 5px 0px black;
+    // }
+
+
+    .Footer .ReviewPad {
+        display: none;
+    }
+
     .Footer .Map {
         // height: 100%;
         width: 30%;

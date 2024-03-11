@@ -21,6 +21,7 @@ import Contact from '../Contact/Contact.js';
 import ExternTrainManagement from '../ExternTrainManagement/ExternTrainManagement.js';
 //SEO
 import Fontainebleau from '../SEO/Fontainebleau.js';
+import LandingPage from '../SEO/LandingPage/LandingPage.js';
 
 const PublicRouter = () => {
     return (
@@ -59,6 +60,7 @@ const PublicRouter = () => {
                 <Route path="/gestion_Formation_externalisee" element={<ExternTrainManagement />} />
 
                 {/* PAGES - SEO */}
+                <Route path="/bilan-de-competence/Landing-Page" element={<LandingPage />} />
                 <Route path="/bilan-de-competence/bilan-de-competence-fontainebleau" element={<Fontainebleau />} />
             </Route>
         </Routes>

@@ -1,0 +1,41 @@
+.movie {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0 !important;
+    /* Pour s'assurer que les coins arrondis sont appliqués à la vidéo */
+    border: 15px solid #5F9CBB;
+    position: relative;
+
+    .responsive-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Cela permettra à la vidéo de couvrir l'espace disponible */
+    }
+
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // Style your button as needed
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background: #fff;
+        border: none;
+        border-radius: 5px;
+
+        &:hover {
+            background: #ddd;
+        }
+
+        display: block;
+    }
+
+    // &:hover .play-button {
+    //     display: block;
+    // }
+}

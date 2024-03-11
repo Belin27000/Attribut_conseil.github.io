@@ -3,7 +3,8 @@
 :root {
   --acDarkBlue: #006185;
   --acLightBlue: #609CBB;
-  --acYellow: #FFD000;
+  // --acYellow: #FFD000;
+  --acYellow: #DBBE3F;
   --acWhite: #EDE3E4;
   --acPurple: #E7DFE8;
 }
@@ -49,6 +50,7 @@ main {
 }
 
 .breadcrumb {
+  display: none;
   margin-top: 1rem;
 
   >* {

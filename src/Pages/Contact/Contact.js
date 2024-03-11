@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './contact.scss'
 import { FaPhone } from "react-icons/fa6";
@@ -7,6 +7,9 @@ import { Link } from 'react-router-dom';
 
 
 const Contact = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     const form = useRef();
 
     const [formValid, setFormValid] = useState(false)

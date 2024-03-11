@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '@/Components/navBar.scss'
 import { FaBars, FaTimes, FaAngleLeft } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+// import GoogleMobile from './Google/MobileRate/GoogleMobile.js';
 
 const NavBarTest = () => {
 
@@ -70,6 +71,11 @@ const NavBarTest = () => {
     }, [])
     return (
         <nav>
+            {(!toggleMenu || screenWidth > 500) && (
+                <div className='ReviewMobile'>
+                    {/* <GoogleMobile /> */}
+                </div>
+            )}
             {(toggleMenu || screenWidth > 500) && (
                 <ul className="list">
                     <li><Link to="/home" className="items" onClick={toggleNav}><div>Accueil</div></Link></li>

@@ -164,6 +164,14 @@ nav {
         background: white;
     }
 
+    .googleMobile {
+        display: block;
+
+        &.isActive {
+            display: none;
+        }
+    }
+
     .list {
         flex-direction: column;
         height: auto;
@@ -205,12 +213,16 @@ nav {
         fill: var(--acDarkBlue);
         display: block;
         font-size: 2rem;
+
+
     }
 
     .closeIconMenu {
         display: block;
         font-size: 2rem;
         fill: var(--acWhite);
+
+
     }
 
 

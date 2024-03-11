@@ -1,0 +1,54 @@
+.googleMobile {
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    z-index: 20;
+    right: 0;
+    left: 0;
+    width: 50%;
+
+    a {
+        text-decoration: none;
+
+        &:visited {
+            color: var(--acDarkBlue);
+        }
+    }
+
+    .rateStars {
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        color: #FB8E28;
+        width: 100%;
+
+        .Logo_google {
+            height: 100%;
+        }
+
+        .ratingNumber {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+}
+
+@media screen and (min-width: 769px) {
+    .ReviewMobile {
+        display: none;
+    }
+
+
+    .googleMobile {
+        bottom: 5rem;
+        width: 25%;
+        background-color: white;
+        top: auto;
+        left: 10rem;
+        border-radius: 15px;
+        padding: .5rem;
+    }
+}

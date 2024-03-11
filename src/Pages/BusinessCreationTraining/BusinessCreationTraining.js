@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './businessCreationTraining.scss'
 import Qualiopi from '../../Assets/Images/Logo_Qualiopi.png'
 import ExternButton from '../../Components/Button/ExternalButton/ExternButton.js';
@@ -10,15 +10,18 @@ import allFiles from '../../_Services/fileToDownload.service.js';
 
 const BusinessCreationTraining = () => {
     const QualiopiValidity = data.Qualiopi.validationDate
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
-        <section className='Bct'>
+        <section className='Bct' >
 
-            <h1 className="Bct-title">FORMATION CRÉATION D‘ENTREPRISE INDIVIDUALISÉE </h1>
+            <h1 className="Bct-title" >FORMATION CRÉATION D‘ENTREPRISE INDIVIDUALISÉE </h1>
             <div className="Bct-Qualiopi">
                 <img src={Qualiopi} alt='qualiopi' />
                 <div>
-                    <h2>La certification Qualiopi a été délivrée pour la catégorie d'action suivante :
+                    <h2 id="top">La certification Qualiopi a été délivrée pour la catégorie d'action suivante :
                         Bilan de compétences et actions de formation
                     </h2>
                     <p>Valable jusqu’au {QualiopiValidity}</p>

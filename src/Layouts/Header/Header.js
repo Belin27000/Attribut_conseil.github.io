@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Bandeau from '@/Assets/Images/Bandeau.jpg'
 // import logo_Attribut from '@/Assets/Images/logo_Attribut.png'
 import logo_Attribut from '@/Assets/Images/logo_Attribut_Blanc.png'
@@ -11,6 +11,9 @@ import NavBar from '@/Components/NavBar.js';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <header className='Header'>
             <div className="headerContact">
