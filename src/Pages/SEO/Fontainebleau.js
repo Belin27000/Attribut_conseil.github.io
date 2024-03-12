@@ -1,10 +1,17 @@
-import React from 'react';
-import './seo.scss';
 import ScrollToTop from '../../Components/Button/ScrollButton/ScrollToTop.js';
 import TelButton from '../../Components/Button/TelButton/TelButton.js';
 import ContactButton from '../../Components/Button/ContactButton.js';
-import { Link } from 'react-router-dom';
+import Qualiopi from '@/Assets/Images/Logo_Qualiopi.png'
+import Cpf from '@/Assets/Images/logo_CPF.webp'
+import climb from '@/Assets/video/Grimpeur.mp4'
+import Movie from '@/Components/Movie/Movie.js';
+import Arc from '@/Assets/video/Tir_Arc.mp4'
+import Tree from '@/Assets/video/Plante.mp4'
 import { FaStar } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import React from 'react';
+import './seo.scss';
+
 
 
 const Fontainebleau = () => {
@@ -22,26 +29,38 @@ const Fontainebleau = () => {
                 </p>
                 <p>Attribut Conseils propose son expertise pour aider chacun à réussir et à s'épanouir dans le monde du travail. Notre équipe est disponible pour vos bilans de compétences en Île-de-France, plus précisément à Fontainebleau dans le département de Seine-et-Marne.</p>
             </article>
-            <article className="timeline right-container">
+            <article className="timeline right-container withMovie">
                 <h2>Qui peut faire un bilan de compétences ?</h2>
                 <div>
                     <p>Le cabinet ATTRIBUT CONSEILS spécialisé dans la gestion de carrière professionnelle réalisent des <b>bilans de compétences</b> pour tous types de profils. Que vous exerciez un métier dans le public ou le privé, quel que soit votre niveau, votre statut et votre secteur d’activité. Dirigeant, cadre supérieur, technicien ou ouvrier, vous êtes concerné, peu importe votre statut ou votre métier.</p>
+                    <Movie src={climb} />
                 </div>
             </article>
-            <article className="timeline right-container">
+            <article className="timeline right-container articleCertif">
                 <h3>Le bilan de compétences pour les salariés et pour les demandeurs d'emploi</h3>
-                <p>Vous avez <b>cumulé des droits à la formation</b>, votre compte CPF est crédité une fois par an. Le financement d’un bilan de compétences dépend de votre situation, statut et des modalités souhaitées. </p>
-                <p>Pour financer <b>le bilan de compétences</b> vous avez 4 possibilités : utiliser vos droits CPF, le plan de développement des compétences de votre employeur, France Travail ou le financement personnel.Vous pouvez effectuer <b>le bilan de compétences</b> sur le temps de travail ou hors temps de travail sans prévenir votre employeur. </p>
-                <p>Pour mieux connaitre vos droits à la formation, les modalités de financements pour les salariés du public ou du privé</p>
+                <div>
+                    <p>Vous avez <b>cumulé des droits à la formation</b>, votre compte CPF est crédité une fois par an. Le financement d’un bilan de compétences dépend de votre situation, statut et des modalités souhaitées. </p>
+                    <p>Pour financer <b>le bilan de compétences</b> vous avez 4 possibilités : utiliser vos droits CPF, le plan de développement des compétences de votre employeur, France Travail ou le financement personnel.Vous pouvez effectuer <b>le bilan de compétences</b> sur le temps de travail ou hors temps de travail sans prévenir votre employeur. </p>
+                    <p>Pour mieux connaitre vos droits à la formation, les modalités de financements pour les salariés du public ou du privé</p>
+                </div>
+                <div className="articleCertif-pic">
+                    < img src={Qualiopi} alt="Logo Qualiopi" />
+                    < img className='LogCpf' src={Cpf} alt="Logo Qualiopi" />
+                </div>
             </article>
             <TelButton number="06 98 88 15 55" />
             <article className="timeline left-container">
                 <h2>Pourquoi faire un bilan de compétences ?</h2>
                 <p>Différents objectifs peuvent vous amener à prendre un rendez-vous chez des consultants tels qu'<b>Attribut Conseils</b> pour un bilan de compétences. C'est un outil puissant qui permet de répondre à plusieurs objectifs de gestion de carrière.</p>
             </article>
-            <article className="timeline left-container">
+            <article className="timeline left-container withMovie">
                 <h3 className='text-centered'>L'évaluation de vos compétences pour un changement professionnel</h3>
-                <p className='text-end'>Le bilan de compétences est un excellent point de départ lorsque vous envisagez une reconversion. En exerçant votre métier actuel ou dans votre vie personnelle, vous avez acquis des connaissances techniques et des qualités relationnelles indispensables dans la <b>vie professionnelle</b>. Grâce au bilan de compétences, aux tests de personnalité, <b>tests d'orientation du bilan de compétences</b> vous prenez conscience de vos véritables atouts, identifiez ceux qui vous serviront dans la suite de votre carrière et les compétences à acquérir pour atteindre vos objectifs.</p>
+                <div>
+                    <p className='text-end'>Le bilan de compétences est un excellent point de départ lorsque vous envisagez une reconversion. En exerçant votre métier actuel ou dans votre vie personnelle, vous avez acquis des connaissances techniques et des qualités relationnelles indispensables dans la <b>vie professionnelle</b>. </p>
+
+                    <Movie src={Arc} />
+                </div>
+                <p>Grâce au bilan de compétences, aux tests de personnalité, <b>tests d'orientation du bilan de compétences</b> vous prenez conscience de vos véritables atouts, identifiez ceux qui vous serviront dans la suite de votre carrière et les compétences à acquérir pour atteindre vos objectifs.</p>
             </article>
             <ContactButton text="Je demande mon bilan de compétences" />
             <article className="timeline right-container">
@@ -65,6 +84,9 @@ const Fontainebleau = () => {
             <article className="timeline left-container">
                 <h3 className='text-centered'>La création d'entreprise</h3>
                 <p className='text-end'>Composé de plusieurs tests, le bilan de compétences se distingue également comme un levier pertinent pour le professionnel qui désire mieux appréhender son <b>projet de création d'entreprise</b>. Un accompagnement personnel vous permet de mieux connaître votre profil d'entrepreneur. Vos différentes facultés sont clairement identifiées et vous savez quels sont vos points forts et les éléments sur lesquels vous devez encore travailler.</p>
+                <div className='movieCentered'>
+                    <Movie src={Tree} />
+                </div>
                 <p className='text-end'>Les entretiens pour votre <b>bilan de compétences</b> à Fontainebleau permettent par ailleurs de consolider votre projet. Vous obtenez des informations précieuses sur les dispositifs d'aides accessibles aux nouveaux entrepreneurs. Tout cela est déterminant si vous souhaitez créer les meilleures conditions pour mettre en place votre activité entrepreneuriale. Il est d'ailleurs possible d'opter pour <Link to="/formation_creation_entreprise#top">une formation à la création d'entreprise en Seine-et-Marne</Link> pour aller plus loin sur le sujet. Vous ressortez avec une feuille de route précisant les actions indispensables au bon développement de votre projet.</p>
             </article>
             <ContactButton text="Contactez-nous" />

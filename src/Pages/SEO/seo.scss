@@ -3,6 +3,10 @@
     padding-bottom: 2rem;
     color: white;
 
+    .LogCpf {
+        background-color: white;
+    }
+
     h1 {
         margin-top: 0;
         text-align: left;
@@ -29,6 +33,129 @@
             font-size: 20px;
             text-align: left;
         }
+
+        ul li {
+            font-size: 1.2rem;
+            text-align: start;
+        }
+
+    }
+
+    .timeline {
+
+
+        .articleCertif {
+
+            &-pic {
+                width: 100%;
+
+                img {
+                    width: 10%;
+                }
+            }
+        }
+
+        position: relative;
+
+        .articleCertif-pic {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 4rem 0;
+
+            img {
+                width: 35%;
+            }
+        }
+
+        &.right-container {
+            text-align: start;
+
+
+        }
+
+        &.right-container::before {
+            content: "";
+            position: absolute;
+            /* positionner les ronds par rapport à chaque article */
+            top: .1rem;
+            /* positionner le rond au milieu de l'article */
+            left: -1.7rem;
+            /* ajustez la position du rond par rapport au côté gauche de l'article */
+            // transform: translateY(-50%);
+            /* centrez le rond verticalement */
+            width: 1.5rem;
+            /* largeur du rond */
+            height: 1.5rem;
+            /* hauteur du rond */
+            background-color: var(--acYellow);
+            /* couleur jaune */
+            border-radius: 50%;
+            /* pour obtenir un cercle */
+        }
+
+        &.right-container::after {
+            content: "";
+            position: absolute;
+            top: 1%;
+            /* positionner le trait à partir du centre du rond */
+            left: -1rem;
+            /* aligner le trait avec le bord gauche de l'article */
+            width: 3px;
+            /* épaisseur du trait */
+            height: calc(100% + 45px);
+            /* hauteur du trait, ajustée pour atteindre le bas de l'article */
+            background-color: var(--acYellow);
+            /* couleur jaune */
+        }
+
+        &.left-container {
+            text-align: end;
+        }
+
+        &.left-container::before {
+            content: "";
+            position: absolute;
+            /* positionner les ronds par rapport à chaque article */
+            top: .1rem;
+            /* positionner le rond au milieu de l'article */
+            right: -1.7rem;
+            /* ajustez la position du rond par rapport au côté gauche de l'article */
+            // transform: translateY(-50%);
+            /* centrez le rond verticalement */
+            width: 1.5rem;
+            /* largeur du rond */
+            height: 1.5rem;
+            /* hauteur du rond */
+            background-color: var(--acYellow);
+            /* couleur jaune */
+            border-radius: 50%;
+            /* pour obtenir un cercle */
+        }
+
+        &.left-container::after {
+            content: "";
+            position: absolute;
+            top: .1rem;
+            /* positionner le trait à partir du centre du rond */
+            right: -1rem;
+            /* aligner le trait avec le bord gauche de l'article */
+            width: 3px;
+            /* épaisseur du trait */
+            height: calc(100% + 48px);
+            /* hauteur du trait, ajustée pour atteindre le bas de l'article */
+            background-color: var(--acYellow);
+            /* couleur jaune */
+        }
+    }
+
+    .TelButton,
+    .ContactButton {
+
+        margin: 2rem 0;
+    }
+
+    .movie {
+        margin: 2.5rem 0;
     }
 
 }
@@ -48,8 +175,15 @@
             font-size: 5rem;
         }
 
+
         &-article {
-            margin: 1rem 13rem;
+            margin: 1rem 0 5rem 0;
+
+            p {
+                font-size: 2rem;
+                line-height: 2.5rem;
+
+            }
 
             .stars {
                 color: #DBBE3F;
@@ -64,6 +198,11 @@
                 text-align: start;
             }
 
+            ul li {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+
         }
 
         .timeline {
@@ -74,12 +213,12 @@
             h2,
             h3 {
                 font-size: 2rem;
-                margin: 1rem 13rem;
+                margin: 1rem 3rem;
             }
 
             p {
                 font-size: 1.6em;
-                margin: 1rem 13rem;
+                margin: 1rem 3rem;
                 line-height: 2rem;
             }
 
@@ -92,81 +231,200 @@
             }
 
 
-            &.right-container::before {
-                content: "";
-                position: absolute;
-                /* positionner les ronds par rapport à chaque article */
-                top: 9%;
-                /* positionner le rond au milieu de l'article */
-                left: 10%;
-                /* ajustez la position du rond par rapport au côté gauche de l'article */
-                transform: translateY(-50%);
-                /* centrez le rond verticalement */
-                width: 55px;
-                /* largeur du rond */
-                height: 55px;
-                /* hauteur du rond */
-                background-color: var(--acYellow);
-                /* couleur jaune */
-                border-radius: 50%;
-                /* pour obtenir un cercle */
-            }
-
-            &.right-container::after {
-                content: "";
-                position: absolute;
-                top: calc(9% + 25px);
-                /* positionner le trait à partir du centre du rond */
-                left: calc(10% + 25px);
-                /* aligner le trait avec le bord gauche de l'article */
-                width: 5px;
-                /* épaisseur du trait */
-                height: calc(100% + 45px);
-                /* hauteur du trait, ajustée pour atteindre le bas de l'article */
-                background-color: var(--acYellow);
-                /* couleur jaune */
-            }
-
-            &.left-container::before {
-                content: "";
-                position: absolute;
-                /* positionner les ronds par rapport à chaque article */
-                top: 9%;
-                /* positionner le rond au milieu de l'article */
-                right: 10%;
-                /* ajustez la position du rond par rapport au côté gauche de l'article */
-                transform: translateY(-50%);
-                /* centrez le rond verticalement */
-                width: 55px;
-                /* largeur du rond */
-                height: 55px;
-                /* hauteur du rond */
-                background-color: var(--acYellow);
-                /* couleur jaune */
-                border-radius: 50%;
-                /* pour obtenir un cercle */
-            }
-
-            &.left-container::after {
-                content: "";
-                position: absolute;
-                top: calc(9% + 25px);
-                /* positionner le trait à partir du centre du rond */
-                right: calc(10% + 25px);
-                /* aligner le trait avec le bord gauche de l'article */
-                width: 5px;
-                /* épaisseur du trait */
-                height: calc(100% + 48px);
-                /* hauteur du trait, ajustée pour atteindre le bas de l'article */
-                background-color: var(--acYellow);
-                /* couleur jaune */
-            }
 
             position: relative;
             /* assurez-vous que les éléments positionnés à l'intérieur de .timeline sont positionnés par rapport à elle */
             padding-left: 30px;
-            /* espace pour le rond jaune */
 
+            /* espace pour le rond jaune */
+            &.right-container {
+                // padding-right: 1rem;
+
+                div {
+                    display: flex;
+                    justify-content: space-between;
+
+                    p {
+                        // width: 50%;
+                        margin-right: 0;
+                    }
+                }
+
+                &.withMovie {
+                    div p {
+                        width: 50%;
+                    }
+                }
+
+                &.articleCertif {
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+
+                        p {
+                            width: 90%;
+                        }
+                    }
+
+                    .articleCertif-pic {
+                        // display: flex;
+                        justify-content: space-evenly;
+                        flex-direction: row;
+                    }
+                }
+
+                &::before {
+                    left: -1%;
+                    top: 0;
+                    width: 4rem;
+                    height: 4rem;
+                }
+
+                &::after {
+                    left: 2.5%;
+                    top: 5%;
+                    width: 5px;
+                    height: calc(100% + 60px);
+                }
+            }
+
+            &.left-container {
+                .movieCentered {
+                    // width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                &::before {
+                    left: 95%;
+                    top: -5%;
+                    width: 4rem;
+                    height: 4rem;
+                }
+
+                &::after {
+                    right: 1%;
+                    top: 0%;
+                    width: 5px;
+                    height: calc(100% + 60px);
+                }
+
+                &.withMovie {
+                    line-height: 2.5rem;
+
+                    div {
+                        display: flex;
+                        flex-direction: row-reverse;
+
+                        p {
+                            line-height: 3rem;
+                            width: 50%;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    p {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        line-height: 2.5rem;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .Seo {
+        p {
+            font-size: 2rem;
+            // margin: 0;
+            line-height: 2.5rem;
+        }
+
+        .Seo_Yellow {
+            font-size: 2.9rem;
+            line-height: 3rem;
+        }
+
+        &-article {
+            margin: 7rem;
+
+        }
+
+        .timeline {
+
+            &.right-container {
+                &::before {
+                    top: -5%;
+                    left: 0;
+                }
+
+                &::after {
+                    top: 0;
+                    left: 2%;
+                    height: calc(100% + 70px);
+
+                }
+
+                &.withMovie {
+                    position: relative;
+
+                    div {
+                        justify-content: initial;
+
+                        p {
+                            width: 65%;
+                            line-height: 2.5rem;
+                        }
+
+                        .movie {
+                            margin-top: 0;
+                            margin-bottom: 0;
+                        }
+
+                    }
+
+                    margin-bottom: 0;
+                }
+
+
+            }
+
+            &.left-container {
+                h3 {
+
+                    margin-right: 5rem;
+                    text-align: end;
+                }
+
+                p {
+
+                    margin-right: 5rem;
+                }
+
+                &::before {
+                    top: -5%;
+                    left: 96.5%;
+                }
+
+                &::after {
+                    height: calc(100% + 70px);
+
+                    top: 0;
+                    right: 1.1rem;
+                }
+
+                &.withMovie {
+                    .movie {
+                        margin-top: 0;
+                    }
+                }
+            }
         }
     }
 }
