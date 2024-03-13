@@ -33,6 +33,9 @@
         }
 
         &-img {
+            position: relative;
+            top: -1rem;
+
             img {
                 width: 100%;
             }

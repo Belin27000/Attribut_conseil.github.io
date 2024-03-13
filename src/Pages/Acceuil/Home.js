@@ -1,7 +1,6 @@
 import React from 'react';
-import Carrousel from '@/Components/Gallery/Carousel.js';
 import carouselService from '@/_Services/carousel.service.js';
-
+import PresAC from '@/Assets/video/Pres_AC.mp4'
 import '@/Pages/Acceuil/home.scss';
 import KeyNumber from '../../Components/KeyNumbers/KeyNumber.js';
 
@@ -19,7 +18,11 @@ const Home = () => {
                     <p>Notre<span className='DiffBlocColor'>différence :</span></p>
                     <p>Notre expérience de la diversité des problématiques professionnelles et la capacité à travailler ensemble vers des solutions</p>
                 </div>
-                <Carrousel images={pictures} />
+                <div className='movie' >
+                    <video className='responsive-video' autoPlay muted loop>
+                        <source src={PresAC} type='video/mp4' />
+                    </video>
+                </div>
             </section>
             <p className='BlueBand'><span className='CapName'>attri</span><span className='EndName' translate="no">but</span><span className='CapName '>conseils </span> <span className='BlueBandLastWord'> c'est :</span></p>
             <KeyNumber />

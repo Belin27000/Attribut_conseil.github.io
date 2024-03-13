@@ -3,7 +3,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     /* background-color: lightblue */
+    .movie {
+        width: 100%;
+        border-radius: 0;
+        height: auto;
+
+        .responsive-video {
+            object-fit: contain;
+        }
+    }
 }
 
 

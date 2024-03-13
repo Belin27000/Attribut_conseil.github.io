@@ -5,12 +5,14 @@ import Qualiopi from '@/Assets/Images/Logo_Qualiopi.png'
 import Cpf from '@/Assets/Images/logo_CPF.webp'
 import climb from '@/Assets/video/Grimpeur.mp4'
 import Movie from '@/Components/Movie/Movie.js';
-import Arc from '@/Assets/video/Tir_Arc.mp4'
-import Tree from '@/Assets/video/Plante.mp4'
+import Arc from '@/Assets/video/Tir_Arc.mp4';
+import Tree from '@/Assets/video/Plante.mp4';
+import LogoTree from '@/Assets/Images/Tree.png';
 import { FaStar } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import React from 'react';
 import './seo.scss';
+
 
 
 
@@ -19,6 +21,9 @@ const Fontainebleau = () => {
         <section className='Seo'>
             <h1><span>Votre</span><br /> BILAN DE COMPÉTENCES A FONTAINEBLEAU</h1>
             <p className='Seo_Yellow'>Vous cherchez à réaliser un bilan de compétences à Fontainebleau ? Contactez notre cabinet spécialisé en Seine-et-Marne, retour rapide assuré !</p>
+            <div className="Seo container-img">
+                <img className='Tree' src={LogoTree} alt="Logo arbre Attribut conseils" />
+            </div>
             <article className="Seo-article">
                 <p>Le bilan de compétences est un dispositif puissant pour (re)positionner professionnellement, après avoir identifié vos potentialités et vos aspirations et de les avoir confrontés aux réalités du marché ou du contexte de votre entreprise.
                 </p>
