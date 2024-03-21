@@ -1,39 +1,3 @@
-// import React, { useRef, useState } from 'react';
-// import './movie.scss';
-// const Movie = ({ src }) => {
-
-//     const videoRef = useRef(null);
-//     const [isPlaying, setIsPlaying] = useState(false);
-
-
-//     const togglePlayPause = () => {
-//         if (videoRef.current) {
-//             if (videoRef.current.paused || videoRef.current.ended) {
-//                 videoRef.current.play();
-//                 setIsPlaying(true);
-//             } else {
-//                 videoRef.current.pause();
-//                 setIsPlaying(false);
-//             }
-//         }
-//     };
-
-//     return (
-//         <div className='movie' onClick={togglePlayPause}>
-//             <video className='responsive-video' muted ref={videoRef} >
-//                 <source src={src} type='video/mp4' />
-//             </video>
-//             {!isPlaying && (
-//                 <button className='play-button'>
-//                     Play
-//                 </button>
-//             )}
-
-//         </div>
-//     );
-// };
-
-// export default Movie;
 import React, { useRef, useState, useEffect } from 'react';
 import './movie.scss';
 
@@ -93,7 +57,7 @@ const Movie = ({ src }) => {
 
     return (
         <div className='movie' onClick={togglePlayPause}>
-            <video className='responsive-video' muted ref={videoRef}>
+            <video className='responsive-video' muted ref={videoRef} autoPlay playsInline>
                 <source src={src} type='video/mp4' />
             </video>
             {!isPlaying && (

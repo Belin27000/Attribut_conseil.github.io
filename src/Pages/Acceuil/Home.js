@@ -19,7 +19,7 @@ const Home = () => {
                     <p>Notre expérience de la diversité des problématiques professionnelles et la capacité à travailler ensemble vers des solutions</p>
                 </div>
                 <div className='movie' >
-                    <video className='responsive-video' autoPlay muted loop>
+                    <video className='responsive-video' autoPlay muted loop playsInline>
                         <source src={PresAC} type='video/mp4' />
                     </video>
                 </div>
