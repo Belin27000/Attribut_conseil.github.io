@@ -201,6 +201,11 @@
         &-article {
             margin: 1rem 0 5rem 0;
 
+            h2 {
+                text-align: start;
+                font-size: 2.5rem;
+            }
+
             p {
                 font-size: 2rem;
                 line-height: 2.5rem;
@@ -218,11 +223,31 @@
 
             li {
                 text-align: start;
+
             }
 
-            ul li {
-                font-size: 2rem;
-                line-height: 3rem;
+            ul {
+
+                li {
+                    font-size: 2rem;
+                    line-height: 3rem;
+
+
+                }
+            }
+
+            .liste-Melun {
+                padding-left: 0;
+
+                li {
+                    list-style-type: none;
+                    margin-bottom: 1rem;
+
+                    &::before {
+                        margin-right: 1rem;
+                        content: "-";
+                    }
+                }
             }
 
         }
@@ -235,8 +260,9 @@
             h2,
             h3 {
                 font-size: 2rem;
-                margin: 1rem 3rem;
+                margin: 1rem 5rem 3rem 3rem;
             }
+
 
             p {
                 font-size: 1.6em;
@@ -278,22 +304,37 @@
                     }
                 }
 
-                &.articleCertif {
+                .articleCertif {
 
-                    div {
-                        display: flex;
-                        flex-direction: column;
-                        width: 100%;
+                    // div {
+                    //     display: flex;
+                    //     flex-direction: column;
+                    //     width: 100%;
 
-                        p {
-                            width: 90%;
+                    //     p {
+                    //         width: 90%;
+                    //     }
+                    // }
+                    &-container {
+
+                        &-text {
+                            flex-direction: column;
                         }
-                    }
 
-                    .articleCertif-pic {
-                        // display: flex;
-                        justify-content: space-evenly;
-                        flex-direction: row;
+                        .articleCertif-pic {
+                            width: 35%;
+                            display: flex;
+                            justify-content: flex-start;
+                            // flex-direction: row;
+                            flex-direction: column;
+                            margin-top: 0;
+
+                            img {
+                                width: 100%;
+                                margin-bottom: 1rem;
+                                margin-left: 1rem;
+                            }
+                        }
                     }
                 }
 
@@ -313,10 +354,19 @@
             }
 
             &.left-container {
+                .video-flexRow {
+                    display: flex;
+                    flex-direction: row-reverse;
+                }
+
                 .movieCentered {
                     // width: 100%;
                     display: flex;
                     justify-content: center;
+                }
+
+                .left-container_AlignStart {
+                    text-align: start;
                 }
 
                 &::before {

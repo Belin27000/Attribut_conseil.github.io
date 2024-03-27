@@ -12,6 +12,7 @@ import { FaStar } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import React from 'react';
 import './seo.scss';
+import Questions from '../../Components/Questions/Questions.js';
 
 
 
@@ -43,14 +44,17 @@ const Fontainebleau = () => {
             </article>
             <article className="timeline right-container articleCertif">
                 <h3>Le bilan de compétences pour les salariés et pour les demandeurs d'emploi</h3>
-                <div>
-                    <p>Vous avez <b>cumulé des droits à la formation</b>, votre compte CPF est crédité une fois par an. Le financement d’un bilan de compétences dépend de votre situation, statut et des modalités souhaitées. </p>
-                    <p>Pour financer <b>le bilan de compétences</b> vous avez 4 possibilités : utiliser vos droits CPF, le plan de développement des compétences de votre employeur, France Travail ou le financement personnel.Vous pouvez effectuer <b>le bilan de compétences</b> sur le temps de travail ou hors temps de travail sans prévenir votre employeur. </p>
-                    <p>Pour mieux connaitre vos droits à la formation, les modalités de financements pour les salariés du public ou du privé</p>
-                </div>
-                <div className="articleCertif-pic">
-                    < img src={Qualiopi} alt="Logo Qualiopi" />
-                    < img className='LogCpf' src={Cpf} alt="Logo Qualiopi" />
+                <div className='articleCertif-container'>
+
+                    <div className='articleCertif-container-text'>
+                        <p>Vous avez <b>cumulé des droits à la formation</b>, votre compte CPF est crédité une fois par an. Le financement d’un bilan de compétences dépend de votre situation, statut et des modalités souhaitées. </p>
+                        <p>Pour financer <b>le bilan de compétences</b> vous avez 4 possibilités : utiliser vos droits CPF, le plan de développement des compétences de votre employeur, France Travail ou le financement personnel.Vous pouvez effectuer <b>le bilan de compétences</b> sur le temps de travail ou hors temps de travail sans prévenir votre employeur. </p>
+                        <p>Pour mieux connaitre vos droits à la formation, les modalités de financements pour les salariés du public ou du privé</p>
+                    </div>
+                    <div className="articleCertif-pic">
+                        < img src={Qualiopi} alt="Logo Qualiopi" />
+                        < img className='LogCpf' src={Cpf} alt="Logo Qualiopi" />
+                    </div>
                 </div>
             </article>
             <TelButton number="06 98 88 15 55" />
@@ -111,6 +115,7 @@ const Fontainebleau = () => {
                 <p>En tant que leader, Attribut Conseils aide des centaines de salariés chaque année et traite diverses problématiques du monde du travail. Vous pouvez recourir à nos services que vous soyez à Torcy, Lagny-sur-Marne, Melun, Meaux ou ailleurs en Seine-et-Marne. Les entretiens étant possibles à distance en visio, les professionnels d'autres départements et régions de France sont les bienvenus.</p>
             </article>
             <TelButton number="06 98 88 15 55" />
+            <Questions tag='all' ville='Fontainebleau' />
             <ScrollToTop />
         </section >
     );

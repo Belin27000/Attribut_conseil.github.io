@@ -22,6 +22,7 @@ import ExternTrainManagement from '../ExternTrainManagement/ExternTrainManagemen
 //SEO
 import Fontainebleau from '../SEO/Fontainebleau.js';
 import LandingPage from '../SEO/LandingPage/LandingPage.js';
+import Melun from '../SEO/Melun.js';
 
 const PublicRouter = () => {
     return (
@@ -62,6 +63,7 @@ const PublicRouter = () => {
                 {/* PAGES - SEO */}
                 <Route path="/bilan-de-competence/Landing-Page" element={<LandingPage />} />
                 <Route path="/bilan-de-competence/bilan-de-competence-fontainebleau" element={<Fontainebleau />} />
+                <Route path="/bilan-de-competence/bilan-de-competence-melun" element={<Melun />} />
             </Route>
         </Routes>
     );
