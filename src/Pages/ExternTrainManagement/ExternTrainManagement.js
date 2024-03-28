@@ -4,7 +4,7 @@ import ContactButton from '../../Components/Button/ContactButton.js';
 const ExternTrainManagement = () => {
     return (
         <section className='Train'>
-            <h1 className='sr-only'>Gestion de formation externalisée Fontainebleau</h1>
+            <h1 className='sr-only'>Gestion de formation externalisée en Seine et Marne</h1>
             <h2 className="Train-title"> Découvrez notre service de gestion de formation externalisée soutenu par notre expertise QUALIOPI !</h2>
             <article className="Train-article">
                 <p>Êtes-vous à la recherche d'une solution efficace pour gérer vos formations internes sans soucis ni tracas ?  Notre service de gestion de formation externalisée est là pour vous faciliter la vie et vous permettre de vous concentrer sur votre cœur de métier.

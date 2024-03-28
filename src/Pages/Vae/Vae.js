@@ -8,7 +8,7 @@ import allFiles from '../../_Services/fileToDownload.service.js';
 const Vae = () => {
     return (
         <section className='Vae'>
-            <h1 className='sr-only'>Vae Fontainebleau</h1>
+            <h1 className='sr-only'>Vae en Seine et Marne</h1>
 
             <h2 className='Vae-title'>Accompagnement VAE - VAPP</h2>
             <article className='Vae-article'>

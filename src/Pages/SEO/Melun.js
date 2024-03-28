@@ -16,9 +16,11 @@ import Questions from '../../Components/Questions/Questions.js';
 
 
 const Melun = () => {
+    const ville = 'Melun';
+
     return (
         <section className='Seo'>
-            <h1><span>Votre</span><br /> BILAN DE COMPÉTENCES A MELUN</h1>
+            <h1><span>Votre</span><br /> BILAN DE COMPÉTENCES A <span className='Title city'>{ville}</span></h1>
             <p className='Seo_Yellow'>Vous cherchez à réaliser un bilan de compétences à Melun ? Contactez notre cabinet spécialisé en Seine-et-Marne, retour rapide assuré !</p>
             <div className="Seo container-img">
                 <img className='Tree' src={LogoTree} alt="Logo arbre Attribut conseils" />

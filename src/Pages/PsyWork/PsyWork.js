@@ -5,7 +5,7 @@ import ContactButton from '../../Components/Button/ContactButton.js';
 const PsyWork = () => {
     return (
         <section className='PsyWork'>
-            <h1 className='sr-only'>Psychologie du travail Fontainebleau</h1>
+            <h1 className='sr-only'>Psychologie du travail en Seine et Marne</h1>
             <h2 className="PsyWork-title">Psychologie du travail </h2>
             <article className="PsyWork-article">
                 <p>La souffrance au travail est une réalité de plus en plus préoccupante, affectant la santé et le bien-être des salariés. Cependant, il est essentiel de savoir qu'il existe des solutions efficaces pour surmonter cette épreuve. Notre accompagnement en psychologie du travail met en avant l'intérêt des thérapies brèves et systémiques pour vous aider à retrouver l'équilibre et la sérénité.

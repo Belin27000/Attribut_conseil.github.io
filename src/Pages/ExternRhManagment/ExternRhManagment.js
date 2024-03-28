@@ -5,7 +5,7 @@ import ContactButton from '../../Components/Button/ContactButton.js';
 const ExternRhManagment = () => {
     return (
         <section className='ExternRhManagment'>
-            <h1 className='sr-only'>Gestion RH externalisée Fontainebleau</h1>
+            <h1 className='sr-only'>Gestion RH externalisée en Seine et Marne</h1>
             <h2 className="ExternRhManagment-title">GESTION RH EXTERNALISÉE </h2>
             <article className="ExternRhManagment-article_bgWhite">
                 <h3 className="Bilan-article_blue">Optimisez votre gestion RH et renforcez vos compétences avec notre service d'externalisation professionnelle</h3>

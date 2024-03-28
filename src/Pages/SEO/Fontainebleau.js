@@ -18,10 +18,12 @@ import Questions from '../../Components/Questions/Questions.js';
 
 
 const Fontainebleau = () => {
+    const ville = 'Fontainebleau';
+
     return (
         <section className='Seo'>
-            <h1><span>Votre</span><br /> BILAN DE COMPÉTENCES A FONTAINEBLEAU</h1>
-            <p className='Seo_Yellow'>Vous cherchez à réaliser un bilan de compétences à Fontainebleau ? Contactez notre cabinet spécialisé en Seine-et-Marne, retour rapide assuré !</p>
+            <h1><span>Votre</span><br /> BILAN DE COMPÉTENCES A <span className='Title city'>{ville}</span></h1>
+            <p className='Seo_Yellow'>Vous cherchez à réaliser un bilan de compétences à {ville} ? Contactez notre cabinet spécialisé en Seine-et-Marne, retour rapide assuré !</p>
             <div className="Seo container-img">
                 <img className='Tree' src={LogoTree} alt="Logo arbre Attribut conseils" />
             </div>
@@ -33,7 +35,7 @@ const Fontainebleau = () => {
                 <p>
                     Vous bénéficiez d'un accompagnement par des consultants en gestion de carrière et d'une stratégie dans la construction d'un projet professionnel adapté à vos aspirations.
                 </p>
-                <p>Attribut Conseils propose son expertise pour aider chacun à réussir et à s'épanouir dans le monde du travail. Notre équipe est disponible pour vos bilans de compétences en Île-de-France, plus précisément à Fontainebleau dans le département de Seine-et-Marne.</p>
+                <p>Attribut Conseils propose son expertise pour aider chacun à réussir et à s'épanouir dans le monde du travail. Notre équipe est disponible pour vos bilans de compétences en Île-de-France, plus précisément à {ville} dans le département de Seine-et-Marne.</p>
             </article>
             <article className="timeline right-container withMovie">
                 <h2>Qui peut faire un bilan de compétences ?</h2>
@@ -88,7 +90,7 @@ const Fontainebleau = () => {
             <article className="timeline left-container">
                 <h3 className='text-end'>Améliorer votre profil pour les recruteurs</h3>
                 <p className='text-end'>Un candidat qui a effectué son bilan de compétences envoie un signal très positif lors d'un recrutement. Indiquée dans votre CV, cette <b>expérience enrichissante</b> est généralement abordée au cours de l'entretien. Ce développement donne davantage de crédit à votre candidature et démontre votre envie de dépasser vos limites. Il s'agit d'un gage de motivation qui peut être décisif.</p>
-                <p className='text-end'>Lors du bilan de compétences à Fontainebleau, notre <b>cabinet de coaching Attribut Conseils</b> vous propose des outils concrets pour mettre votre profil en valeur. Notre équipe est par exemple disponible pour aider à repenser votre CV, travailler la lettre de motivation, etc.</p>
+                <p className='text-end'>Lors du bilan de compétences à {ville}, notre <b>cabinet de coaching Attribut Conseils</b> vous propose des outils concrets pour mettre votre profil en valeur. Notre équipe est par exemple disponible pour aider à repenser votre CV, travailler la lettre de motivation, etc.</p>
             </article>
             <article className="timeline left-container">
                 <h3 className='text-centered'>La création d'entreprise</h3>
@@ -96,13 +98,13 @@ const Fontainebleau = () => {
                 <div className='movieCentered'>
                     <Movie src={Tree} />
                 </div>
-                <p className='text-end'>Les entretiens pour votre <b>bilan de compétences</b> à Fontainebleau permettent par ailleurs de consolider votre projet. Vous obtenez des informations précieuses sur les dispositifs d'aides accessibles aux nouveaux entrepreneurs. Tout cela est déterminant si vous souhaitez créer les meilleures conditions pour mettre en place votre activité entrepreneuriale. Il est d'ailleurs possible d'opter pour <Link to="/formation_creation_entreprise#top">une formation à la création d'entreprise en Seine-et-Marne</Link> pour aller plus loin sur le sujet. Vous ressortez avec une feuille de route précisant les actions indispensables au bon développement de votre projet.</p>
+                <p className='text-end'>Les entretiens pour votre <b>bilan de compétences</b> à {ville} permettent par ailleurs de consolider votre projet. Vous obtenez des informations précieuses sur les dispositifs d'aides accessibles aux nouveaux entrepreneurs. Tout cela est déterminant si vous souhaitez créer les meilleures conditions pour mettre en place votre activité entrepreneuriale. Il est d'ailleurs possible d'opter pour <Link to="/formation_creation_entreprise#top">une formation à la création d'entreprise en Seine-et-Marne</Link> pour aller plus loin sur le sujet. Vous ressortez avec une feuille de route précisant les actions indispensables au bon développement de votre projet.</p>
             </article>
             <ContactButton text="Contactez-nous" />
             <article className="Seo-article">
-                <h2>Bilan de compétences à Fontainebleau </h2>
+                <h2>Bilan de compétences à {ville} </h2>
                 <p>Faites confiance à Attribut Conseils - C’est 170 avis google<span className='stars'><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></span></p>
-                <p>Réaliser des bilans de compétences à Fontainebleau, c'est faire le point de vos aptitudes, vos <b>pistes d'évolution</b> complétés par ainsi que les améliorations nécessaires. Les résultats vous aident à identifier vos besoins en termes de formation. Vous apprenez à avoir confiance en vos capacités et à travailler sur vos points faibles pour une meilleure intégration professionnelle. Chez Attribut Conseils, cela passe par trois principales étapes qui sont : </p>
+                <p>Réaliser des bilans de compétences à {ville}, c'est faire le point de vos aptitudes, vos <b>pistes d'évolution</b> complétés par ainsi que les améliorations nécessaires. Les résultats vous aident à identifier vos besoins en termes de formation. Vous apprenez à avoir confiance en vos capacités et à travailler sur vos points faibles pour une meilleure intégration professionnelle. Chez Attribut Conseils, cela passe par trois principales étapes qui sont : </p>
                 <ul>
                     <li>La phase préliminaire,</li>
                     <li>L’investigation</li>
@@ -110,7 +112,7 @@ const Fontainebleau = () => {
                 </ul>
                 <p>La phase préliminaire est <b>un entretien gratuit et sans engagement</b>. Elle consiste à analyser la demande et le besoin du bénéficiaire. C'est aussi le moment où nos consultants déterminent le format le plus adapté à votre situation. À votre écoute, nous définissons ensemble les modalités de déroulement du bilan de compétences.</p>
                 <p>L'investigation correspond à la construction de votre projet professionnel, à l'évaluation de sa pertinence et, si nécessaire, à l'élaboration d'alternatives.La conclusion se déroule via des <b>entretiens personnalisés</b> durant lesquels vous pourrez vous approprier les résultats de l'étape précédente. On relève les conditions et les moyens qui favoriseront l'atteinte de vos objectifs. Les principales modalités et étapes pour la réalisation de votre projet sont définies à l'issue du bilan de compétences dans la synthèse produite par Attribut Conseils.</p>
-                <p>Avec plus de 16 ans d'expérience à notre actif, nous sommes l'un des meilleurs cabinets pour la réalisation de bilans de compétences à Fontainebleau. Notre équipe est constituée de psychologues du travail, de consultants experts bilan, d'ingénieurs de formation, de spécialistes en coaching, d'anciens RH et dirigeants d'entreprise.
+                <p>Avec plus de 16 ans d'expérience à notre actif, nous sommes l'un des meilleurs cabinets pour la réalisation de bilans de compétences à {ville}. Notre équipe est constituée de psychologues du travail, de consultants experts bilan, d'ingénieurs de formation, de spécialistes en coaching, d'anciens RH et dirigeants d'entreprise.
                 </p>
                 <p>En tant que leader, Attribut Conseils aide des centaines de salariés chaque année et traite diverses problématiques du monde du travail. Vous pouvez recourir à nos services que vous soyez à Torcy, Lagny-sur-Marne, Melun, Meaux ou ailleurs en Seine-et-Marne. Les entretiens étant possibles à distance en visio, les professionnels d'autres départements et régions de France sont les bienvenus.</p>
             </article>

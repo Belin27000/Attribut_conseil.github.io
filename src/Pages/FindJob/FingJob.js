@@ -5,7 +5,7 @@ import ContactButton from '../../Components/Button/ContactButton.js';
 const FingJob = () => {
     return (
         <section className='FindJob'>
-            <h1 className='sr-only'>Recherche d'emploi Fontainebleau</h1>
+            <h1 className='sr-only'>Recherche d'emploi en Seine et Marne</h1>
 
             <h2 className="FindJob-title">Accompagnement  à la recherche d‘emploi </h2>
             <article className="FindJob-article">

@@ -8,7 +8,7 @@ import Charte200 from '@/Assets/Images/chartedeontologieCPF/charte200.webp'
 import Charte800 from '@/Assets/Images/chartedeontologieCPF/charte800.webp'
 import '@/Layouts/Footer/footer.scss'
 import data from '../../Assets/data/data.json'
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import allFiles from '../../_Services/fileToDownload.service.js';
 import Handi from '../../Assets/Images/Handicapped.png'
@@ -18,6 +18,12 @@ import { FaHeart } from 'react-icons/fa';
 
 const Footer = () => {
     const QualiopiValidity = data.Qualiopi.validationDate
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
 
     return (
         <footer className='Footer'>
@@ -99,11 +105,20 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='Map'>
+
+
+
+
+            <div className='City_Link'>
                 <h2>
-                    Où nous trouver
+                    Nous trouver en Seine et Marne
                 </h2>
-                <iframe title="location" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10594.503031689123!2d2.6953754!3d48.4061297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5de5466d64191%3A0xcd129d3981711195!2sAttribut%20Conseils!5e0!3m2!1sfr!2sfr!4v1703104076596!5m2!1sfr!2sfr" width="450" height="330" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <ul>
+                    <li><Link to="/bilan-de-competence/bilan-de-competence-fontainebleau" onClick={scrollToTop}>Bilan de competence à Fontainebleau</Link></li>
+                    <li><Link to="/bilan-de-competence/bilan-de-competence-melun" onClick={scrollToTop}>Bilan de competence à Melun</Link></li>
+                    <li><Link to="/bilan-de-competence/bilan-de-competence-montereau-fault-yonne" onClick={scrollToTop}>Bilan de competence à Montereau-Fault-Yonne</Link></li>
+                    <li><Link to="/bilan-de-competence/bilan-de-competence-avon" onClick={scrollToTop}>Bilan de competence à Avon</Link></li>
+                </ul>
             </div>
             {/* <div className="Handi">
                 <img src={Handi} alt='Handicapped logo' width='220' height='220' />

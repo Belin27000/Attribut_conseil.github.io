@@ -3,6 +3,9 @@
         display: none;
     }
 
+    background-color: white;
+
+
     width: 100%;
     position: relative;
     bottom: 0;
@@ -70,7 +73,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-
+            background-color: var(--acDarkBlue);
             transform: scaleX(-1);
 
             .Single-Link {
@@ -100,6 +103,7 @@
             ul li {
 
                 list-style-type: none;
+                color: red;
             }
 
             a {
@@ -107,13 +111,42 @@
                 color: white;
                 font-size: .7rem;
                 text-decoration: none;
+
+                :visited {
+                    color: red;
+                }
             }
         }
     }
 
-    .Map {
-        display: none;
+    // .Map {
+    //     display: none;
 
+    // }
+    .City_Link {
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--acDarkBlue);
+
+        }
+
+        li:hover {
+
+            margin: 0 .5rem;
+            background-color: var(--acDarkBlue);
+
+            a:hover {
+                color: white;
+                // text-decoration: underline
+            }
+        }
     }
 }
 
@@ -136,68 +169,64 @@
             position: absolute;
             z-index: 1;
             background-color: transparent;
+            bottom: 65%;
 
         }
 
-        .FooterPictureFont-mention {
-            transform: scalex(-1);
-            flex-direction: row;
-            align-items: flex-end;
-            padding-bottom: 1rem;
+        .FooterPictureFont {
+            position: relative;
 
-            .handicap-picture {
-                width: 10%;
-            }
+            &-mention {
+                transform: scalex(-1);
+                flex-direction: row;
+                align-items: flex-end;
+                padding-bottom: 1rem;
+                background-color: transparent;
 
-            ul li {
-                list-style-type: none;
-            }
+                .handicap-picture {
+                    width: 10%;
+                }
 
-            div {
-                width: 25%;
-            }
+                ul li {
+                    list-style-type: none;
+                }
 
-            .Handi .Single-Link {
-                width: 100%;
-            }
+                div {
+                    width: 25%;
+                }
 
-            .Single-Link a {
+                .Handi .Single-Link {
+                    width: 100%;
+                }
 
-                font-size: .75rem;
-            }
+                .Single-Link a {
 
-            .builderRef {
-                color: white;
-
-                p {
-                    margin: 0;
                     font-size: .75rem;
+                }
 
-                    a {
-                        font-size: .8rem;
-                        font-weight: bold;
-                        text-decoration: underline;
+                .builderRef {
+                    color: white;
+
+                    p {
+                        margin: 0;
+                        font-size: .75rem;
+
+                        a {
+                            font-size: .8rem;
+                            font-weight: bold;
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
         }
 
-        .Map {
-            display: initial;
+        .City_Link {
+            width: 30%;
             position: absolute;
             top: 0;
-            z-index: 1;
             right: 10%;
-
-            h2 {
-                margin: 0;
-            }
-
-            iframe {
-                width: 75%;
-                height: 80%;
-                border-radius: 15px;
-            }
+            z-index: 5;
         }
     }
 

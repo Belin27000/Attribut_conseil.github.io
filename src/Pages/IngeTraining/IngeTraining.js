@@ -5,7 +5,7 @@ import ContactButton from '../../Components/Button/ContactButton.js';
 const IngeTraining = () => {
     return (
         <section className='IngeTraining'>
-            <h1 className='sr-only'>Ingénierie de la formation Fontainebleau</h1>
+            <h1 className='sr-only'>Ingénierie de la formation en Seine et Marne</h1>
             <h2 className="Bilan-title">INGENIERIE DE LA FORMATION</h2>
             <article className="IngeTraining-article">
                 <p>Chez ATTRIBUT CONSEILS nous sommes passionnés par la création et la mise en œuvre de programmes de formation de qualité supérieure. Notre équipe d'experts en ingénierie de la formation est là pour vous accompagner dans toutes les étapes de développement de vos programmes de formation, en veillant à ce qu'ils soient pertinents, efficaces et répondent aux besoins spécifiques de votre entreprise.</p>

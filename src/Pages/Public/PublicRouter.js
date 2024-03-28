@@ -23,6 +23,8 @@ import ExternTrainManagement from '../ExternTrainManagement/ExternTrainManagemen
 import Fontainebleau from '../SEO/Fontainebleau.js';
 import LandingPage from '../SEO/LandingPage/LandingPage.js';
 import Melun from '../SEO/Melun.js';
+import MontereauFy from '../SEO/MontereauFy.js';
+import Avon from '../SEO/Avon.js';
 
 const PublicRouter = () => {
     return (
@@ -64,6 +66,8 @@ const PublicRouter = () => {
                 <Route path="/bilan-de-competence/Landing-Page" element={<LandingPage />} />
                 <Route path="/bilan-de-competence/bilan-de-competence-fontainebleau" element={<Fontainebleau />} />
                 <Route path="/bilan-de-competence/bilan-de-competence-melun" element={<Melun />} />
+                <Route path="/bilan-de-competence/bilan-de-competence-montereau-fault-yonne" element={<MontereauFy />} />
+                <Route path="/bilan-de-competence/bilan-de-competence-avon" element={<Avon />} />
             </Route>
         </Routes>
     );

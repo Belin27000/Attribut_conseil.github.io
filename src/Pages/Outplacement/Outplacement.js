@@ -7,7 +7,7 @@ import allFiles from '../../_Services/fileToDownload.service.js';
 const Outplacement = () => {
     return (
         <section className='Outplacement'>
-            <h1 className='sr-only'>Cabinet d'outplacement Fontainebleau</h1>
+            <h1 className='sr-only'>Cabinet d'outplacement en Seine et Marne</h1>
             <h2 className="Outplacement-title">OUTPLACEMENT INDIVIDUEL ou COLLECTIF </h2>
             <article className="Outplacement-article">
                 <h3 className="Outplacement-article-title">QU’EST CE QUE l’OUTPLACEMENT ? </h3>
