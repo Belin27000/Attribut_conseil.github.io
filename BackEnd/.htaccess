@@ -1,0 +1,96 @@
+##
+# @package		Joomla
+# @copyright	Copyright (C) 2005 - 2014 Open Source Matters. All rights reserved.
+# @license		GNU General Public License version 2 or later; see LICENSE.txt
+##
+
+##
+# READ THIS COMPLETELY IF YOU CHOOSE TO USE THIS FILE!
+#
+# The line just below this section: 'Options +FollowSymLinks' may cause problems
+# with some server configurations.  It is required for use of mod_rewrite, but may already
+# be set by your server administrator in a way that dissallows changing it in
+# your .htaccess file.  If using it causes your server to error out, comment it out (add # to
+# beginning of line), reload your site in your browser and test your sef url's.  If they work,
+# it has been set by your server administrator and you do not need it set here.
+##
+
+
+
+## Can be commented out if causes errors, see notes above.
+Options +FollowSymLinks
+
+## Mod_rewrite in use.
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.attribut-conseils\.com$ [NC]
+RewriteRule ^ https://www.2023.attribut-conseils.com%{REQUEST_URI} [L,R=301]
+
+# Redirection vers www.2023.attribut-conseils.com si la page n'existe pas
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ https://www.2023.attribut-conseils.com/$1 [L,R=301]
+
+
+## Begin - Rewrite rules to block out some common exploits.
+# If you experience problems on your site block out the operations listed below
+# This attempts to block the most common type of exploit `attempts` to Joomla!
+#
+# Block out any script trying to base64_encode data within the URL.
+RewriteCond %{QUERY_STRING} base64_encode[^(]*\([^)]*\) [OR]
+# Block out any script that includes a <script> tag in URL.
+RewriteCond %{QUERY_STRING} (<|%3C)([^s]*s)+cript.*(>|%3E) [NC,OR]
+# Block out any script trying to set a PHP GLOBALS variable via URL.
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+# Block out any script trying to modify a _REQUEST variable via URL.
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+# Return 403 Forbidden header and show the content of the root homepage
+RewriteRule .* index.php [F]
+#
+## End - Rewrite rules to block out some common exploits.
+
+## Begin - Custom redirects
+#
+# If you need to redirect some pages, or set a canonical non-www to
+# www redirect (or vice versa), place that code here. Ensure those
+# redirects use the correct RewriteRule syntax and the [R=301,L] flags.
+# Redirige non-www vers www
+RewriteCond %{HTTP_HOST} ^attribut-conseils.com [NC] 
+RewriteRule ^(.*)$ http://www.attribut-conseils.com/$1 [L,R=301]
+# Redirige la page qui-sommes-nous qui a changé d'alias
+RewriteRule ^fr/qui-sommes-nous-$ http://www.attribut-conseils.com/qui-sommes-nous [NC,R=301,L]
+# Redirige la page quels-sont-vos-points-faibles-la-question-qui-tue qui a changé d'alias
+RewriteRule ^fr/conseils/27-conseils-pratiques-et-astuces-de-gestion-de-carriere/59-quels-sont-vos-points-faibles-la-question-qui-tue$ http://www.attribut-conseils.com/conseils/27-conseils-pratiques-et-astuces-de-gestion-de-carriere/24-quels-sont-vos-points-faibles-la-question-qui-tue [NC,R=301,L]
+RewriteRule ^fr/conseils/27-conseils-pratiques/59-la-question-qui-tue$ http://www.attribut-conseils.com/conseils/27-conseils-pratiques-et-astuces-de-gestion-de-carriere/24-quels-sont-vos-points-faibles-la-question-qui-tue [NC,R=301,L]
+RewriteRule ^fr/conseils/27-conseils-pratiques-et-astuces-de-gestion-de-carriere/70-nouvelle-annee-renouveau$ http://www.attribut-conseils.com/conseils/27-conseils-pratiques-et-astuces-de-gestion-de-carriere/35-nouvelle-annee-renouveau [NC,R=301,L]
+RewriteRule ^fr/conseils/27-conseils-pratiques-et-astuces-de-gestion-de-carriere/89-(.*)$ http://www.attribut-conseils.com/conseils/27-conseils-pratiques-et-astuces-de-gestion-de-carriere/53-$1 [NC,R=301,L]
+#RewriteRule ^fr/conseils/27-conseils-pratiques-et-astuces-de-gestion-de-carriere/89-questions-pour-evaluer-experience-candidats$ http://www.attribut-conseils.com/conseils/27-conseils-pratiques-et-astuces-de-gestion-de-carriere/53-questions-pour-evaluer-experience-candidats [NC,R=301,L]
+RewriteRule ^fr/conseils/25-vos-droits/65-le-cif$ http://www.attribut-conseils.com/conseils/29-vos-droits/30-le-cif [NC,R=301,L]
+# Redirige les anciennes url avec /fr/ à la racine /
+RewriteRule ^fr/(.*)$ http://www.attribut-conseils.com/$1 [NC,R=301,L]
+#
+## End - Custom redirects
+
+##
+# Uncomment following line if your webserver's URL
+# is not directly related to physical file paths.
+# Update Your Joomla! Directory (just / for root).
+##
+
+# RewriteBase /
+
+## Begin - Joomla! core SEF Section.
+#
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+#
+# If the requested path and file is not /index.php and the request
+# has not already been internally rewritten to the index.php script
+RewriteCond %{REQUEST_URI} !^/index\.php
+# and the request is for something within the component folder,
+# or for the site root, or for an extensionless URL, or the
+# requested URL ends with one of the listed extensions
+RewriteCond %{REQUEST_URI} /component/|(/[^.]*|\.(php|html?|feed|pdf|vcf|raw))$ [NC]
+# internally rewrite the request to the index.php script
+RewriteRule .* index.php [L]
+#
+## End - Joomla! core SEF Section.
