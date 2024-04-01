@@ -118,6 +118,7 @@ const Footer = () => {
                     <li><Link to="/bilan-de-competence/bilan-de-competence-melun" onClick={scrollToTop}>Bilan de competence à Melun</Link></li>
                     <li><Link to="/bilan-de-competence/bilan-de-competence-montereau-fault-yonne" onClick={scrollToTop}>Bilan de competence à Montereau-Fault-Yonne</Link></li>
                     <li><Link to="/bilan-de-competence/bilan-de-competence-avon" onClick={scrollToTop}>Bilan de competence à Avon</Link></li>
+                    <li><Link to="/bilan-de-competence/bilan-de-competence-provins" onClick={scrollToTop}>Bilan de competence à Provins</Link></li>
                 </ul>
             </div>
             {/* <div className="Handi">

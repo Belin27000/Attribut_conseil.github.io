@@ -26,6 +26,7 @@ import LandingPage from '../SEO/LandingPage/LandingPage.js';
 import Melun from '../SEO/Melun.js';
 import MontereauFy from '../SEO/MontereauFy.js';
 import Avon from '../SEO/Avon.js';
+import Provins from '../SEO/Provins.js';
 
 const PublicRouter = () => {
     return (
@@ -70,6 +71,7 @@ const PublicRouter = () => {
                 <Route path="/bilan-de-competence/bilan-de-competence-melun" element={<Melun />} />
                 <Route path="/bilan-de-competence/bilan-de-competence-montereau-fault-yonne" element={<MontereauFy />} />
                 <Route path="/bilan-de-competence/bilan-de-competence-avon" element={<Avon />} />
+                <Route path="/bilan-de-competence/bilan-de-competence-provins" element={<Provins />} />
 
                 <Route path='*' element={<Home />} />
 
