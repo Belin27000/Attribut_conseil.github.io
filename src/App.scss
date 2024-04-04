@@ -26,6 +26,15 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: var(--acDarkBlue);
+}
+
+.LayoutAdvice {
+  margin: 1rem;
+
+  main {
+    margin-top: 0;
+  }
 }
 
 main {
@@ -36,7 +45,6 @@ main {
 }
 
 .App {
-  background: var(--acDarkBlue);
   text-align: center;
 
 }
@@ -62,9 +70,8 @@ main {
   }
 }
 
-/* @media (max-width: 500px) {
-  main {
-    margin: 1rem 0;
-
+@media (min-width: 760px) {
+  .LayoutAdvice {
+    margin: 4rem;
   }
-} */
+}

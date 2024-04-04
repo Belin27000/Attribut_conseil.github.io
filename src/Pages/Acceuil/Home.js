@@ -4,6 +4,7 @@ import PresAC from '@/Assets/video/Pres_AC.mp4'
 import '@/Pages/Acceuil/home.scss';
 import KeyNumber from '../../Components/KeyNumbers/KeyNumber.js';
 import Movie from '../../Components/Movie/Movie.js';
+import GoogleWidget from '../../Components/Google/GoogleWidget/GoogleWidget.js';
 
 
 
@@ -28,6 +29,7 @@ const Home = () => {
             </section>
             <p className='BlueBand'><span className='CapName'>attri</span><span className='EndName' translate="no">but</span><span className='CapName '>conseils </span> <span className='BlueBandLastWord'> c'est :</span></p>
             <KeyNumber />
+            <GoogleWidget />
         </div>
     );
 };

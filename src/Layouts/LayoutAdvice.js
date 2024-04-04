@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 import Breadcrumb from '../Components/Breadcrumb/Breadcrumb.js';
 import ScrollToTop from '../Components/Button/ScrollButton/ScrollToTop.js';
 import HeaderAdvice from './Header/HeaderAdvice.js';
-import './layoutAdvice.scss';
+// import './layoutAdvice.scss';
 
 const LayoutAdvice = () => {
     return (

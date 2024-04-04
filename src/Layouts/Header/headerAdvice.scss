@@ -1,0 +1,29 @@
+.HeaderAdvice {
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .7rem;
+
+    a {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        color: #000000;
+
+    }
+}
+
+@media (min-width:760px) {
+
+    .HeaderAdvice {
+        border-top: 5px solid #000000;
+        border-bottom: 5px solid #000000;
+
+        font-size: 1.5rem;
+
+        p {
+            margin: 1rem 0;
+        }
+    }
+}

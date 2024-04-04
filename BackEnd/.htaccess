@@ -23,14 +23,11 @@ Options +FollowSymLinks
 ## Mod_rewrite in use.
 
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www\.attribut-conseils\.com$ [NC]
-RewriteRule ^ https://www.2023.attribut-conseils.com%{REQUEST_URI} [L,R=301]
 
 # Redirection vers www.2023.attribut-conseils.com si la page n'existe pas
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{HTTP_HOST} ^www\.attribut-conseils\.com$ [NC]
+RewriteCond %{REQUEST_URI} !^/administrator/index\.php$ [NC]
 RewriteRule ^(.*)$ https://www.2023.attribut-conseils.com/$1 [L,R=301]
-
 
 ## Begin - Rewrite rules to block out some common exploits.
 # If you experience problems on your site block out the operations listed below

@@ -124,7 +124,13 @@
 
     // }
     .City_Link {
+        h2 {
+            font-size: .8rem;
+            margin-bottom: 0;
+        }
+
         ul {
+            margin-top: 0;
             list-style-type: none;
             display: flex;
             flex-direction: column;
@@ -132,6 +138,7 @@
         }
 
         a {
+            font-size: .6rem;
             text-decoration: none;
             color: var(--acDarkBlue);
 
@@ -166,7 +173,8 @@
 
         .FooterLogoContainer {
             width: 45%;
-            position: absolute;
+            position: relative;
+            // position: absolute;
             z-index: 1;
             background-color: transparent;
             bottom: 65%;
@@ -222,8 +230,13 @@
         }
 
         .City_Link {
+            h2 {
+                font-size: .8rem;
+            }
+
             width: 30%;
             position: absolute;
+            font-size: .9rem;
             top: 0;
             right: 10%;
             z-index: 5;
@@ -260,37 +273,43 @@
 }
 
 @media screen and (min-width: 992px) {
-    // .GoogleRate {
-    //     position: absolute;
-    //     bottom: 10px;
-    //     left: 15rem;
-    //     box-shadow: 0 0 5px 0px black;
-    // }
-
-
-    .Footer .ReviewPad {
-        display: none;
-    }
-
-    .Footer .Map {
-        // height: 100%;
-        width: 30%;
-        height: 75%;
-        // display: initial;
-        // position: absolute;
-        // top: 0;
-        // z-index: 1;
-        // right: 10%;
-
-        h2 {
-            margin-bottom: 1rem;
+    .Footer {
+        .ReviewPad {
+            display: none;
         }
 
-        iframe {
-            width: 100%;
-            height: 100%;
-            // height: fit-content;
-            // border-radius: 15px;
+
+        .Map {
+            // height: 100%;
+            width: 30%;
+            height: 75%;
+            // display: initial;
+            // position: absolute;
+            // top: 0;
+            // z-index: 1;
+            // right: 10%;
+
+            h2 {
+                margin-bottom: 1rem;
+            }
+
+            iframe {
+                width: 100%;
+                height: 100%;
+                // height: fit-content;
+                // border-radius: 15px;
+            }
+        }
+
+        .City_Link {
+            h2 {
+                font-size: 1.2em;
+            }
+
+
+            a {
+                font-size: .8rem;
+            }
         }
     }
 }

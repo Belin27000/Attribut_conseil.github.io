@@ -13,6 +13,7 @@ import { FaStar } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import './seo.scss';
 import Questions from '../../Components/Questions/Questions.js';
+import GoogleWidget from '../../Components/Google/GoogleWidget/GoogleWidget.js';
 
 
 const MontereauFy = () => {
@@ -102,6 +103,7 @@ const MontereauFy = () => {
                 </div>
             </article>
             <ContactButton text="Contactez-nous" />
+            <GoogleWidget />
             <article className="Seo-article">
                 <h2 className='title-Melun-textStart'>Bilan de compétences à {ville} </h2>
                 <p>Faites confiance à Attribut Conseils - Avec une note de 5 sur 5 basée sur 170 avis Google.<span className='stars'><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></span></p>

@@ -13,6 +13,7 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 import './seo.scss';
 import Questions from '../../Components/Questions/Questions.js';
+import GoogleWidget from '../../Components/Google/GoogleWidget/GoogleWidget.js';
 
 
 
@@ -101,6 +102,8 @@ const Fontainebleau = () => {
                 <p className='text-end'>Les entretiens pour votre <b>bilan de compétences</b> à {ville} permettent par ailleurs de consolider votre projet. Vous obtenez des informations précieuses sur les dispositifs d'aides accessibles aux nouveaux entrepreneurs. Tout cela est déterminant si vous souhaitez créer les meilleures conditions pour mettre en place votre activité entrepreneuriale. Il est d'ailleurs possible d'opter pour <Link to="/formation_creation_entreprise#top">une formation à la création d'entreprise en Seine-et-Marne</Link> pour aller plus loin sur le sujet. Vous ressortez avec une feuille de route précisant les actions indispensables au bon développement de votre projet.</p>
             </article>
             <ContactButton text="Contactez-nous" />
+            <GoogleWidget />
+
             <article className="Seo-article">
                 <h2>Bilan de compétences à {ville} </h2>
                 <p>Faites confiance à Attribut Conseils - C’est 170 avis google<span className='stars'><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></span></p>

@@ -12,7 +12,7 @@ import YouthGuidance from '../youthGuidance/YouthGuidance.js';
 import Coaching from '../Coaching/Coaching.js';
 import CareerConsult from '../CareerManagementConsultant/CareerConsult.js';
 import TrainingTrainer from '../TrainingTrainer/TrainingTrainer.js';
-import BusinessCreationTraining from '../BusinessCreationTraining/BusinessCreationTraining.js';
+// import BusinessCreationTraining from '../BusinessCreationTraining/BusinessCreationTraining.js';
 import BusinessCreationTraining2 from '../BusinessCreationTraining/BusinessCreationTraining2.js';
 import IngeTraining from '../IngeTraining/IngeTraining.js';
 import ExternRhManagment from '../ExternRhManagment/ExternRhManagment.js';
@@ -27,6 +27,8 @@ import Melun from '../SEO/Melun.js';
 import MontereauFy from '../SEO/MontereauFy.js';
 import Avon from '../SEO/Avon.js';
 import Provins from '../SEO/Provins.js';
+import JobInterview from '../Advice/JobInterview.js';
+import LayoutAdvice from '../../Layouts/LayoutAdvice.js';
 
 const PublicRouter = () => {
     return (
@@ -75,6 +77,9 @@ const PublicRouter = () => {
 
                 <Route path='*' element={<Home />} />
 
+            </Route>
+            <Route element={<LayoutAdvice />}>
+                <Route path="/conseils/A_chacun_sa_question_qui_tue_en_entretien_d_embauche" element={<JobInterview />} />
             </Route>
         </Routes>
     );

@@ -6,12 +6,13 @@ import ManHide from '@/Assets/Images/ManHide.png'
 import QuestionMan from '@/Assets/Images/QuestionMan.png'
 import ClockMed from '@/Assets/Images/ClockMed.png'
 import PaperCheck from '@/Assets/Images/PaperCheck.png'
+import { Link } from 'react-router-dom';
 const JobInterview = () => {
     return (
-        <section>
+        <section className='JobInterview'>
             <header>
-                <div>
-                    <h1>A CHACUN SA QUESTION QUI<br /> TUE EN ENTRETIEN<br /> D’EMBAUCHE....!</h1>
+                <div className='title-container'>
+                    <h1>A CHACUN SA QUESTION QUI TUE EN ENTRETIEN D’EMBAUCHE....!</h1>
                 </div>
                 <div className="container">
                     <img src={dice} alt='doigt poussant 3 dés empilés' />
@@ -25,9 +26,7 @@ const JobInterview = () => {
                     <h2>De plus, vous êtes irrésistible! </h2>
                     <p>Au premier contact, vous en êtes certain, votre poignée de main chaleureuse et votre sourire éblouissant ont donné une première impression des plus remarquables à votre interlocuteur. </p>
                     <div className="news-Link">
-                        <a href="http://www.attribut-conseils.com" target="_blank" rel="noopener noreferrer">
-                            www.attribut-conseils.com
-                        </a>
+                        <Link to={"/home"}>www.attribut-conseils.com</Link>
                     </div>
                 </aside>
                 <article className='double-col'>
@@ -61,9 +60,7 @@ const JobInterview = () => {
                     <p>Souvenez-vous qu’il n’y a aucune obligation de répondre du tac au tac et que ces instants pris pour réfléchir seront payants. Vous devez cependant répondre à la question, car en n’y répondant pas, vous confirmerez votre malaise.
                     </p>
                     <div className="news-Link">
-                        <a href="http://www.attribut-conseils.com" target="_blank" rel="noopener noreferrer">
-                            www.attribut-conseils.com
-                        </a>
+                        <Link to={"/home"}>www.attribut-conseils.com</Link>
                     </div>
                 </aside>
                 <article className='double-col'>
@@ -89,6 +86,9 @@ const JobInterview = () => {
                             <p className='bold'>Dans notre prochaine news letter nous vous présenterons une liste de question possible en entretien, en attendant recherchez celles que vous ne voulez pas que l'on vous pose... </p>
                         </div>
                     </section>
+                    <div className="news-Link last">
+                        <Link to={"/home"}>www.attribut-conseils.com</Link>
+                    </div>
                 </article>
             </main>
         </section >
