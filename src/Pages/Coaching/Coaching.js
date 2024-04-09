@@ -1,10 +1,14 @@
 import React from 'react';
 import './coaching.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 const Coaching = () => {
+    const metaTitle = `Attribut Conseils - Accompagnement en coaching `
+    const metaDescription = `Vous souhaitez un accompagnement en coaching professionnel  en Seine et Marne? Contactez-nous !`
     return (
         <section className='Coaching'>
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
             <h1 className='sr-only'>Coaching en Seine et Marne</h1>
             <h2 className="Coaching-title" translate="no">COACHING</h2>
             <article className="Coaching-article">

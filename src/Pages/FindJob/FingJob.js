@@ -1,10 +1,15 @@
 import React from 'react';
 import './findJob.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 const FingJob = () => {
+    const metaTitle = `Attribut Conseils - Accompagnement  à la recherche d‘emploi `
+    const metaDescription = `Vous souhaitez un accompagnement  à la recherche d‘emploi en Seine et Marne? Contactez-nous !`
     return (
         <section className='FindJob'>
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
+
             <h1 className='sr-only'>Recherche d'emploi en Seine et Marne</h1>
 
             <h2 className="FindJob-title">Accompagnement  à la recherche d‘emploi </h2>

@@ -2,13 +2,14 @@ import React from 'react';
 import '@/Pages/Apropos/about.scss'
 import { Qualiopi, DataDoc, dbPic } from '@/Pages/index.js'
 import data from '../../Assets/data/data.json'
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 const About = () => {
     const QualiopiValidity = data.Qualiopi.validationDate
     console.log(QualiopiValidity);
     return (
         <section className='About'>
-
+            <MetaTitleDes />
             <h1 className='sr-only'>Bilan de compétences en Seine et Marne - qui sommes nous</h1>
             <h2>Qui sommes nous ?</h2>
 

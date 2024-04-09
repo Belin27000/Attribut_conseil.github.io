@@ -8,6 +8,8 @@ const Canonical = () => {
     return (
         <Helmet>
             <link rel="canonical" href={canonicalUrl} />
+            <meta property="og:url" content={canonicalUrl} />
+
         </Helmet>
     );
 };

@@ -1,10 +1,15 @@
 import React from 'react';
 import './ingeTraining.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 const IngeTraining = () => {
+    const metaTitle = `Attribut Conseils - Ingénierie de la formation`
+    const metaDescription = `Vous souhaitez développer vos programmes de formation efficacement pour répondre aux besoins de votre entreprise? Contactez-nous !`
     return (
         <section className='IngeTraining'>
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
+
             <h1 className='sr-only'>Ingénierie de la formation en Seine et Marne</h1>
             <h2 className="Bilan-title">INGENIERIE DE LA FORMATION</h2>
             <article className="IngeTraining-article">

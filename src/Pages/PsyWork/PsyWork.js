@@ -1,10 +1,15 @@
 import React from 'react';
 import './psyWork.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 const PsyWork = () => {
+    const metaTitle = `Attribut Conseils - Psychologie du travail`
+    const metaDescription = `Accompagnement psychologie du travail: La santé et le bien-être des salariés en Seine et Marne.`
     return (
         <section className='PsyWork'>
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
+
             <h1 className='sr-only'>Psychologie du travail en Seine et Marne</h1>
             <h2 className="PsyWork-title">Psychologie du travail </h2>
             <article className="PsyWork-article">

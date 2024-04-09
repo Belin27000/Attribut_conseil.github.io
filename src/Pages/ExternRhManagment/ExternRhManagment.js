@@ -1,10 +1,15 @@
 import React from 'react';
 import './externRhManagment.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 const ExternRhManagment = () => {
+    const metaTitle = `Attribut Conseils - Gestion RH externalisée `
+    const metaDescription = `Vous souhaitez externaliser votre gestion des ressources humaines? Contactez-nous !`
     return (
         <section className='ExternRhManagment'>
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
+
             <h1 className='sr-only'>Gestion RH externalisée en Seine et Marne</h1>
             <h2 className="ExternRhManagment-title">GESTION RH EXTERNALISÉE </h2>
             <article className="ExternRhManagment-article_bgWhite">

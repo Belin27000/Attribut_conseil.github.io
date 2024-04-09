@@ -1,9 +1,14 @@
 import React from 'react';
 import './ExternTrainManagement.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 const ExternTrainManagement = () => {
+    const metaTitle = `Attribut Conseils - Gestion de formation externalisée `
+    const metaDescription = `Vous souhaitez solution efficace pour gérer vos formations internes? Contactez-nous !`
     return (
         <section className='Train'>
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
+
             <h1 className='sr-only'>Gestion de formation externalisée en Seine et Marne</h1>
             <h2 className="Train-title"> Découvrez notre service de gestion de formation externalisée soutenu par notre expertise QUALIOPI !</h2>
             <article className="Train-article">

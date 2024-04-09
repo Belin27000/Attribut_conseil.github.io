@@ -4,10 +4,16 @@ import ContactButton from '../../Components/Button/ContactButton.js';
 import ScrollToTop from '../../Components/Button/ScrollButton/ScrollToTop.js';
 import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import allFiles from '../../_Services/fileToDownload.service.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 const Vae = () => {
+    const metaTitle = `Attribut Conseils - VAE`
+    const metaDescription = `Vous cherchez à réaliser une VAE en seine et marne? Contactez-nous !`
+
+
     return (
         <section className='Vae'>
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
             <h1 className='sr-only'>Vae en Seine et Marne</h1>
 
             <h2 className='Vae-title'>Accompagnement VAE - VAPP</h2>

@@ -3,10 +3,15 @@ import './trainingTrainer.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
 import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import allFiles from '../../_Services/fileToDownload.service.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 const TrainingTrainer = () => {
+    const metaTitle = `Attribut Conseils - Formation aux métiers de la formation`
+    const metaDescription = `Vous souhaitez vous former aux métiers de la formation en Seine et Marne? Contactez-nous !`
     return (
-        <section className='TrainingTrainer'>
+        <section section className='TrainingTrainer' >
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
+
             <h1 className='sr-only'>Formation metier de formateur en Seine et Marne - Attribut conseils</h1>
             <h2 className="TrainingTrainer-title">FORMATION METIER FORMATEUR ADULTES
             </h2>
@@ -113,7 +118,7 @@ const TrainingTrainer = () => {
                 <p><strong>Un certificat de compétences est remis au stagiaire en fin de formation. </strong></p>
                 <ContactButton />
             </article>
-        </section>
+        </section >
     );
 };
 

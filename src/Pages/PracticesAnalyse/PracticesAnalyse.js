@@ -1,10 +1,15 @@
 import React from 'react';
 import './practicesAnalyse.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 const PracticesAnalyse = () => {
+    const metaTitle = `Attribut Conseils - Analyse de pratiques professionnelles`
+    const metaDescription = `Vous souhaitez vous former à l'analyse de pratiques professionnelles en Seine et Marne? Contactez-nous !`
     return (
         <section className='PracticesAnalyse'>
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
+
             <h1 className="PracticesAnalyse-title">ANALYSES DES PRATIQUES PROFESSIONNELLES - SUPERVISION </h1>
             <article className='PracticesAnalyse-article_bgWhite'>
                 <p className='PracticesAnalyse-article_blue'>Cette formation vise à offrir aux professionnels un espace de réflexion et d'apprentissage, favorisant le développement de compétences essentielles dans leur pratique. L’analyse de pratiques permet de maintenir les apprentissages présents: poser le cadre, tenir la posture, revisiter les théories, naviguer dans la dynamique de séance, réviser les outils ou en découvrir…</p>

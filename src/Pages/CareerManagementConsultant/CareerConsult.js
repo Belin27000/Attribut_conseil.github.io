@@ -3,12 +3,17 @@ import './careerConsult.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
 import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import allFiles from '../../_Services/fileToDownload.service.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 
 const CareerConsult = () => {
+    const metaTitle = `Attribut Conseils - Formation consultant en gestion de carrières `
+    const metaDescription = `Vous souhaitez vous former aux métiers de consultant en gestion de carrières en Seine et Marne? Contactez-nous !`
     return (
         <section className='CareerConsult'>
-            <h1 className='sr-only'>Attribut Conseils forme au metier de cultant en gestion de carrières en Seine et Marne</h1>
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
+
+            <h1 className='sr-only'>Attribut Conseils forme au metier de consultant en gestion de carrières en Seine et Marne</h1>
             <h2 className="CareerConsult-title">FORMATION METIER CONSULTANT EN GESTION DE CARRIERES</h2>
             <article className="CareerConsult-article">
                 <p>Ce programme exhaustif est divisé en deux niveaux distincts : Consultant Niveau 1 et Consultant Niveau 2  axé expert bilan. Chez Attribut Conseils, nous comprenons que chaque apprenant est unique. C'est pourquoi nous offrons la possibilité de personnaliser votre formation selon vos besoins spécifiques. Nous pouvons également créer des modules de perfectionnement de courtes durées et sur mesure pour répondre à vos attentes particulières. N'hésitez pas à nous contacter pour discuter de vos besoins et élaborer ensemble un programme de formation adapté à vos objectifs. Ces formations sont accessibles en classe virtuelle ou en présentiel.

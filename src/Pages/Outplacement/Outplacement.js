@@ -3,15 +3,20 @@ import './outplacement.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
 import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import allFiles from '../../_Services/fileToDownload.service.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 const Outplacement = () => {
+    const metaTitle = `Attribut Conseils - Outplacement`
+    const metaDescription = `Vous souhaitez repositionner un ou plusieurs collaborateurs, l'outplacement est LA solution- Contactez-nous !`
     return (
         <section className='Outplacement'>
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
+
             <h1 className='sr-only'>Cabinet d'outplacement en Seine et Marne</h1>
             <h2 className="Outplacement-title">OUTPLACEMENT INDIVIDUEL ou COLLECTIF </h2>
             <article className="Outplacement-article">
                 <h3 className="Outplacement-article-title">QU’EST CE QUE l’OUTPLACEMENT ? </h3>
-                <p>Dans le cadre d’une procédure de restructuration, l’entreprise peut faire appel à un prestataire pour piloter le repositionnement d’un ou plusieurs  collaborateurs jusqu’à l’obtention d’une solution professionnelle durable. Une réunion avec l’entreprise pourra être mis en place afin de mieux préciser le contexte et la situation professionnelle du ou des salariés.
+                <p>Dans le cadre d’une procédure de restructuration, l’entreprise peut faire appel à un prestataire pour piloter le repositionnement d’un ou plusieurs collaborateurs jusqu’à l’obtention d’une solution professionnelle durable. Une réunion avec l’entreprise pourra être mis en place afin de mieux préciser le contexte et la situation professionnelle du ou des salariés.
                 </p>
                 <h3 className="Outplacement-article-title">LE RÔLE DE NOTRE CABINET ATTRIBUT CONSEILS</h3>
                 <p>Notre expérience et notre réseau sont nos atouts pour piloter le repositionnement du salarié jusqu’à l'obtention d’une <strong>solution professionnelle durable</strong>.

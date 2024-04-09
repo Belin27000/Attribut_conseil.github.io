@@ -3,6 +3,7 @@ import Tree from '@/Assets/Images/Tree.png'
 import FlagCPF from '@/Assets/Images/CPF_France.png'
 import success from '@/Assets/Images/success.png'
 import './businessCreationTraining.scss';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 const BusinessCreationTraining = () => {
 
@@ -33,8 +34,12 @@ const BusinessCreationTraining = () => {
             window.removeEventListener('scroll', handleScroll);
         }
     }, [])
+    const metaTitle = `Attribut Conseils - Formation à la création d'entreprise `
+    const metaDescription = `Vous souhaitez être accompagné pour la création de votre entreprise ? Contactez Attribut conseils en Seine et Marne !`
     return (
         <section className='bct'>
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
+
             <div className="container">
                 <div className="Landing-Page container-img">
                     <img className='Tree' src={Tree} alt="Logo arbre Attribut conseils" />

@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 import Footer from './Footer/Footer.js';
 import Breadcrumb from '../Components/Breadcrumb/Breadcrumb.js';
 import ScrollToTop from '../Components/Button/ScrollButton/ScrollToTop.js';
-import Canonical from '../Components/Canonical.js';
+import Canonical from '../Components/Meta/Canonical.js';
 
 
 const Layout = () => {

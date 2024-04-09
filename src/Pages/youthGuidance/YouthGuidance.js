@@ -3,10 +3,15 @@ import './youthGuidance.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
 import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import allFiles from '../../_Services/fileToDownload.service.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 const YouthGuidance = () => {
+    const metaTitle = `Attribut Conseils - Orientation des jeunes`
+    const metaDescription = `Vous cherchez la bonne orientation pour votre enfant? Contactez-nous !`
     return (
         <section className='YouthGuidance'>
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
+
             <h1 className='sr-only'>Orientation des jeunes générations</h1>
             <h2 className="YouthGuidance-title">ORIENTATION JEUNES</h2>
             <h3 className="YouthGuidance-article-title">L’ORIENTATION: ÇA S’ÉDUQUE!</h3>

@@ -5,6 +5,7 @@ import '@/Pages/Acceuil/home.scss';
 import KeyNumber from '../../Components/KeyNumbers/KeyNumber.js';
 import Movie from '../../Components/Movie/Movie.js';
 import GoogleWidget from '../../Components/Google/GoogleWidget/GoogleWidget.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 
 
@@ -13,6 +14,7 @@ const Home = () => {
     console.log(pictures.pictures);
     return (
         <div className='Home'>
+            <MetaTitleDes />
             <h1 className='sr-only'>Bilan de compétences en Seine et Marne</h1>
             <section className='topSideHome'>
                 <div translate="no" className='PunchLine'>"Le travail nous travaille, ensemble faisons en sorte qu'il nous travaille bien"</div>

@@ -6,6 +6,7 @@ import ContactButton from '../../Components/Button/ContactButton.js';
 import data from '../../Assets/data/data.json'
 import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import allFiles from '../../_Services/fileToDownload.service.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 
 const BusinessCreationTraining = () => {
@@ -14,8 +15,11 @@ const BusinessCreationTraining = () => {
         window.scrollTo(0, 0)
     }, [])
 
+    const metaTitle = `Attribut Conseils - Formation à la création d'entreprise `
+    const metaDescription = `Vous souhaitez être accompagné pour la création de votre entreprise ? Contactez ATtribut conseils en Seine et Marne !`
     return (
         <section className='Bct' >
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
 
             <h1 className="Bct-title" >FORMATION CRÉATION D‘ENTREPRISE INDIVIDUALISÉE </h1>
             <div className="Bct-Qualiopi">

@@ -14,12 +14,16 @@ import { Link } from 'react-router-dom';
 import './seo.scss';
 import Questions from '../../Components/Questions/Questions.js';
 import GoogleWidget from '../../Components/Google/GoogleWidget/GoogleWidget.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 
 const MontereauFy = () => {
     const ville = 'Montereau-Fault-Yonne';
+    const metaTitle = `Attribut Conseils - Bilan de compétences à ${ville}`
+    const metaDescription = `Vous cherchez à réaliser votre bilan de compétence à ${ville}? Contactez-nous !`
     return (
         <section className='Seo'>
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
             <h1><span>Votre</span><br /> BILAN DE COMPÉTENCES A <span className='Title city'>{ville}</span></h1>
             <p className='Seo_Yellow'>Vous cherchez à réaliser un bilan de compétences à {ville} ? Contactez notre cabinet spécialisé en Seine-et-Marne, retour rapide assuré !</p>
             <div className="Seo container-img">

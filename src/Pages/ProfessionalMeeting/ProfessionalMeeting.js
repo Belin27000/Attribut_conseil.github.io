@@ -1,10 +1,15 @@
 import React from 'react';
 import './professionalMeeting.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 const ProfessionalMeeting = () => {
+    const metaTitle = `Attribut Conseils - Entretien professionnel `
+    const metaDescription = `Vous souhaitez faire réaliser vos entretiens professionnels obligatoires afin de répondre à l'article L.6315-1 du code du travail? Contactez-nous !`
     return (
         <section className='ProfessionalMeeting'>
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
+
             <h1 className='sr-only'>Entretien professionnel en Seine et Marne</h1>
             <h2 className="ProfessionalMeeting-title">FOCUS SUR L‘ENTRETIEN PROFESSIONNEL</h2>
             <article className='ProfessionalMeeting-article_bgWhite'>
