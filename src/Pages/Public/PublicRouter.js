@@ -12,8 +12,8 @@ import YouthGuidance from '../youthGuidance/YouthGuidance.js';
 import Coaching from '../Coaching/Coaching.js';
 import CareerConsult from '../CareerManagementConsultant/CareerConsult.js';
 import TrainingTrainer from '../TrainingTrainer/TrainingTrainer.js';
-// import BusinessCreationTraining from '../BusinessCreationTraining/BusinessCreationTraining.js';
-import BusinessCreationTraining2 from '../BusinessCreationTraining/BusinessCreationTraining2.js';
+import BusinessCreationTraining from '../BusinessCreationTraining/BusinessCreationTraining.js';
+// import BusinessCreationTraining2 from '../BusinessCreationTraining/BusinessCreationTraining2.js';
 import IngeTraining from '../IngeTraining/IngeTraining.js';
 import ExternRhManagment from '../ExternRhManagment/ExternRhManagment.js';
 import PracticesAnalyse from '../PracticesAnalyse/PracticesAnalyse.js';
@@ -53,8 +53,8 @@ const PublicRouter = () => {
                 <Route path="/coaching" element={<Coaching />} />
                 <Route path="/psychologie_du_travail" element={<PsyWork />} />
 
-                {/* <Route path="/formation_creation_entreprise" element={<BusinessCreationTraining />} /> */}
-                <Route path="/formation_creation_entreprise" element={<BusinessCreationTraining2 />} />
+                <Route path="/formation_creation_entreprise" element={<BusinessCreationTraining />} />
+                {/* <Route path="/formation_creation_entreprise" element={<BusinessCreationTraining2 />} /> */}
                 <Route path="/formation_metier_formateur_adultes" element={<TrainingTrainer />} />
                 <Route path="/formation_metier_consultant_en_gestion_de_carrieres" element={<CareerConsult />} />
                 <Route path="/groupe_analyse_de_pratiques" element={<PracticesAnalyse />} />

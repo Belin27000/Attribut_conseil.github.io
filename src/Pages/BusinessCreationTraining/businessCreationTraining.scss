@@ -21,10 +21,11 @@
 
     .container {
         position: relative;
+
         // height: 100%;
 
         &-head {
-            position: absolute;
+            position: relative;
             top: -1rem;
             // left: 0;
             z-index: 2;
@@ -49,8 +50,10 @@
         }
 
         &-img {
-            position: relative;
-            top: -1rem;
+            .Tree {
+                position: absolute;
+                left: 0;
+            }
 
             .FlagCPF {
                 position: absolute;
@@ -75,7 +78,7 @@
         position: relative;
 
         p {
-            font-size: .65rem;
+            font-size: .6rem;
             font-weight: bold;
             width: 35%;
             height: 55%;
@@ -95,6 +98,141 @@
             width: 50%;
         }
     }
+
+    .training-path {
+        margin: 0 1rem;
+        position: relative;
+
+        .description-picContainer {
+            display: flex;
+            width: 100%;
+
+            .text {
+                font-size: .6rem;
+
+                p {
+                    margin: 0 .5rem;
+                    font-weight: bold;
+                }
+
+                .Yellow {
+                    color: var(--acYellow);
+
+                    &.medium {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            img {
+                object-fit: cover;
+                width: 30%;
+                border-radius: 5px;
+            }
+        }
+
+    }
+
+    .training-step {
+
+        .step {
+            background: linear-gradient(#000000, #006185);
+
+            // border-bottom: solid 3px var(--acYellow);
+            h3 {
+
+                padding: 1rem;
+            }
+
+            ol {
+                margin-left: 1rem;
+
+                li {
+                    text-align: center;
+                    margin-bottom: 1rem;
+
+                    &::marker {
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                    }
+                }
+
+            }
+        }
+
+        .step-after {
+            background: linear-gradient(#006185, #a6a6a6);
+            padding: 1rem;
+
+            h3 {
+                color: var(--acWhite);
+                font-size: 1.7rem;
+            }
+
+            p {
+
+                &.Darkblue {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: #006185;
+                }
+            }
+
+        }
+    }
+
+    .whoCanDo,
+    .howPay {
+        padding: 0 1rem;
+
+        .picContainer {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .trainYourself {
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .allText {
+            margin: 1rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #006185;
+            width: 200px;
+            height: 200px;
+            vertical-align: middle;
+            background-color: white;
+            border-radius: 50%;
+            // border: 3px dotted white;
+            // justify-content: flex-end;
+
+            .mainText {
+                width: 70%;
+            }
+
+            .circleDot {
+                position: absolute;
+                top: 0;
+                rotate: -40deg;
+            }
+
+            // border-image: radial-gradient(circle, white 10%, transparent 10%) 1;
+
+            /* Utilisation de la bordure pointillée */
+        }
+
+
+    }
+
 }
 
 @media (min-width: 760px) {

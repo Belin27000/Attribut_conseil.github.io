@@ -1,39 +1,45 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Tree from '@/Assets/Images/Tree.png'
-import FlagCPF from '@/Assets/Images/CPF_France.png'
+import Visio2 from '@/Assets/Images/Visio2.png'
 import success from '@/Assets/Images/success.png'
-import './businessCreationTraining.scss';
+import CPF_White from '@/Assets/Images/CPF_White.png'
+import FlagCPF from '@/Assets/Images/CPF_France.png'
+// import CircleDot from '@/Assets/Images/CircleDot.png'
+import TwoDesigner from '@/Assets/Images/TwoDesigner.png'
 import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
+
+import './businessCreationTraining.scss';
+import TelButton from '../../Components/Button/TelButton/TelButton.js';
 
 const BusinessCreationTraining = () => {
 
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const [scrollLittlePosition, setScrollLittlePosition] = useState(0);
-    const [scrollLinePosition, setScrollLinePosition] = useState(0);
+    // const [scrollPosition, setScrollPosition] = useState(0);
+    // const [scrollLittlePosition, setScrollLittlePosition] = useState(0);
+    // const [scrollLinePosition, setScrollLinePosition] = useState(0);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY < 1100) {
-                setScrollPosition(window.scrollY);
-                // const base = window.scrollTo(0, 0)
-                // setScrollPosition(1500);
-            }
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         if (window.scrollY < 1100) {
+    //             setScrollPosition(window.scrollY);
+    //             // const base = window.scrollTo(0, 0)
+    //             // setScrollPosition(1500);
+    //         }
 
-            if (window.scrollY < 1400) {
-                setScrollLittlePosition(window.scrollY);
+    //         if (window.scrollY < 1400) {
+    //             setScrollLittlePosition(window.scrollY);
 
-            }
-            if (window.scrollY < 1300) {
-                setScrollLinePosition(window.scrollY);
+    //         }
+    //         if (window.scrollY < 1300) {
+    //             setScrollLinePosition(window.scrollY);
 
-            }
-            // setScrollPosition(window.scrollY);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        }
-    }, [])
+    //         }
+    //         // setScrollPosition(window.scrollY);
+    //     };
+    //     window.addEventListener('scroll', handleScroll);
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     }
+    // }, [])
     const metaTitle = `Attribut Conseils - Formation à la création d'entreprise `
     const metaDescription = `Vous souhaitez être accompagné pour la création de votre entreprise ? Contactez Attribut conseils en Seine et Marne !`
     return (
@@ -65,19 +71,72 @@ const BusinessCreationTraining = () => {
             </div>
             <div className='training-path'>
                 <div className="description">
-                    <h2>Comment se déroule la formation? {scrollPosition} {scrollLittlePosition}</h2>
+                    <h2>Comment se déroule la formation?</h2>
                     <p>Chaque formation à la création d’entreprise est conçue de manière spécifique, offrant un apprentissage individualisé pour <b>répondre à vos besoins uniques</b>. Nous nous appuyons sur une méthodologie générale tout en adaptant les contenus et les outils à votre projet spécifique.
                     </p>
                     <p>Vous bénéficierez de l'accompagnement d'un dirigeant expérimenté de PME, spécialisé dans le soutien aux jeunes créateurs. <b>Un premier entretien, gratuit et sans engagement</b>, nous permettra d'analyser vos besoins afin de concevoir un programme sur mesure qui vous convienne.</p>
                     <p>Notre approche privilégie une pratique intensive, avec un ratio de 10% théorique et 90% pratique. Tout au long de la formation, vous travaillerez activement sur votre projet de création, depuis l'exploration de votre idée jusqu'à la concrétisation de votre entreprise.</p>
+                    <div className="description-picContainer">
+                        <img src={TwoDesigner} alt="Two designer working" />
+                        <div className="text">
+                            <p className='Yellow'>100% visio/100%<br /> présentiel ou mixte</p>
+                            <p className='Yellow medium'>Au choix</p>
+                            <p>Pas de plateforme digitale impersonnelle, que des consultants formateurs en entretien</p>
+                        </div>
+                        <img src={Visio2} alt="Man working on a laptop" />
+
+                    </div>
                 </div>
-                <div className='yellow-circle' style={{ transform: `translateX(${scrollPosition - 2150}px)` }}></div>
-                <div className='white-circle' style={{ transform: `translateX(${scrollLittlePosition - 2450}px)` }}></div>
-                <div className='yellow-line' style={{ transform: `translateX(${scrollLinePosition - 2250}px)` }}></div>
-                {/* <div>
-                    <img src={Tree} alt="Logo arbre Attribut conseils" />
-                    <p></p>
-                    <img src={Tree} alt="Logo arbre Attribut conseils" />
+                <div className='yellow-circle'></div>
+                <div className='white-circle'></div>
+                <div className='yellow-line'></div>
+            </div>
+            <div className="training-step">
+                <div className="step">
+                    <h3>Quels sont les étapes cles de votre formation à la création d’entreprise?</h3>
+                    <ol>
+                        <li>Le projet: Définir et évaluer l’idée</li>
+                        <li>Le business plan: Réaliser l’étude de marché, definir la stratégie</li>
+                        <li>L’activité et les moyens - Définir la rentabilité</li>
+                        <li>Financement: Notions de bilan, BFR, fonds propres et immobilisations </li>
+                        <li>Prévisions financières: suivi, plan de financement, compte de résultat, plan de trésorerie, </li>
+                        <li>Statut juridique - Régime social</li>
+                        <li>Démarche: plan d’actions des formalités</li>
+                    </ol>
+                </div>
+                <div className="step-after">
+                    <h3>Et après la formation?</h3>
+                    <p>Nous restons à vos cotés! Vous rejoignez notre communauté d’entrepreneurs.</p>
+                    <p>Vous bénéficiez d’un suivi à 6 mois avec votre formateur. </p>
+                    <p className='Darkblue'>Pour obtenir le programme détaillé</p>
+                    <TelButton number='06 98 88 15 55' />
+                </div>
+            </div>
+            <div className="whoCanDo">
+                <h3>Qui peut intégrer la formation création d’entreprise ?</h3>
+                <p>Le cabinet ATTRIBUT CONSEILS est là pour soutenir tous les porteurs de projets, qu'ils évoluent dans le secteur public ou privé, quel que soit leur niveau, leur statut ou leur domaine d'activité. Nous sommes là pour vous, que vous ayez simplement une idée en germe ou que vous cherchiez à développer vos compétences entrepreneuriales.</p>
+            </div>
+            <div className="howPay">
+                <div className="text">
+                    <h3>Comment financer ma formation création d’entreprise? </h3>
+                    <p>Le prix de cette formation se situe entre <b>1000€ et  2240€.</b> Le financement de la formation dépend de votre situation, statut et des modalités souhaitées.</p>
+                    <p>La durée de la formation varie entre 8h et 16h, selon votre besoin, entièrement individualisée et sous la forme d’entretien en face à face (visio ou présentiel ou mixte). Un travail personnel est nécessaire entre les entretiens.
+                    </p>
+                    <p>Pour financer votre formation vous avez 4 possibilités : utiliser vos droits CPF, le plan de développement des compétences de votre employeur, France Travail ou le financement personnel. Vous pouvez consulter nos conditions générales de vente ci dessous.
+                    </p>
+                </div>
+                <div className="picContainer">
+                    <img src={CPF_White} alt="Logo CPF" />
+                </div>
+            </div>
+            <div className="trainYourself">
+                <h3>FORMEZ VOUS  ET DÉVELOPPEZ VOS COMPÉTENCES ENTREPRENEURIALES</h3>
+                <div className="allText">
+                    <p className="mainText">Obtenir un rendez-vous, un devis ou pour plus d’informations et concrétiser votre projet</p>
+                    <p>Je contacte<br /><b>ATTRIBUT<br />CONSEILS</b> </p>
+                </div>
+                {/* <div className="circleDot">
+                    <img src={CircleDot} alt="cercle de petit point" />
                 </div> */}
             </div>
         </section>
