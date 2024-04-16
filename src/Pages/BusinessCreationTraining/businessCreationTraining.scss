@@ -1,17 +1,18 @@
-@mixin circle-styles($size, $background-color, $top: 0) {
+@mixin circle-styles($size, $background-color, $top: 0, $left: 0) {
     width: $size;
     height: $size;
     background-color: $background-color;
     border-radius: 50%;
     position: absolute;
     top: $top;
-    transition: transform 0.5s ease;
+    left: $left;
 }
 
-@mixin line-styles($width, $background-color, $rotation, $top) {
+@mixin line-styles($width, $background-color, $rotation, $top: 0, $right: 100%) {
     width: $width;
     background-color: $background-color;
     rotate: $rotation;
+    right: $right;
     top: $top;
     position: relative;
 }
@@ -22,12 +23,10 @@
     .container {
         position: relative;
 
-        // height: 100%;
 
         &-head {
             position: relative;
             top: -1rem;
-            // left: 0;
             z-index: 2;
             text-align: start;
 
@@ -69,6 +68,7 @@
     }
 
     &-pres {
+        position: relative;
         font-weight: bold;
         margin: 1rem;
     }
@@ -137,8 +137,8 @@
 
         .step {
             background: linear-gradient(#000000, #006185);
+            width: 100%;
 
-            // border-bottom: solid 3px var(--acYellow);
             h3 {
 
                 padding: 1rem;
@@ -195,10 +195,30 @@
     }
 
     .trainYourself {
-        padding: 0 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: bold;
+
+            p {
+                margin: 0;
+                width: 60%;
+            }
+
+            .Yellow {
+                color: var(--acYellow);
+
+                &.medium {
+                    margin: .5rem;
+                }
+            }
+        }
 
         .allText {
             margin: 1rem;
@@ -207,120 +227,599 @@
             flex-direction: column;
             align-items: center;
             color: #006185;
-            width: 200px;
-            height: 200px;
+            width: 250px;
+            height: 250px;
             vertical-align: middle;
             background-color: white;
             border-radius: 50%;
-            // border: 3px dotted white;
-            // justify-content: flex-end;
+            margin: 1rem;
 
             .mainText {
                 width: 70%;
+                padding: 1rem;
             }
 
             .circleDot {
                 position: absolute;
-                top: 0;
-                rotate: -40deg;
+                top: -1.5rem;
+
+                img {
+
+                    width: 300px;
+                    height: 300px;
+                    rotate: -40deg;
+                }
             }
 
-            // border-image: radial-gradient(circle, white 10%, transparent 10%) 1;
+            .yellowCircle {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: var(--acYellow);
+                z-index: 15;
+                position: absolute;
+                bottom: -1rem;
+                left: 1rem;
+            }
+        }
 
-            /* Utilisation de la bordure pointillée */
+        .videoContainer {
+
+            .movie {
+                border: 15px solid var(--acYellow);
+            }
         }
 
 
     }
 
+    .googleRate {
+        font-size: 50px;
+        color: var(--acWhite);
+    }
+
+    .reviewExample {
+        margin: 1rem;
+    }
 }
 
-@media (min-width: 760px) {
-
+@media screen and (min-width: 576px) {
     .bct {
+        font-size: 1.5rem;
+
         .container {
             &-head {
                 h1 {
-                    font-size: 5rem;
+                    font-size: 3rem;
                 }
 
                 h2 {
-                    font-size: 3rem;
+                    font-size: 2rem;
                 }
             }
 
             &-img {
-                .FlagCPF {
-                    width: 35%;
+
+                .Tree {
+                    z-index: 0;
+                }
+            }
+
+        }
+
+        .bct-pres {
+            position: relative;
+            z-index: 4;
+        }
+
+        .bct-description {
+            position: relative;
+
+
+            .Success-container {
+                p {
+                    width: 36%;
+                    height: 55%;
+                    right: 27%;
+                    top: 4%;
+                    font-size: 1.1rem;
+                    padding: 1rem;
+                    margin: 1rem;
+                }
+            }
+
+        }
+
+        .trainYourself {
+            .allText {
+                width: 350px;
+                height: 350px;
+                left: -150px;
+                top: 150px;
+
+                .circleDot {
+                    img {
+
+                        width: 400px;
+                        height: 400px
+                    }
+                }
+
+                .yellowCircle {
+                    width: 50px;
+                    height: 50px;
+                    bottom: -0.2rem;
                 }
             }
         }
 
-        &-pres {
-            font-size: 1.5rem;
-            width: 70%;
-            text-align: start;
-            padding-left: 3rem;
-            margin: 0;
+        .training-path {
+            .description-picContainer {
+                .text {
+                    .Yellow {
+
+                        font-size: 1.1rem;
+
+                        &.medium {
+                            font-size: 1.5rem;
+
+                        }
+
+                    }
+
+
+
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .bct {
+        .container-img {
+            .FlagCPF {
+                bottom: 5rem;
+                width: 20%;
+            }
         }
 
-        &-description {
+        .training-path {
+            .description-picContainer {
+                .text {
+                    .Yellow {
 
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+                        font-size: 1.3rem;
+
+                        &.medium {
+                            font-size: 1.7rem;
+
+                        }
+
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
         }
 
-        .Success-container {
-            width: 60%;
-            // height: 100%;
+        .trainYourself {
+            position: relative;
+            margin-bottom: 10rem;
 
-            p {
-                font-size: .9rem;
-                width: 35%;
-                height: 60%;
-                right: 30%;
-                top: 5%;
+            .text {
+
+                margin-bottom: 1rem;
             }
 
-            img {
-                width: 45%;
+            .allText {
+                position: relative;
+                left: 0%;
+
+            }
+
+            .videoContainer {
+                position: absolute;
+                top: 45%;
+                right: 10px;
+
+                .movie {
+                    width: 250px;
+                    height: 250px;
+                    border: 10px solid var(--acYellow);
+                }
+            }
+        }
+
+        .bct-description {
+            .Success-container {
+                p {
+                    right: 28%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 964px) {
+    .bct {
+        .trainYourself {
+            position: relative;
+
+            .allText {
+                position: relative;
+                left: 0%;
+            }
+
+            .videoContainer {
+                position: absolute;
+                top: 40%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .bct {
+        .container-img {
+
+            .Tree {
+                top: -2rem
+            }
+
+            .FlagCPF {
+                bottom: 0;
+                width: 30%;
+            }
+        }
+
+        .container-head {
+
+            h1 {
+                font-size: 5rem
+            }
+
+            h2 {
+                font-size: 3rem;
+            }
+        }
+
+        .bct-description {
+            display: flex;
+            align-items: center;
+
+            .bct-pres {
+                padding-left: 2rem;
+                width: 80%;
+                text-align: start;
+            }
+
+            .Success-container {
+                width: 50%;
+
+                img {
+                    width: 60%;
+                }
+
+                p {
+                    width: 43%;
+                    height: 55%;
+                    right: 23%;
+                    top: 3%;
+                    font-size: 1rem;
+                }
             }
         }
 
         .training-path {
             display: flex;
-            width: 100%;
             justify-content: flex-end;
-            position: relative;
 
             .description {
-                h2 {
-                    font-size: 2rem;
-                    text-align: center;
+                text-align: start;
+                width: 70%;
+
+                .description-picContainer {
+                    .text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        padding: 0 3.5rem;
+
+                        p {
+                            line-height: 2rem;
+                        }
+                    }
+
+                    .Yellow {
+                        font-size: 1.5rem
+                    }
                 }
-
-
-                width: 60%;
-                font-size: 1.5rem;
-                padding: 0 2rem;
-                text-align: justify;
-
             }
         }
 
         .yellow-circle {
-            @include circle-styles(200px, var(--acYellow));
+            @include circle-styles(200px, var(--acYellow), 0, 50px);
         }
 
         .white-circle {
-            @include circle-styles(75px, white, 25%);
+            @include circle-styles(80px, white, 16%, 170px);
         }
 
         .yellow-line {
-            @include line-styles(5px, var(--acYellow), -7deg, -100px);
+            @include line-styles(5px, var(--acYellow), -7deg, 0px, 75%);
         }
 
-    }
+        .training-step {
+            display: flex;
+            overflow: hidden;
+            margin-top: 1rem;
 
+            .step {
+
+                transform: skew(15deg);
+                padding: 0 5rem;
+                width: 100%;
+                margin-left: -5rem;
+                margin-right: -5rem;
+
+                div {
+                    transform: skew(-15deg);
+
+                }
+
+                h3 {
+                    font-size: 2.2rem;
+                    text-align: start;
+                    margin: 0 0 0 1rem;
+                }
+
+                ol {
+                    margin-left: 3rem;
+
+                    li {
+                        text-align: start;
+                        padding-left: 1rem;
+
+                        &::marker {
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+            }
+
+            .Inter {
+                width: 7px;
+                background-color: var(--acYellow);
+                transform: skew(15deg);
+                translate: 5.1rem;
+                margin: 0 1rem;
+            }
+
+            .step-after {
+
+                width: 45%;
+                transform: skew(15deg);
+                padding-right: 2rem;
+                translate: 90px;
+                background: linear-gradient(to bottom right, #a6a6a6, #ffffff);
+
+                div {
+                    margin-left: 2rem;
+                    margin-right: 5rem;
+                    transform: skew(-15deg);
+                    font-weight: bold;
+
+                    .whiteP {
+
+                        color: white;
+                    }
+
+                    h3 {
+                        margin-top: 0;
+                        text-align: start;
+
+                        color: var(--acDarkBlue);
+                        font-size: 2.5rem;
+
+                        span {
+                            color: #5f9cbb;
+
+                        }
+
+                    }
+
+                    p {
+                        text-align: start;
+                        color: var(--acDarkBlue);
+                    }
+                }
+            }
+
+            .TelButton {
+                width: 80%;
+
+                a {
+
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .whoCanDo {
+            text-align: right;
+            width: 70%;
+            position: relative;
+
+            &-yellow-circle {
+                @include circle-styles(175px, var(--acYellow), -30%, 105%);
+
+            }
+
+            &-white-circle {
+                @include circle-styles(80px, white, -40%, 105%);
+            }
+        }
+
+        .howPay {
+            display: flex;
+            align-items: center;
+
+            .text {
+                text-align: start;
+                position: relative;
+                padding-left: 7rem;
+                width: 95%;
+
+                h3 {
+                    margin-top: 0;
+                    width: 50%;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    border-radius: 50%;
+                    background-color: var(--acYellow);
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: calc(100% - 1rem);
+                    background-color: var(--acYellow);
+                    width: 4px;
+                    top: 0;
+                    left: calc((3.5rem / 2) - 1px);
+
+                }
+            }
+
+            .picContainer {
+                width: 30%;
+            }
+        }
+
+        .trainYourself {
+            position: relative;
+            margin-bottom: 25rem;
+
+
+            h3 {
+                width: 60%;
+                font-size: 3rem;
+                margin-bottom: 5rem;
+            }
+
+            .text {
+                position: absolute;
+                left: 50%;
+                top: 150%;
+                width: 25%;
+                transform: translateX(-150%);
+                font-size: 1rem;
+                text-align: start;
+
+                .Yellow {
+                    font-size: .9rem;
+
+                    &.medium {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            .allText {
+                position: absolute;
+                right: 0;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 450px;
+                height: 450px;
+
+                .mainText {
+                    margin-top: 1rem;
+                    font-size: 1.8rem;
+                }
+
+                .circleDot {
+                    transform: translateY(-5%);
+
+                    img {
+
+                        width: 550px;
+                        height: 550px;
+
+                    }
+                }
+
+                .yellowCircle {
+                    @include circle-styles(75px, var(--acYellow), 100%, 0);
+                    transform: translateY(-75%)
+                }
+
+            }
+
+            .videoContainer {
+                transform: translateX(170%);
+                right: 50%;
+                top: 75%;
+                position: absolute;
+
+                .movie {
+                    width: 200px;
+                    height: 200px;
+                    border: 10px solid var(--acYellow);
+
+                }
+            }
+        }
+
+        .GoogleReview {
+            display: flex;
+            margin-top: 35rem;
+            align-items: center;
+
+            .googleRate {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+
+                h3 {
+                    margin-bottom: 0;
+                }
+
+                .Rate {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+
+                .Logo-container {
+                    img {
+                        width: 40%;
+                    }
+                }
+            }
+
+            .reviewExample {
+                width: 50%;
+                text-align: start;
+                margin-bottom: 0;
+            }
+        }
+    }
 }

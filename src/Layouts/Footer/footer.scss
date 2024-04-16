@@ -124,6 +124,8 @@
 
     // }
     .City_Link {
+        color: transparent;
+
         h2 {
             font-size: .8rem;
             margin-bottom: 0;
@@ -138,16 +140,17 @@
         }
 
         a {
+            color: transparent;
             font-size: .6rem;
             text-decoration: none;
-            color: var(--acDarkBlue);
+            // color: var(--acDarkBlue);
 
         }
 
         li:hover {
 
             margin: 0 .5rem;
-            background-color: var(--acDarkBlue);
+            // background-color: var(--acDarkBlue);
 
             a {
                 color: white;

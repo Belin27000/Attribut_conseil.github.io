@@ -4,42 +4,19 @@ import Visio2 from '@/Assets/Images/Visio2.png'
 import success from '@/Assets/Images/success.png'
 import CPF_White from '@/Assets/Images/CPF_White.png'
 import FlagCPF from '@/Assets/Images/CPF_France.png'
-// import CircleDot from '@/Assets/Images/CircleDot.png'
+import CircleDot from '@/Assets/Images/CircleDot.png'
 import TwoDesigner from '@/Assets/Images/TwoDesigner.png'
 import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
+import GrassGrow from '../../Assets/video/GrassGrow.mp4'
+
 import './businessCreationTraining.scss';
 import TelButton from '../../Components/Button/TelButton/TelButton.js';
+import GoogleRate from '../../Components/Google/GlobalRate/GoogleRate.js';
+import Movie from '../../Components/Movie/Movie.js';
 
 const BusinessCreationTraining = () => {
 
-    // const [scrollPosition, setScrollPosition] = useState(0);
-    // const [scrollLittlePosition, setScrollLittlePosition] = useState(0);
-    // const [scrollLinePosition, setScrollLinePosition] = useState(0);
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         if (window.scrollY < 1100) {
-    //             setScrollPosition(window.scrollY);
-    //             // const base = window.scrollTo(0, 0)
-    //             // setScrollPosition(1500);
-    //         }
-
-    //         if (window.scrollY < 1400) {
-    //             setScrollLittlePosition(window.scrollY);
-
-    //         }
-    //         if (window.scrollY < 1300) {
-    //             setScrollLinePosition(window.scrollY);
-
-    //         }
-    //         // setScrollPosition(window.scrollY);
-    //     };
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     }
-    // }, [])
     const metaTitle = `Attribut Conseils - Formation à la création d'entreprise `
     const metaDescription = `Vous souhaitez être accompagné pour la création de votre entreprise ? Contactez Attribut conseils en Seine et Marne !`
     return (
@@ -79,7 +56,7 @@ const BusinessCreationTraining = () => {
                     <div className="description-picContainer">
                         <img src={TwoDesigner} alt="Two designer working" />
                         <div className="text">
-                            <p className='Yellow'>100% visio/100%<br /> présentiel ou mixte</p>
+                            <p className='Yellow'>100% visio/100% présentiel ou mixte</p>
                             <p className='Yellow medium'>Au choix</p>
                             <p>Pas de plateforme digitale impersonnelle, que des consultants formateurs en entretien</p>
                         </div>
@@ -93,26 +70,34 @@ const BusinessCreationTraining = () => {
             </div>
             <div className="training-step">
                 <div className="step">
-                    <h3>Quels sont les étapes cles de votre formation à la création d’entreprise?</h3>
-                    <ol>
-                        <li>Le projet: Définir et évaluer l’idée</li>
-                        <li>Le business plan: Réaliser l’étude de marché, definir la stratégie</li>
-                        <li>L’activité et les moyens - Définir la rentabilité</li>
-                        <li>Financement: Notions de bilan, BFR, fonds propres et immobilisations </li>
-                        <li>Prévisions financières: suivi, plan de financement, compte de résultat, plan de trésorerie, </li>
-                        <li>Statut juridique - Régime social</li>
-                        <li>Démarche: plan d’actions des formalités</li>
-                    </ol>
+                    <div>
+                        <h3>Quels sont les étapes cles de votre formation à la création d’entreprise?</h3>
+                        <ol>
+                            <li>Le projet: Définir et évaluer l’idée</li>
+                            <li>Le business plan: Réaliser l’étude de marché, definir la stratégie</li>
+                            <li>L’activité et les moyens - Définir la rentabilité</li>
+                            <li>Financement: Notions de bilan, BFR, fonds propres et immobilisations </li>
+                            <li>Prévisions financières: suivi, plan de financement, compte de résultat, plan de trésorerie, </li>
+                            <li>Statut juridique - Régime social</li>
+                            <li>Démarche: plan d’actions des formalités</li>
+                        </ol>
+                    </div>
+                </div>
+                <div className="Inter">
                 </div>
                 <div className="step-after">
-                    <h3>Et après la formation?</h3>
-                    <p>Nous restons à vos cotés! Vous rejoignez notre communauté d’entrepreneurs.</p>
-                    <p>Vous bénéficiez d’un suivi à 6 mois avec votre formateur. </p>
-                    <p className='Darkblue'>Pour obtenir le programme détaillé</p>
-                    <TelButton number='06 98 88 15 55' />
+                    <div>
+                        <h3>Et après la <span>formation?</span></h3>
+                        <p>Nous restons à vos cotés! <span>Vous rejoignez notre communauté d’entrepreneurs.</span></p>
+                        <p className='whiteP'>Vous bénéficiez d’un suivi à 6 mois avec votre formateur. </p>
+                        <p className='Darkblue'>Pour obtenir le programme détaillé</p>
+                        <TelButton number='06 98 88 15 55' />
+                    </div>
                 </div>
             </div>
             <div className="whoCanDo">
+                <div className='whoCanDo-yellow-circle'></div>
+                <div className='whoCanDo-white-circle'></div>
                 <h3>Qui peut intégrer la formation création d’entreprise ?</h3>
                 <p>Le cabinet ATTRIBUT CONSEILS est là pour soutenir tous les porteurs de projets, qu'ils évoluent dans le secteur public ou privé, quel que soit leur niveau, leur statut ou leur domaine d'activité. Nous sommes là pour vous, que vous ayez simplement une idée en germe ou que vous cherchiez à développer vos compétences entrepreneuriales.</p>
             </div>
@@ -131,13 +116,37 @@ const BusinessCreationTraining = () => {
             </div>
             <div className="trainYourself">
                 <h3>FORMEZ VOUS  ET DÉVELOPPEZ VOS COMPÉTENCES ENTREPRENEURIALES</h3>
-                <div className="allText">
-                    <p className="mainText">Obtenir un rendez-vous, un devis ou pour plus d’informations et concrétiser votre projet</p>
-                    <p>Je contacte<br /><b>ATTRIBUT<br />CONSEILS</b> </p>
+                <div className="text">
+                    <p className='Yellow'>Du lundi au samedi inclus</p>
+                    <p className='Yellow medium'>De 8h30 à 20h</p>
+                    <p>Des horaires adaptés aux vôtres, pour prendre le temps de bien faire</p>
                 </div>
-                {/* <div className="circleDot">
-                    <img src={CircleDot} alt="cercle de petit point" />
-                </div> */}
+                <div className="allText">
+                    <div className="mainText">
+                        <p>Obtenir un rendez-vous, un devis ou pour plus d’informations et concrétiser votre projet</p>
+                        <p>Je contacte<br /><b>ATTRIBUT<br />CONSEILS</b> </p>
+                    </div>
+                    <div className="circleDot">
+                        <img src={CircleDot} alt="cercle de petit point" />
+                    </div>
+                    <div className="yellowCircle"></div>
+                </div>
+                <div className="videoContainer">
+                    <Movie src={GrassGrow} />
+                </div>
+            </div>
+            <div className="GoogleReview">
+                <div className="googleRate">
+                    <h3>AVIS GOOGLE</h3>
+                    <GoogleRate />
+                </div>
+                <div className="reviewExample">
+                    <q>Un accompagnement méthodique et de grande qualité, qui m'a permis d'y voir clair dans mon projet et m'a vraiment donné confiance pour sa réalisation. Un grand Merci
+                    </q><br /><br />
+                    <q>Très bon accompagnement, écoute et co-construction du projet très bonne. Partie financière très pédagogique</q><br /><br />
+                    <q>Très bon accompagnement, écoute et co-construction du projet très bonne. Partie financière très pédagogique</q><br /><br />
+                    <q>Excellent formateur ! J’ai réalisé avec Alain une formation création d’entreprise , et j’ai été très agréablement surpris de la qualité de prestation. A l’écoute, Alain , prend le temps de nous expliquer et de mettre en pratique. Suivi personnalisé et pédagogie ++++ Je recommande vivement</q>
+                </div>
             </div>
         </section>
     );
