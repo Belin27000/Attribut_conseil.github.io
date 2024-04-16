@@ -1,0 +1,691 @@
+.Seo {
+    margin: 0 2rem;
+    padding-bottom: 2rem;
+    color: white;
+    position: relative;
+
+    .LogCpf {
+        background-color: white;
+    }
+
+    .questions-container {
+        width: 95%;
+    }
+
+    .container-img {
+        // width: 110%;
+        position: absolute;
+        top: -1rem;
+        left: -1.5rem;
+        // right: -1.5rem;
+        z-index: 2;
+        margin: 0;
+
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .container-oblique {
+        left: -2rem;
+        padding-left: 0 !important;
+        width: calc(110% + 4rem);
+        transform: skewX(5deg);
+
+    }
+
+    .oblique {
+        width: 65%;
+        background: linear-gradient(180deg, rgba(0, 45, 65, 1) 0%, rgba(0, 97, 133, 1) 93%);
+        // background: linear-gradient(#000000, #006185);
+        // background: linear-gradient(40deg, linear-gradient(#000000, #006185), var(--acDarkBlue));
+
+        position: relative;
+        padding: 0 13rem;
+        transform: translateX(-15%);
+        overflow: hidden;
+
+        div {
+
+            transform: skewX(-5deg);
+
+            flex-direction: column;
+        }
+    }
+
+
+    h1 {
+
+        margin-top: 0;
+        text-align: left;
+        width: 100%;
+        font-size: 2rem;
+        z-index: 3;
+        position: relative;
+
+
+        &.Title,
+        .city {
+            text-transform: uppercase;
+        }
+
+        span {
+
+            color: var(--acYellow);
+        }
+
+    }
+
+    &_Yellow {
+        color: var(--acYellow);
+        font-size: 29px;
+        font-weight: bold;
+        text-align: left;
+        position: relative;
+        z-index: 3;
+    }
+
+    &-article {
+        line-height: 2rem;
+        position: relative;
+        z-index: 3;
+
+        p {
+            font-size: 20px;
+            text-align: left;
+        }
+
+        ul li {
+            font-size: 1.2rem;
+            text-align: start;
+        }
+
+    }
+
+    .timeline {
+
+
+        .articleCertif {
+
+            &-pic {
+                width: 100%;
+
+                img {
+                    width: 10%;
+                }
+            }
+        }
+
+        position: relative;
+
+        .articleCertif-pic {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 4rem 0;
+
+            img {
+                width: 35%;
+            }
+        }
+
+        &.right-container {
+            text-align: start;
+
+
+        }
+
+        &.right-container::before {
+            content: "";
+            position: absolute;
+            /* positionner les ronds par rapport à chaque article */
+            top: .1rem;
+            /* positionner le rond au milieu de l'article */
+            left: -1.7rem;
+            /* ajustez la position du rond par rapport au côté gauche de l'article */
+            // transform: translateY(-50%);
+            /* centrez le rond verticalement */
+            width: 1.5rem;
+            /* largeur du rond */
+            height: 1.5rem;
+            /* hauteur du rond */
+            background-color: var(--acYellow);
+            /* couleur jaune */
+            border-radius: 50%;
+            /* pour obtenir un cercle */
+        }
+
+        &.right-container::after {
+            content: "";
+            position: absolute;
+            top: 1%;
+            /* positionner le trait à partir du centre du rond */
+            left: -1rem;
+            /* aligner le trait avec le bord gauche de l'article */
+            width: 3px;
+            /* épaisseur du trait */
+            height: calc(100% + 45px);
+            /* hauteur du trait, ajustée pour atteindre le bas de l'article */
+            background-color: var(--acYellow);
+            /* couleur jaune */
+        }
+
+        &.left-container {
+            text-align: end;
+            display: flex;
+            flex-direction: column;
+
+            // div {
+
+            //     padding-right: 1.5rem;
+            // }
+        }
+
+        &.left-container::before {
+            content: "";
+            position: absolute;
+            /* positionner les ronds par rapport à chaque article */
+            top: 0;
+            /* positionner le rond au milieu de l'article */
+            right: -.8rem;
+            /* ajustez la position du rond par rapport au côté gauche de l'article */
+            // transform: translateY(-50%);
+            /* centrez le rond verticalement */
+            width: 1.5rem;
+            /* largeur du rond */
+            height: 1.5rem;
+            /* hauteur du rond */
+            background-color: var(--acYellow);
+            /* couleur jaune */
+            border-radius: 50%;
+            /* pour obtenir un cercle */
+        }
+
+        &.left-container::after {
+            content: "";
+            position: absolute;
+            top: .1rem;
+            /* positionner le trait à partir du centre du rond */
+            right: -.25rem;
+            /* aligner le trait avec le bord gauche de l'article */
+            width: 3px;
+            /* épaisseur du trait */
+            height: calc(100% + 48px);
+            /* hauteur du trait, ajustée pour atteindre le bas de l'article */
+            background-color: var(--acYellow);
+            /* couleur jaune */
+        }
+    }
+
+    .TelButton,
+    .ContactButton {
+
+        margin: 2rem 0;
+    }
+
+    .movie {
+        margin: 2.5rem 0;
+    }
+
+    .allText {
+        // top: 5rem;
+        // margin-bottom: 10rem;
+        margin: 5rem 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #006185;
+        width: 250px;
+        height: 250px;
+        vertical-align: middle;
+        background-color: white;
+        border-radius: 50%;
+        // margin: 1rem;
+
+        .mainText {
+            width: 70%;
+            padding: 1rem;
+        }
+
+        .circleDot {
+            position: absolute;
+            top: -1.5rem;
+
+            img {
+
+                width: 300px;
+                height: 300px;
+                rotate: -40deg;
+            }
+        }
+
+        .yellowCircle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--acYellow);
+            z-index: 15;
+            position: absolute;
+            bottom: -1rem;
+            left: 1rem;
+        }
+
+        .videoContainer {
+            position: absolute;
+            top: -30%;
+            // transform: translateY(10%);
+            right: -35%;
+            // transform: translateX(-100%);
+
+
+            .movie {
+                border: 5px solid var(--acYellow);
+
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+
+    .description-picContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 50%;
+            border-radius: 20px;
+        }
+
+        .text {
+            .Yellow {
+                color: var(--acYellow);
+            }
+
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
+}
+
+@media (min-width: 760px) {
+    .Seo {
+        .ContactButton {
+            // width: 40%;
+            background-color: #DBBE3F;
+            font-size: 1.5rem;
+            margin: 2rem 0;
+            padding: 1rem 3rem;
+        }
+
+        h1 {
+            width: 75%;
+            font-size: 5rem;
+        }
+
+        &-article {
+            margin: 1rem 0 5rem 0;
+
+            h2 {
+                text-align: start;
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 2rem;
+                line-height: 2.5rem;
+
+            }
+
+            .stars {
+                color: #DBBE3F;
+                margin-left: 1rem;
+
+                >* {
+                    margin-left: .1rem;
+                }
+            }
+
+            li {
+                text-align: start;
+
+            }
+
+            ul {
+
+                li {
+                    font-size: 2rem;
+                    line-height: 3rem;
+
+
+                }
+            }
+
+        }
+
+        .timeline {
+            position: relative;
+            margin-bottom: 5rem;
+            text-align: start;
+
+            h2,
+            h3 {
+                font-size: 2rem;
+                margin: 1rem 5rem 3rem 3rem;
+            }
+
+
+            p {
+                font-size: 1.6em;
+                margin: 1rem 3rem;
+                line-height: 2rem;
+            }
+
+            .text-end {
+                text-align: end;
+            }
+
+            .text-centered {
+                text-align: center;
+            }
+
+
+
+            position: relative;
+            /* assurez-vous que les éléments positionnés à l'intérieur de .timeline sont positionnés par rapport à elle */
+            padding-left: 30px;
+
+            /* espace pour le rond jaune */
+            .multipleText {
+                flex-direction: column;
+
+                div {
+                    flex-direction: column;
+
+                    p {
+                        width: 100%;
+                    }
+
+                }
+
+                .articleCertif-pic {
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                }
+            }
+
+            &.right-container {
+
+                // padding-right: 1rem;
+
+                div {
+                    display: flex;
+                    // flex-direction: row;
+                    justify-content: space-between;
+
+                    p {
+                        // width: 50%;
+                        margin-right: 0;
+                    }
+                }
+
+                .multipleText {
+                    ul {
+                        font-size: 1.5rem;
+                        margin-left: 2rem;
+                    }
+                }
+
+                &.withMovie {
+                    div {
+
+                        p {
+                            width: 75%;
+                        }
+
+                        ul {
+                            font-size: 1.5rem;
+                            margin-left: 2rem;
+                        }
+                    }
+
+                    .movie {
+                        align-self: center;
+                    }
+                }
+
+                .articleCertif {
+
+                    &-container {
+
+                        &-text {
+                            flex-direction: column;
+                        }
+
+                        .articleCertif-pic {
+                            width: 35%;
+                            display: flex;
+                            justify-content: flex-start;
+                            // flex-direction: row;
+                            flex-direction: column;
+                            margin-top: 0;
+
+                            img {
+                                width: 100%;
+                                margin-bottom: 1rem;
+                                margin-left: 1rem;
+                            }
+                        }
+                    }
+
+
+                }
+
+                &::before {
+                    left: -1%;
+                    top: 0;
+                    width: 4rem;
+                    height: 4rem;
+                }
+
+                &::after {
+                    left: 3%;
+                    width: 5px;
+                    height: calc(100% + 60px);
+                }
+
+                ul {
+                    font-size: 1.5rem;
+                    margin-left: 2rem;
+                }
+
+                a:visited {
+
+                    color: white;
+
+                }
+            }
+
+            &.left-container {
+
+                ul {
+                    text-align: start;
+                    font-size: 1.5rem;
+                }
+
+                .movie {
+                    align-self: center;
+                }
+
+                &::before {
+                    left: 94%;
+                    top: -2%;
+                    width: 4rem;
+                    height: 4rem;
+                }
+
+                &::after {
+                    right: 1%;
+                    top: 0%;
+                    width: 5px;
+                    height: calc(100% + 60px);
+                }
+
+                &.withMovie {
+                    line-height: 2.5rem;
+
+                    div {
+                        display: flex;
+                        flex-direction: row-reverse;
+
+                        p {
+                            line-height: 3rem;
+                            width: 50%;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    p {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        line-height: 2.5rem;
+                    }
+                }
+            }
+
+        }
+
+        .allText {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .centered {
+            font-size: 1.5rem;
+        }
+
+        .questions {
+            p {
+                font-size: 1.5rem;
+            }
+
+            .questions-container {
+                width: 100%;
+            }
+
+            .clique {
+                width: 80%;
+
+                p {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .Seo {
+        .container-img {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+
+
+            img {
+                width: 75%;
+            }
+        }
+
+        p {
+            font-size: 2rem;
+            // margin: 0;
+            line-height: 2.5rem;
+        }
+
+        .Seo_Yellow {
+            font-size: 2.9rem;
+            line-height: 3rem;
+        }
+
+        &-article {
+            margin: 7rem;
+
+        }
+
+        .timeline {
+
+            &.right-container {
+                &::before {
+                    top: -5%;
+                    left: 0;
+                }
+
+                &::after {
+                    top: 0;
+                    left: 2%;
+                    height: calc(100% + 70px);
+
+                }
+
+                &.withMovie {
+                    position: relative;
+
+                    div {
+                        justify-content: initial;
+
+                        p {
+                            width: 65%;
+                            line-height: 2.5rem;
+                        }
+
+                        .movie {
+                            margin-top: 0;
+                            margin-bottom: 0;
+                        }
+
+                    }
+
+                    margin-bottom: 0;
+                }
+
+
+            }
+
+            &.left-container {
+                h3 {
+
+                    margin-right: 5rem;
+                    text-align: end;
+                }
+
+                p {
+
+                    margin-right: 5rem;
+                }
+
+                &::before {
+                    top: -5%;
+                    left: 96.5%;
+                }
+
+                &::after {
+                    height: calc(100% + 70px);
+
+                    top: 0;
+                    right: 1.1rem;
+                }
+
+                &.withMovie {
+                    .movie {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
