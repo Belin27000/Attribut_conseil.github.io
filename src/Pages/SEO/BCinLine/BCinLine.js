@@ -12,6 +12,8 @@ import Tree from '@/Assets/video/Plante.mp4';
 import visio from '@/Assets/video/Visio.mp4'
 import climb from '@/Assets/video/Grimpeur.mp4'
 import GrassGrow from '@/Assets/video/GrassGrow.mp4'
+import WalkStairs from '@/Assets/video/WalkStairs.mp4'
+
 
 import Cpf from '@/Assets/Images/logo_CPF.webp'
 import LogoTree from '@/Assets/Images/Tree.png';
@@ -46,7 +48,7 @@ const BCinLine = () => {
             <article className="timeline right-container withMovie">
                 <h2>Bilan de compétences en ligne: De quoi s’agit il?</h2>
                 <div className='multipleText'>
-                    <div>
+                    <div className='multipleText-text'>
                         <p>Pour comprendre ce dispositif, il faut définir au préalable ce que c'est qu'un <b>bilan de compétences</b>. Ce dispositif  servant à l'orientation professionnelle a été mis en place par le Code du travail en 1991. Il est le premier système d'accompagnement professionnel individuel ayant été mis à votre disposition. Son but principal est de vous permettre de faire le point individuellement sur vos compétences professionnelles, vos capacités personnelles, vos ambitions et vos motivations.<br />Vous pourrez ainsi définir plus facilement un <b>nouveau projet professionnel</b> dans le cadre d'une reconversion ou de vous orienter vers la formation idéale afin d'être qualifié pour une offre d'emploi précise. Le bilan de compétences se déroule en présentiel avec un consultant auprès d'un organisme spécialisé et disposant d'une habilitation de l'État. Sa durée est 24 heures programmées en plusieurs séances sur environ 6 semaines.
                             <br />Le bilan de compétences en ligne n'est pas différent de ce dispositif. Le but et les objectifs à atteindre sont les mêmes pour ces deux notions. Les séances entre vous et votre consultant se font à distance par visioconférence, pas de plateforme impersonnelle. Vous n'aurez pas à vous déplacer, mais vous devez avoir à votre disposition :
                         </p>
@@ -59,16 +61,18 @@ const BCinLine = () => {
                         </ul>
                         <p>                                En ligne, vous bénéficierez de plusieurs avantages en optant pour un bilan de compétences.</p>
                     </div>
+                    <div className="multipleText-pic">
 
-                    <Movie src={climb} />
-                    <div className="articleCertif-pic">
-                        < img src={Qualiopi} alt="Logo Qualiopi" />
-                        < img className='LogCpf' src={Cpf} alt="Logo Qualiopi" />
+                        <Movie src={climb} />
+                        <div className="articleCertif-pic">
+                            < img src={Qualiopi} alt="Logo Qualiopi" />
+                            < img className='LogCpf' src={Cpf} alt="Logo Qualiopi" />
+                        </div>
                     </div>
                 </div>
             </article>
             <TelButton number="06 98 88 15 55" />
-            <article className="timeline left-container">
+            <article className="timeline left-container visio">
                 <div className='multipleText'>
                     <h2>Quels sont les avantages du bilan de compétences en ligne ?</h2>
                     <p>Effectuer un bilan de compétences en ligne présente de nombreux avantages. Il s'agit tout d'abord d'une <b>solution plus flexible</b> qui vous offre beaucoup de possibilités. Vous pouvez par exemple faire votre bilan de compétences à n'importe quel endroit. Vous n'aurez pas à vous déplacer vers l'agence de l'organisme choisi. Vous pouvez également décider d'effectuer les séances à votre domicile, dans un espace de coworking ou même en étant en vacances.</p>
@@ -79,17 +83,17 @@ const BCinLine = () => {
                 <Movie src={visio} />
             </article>
             <ContactButton text="Je demande mon bilan de compétences" />
-            <article className="timeline right-container withMovie">
+            <article className="timeline right-container withMovie tree">
                 <h2 className='text-centered'>Bilan de compétences: Pour quelles raisons?</h2>
-                <div className='multipleText'>
+                <div className='multipleText-text'>
                     <p className='text-end'>Plusieurs raisons peuvent vous pousser à effectuer un bilan de compétences en ligne. L'épanouissement est indispensable pour être productif à votre poste, peu importe le métier que vous exercez. Si vous ne vous sentez plus épanoui, vous pouvez vous engager dans cette démarche pour vous remotiver.</p>
                     <p>Grâce à ce dispositif, vous vous rendrez compte des capacités professionnelles dont vous disposez et de vos forces afin de reprendre confiance en vous et d'être plus épanoui à votre poste.</p>
                     <p>Le bilan de compétences en ligne est aussi idéal pour faire <b>un point sur votre carrière professionnelle</b> et de savoir où vous en êtes. Vous pourrez ainsi prendre connaissance de vos freins et y remédier afin d'améliorer votre profil professionnel.</p>
                     <p>L'une des raisons les plus classiques pour lesquelles vous devez effectuer cette démarche est la reconversion professionnelle. Dans le cadre d'une procédure de recherche d'un nouvel emploi, ce dispositif d'orientation vous permettra de maximiser vos chances de vous reconvertir dans un secteur d'activité ou à un poste qui vous convient.</p>
                     <p>Il sert également à <b>évaluer vos compétences</b> dans le but de mieux vous préparer aux défis de ce nouvel emploi. En effectuant un bilan de compétences en ligne, vous pourrez plus facilement trouver un métier dans lequel vous serez épanoui afin de faciliter votre intégration sur le marché du travail.</p>
 
-                    <Movie src={Tree} />
                 </div>
+                <Movie src={Tree} />
             </article>
             <TelButton number="06 98 88 15 55" />
             <article className="timeline left-container">
@@ -104,7 +108,7 @@ const BCinLine = () => {
                     <p>Avec la phase préliminaire, vous pouvez <b>établir les fondements du bilan de compétences en ligne</b> et le programme de ce dernier. Le consultant vous transmet alors de nombreuses informations pertinentes. C'est notamment sur les méthodologies qui seront mises en œuvre et sur les principes régissant l'exploitation des résultats obtenus à l'issue du bilan.</p>
                 </div>
             </article>
-            <article className="timeline right-container">
+            <article className="timeline right-container videoBefore">
                 <h3>Phase d'investigation</h3>
                 <div className='multipleText'>
                     <p>D'une grande importance, la <b>phase d'investigation</b> permet de vous plonger au cœur de la démarche d'orientation professionnelle. Elle est consacrée à une introspection approfondie et invite à une réflexion personnelle à travers des questions fondamentales sur :</p>
@@ -123,6 +127,10 @@ const BCinLine = () => {
                 <h3>Phase de conclusion</h3>
                 <p>La <b>phase de conclusion</b> joue un rôle prépondérant dans le bilan de compétences. Elle permet de déterminer le plan d'action nécessaire à la réalisation de vos objectifs professionnels, que vous soyez un salarié ou un demandeur d'emploi.</p>
                 <p>Cette phase offre la possibilité de déterminer si des mesures telles que la formation continue, la reprise d'études ou une reconversion professionnelle sont appropriées. Durant cette période, un <b>document de synthèse</b> est élaboré conjointement par le consultant et le bénéficiaire. Il récapitule le plan d'action et facilitant l'élaboration d'une argumentation solide pour le projet envisagé.</p>
+                <div className="videoContainer">
+                    <Movie src={WalkStairs} />
+                </div>
+
             </article>
 
             <div className="allText">
@@ -142,7 +150,7 @@ const BCinLine = () => {
             <article className="timeline container-oblique">
                 <div className="oblique">
                     <div>
-                        <h2 className='text-end'>Bilan de compétences en ligne : quelles sont les personnes concernées ?
+                        <h2 className='title'>Bilan de compétences en ligne : quelles sont les personnes concernées ?
                         </h2>
                         <p className='text-end'>Le bilan de compétences en ligne cible les personnes désirant évaluer ou réorienter leur carrière depuis leur domicile. Adapté aux employés, aux indépendants et aux chercheurs d'emploi, cet outil flexible s'adresse également à vous si vous envisagez une formation ou une évolution professionnelle.</p>
                         <h3>Les salariés du secteur privé</h3>
