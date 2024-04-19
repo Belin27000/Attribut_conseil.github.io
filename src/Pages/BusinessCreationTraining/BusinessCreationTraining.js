@@ -4,16 +4,13 @@ import Visio2 from '@/Assets/Images/Visio2.png'
 import success from '@/Assets/Images/success.png'
 import CPF_White from '@/Assets/Images/CPF_White.png'
 import FlagCPF from '@/Assets/Images/CPF_France.png'
-import CircleDot from '@/Assets/Images/CircleDot.png'
 import TwoDesigner from '@/Assets/Images/TwoDesigner.png'
 import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
-
-import GrassGrow from '../../Assets/video/GrassGrow.mp4'
 
 import './businessCreationTraining.scss';
 import TelButton from '../../Components/Button/TelButton/TelButton.js';
 import GoogleRate from '../../Components/Google/GlobalRate/GoogleRate.js';
-import Movie from '../../Components/Movie/Movie.js';
+import CircleDot from '../../Components/CircleDot/CircleDot.js';
 
 const BusinessCreationTraining = () => {
 
@@ -121,19 +118,7 @@ const BusinessCreationTraining = () => {
                     <p className='Yellow medium'>De 8h30 à 20h</p>
                     <p>Des horaires adaptés aux vôtres, pour prendre le temps de bien faire</p>
                 </div>
-                <div className="allText">
-                    <div className="mainText">
-                        <p>Obtenir un rendez-vous, un devis ou pour plus d’informations et concrétiser votre projet</p>
-                        <p>Je contacte<br /><b>ATTRIBUT<br />CONSEILS</b> </p>
-                    </div>
-                    <div className="circleDot">
-                        <img src={CircleDot} alt="cercle de petit point" />
-                    </div>
-                    <div className="yellowCircle"></div>
-                </div>
-                <div className="videoContainer">
-                    <Movie src={GrassGrow} />
-                </div>
+                <CircleDot />
             </div>
             <div className="GoogleReview">
                 <div className="googleRate">

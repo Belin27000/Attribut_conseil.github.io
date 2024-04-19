@@ -1,0 +1,228 @@
+@mixin circle-styles($size, $background-color, $top: 0, $left: 0) {
+    width: $size;
+    height: $size;
+    background-color: $background-color;
+    border-radius: 50%;
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+
+@mixin line-styles($width, $background-color, $rotation, $top: 0, $right: 100%) {
+    width: $width;
+    background-color: $background-color;
+    rotate: $rotation;
+    right: $right;
+    top: $top;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+
+    .allText {
+        margin: 1rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #006185;
+        width: 250px;
+        height: 250px;
+        vertical-align: middle;
+        background-color: white;
+        border-radius: 50%;
+        margin: 1rem 0 5rem 0;
+        top: 5rem;
+
+        .mainText {
+            width: 70%;
+            padding: 1rem;
+        }
+
+        .circleDot {
+            position: absolute;
+            top: -1.5rem;
+
+            img {
+
+                width: 300px;
+                height: 300px;
+                rotate: -40deg;
+            }
+        }
+
+        .yellowCircle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--acYellow);
+            z-index: 15;
+            position: absolute;
+            bottom: -1rem;
+            left: 1rem;
+        }
+    }
+
+    .videoContainer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(40%);
+
+        .movie {
+            width: 125px;
+            height: 125px;
+            border: 10px solid var(--acYellow);
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    a {
+
+        .allText {
+            width: 350px;
+            height: 350px;
+            // left: -150px;
+            top: 150px;
+
+            .circleDot {
+                img {
+
+                    width: 400px;
+                    height: 400px
+                }
+            }
+
+            .yellowCircle {
+                width: 50px;
+                height: 50px;
+                bottom: -0.2rem;
+            }
+        }
+
+        .videoContainer {
+            position: absolute;
+            top: 10%;
+            // right: 10%;
+            transform: translateX(50%);
+
+            .movie {
+                width: 175px;
+                height: 175px;
+                // border: 10px solid var(--acYellow);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    // .videoContainer {
+    //     position: absolute;
+    //     top: -45px;
+    //     right: 10px;
+
+    //     .movie {
+    //         width: 250px;
+    //         height: 250px;
+    //         border: 10px solid var(--acYellow);
+    //     }
+    // }
+}
+
+@media screen and (min-width: 964px) {
+    a {
+
+        .allText {
+            position: relative;
+            left: 0%;
+            width: 400px;
+            height: 400px;
+
+            .mainText {
+                font-size: 1.75rem;
+            }
+
+            .circleDot {
+                width: 500px;
+                height: 500px;
+
+                img {
+                    width: 475px;
+                    height: 475px;
+                }
+
+                // transform: translateX(-10%);
+            }
+
+        }
+
+        .videoContainer {
+            position: absolute;
+            top: 0%;
+
+            .movie {
+                width: 275px;
+                height: 275px;
+                // border: 10px solid var(--acYellow);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    a {
+
+
+        .allText {
+            position: absolute;
+            right: 0;
+            top: 75px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 450px;
+            height: 450px;
+
+            .mainText {
+                margin-top: 1rem;
+                font-size: 1.8rem;
+            }
+
+            .circleDot {
+                top: -50px;
+                left: -45px;
+                // transform: translateY(-15%);
+                // transform: translateX(-4%);
+
+                img {
+
+                    width: 550px;
+                    height: 550px;
+
+                }
+            }
+
+            .yellowCircle {
+                @include circle-styles(75px, var(--acYellow), 100%, 0);
+                transform: translateY(-75%)
+            }
+
+        }
+
+        .videoContainer {
+            transform: translateX(150%);
+            right: 5%;
+            top: -75px;
+            position: absolute;
+
+            .movie {
+                width: 200px;
+                height: 200px;
+                border: 10px solid var(--acYellow);
+
+            }
+        }
+    }
+}

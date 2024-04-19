@@ -189,7 +189,7 @@
             width: 100%;
 
             img {
-                width: 100%;
+                width: 50%;
             }
         }
     }
@@ -219,57 +219,6 @@
                 }
             }
         }
-
-        .allText {
-            margin: 1rem;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: #006185;
-            width: 250px;
-            height: 250px;
-            vertical-align: middle;
-            background-color: white;
-            border-radius: 50%;
-            margin: 1rem;
-
-            .mainText {
-                width: 70%;
-                padding: 1rem;
-            }
-
-            .circleDot {
-                position: absolute;
-                top: -1.5rem;
-
-                img {
-
-                    width: 300px;
-                    height: 300px;
-                    rotate: -40deg;
-                }
-            }
-
-            .yellowCircle {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                background-color: var(--acYellow);
-                z-index: 15;
-                position: absolute;
-                bottom: -1rem;
-                left: 1rem;
-            }
-        }
-
-        .videoContainer {
-
-            .movie {
-                border: 15px solid var(--acYellow);
-            }
-        }
-
 
     }
 
@@ -328,29 +277,6 @@
                 }
             }
 
-        }
-
-        .trainYourself {
-            .allText {
-                width: 350px;
-                height: 350px;
-                left: -150px;
-                top: 150px;
-
-                .circleDot {
-                    img {
-
-                        width: 400px;
-                        height: 400px
-                    }
-                }
-
-                .yellowCircle {
-                    width: 50px;
-                    height: 50px;
-                    bottom: -0.2rem;
-                }
-            }
         }
 
         .training-path {
@@ -422,23 +348,6 @@
                 margin-bottom: 1rem;
             }
 
-            .allText {
-                position: relative;
-                left: 0%;
-
-            }
-
-            .videoContainer {
-                position: absolute;
-                top: 45%;
-                right: 10px;
-
-                .movie {
-                    width: 250px;
-                    height: 250px;
-                    border: 10px solid var(--acYellow);
-                }
-            }
         }
 
         .bct-description {
@@ -453,18 +362,19 @@
 
 @media screen and (min-width: 964px) {
     .bct {
+
+        .bct-description {
+            .Success-container {
+                p {
+                    font-size: 1.5rem;
+                    right: 29%;
+                    top: 7%;
+                }
+            }
+        }
+
         .trainYourself {
             position: relative;
-
-            .allText {
-                position: relative;
-                left: 0%;
-            }
-
-            .videoContainer {
-                position: absolute;
-                top: 40%;
-            }
         }
     }
 }
@@ -739,52 +649,6 @@
                     &.medium {
                         font-size: 1.5rem;
                     }
-                }
-            }
-
-            .allText {
-                position: absolute;
-                right: 0;
-                top: 100%;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 450px;
-                height: 450px;
-
-                .mainText {
-                    margin-top: 1rem;
-                    font-size: 1.8rem;
-                }
-
-                .circleDot {
-                    transform: translateY(-5%);
-
-                    img {
-
-                        width: 550px;
-                        height: 550px;
-
-                    }
-                }
-
-                .yellowCircle {
-                    @include circle-styles(75px, var(--acYellow), 100%, 0);
-                    transform: translateY(-75%)
-                }
-
-            }
-
-            .videoContainer {
-                transform: translateX(170%);
-                right: 50%;
-                top: 75%;
-                position: absolute;
-
-                .movie {
-                    width: 200px;
-                    height: 200px;
-                    border: 10px solid var(--acYellow);
-
                 }
             }
         }

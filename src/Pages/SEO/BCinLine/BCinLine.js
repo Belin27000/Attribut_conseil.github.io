@@ -11,19 +11,20 @@ import ScrollToTop from '@/Components/Button/ScrollButton/ScrollToTop.js';
 import Tree from '@/Assets/video/Plante.mp4';
 import visio from '@/Assets/video/Visio.mp4'
 import climb from '@/Assets/video/Grimpeur.mp4'
-import GrassGrow from '@/Assets/video/GrassGrow.mp4'
+// import GrassGrow from '@/Assets/video/GrassGrow.mp4'
 import WalkStairs from '@/Assets/video/WalkStairs.mp4'
 
 
 import Cpf from '@/Assets/Images/logo_CPF.webp'
 import LogoTree from '@/Assets/Images/Tree.png';
 import Visio2 from '@/Assets/Images/Visio2.png'
-import CircleDot from '@/Assets/Images/CircleDot.png'
+// import CircleDot from '@/Assets/Images/CircleDot.png'
 import Qualiopi from '@/Assets/Images/Logo_Qualiopi.png'
 import TwoDesigner from '@/Assets/Images/TwoDesigner.png'
 
 
 import './bcInLine.scss';
+import CircleDot from '../../../Components/CircleDot/CircleDot.js';
 
 
 const BCinLine = () => {
@@ -133,7 +134,7 @@ const BCinLine = () => {
 
             </article>
 
-            <div className="allText">
+            {/* <div className="allText">
                 <div className="mainText">
                     <p>Obtenir un rendez-vous, un devis ou pour plus d’informations et concrétiser votre projet</p>
                     <p>Je contacte<br /><b>ATTRIBUT<br />CONSEILS</b> </p>
@@ -145,7 +146,8 @@ const BCinLine = () => {
                 <div className="videoContainer">
                     <Movie src={GrassGrow} />
                 </div>
-            </div>
+            </div> */}
+            <CircleDot />
             {/* <TelButton number="06 98 88 15 55" /> */}
             <article className="timeline container-oblique">
                 <div className="oblique">
@@ -201,7 +203,7 @@ const BCinLine = () => {
                 <p>Notre programme respecte les trois phases normalement prévues pour ce dispositif d'orientation. Il consiste en un accompagnement de 24 heures établi sur une durée de trois mois, comprenant 16 heures d'entretiens individuels avec l'un de nos experts. Le reste du temps comprend 2 heures de tests et 6 heures de travail personnel.</p>
                 <p>Nous vous proposons des tarifs concurrentiels et variables selon vos besoins. Avec Attribut Conseils, vous avez droit à <b>un accompagnement personnalisé</b> pour la réalisation de votre bilan de compétences, peu importe votre situation.</p>
             </div>
-            <div className="allText">
+            {/* <div className="allText">
                 <div className="mainText">
                     <p>Obtenir un rendez-vous, un devis ou pour plus d’informations et concrétiser votre projet</p>
                     <p>Je contacte<br /><b>ATTRIBUT<br />CONSEILS</b> </p>
@@ -213,7 +215,8 @@ const BCinLine = () => {
                 <div className="videoContainer">
                     <Movie src={GrassGrow} />
                 </div>
-            </div>
+            </div> */}
+            <CircleDot />
             <Questions tag='all' ville='Fontainebleau' />
             <ScrollToTop />
         </section >
