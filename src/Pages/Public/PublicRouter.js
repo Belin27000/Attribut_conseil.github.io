@@ -30,6 +30,7 @@ import Provins from '../SEO/Provins.js';
 import JobInterview from '../Advice/JobInterview.js';
 import LayoutAdvice from '../../Layouts/LayoutAdvice.js';
 import BCinLine from '../SEO/BCinLine/BCinLine.js';
+import BcCPF from '../SEO/BcCPF.js';
 
 const PublicRouter = () => {
     return (
@@ -76,6 +77,7 @@ const PublicRouter = () => {
                 <Route path="/bilan-de-competence/bilan-de-competence-avon" element={<Avon />} />
                 <Route path="/bilan-de-competence/bilan-de-competence-provins" element={<Provins />} />
                 <Route path="/bilan-de-competence/bilan-de-competence-en-ligne" element={<BCinLine />} />
+                <Route path="/bilan-de-competence/bilan-de-competence-CPF" element={<BcCPF />} />
 
                 <Route path='*' element={<Home />} />
 
