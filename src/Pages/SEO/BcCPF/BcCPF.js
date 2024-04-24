@@ -41,19 +41,21 @@ const BcCPF = () => {
                     Dans cette page dédiée au bilan de compétences CPF, nous vous guiderons à travers les différentes étapes de cette démarche. Nous vous expliquerons comment utiliser votre CPF pour financer un bilan de compétences et quels en sont les avantages pour votre carrière. Chez Attribut Conseils, nous sommes là pour vous accompagner dans cette démarche et vous aider à prendre les bonnes décisions pour votre avenir professionnel.
                 </p>
             </article>
-            <article className="timeline right-container withMovie">
-                <h2>Qu’est ce que le CPF?</h2>
-                <div>
-                    <div>
+            <article className="timeline firstRight-container right-container withMovie">
+                <h2 className='litleWhiteDot' >Qu’est ce que le CPF?</h2>
+                <div className='TextMovieLogo' >
+                    <div className='text-col'>
                         <p>Le Compte Personnel de Formation (CPF) est un dispositif instauré en France pour permettre à chaque actif, qu'il soit salarié ou demandeur d'emploi, d'acquérir des droits à la formation tout au long de sa carrière professionnelle. Concrètement, le CPF est un compte individuel alimenté en heures de formation, calculées en fonction du temps de travail effectué par l'individu. Ces heures sont créditées chaque année et peuvent être utilisées pour suivre des formations qualifiantes, certifiantes ou d'acquisition des compétences.
                         </p>
                         <p>Le CPF remplace depuis le 1er janvier 2015 le Droit Individuel à la Formation (DIF). Chaque personne dispose ainsi d'un capital d'heures de formation qu'elle peut mobiliser selon ses besoins tout au long de sa vie professionnelle.
                         </p>
                     </div>
-                    <Movie src={climb} />
-                    <div className="articleCertif-pic">
-                        < img src={Qualiopi} alt="Logo Qualiopi" />
-                        < img className='LogCpf' src={Cpf} alt="Logo Qualiopi" />
+                    <div className='withMovieAndLogo'>
+                        <Movie src={climb} />
+                        <div className="articleCertif-pic">
+                            < img src={Qualiopi} alt="Logo Qualiopi" />
+                            < img className='LogCpf' src={Cpf} alt="Logo Qualiopi" />
+                        </div>
                     </div>
                 </div>
                 {/* </article>
@@ -67,7 +69,7 @@ const BcCPF = () => {
                     </div>
                 </div>
             </article>
-            <article className="timeline">
+            <article className="timeline simpleCont-leftPic">
                 <div>
                     <h2>Le bilan de compétences via le CPF </h2>
                     <p>Utiliser son Compte Personnel de Formation (CPF) pour financer un bilan de compétences est une démarche pertinente pour toute personne désireuse de prendre un temps de réflexion sur son parcours professionnel et d'envisager des perspectives d'évolution ou de reconversion. Le bilan de compétences est une prestation spécifique qui permet à chacun de faire le point sur ses compétences, ses motivations et ses aspirations professionnelles.
@@ -104,16 +106,19 @@ const BcCPF = () => {
                     <img src={Light} alt="Ampoule sur un escalier" />
                 </div>
             </article>
-            <article className="timeline ">
+            <article className="timeline fireworks ">
                 <div className='circleInFire'>
                     <img src={fireworks} alt="" />
                     <div className="yellowCircle"></div>
                     <div className="whiteCircle"></div>
                 </div>
-                <h2 className='text-start'>Témoignages et retours d'expérience
-                </h2>
-                <p className='text-start'>Nos clients ont été nombreux à utiliser leur CPF pour financer un bilan de compétences chez Attribut Conseils, et les retours d'expérience sont unanimes. Beaucoup ont témoigné de l'impact positif de cette démarche sur leur parcours professionnel, en leur permettant de clarifier leurs objectifs et de prendre des décisions éclairées pour leur avenir. Les histoires de réussite de nos clients sont la meilleure preuve de l'efficacité du bilan de compétences dans le cadre d'une reconversion professionnelle.
-                </p>
+                <div className='text'>
+
+                    <h2 className='text-start'>Témoignages et retours d'expérience
+                    </h2>
+                    <p className='text-start'>Nos clients ont été nombreux à utiliser leur CPF pour financer un bilan de compétences chez Attribut Conseils, et les retours d'expérience sont unanimes. Beaucoup ont témoigné de l'impact positif de cette démarche sur leur parcours professionnel, en leur permettant de clarifier leurs objectifs et de prendre des décisions éclairées pour leur avenir. Les histoires de réussite de nos clients sont la meilleure preuve de l'efficacité du bilan de compétences dans le cadre d'une reconversion professionnelle.
+                    </p>
+                </div>
                 <CircleDot displayAll={false} />
             </article>
             <GoogleWidget />

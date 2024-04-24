@@ -121,3 +121,274 @@
     }
 
 }
+
+@media screen and (min-width: 760px) {
+    .Seo {
+        a {
+            display: flex;
+            justify-content: center;
+
+            .videoContainer {
+                right: 0;
+            }
+        }
+
+        .timeline {
+            &.right-container {
+                .articleCertif-pic {
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+
+                &-downDot::before {
+                    left: 3%;
+                    width: 5px;
+                }
+            }
+
+
+            .downDot::after {
+                width: 4rem;
+                height: 4rem;
+                left: 0;
+                transform: translateX(-14%);
+            }
+
+
+        }
+
+        .simpleCont-leftPic {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+
+            div {
+
+                h2,
+                p {
+
+                    margin: 0;
+                }
+            }
+
+            a {
+                .allText {
+                    justify-content: center;
+                }
+
+                .mainText {
+                    font-size: 1rem;
+                    text-align: center;
+                }
+
+                .videoContainer {
+                    top: 15%;
+                    right: -20%;
+                }
+            }
+        }
+
+        .light {
+            flex-direction: row;
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            &-text {
+                font-size: 1rem;
+            }
+
+            &-pic {
+                // display: initial;
+                width: 15%;
+                display: flex;
+
+
+                img {
+                    width: 100%;
+                    // flex: 1;
+                    // align-self: stretch;
+                }
+            }
+        }
+
+        .circleInFire {
+            // width: 10%;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                align-self: center;
+                width: 20%;
+
+            }
+        }
+
+        a {
+            .allText {
+                left: 0;
+                transform: translateX(0);
+
+                .mainText {
+                    p {
+                        margin-left: 0;
+                        margin-right: 0;
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .videoContainer {
+                right: 50%;
+                transform: translateX(125%);
+                top: 15%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Seo {
+        &-article {
+            margin: 2rem;
+        }
+
+        .timeline {
+            &.right-container {
+                margin-left: 2rem;
+
+                h2 {
+
+                    &.litleWhiteDot::before {
+                        content: "";
+                        @include circle-styles(35px, white, 3%, 4%)
+                    }
+                }
+
+                &.withMovie {
+                    .TextMovieLogo {
+                        flex-direction: row;
+                        align-items: center;
+
+                        // display: flex;
+                        .text-col {
+                            flex-direction: column;
+                        }
+
+                        .withMovieAndLogo {
+                            flex-direction: column;
+                        }
+                    }
+
+                }
+
+                &-downDot {
+                    margin-left: 2rem;
+                }
+
+                &-downDot::before {
+                    left: 2%;
+                }
+            }
+
+            &.right-container::before {
+                width: 4rem;
+                height: 4rem;
+                left: -.7rem;
+            }
+
+            &.firstRight-container::before {
+                width: 6rem;
+                height: 6rem;
+                left: -1.5rem;
+            }
+
+            &.fireworks {
+                display: flex;
+                flex-direction: row-reverse;
+                position: relative;
+                width: 90%;
+
+                h2 {
+                    margin-right: 0;
+                    font-size: 1.9rem;
+                }
+
+                .circleInFire {
+                    width: 15%;
+                    position: absolute;
+                    // bottom: -15%;
+                    // right: -5%;
+
+                    .yellowCircle {
+                        @include circle-styles(125px, var(--acYellow), 500px, 125px)
+                    }
+
+                    .whiteCircle {
+                        @include circle-styles(50px, white, 585px, 150px)
+                    }
+
+                    img {
+                        width: 75%;
+                        position: absolute;
+                        top: 400px;
+                        left: 100px;
+                    }
+                }
+
+                a {
+                    .circleDot {
+                        left: -15%;
+                    }
+
+                    .videoContainer {
+                        top: 10%;
+                    }
+                }
+
+            }
+        }
+
+        .simpleCont-leftPic {
+            justify-content: space-between;
+
+            div {
+                width: 65%;
+            }
+
+            a {
+                .allText {
+                    width: 200px;
+                    height: 200px;
+
+                    .circleDot {
+                        left: -1.5rem;
+                    }
+                }
+
+                .videoContainer {
+                    right: 40%;
+                }
+            }
+        }
+
+        .light {
+            flex: 1;
+
+            &-text {
+
+                font-size: 1rem;
+            }
+
+            &-pic {
+                width: 35%;
+
+                img {
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
