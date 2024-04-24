@@ -3,11 +3,12 @@ import './questions.scss';
 import faqService from '@/_Services/faq.service.js';
 import clique from '@/Assets/Images/Clique.png';
 
-const Questions = ({ tag, ville }) => {
+const Questions = ({ tag, ville = "Fontainebleau", mainTitleFaq, mainPfaq }) => {
     const faqList = faqService.allFaq();
-
-
-
+    const mainTitle = 'Experts et outils adaptés à chaque projet professionnel'
+    const MainP = 'Notre équipe d\'experts et de formateurs qualifiés et certifiés met à votre disposition les outils adaptés pour réaliser votre bilan de compétences et vous accompagner dans votre projet professionnel. '
+    const displayedMainTitle = mainTitleFaq ? mainTitleFaq : mainTitle
+    const displayedMainP = mainPfaq ? mainPfaq : MainP
     const [openedQuestions, setOpenedQuestions] = useState([]);
 
 
@@ -30,8 +31,8 @@ const Questions = ({ tag, ville }) => {
 
     return (
         <section className='questions'>
-            <h2>Experts et outils adaptés à chaque projet professionnel</h2>
-            <p>Notre équipe d'experts et de formateurs qualifiés et certifiés met à votre disposition les outils adaptés pour réaliser votre bilan de compétences et vous accompagner dans votre projet professionnel. </p>
+            <h2>{displayedMainTitle}</h2>
+            <p>{displayedMainP}</p>
             <div className='clique'>
                 <p>LES RÉPONSES À VOS QUESTIONS</p>
                 <img src={clique} alt="clique" />

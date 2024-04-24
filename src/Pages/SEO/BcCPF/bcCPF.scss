@@ -1,0 +1,123 @@
+@mixin circle-styles($size, $background-color, $top: 0, $left: 0) {
+    width: $size;
+    height: $size;
+    background-color: $background-color;
+    border-radius: 50%;
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+
+
+
+.Seo {
+    .timeline {
+        &.right-container::after {
+            height: 100%;
+        }
+
+        position: relative;
+
+        &.right-container-downDot::before {
+            content: "";
+            position: absolute;
+            left: -1rem;
+            top: 0;
+            width: 3px;
+            height: calc(100% + 5px);
+            background-color: var(--acYellow);
+
+        }
+
+        .downDot::after {
+            content: "";
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            left: -1.7rem;
+            bottom: -1.7rem;
+            border-radius: 50%;
+            background-color: var(--acYellow);
+        }
+    }
+
+    a {
+        .videoContainer {
+            right: -20%;
+            top: 0;
+
+            .movie {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .allText {
+            left: 25%;
+            width: 200px;
+            height: 200px;
+            display: flex;
+
+            .mainText {
+                margin-top: 1rem;
+                width: 100%;
+                font-size: 1.52rem;
+            }
+
+            .circleDot {
+                img {
+
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+
+            .yellowCircle {
+                display: none;
+            }
+        }
+    }
+
+    .right-container-downDot {
+        text-align: start;
+    }
+
+    .light {
+        display: flex;
+        flex-direction: column-reverse;
+
+        &-text {
+            width: 100%;
+            text-align: start;
+
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+
+        &-pic {
+            display: none;
+        }
+    }
+
+    .text-start {
+        text-align: start;
+    }
+
+    .circleInFire {
+        position: relative;
+
+        .yellowCircle {
+            @include circle-styles(150px, var(--acYellow), 0, 50%);
+            transform: translateX(-50%);
+            position: relative;
+        }
+
+        .whiteCircle {
+            @include circle-styles(50px, white, 90%, 60%);
+            transform: translateX(-50%);
+            position: absolute;
+        }
+    }
+
+}

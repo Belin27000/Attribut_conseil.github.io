@@ -6,13 +6,13 @@ import CircleWithDot from '@/Assets/Images/CircleDot.png'
 
 import './circleDot.scss'
 
-const CircleDot = () => {
+const CircleDot = ({ displayAll = true }) => {
     return (
         <>
             <Link to="/contact">
                 <div className="allText">
                     <div className="mainText">
-                        <p>Obtenir un rendez-vous, un devis ou pour plus d’informations et concrétiser votre projet</p>
+                        {displayAll && <p>Obtenir un rendez-vous, un devis ou pour plus d’informations et concrétiser votre projet</p>}
                         <p>Je contacte<br /><b>ATTRIBUT<br />CONSEILS</b> </p>
                     </div>
                     <div className="circleDot">

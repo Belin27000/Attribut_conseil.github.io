@@ -30,7 +30,7 @@ import Provins from '../SEO/Provins.js';
 import JobInterview from '../Advice/JobInterview.js';
 import LayoutAdvice from '../../Layouts/LayoutAdvice.js';
 import BCinLine from '../SEO/BCinLine/BCinLine.js';
-import BcCPF from '../SEO/BcCPF.js';
+import BcCPF from '../SEO/BcCPF/BcCPF.js';
 
 const PublicRouter = () => {
     return (
