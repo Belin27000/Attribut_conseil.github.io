@@ -11,6 +11,11 @@
 
 
 .Seo {
+    .RecoStars {
+        font-weight: bold;
+        text-align: center;
+    }
+
     .timeline {
         &.right-container::after {
             height: 100%;

@@ -31,6 +31,8 @@ import JobInterview from '../Advice/JobInterview.js';
 import LayoutAdvice from '../../Layouts/LayoutAdvice.js';
 import BCinLine from '../SEO/BCinLine/BCinLine.js';
 import BcCPF from '../SEO/BcCPF/BcCPF.js';
+import BcReco from '../SEO/BcReco/BcReco.js';
+import BcApec from '../SEO/BcApec/BcApec.js';
 
 const PublicRouter = () => {
     return (
@@ -78,6 +80,8 @@ const PublicRouter = () => {
                 <Route path="/bilan-de-competence/bilan-de-competence-provins" element={<Provins />} />
                 <Route path="/bilan-de-competence/bilan-de-competence-en-ligne" element={<BCinLine />} />
                 <Route path="/bilan-de-competence/bilan-de-competence-CPF" element={<BcCPF />} />
+                <Route path="/bilan-de-competence/bilan-de-competence-reconversion" element={<BcReco />} />
+                <Route path="/bilan-de-competence/bilan-de-competence-Apec" element={<BcApec />} />
 
                 <Route path='*' element={<Home />} />
 

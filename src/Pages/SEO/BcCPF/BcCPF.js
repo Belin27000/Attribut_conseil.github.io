@@ -18,9 +18,8 @@ import MetaTitleDes from '@/Components/Meta/MetaTitleDes.js';
 import CircleDot from '@/Components/CircleDot/CircleDot.js';
 
 const BcCPF = () => {
-    const ville = 'Fontainebleau';
-    const metaTitle = `Attribut Conseils - Bilan de compétences à ${ville}`
-    const metaDescription = `Vous cherchez à réaliser votre bilan de compétence à ${ville}? Contactez-nous !`
+    const metaTitle = `Attribut Conseils - Bilan de compétences et cpf`
+    const metaDescription = `Vous cherchez une reconversion et souhaitez la réaliser en utilisant votre CPF? Contactez-nous !`
 
     const mainTitleFaq = 'FAQ : Bilan de compétences et cpf'
     const mainPfaq = 'Vous avez des questions sur le processus de bilan de compétences ou sur la reconversion professionnelle en général ? Consultez notre foire aux questions pour des réponses claires et concises. Nous sommes là pour dissiper vos doutes et vous fournir les informations dont vous avez besoin pour prendre des décisions éclairées sur votre avenir professionnel.'

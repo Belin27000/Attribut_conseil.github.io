@@ -50,7 +50,61 @@ const faq = [
         answer: 'En choisissant Attribut Conseils pour votre bilan de compétences via le CPF, vous optez pour un accompagnement sur mesure et de qualité. Notre équipe de consultants expérimentés est là pour vous guider tout au long du processus, depuis la vérification de vos droits jusqu\'à la mise en place d\'un programme adapté à vos besoins. Nous vous offrons un service personnalisé, confidentiel et professionnel, pour vous permettre de tirer le meilleur parti de cette démarche et de prendre des décisions éclairées pour votre avenir professionnel. Avec Attribut Conseils, vous bénéficiez d\'une expertise reconnue dans le domaine de l\'orientation professionnelle et de la reconversion, ainsi que d\'un accompagnement de qualité pour vous aider à atteindre vos objectifs. N\'hésitez pas à nous contacter pour plus d\'informations ou pour démarrer votre bilan de compétences dès aujourd\'hui. Votre réussite professionnelle commence ici.',
         tag: ['CPF']
     },
-
+    {
+        title: 'À qui s\'adresse le bilan de compétences reconversion ?',
+        answer: 'Le bilan de compétences reconversion s\'adresse à toute personne qui envisage un changement de carrière, qu\'elle soit en poste, en recherche d\'emploi ou en période de transition professionnelle. C\'est un outil précieux pour ceux qui souhaitent faire le point sur leurs compétences, leurs intérêts et leurs aspirations, afin de prendre des décisions éclairées concernant leur avenir professionnel.',
+        tag: ['reconversion']
+    },
+    {
+        title: 'Comment se déroule un bilan de compétences chez Attribut Conseils ?',
+        answer: 'Chez Attribut Conseils, le bilan de compétences se déroule en plusieurs étapes. Tout d\'abord, vous rencontrez un consultant expérimenté qui vous guide à travers le processus et recueille des informations sur votre parcours professionnel, vos compétences et vos objectifs. Ensuite, vous passez des tests et des évaluations pour analyser vos aptitudes et vos intérêts. Enfin, vous travaillez en collaboration avec votre consultant pour élaborer un plan d\'action personnalisé en vue de votre reconversion professionnelle.',
+        tag: ['reconversion']
+    },
+    {
+        title: 'Combien de temps dure un bilan de compétences reconversion ?',
+        answer: 'La durée d\'un bilan de compétences reconversion peut varier en fonction des besoins et des objectifs de chaque individu. En général, un bilan de compétences complet peut s\'étaler sur plusieurs semaines à quelques mois, mais la durée légale est de 24h. Il comprend généralement des séances individuelles avec un consultant, des évaluations et des tests, ainsi que du travail personnel pour approfondir la réflexion sur ses compétences, ses intérêts et ses aspirations professionnelles. Chez Attribut Conseils, la durée d\'un bilan de compétences est adaptée à chaque personne et à chaque situation, afin de garantir un accompagnement personnalisé et efficace dans le processus de reconversion professionnelle.',
+        tag: ['reconversion']
+    },
+    {
+        title: 'Quelle est la différence entre le bilan de compétences et le coaching professionnel ?',
+        answer: 'Le bilan de compétences se concentre principalement sur l\'analyse des compétences, des intérêts et des aspirations professionnelles d\'une personne, dans un objectif de gestion de carrière(supposant une expertise marché de l’emploi et méthodologie de projet).A ne pas confondre avec  le coaching professionnel qui vise à accompagner individuellement une personne dans l\'atteinte de ses objectifs professionnels ou résoudre une problématique professionnelle. Le bilan de compétences est souvent une première étape dans un processus de reconversion ou de développement professionnel, tandis que le coaching peut intervenir à différents stades de la carrière d\'une personne pour l\'aider à surmonter des obstacles spécifiques ou à atteindre des objectifs précis.',
+        tag: ['reconversion']
+    },
+    {
+        title: 'Comment utiliser les résultats d\'un bilan de compétences pour trouver un nouvel emploi ou se reconvertir ?',
+        answer: 'Les résultats d\'un bilan de compétences peuvent être utilisés de différentes manières pour trouver un nouvel emploi ou se reconvertir. Vous pouvez les utiliser pour identifier les domaines dans lesquels vous êtes le plus compétent et les secteurs qui correspondent le mieux à vos intérêts et à vos valeurs. Ces informations peuvent ensuite être utilisées pour cibler vos recherches d\'emploi, rédiger un CV et une lettre de motivation percutants, et vous préparer aux entretiens d\'embauche. De plus, les recommandations fournies dans le cadre du bilan de compétences peuvent vous aider à élaborer un plan d\'action réaliste et efficace pour atteindre vos objectifs de reconversion professionnelle.',
+        tag: ['reconversion']
+    },
+    {
+        title: 'Quelles sont les erreurs à éviter lors d\'une reconversion professionnelle ?',
+        answer: 'Lors d\'une reconversion professionnelle, il est important d\'éviter certaines erreurs courantes qui pourraient compromettre votre succès.Parmi celles - ci, on peut citer le manque de planification et de recherche préalable, le choix d\'une nouvelle carrière uniquement pour des raisons financières sans tenir compte de vos intérêts et passions, ou encore le fait de négliger de développer de nouvelles compétences ou de réseauter dans votre nouveau domaine d\'activité.',
+        tag: ['reconversion']
+    },
+    {
+        title: 'Doit - on obligatoirement réaliser un bilan de compétences en vue d\'une reconversion ?',
+        answer: 'Bien que le bilan de compétences soit un outil précieux pour ceux qui envisagent une reconversion professionnelle, il n\'est pas obligatoire. Cependant, il peut grandement faciliter le processus en vous fournissant une vision claire et approfondie de vos compétences, de vos intérêts et de vos aspirations professionnelles, ce qui peut vous aider à prendre des décisions éclairées et à élaborer un plan d\'action concret pour réaliser votre projet de reconversion.Il vous permet d’élaborer une vraie stratégie.',
+        tag: ['reconversion']
+    },
+    {
+        title: 'Quelle est la durée d\'un bilan de compétences chez Attribut Conseils ? ',
+        answer: ' Chez Attribut Conseils, un bilan de compétences se déroule généralement sur une période de 2 à 3 mois.Ce cadre temporel permet d\'assurer un suivi approfondi et une réflexion mûrie, tout en s\'adaptant à votre rythme et à vos disponibilités.',
+        tag: ['APEC']
+    },
+    {
+        title: 'Comment Attribut Conseils assure-t-il la confidentialité de mon bilan de compétences ?',
+        answer: 'La confidentialité est une priorité absolue pour nous. Tout au long de votre bilan de compétences, les informations partagées restent strictement entre vous et votre consultant. Attribut Conseils s\'engage à respecter le secret professionnel et à protéger vos données personnelles.',
+        tag: ['APEC']
+    },
+    {
+        title: 'Est-il possible de financer mon bilan de compétences via le CPF ?',
+        answer: 'Oui, Attribut Conseils vous accompagne dans les démarches pour utiliser votre Compte Personnel de Formation (CPF) pour financer votre bilan de compétences. Nous vous guidons à chaque étape pour faciliter l\'accès à cette prestation essentielle à votre développement professionnel.',
+        tag: ['APEC']
+    },
+    {
+        title: 'Quel suivi est proposé après la réalisation du bilan de compétences ?',
+        answer: 'Une fois votre bilan de compétences achevé, Attribut Conseils reste à vos côtés pour vous aider à mettre en œuvre votre projet professionnel. Nous proposons des séances de suivi et vous offrons des conseils pratiques pour assurer une transition en douceur vers votre nouvelle orientation professionnelle.',
+        tag: ['APEC']
+    },
 
 ]
 let allFaq = () => {
