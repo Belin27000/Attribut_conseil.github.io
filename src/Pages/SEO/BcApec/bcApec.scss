@@ -1,0 +1,280 @@
+.Seo {
+    margin: 0;
+    width: 100%;
+
+    h1 {
+        width: 90%;
+        padding: 0 1rem;
+    }
+
+    &_Yellow {
+        padding: 0 1rem;
+
+    }
+
+    article {
+
+        h2 {
+            width: 80%;
+            margin-left: 2rem;
+        }
+
+        p {
+            margin-left: 2rem;
+        }
+    }
+
+    .Seo-article {
+        .articleCertif-pic {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+
+            img {
+                width: 40%;
+            }
+        }
+    }
+
+    .timeline {
+
+        &.right-container::before {
+            content: "";
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: var(--acYellow);
+            left: .25rem;
+        }
+
+        &.right-container::after {
+            content: "";
+            width: 2px;
+            background-color: var(--acYellow);
+            left: 15px;
+            height: calc(100% + 45px);
+        }
+
+        &.withMovie {
+
+            div {
+                display: flex;
+                flex-direction: column;
+
+                align-items: center;
+            }
+        }
+
+        &.right-container {
+            h3 {
+                margin: 1rem 2rem;
+            }
+        }
+
+    }
+
+    .ContactButton {
+        margin: 1rem;
+    }
+
+    .questions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        &-container {
+            .question {
+
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .Seo {
+        article {
+
+            h2 {
+                width: 70%;
+            }
+        }
+
+        font-size: 1rem;
+
+        .timeline {
+
+            &.right-container::before {
+                width: 2.5rem;
+                height: 2.5rem;
+                left: .5rem;
+            }
+
+            &.right-container::after {
+                width: 4px;
+                background-color: var(--acYellow);
+                left: 25px;
+                height: calc(100% + 75px);
+            }
+
+            &.left-container::before {
+                width: 2.5rem;
+                height: 2.5rem;
+                left: 95%;
+            }
+
+            &.left-container::after {
+                // width: 2.5rem;
+                // height: 2.5rem;
+                top: -1%;
+                left: calc(97% + 3px);
+            }
+
+            &.right-container {
+
+                &.withMovie {
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        // align-items: center;
+                        p {
+                            width: 85%;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+
+            &.left-container {
+
+                &.withMovie {
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        // align-items: center;
+                        p {
+                            width: 85%;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .questions {
+            h2 {
+                font-size: 2rem;
+                margin: 0 1rem;
+            }
+
+            >p {
+                margin: 1rem;
+            }
+
+            .questions-container {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Seo {
+        font-size: 1rem;
+
+        .Seo-article {
+            // display: flex;
+
+            // width: 80%;
+            display: flex;
+
+            p {
+                width: 75%;
+            }
+
+            .articleCertif-pic {
+                width: 10%;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .timeline {
+            &.right-container {
+                &.withMovie {
+                    div {
+                        flex-direction: row;
+                        justify-content: space-evenly;
+
+                        p {
+                            font-size: 1.5rem;
+                            margin-left: 2rem;
+                            width: 60%;
+                        }
+
+                        .movie {
+                            width: 200px;
+                            height: 200px;
+                            // margin-left: 1rem;
+                        }
+                    }
+
+                    .text-cointainer {
+                        flex-direction: column;
+                        width: 70%;
+                        align-items: start;
+
+                        p {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            &.right-container::after {
+                height: calc(100% + 80px);
+            }
+
+            &.left-container {
+                align-items: end;
+                margin-bottom: 0;
+
+                h2 {
+                    margin-right: 5rem;
+                }
+
+                &.withMovie {
+                    .multiplePAndMovie {
+                        display: flex;
+                        flex-direction: row-reverse;
+                    }
+
+                    .text-cointainer {
+                        width: 70%;
+                    }
+                }
+            }
+
+            &.left-container::before {
+                left: calc(95% + 4px);
+                top: -2%;
+            }
+        }
+
+        .ContactButton {
+            width: 50%;
+        }
+    }
+}

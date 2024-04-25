@@ -1,23 +1,21 @@
-import ScrollToTop from '@/Components/Button/ScrollButton/ScrollToTop.js';
-import TelButton from '@/Components/Button/TelButton/TelButton.js';
-import Qualiopi from '@/Assets/Images/Logo_Qualiopi.png'
-import Cpf from '@/Assets/Images/logo_CPF.webp'
-import climb from '@/Assets/video/Grimpeur.mp4'
 import Movie from '@/Components/Movie/Movie.js';
+import CircleDot from '@/Components/CircleDot/CircleDot.js';
+import Questions from '@/Components/Questions/Questions.js';
+import MetaTitleDes from '@/Components/Meta/MetaTitleDes.js';
+import TelButton from '@/Components/Button/TelButton/TelButton.js';
+import ContactButton from '../../../Components/Button/ContactButton.js';
+import ScrollToTop from '@/Components/Button/ScrollButton/ScrollToTop.js';
+import GoogleWidget from '@/Components/Google/GoogleWidget/GoogleWidget.js';
+import Cpf from '@/Assets/Images/logo_CPF.webp'
+import LogoTree from '@/Assets/Images/Tree.png';
+import Qualiopi from '@/Assets/Images/Logo_Qualiopi.png'
+
 import Arc from '@/Assets/video/Tir_Arc.mp4';
 import Tree from '@/Assets/video/Plante.mp4';
-import LogoTree from '@/Assets/Images/Tree.png';
-import Light from '@/Assets/Images/LightStairs.png';
+import climb from '@/Assets/video/Grimpeur.mp4'
 import React from 'react';
-// import '../BcCPF/bcCPF.scss';
-import '../seo.scss';
-import Questions from '@/Components/Questions/Questions.js';
-import GoogleWidget from '@/Components/Google/GoogleWidget/GoogleWidget.js';
-import MetaTitleDes from '@/Components/Meta/MetaTitleDes.js';
 
-import CircleDot from '@/Components/CircleDot/CircleDot.js';
-import ContactButton from '../../../Components/Button/ContactButton.js';
-import { Link } from 'react-router-dom';
+import './bcApec.scss';
 const BcApec = () => {
     const metaTitle = `Faire son bilan de compétences avec l’APEC`
     const metaDescription = `Vous souhaitez réaliser un bilan de compétences avec l’APEC mais vous ne savez pas quelles sont les démarches à effectuer ? Laissez-nous vous guider !`
@@ -36,6 +34,10 @@ const BcApec = () => {
             <article className="Seo-article">
                 <p>Bienvenue chez Attribut Conseils, votre cabinet de référence pour le bilan de compétences dans l'Essonne et en seine et marne. Conscients de l'impact décisif d'un bilan de compétences pour le parcours professionnel de chacun, nous nous engageons à vous accompagner dans votre quête d'évolution ou de reconversion. Que vous soyez en période de transition ou à la recherche d'une meilleure adéquation entre vos aspirations et votre métier, Attribut Conseils est à vos côtés. Examinons ensemble la valeur ajoutée d'un bilan de compétences réalisé avec l’APEC et comment Attribut Conseils peut vous accompagner dans ce domaine.
                 </p>
+                <div className="articleCertif-pic">
+                    < img src={Qualiopi} alt="Logo Qualiopi" />
+                    < img className='LogCpf' src={Cpf} alt="Logo Qualiopi" />
+                </div>
             </article>
             <article className="timeline right-container withMovie">
                 <h2>Qu’est ce qu’un bilan de compétences ?</h2>
@@ -51,10 +53,10 @@ const BcApec = () => {
                     <div className='articleCertif-container-text'>
                         <p>L'APEC, ou Association pour l'Emploi des Cadres, est une organisation française qui offre des services et des conseils aux cadres dans leur gestion de carrière. Elle accompagne également les entreprises dans leurs recrutements et la définition de leurs besoins en compétences. L'APEC peut jouer un rôle dans le bilan de compétences en fournissant des informations sur le marché du travail, des conseils en évolution professionnelle et en facilitant l'accès aux offres d'emploi correspondant aux aspirations et compétences des cadres.</p>
                     </div>
-                    <div className="articleCertif-pic">
+                    {/* <div className="articleCertif-pic">
                         < img src={Qualiopi} alt="Logo Qualiopi" />
                         < img className='LogCpf' src={Cpf} alt="Logo Qualiopi" />
-                    </div>
+                    </div> */}
                 </div>
             </article>
             <TelButton number="06 98 88 15 55" />
@@ -67,11 +69,13 @@ const BcApec = () => {
             </article>
             <article className="timeline left-container withMovie">
                 <h3 className='text-centered'>Données chiffrées et tendances du marché du travail</h3>
-                <div>
-                    <p className='text-end'>Le paysage professionnel évolue constamment, et les bilans de compétences deviennent un outil stratégique pour naviguer ces changements. Selon une étude menée par le Ministère du Travail français, environ 70 % des personnes ayant réalisé un bilan de compétences ont connu une progression significative dans leur carrière. De plus, une enquête de l'Observatoire du Bilan de Compétences indique que 80 % des participants ont gagné en confiance et en estime de soi suite à leur bilan.
-                    </p>
-                    <p>Les bilans de compétences reflètent une tendance croissante à la recherche de sens et d'épanouissement professionnel. La crise du Covid-19 n'a fait qu'amplifier ce besoin, poussant de nombreux professionnels à réévaluer leurs aspirations. Dans ce contexte, comment Attribut Conseils accompagne-t-il les professionnels vers une transition réussie ?..</p>
+                <div className='multiplePAndMovie'>
+                    <div className='text-cointainer'>
+                        <p className='text-end'>Le paysage professionnel évolue constamment, et les bilans de compétences deviennent un outil stratégique pour naviguer ces changements. Selon une étude menée par le Ministère du Travail français, environ 70 % des personnes ayant réalisé un bilan de compétences ont connu une progression significative dans leur carrière. De plus, une enquête de l'Observatoire du Bilan de Compétences indique que 80 % des participants ont gagné en confiance et en estime de soi suite à leur bilan.
+                        </p>
+                        <p>Les bilans de compétences reflètent une tendance croissante à la recherche de sens et d'épanouissement professionnel. La crise du Covid-19 n'a fait qu'amplifier ce besoin, poussant de nombreux professionnels à réévaluer leurs aspirations. Dans ce contexte, comment Attribut Conseils accompagne-t-il les professionnels vers une transition réussie ?..</p>
 
+                    </div>
                     <Movie src={Arc} />
                 </div>
             </article>
@@ -86,14 +90,16 @@ const BcApec = () => {
                     </p>
                 </div>
             </article>
-            <article className="timeline right-container">
+            <article className="timeline right-container withMovie">
                 <h3>Impact du bilan de compétences sur la carrière
                 </h3>
-                <div>
-                    <p>Les retours de nos clients attestent de l'impact profond du bilan de compétences sur leur carrière. Ils rapportent une augmentation de la confiance en soi, une clarification de leur projet professionnel et une meilleure adéquation avec leurs aspirations personnelles. Ces changements se traduisent souvent par une transition vers des rôles plus satisfaisants ou par le lancement de projets entrepreneuriaux.
-                    </p>
-                    <p>Le bilan de compétences est donc un véritable catalyseur de développement personnel et professionnel. Prenons un moment pour réfléchir aux prochaines étapes après un bilan de compétences.
-                    </p>
+                <div className='multiplePAndMovie'>
+                    <div className='text-cointainer'>
+                        <p>Les retours de nos clients attestent de l'impact profond du bilan de compétences sur leur carrière. Ils rapportent une augmentation de la confiance en soi, une clarification de leur projet professionnel et une meilleure adéquation avec leurs aspirations personnelles. Ces changements se traduisent souvent par une transition vers des rôles plus satisfaisants ou par le lancement de projets entrepreneuriaux.
+                        </p>
+                        <p>Le bilan de compétences est donc un véritable catalyseur de développement personnel et professionnel. Prenons un moment pour réfléchir aux prochaines étapes après un bilan de compétences.
+                        </p>
+                    </div>
                     <Movie src={Tree} />
                 </div>
             </article>
@@ -113,7 +119,6 @@ const BcApec = () => {
             <ContactButton text="Contactez-nous" />
             <Questions tag='APEC' mainTitleFaq={mainTitleFaq} mainPfaq={mainPfaq} />
 
-            <TelButton number="06 98 88 15 55" />
             {/* <Questions tag='all' ville={ville} /> */}
             <ScrollToTop />
         </section >
