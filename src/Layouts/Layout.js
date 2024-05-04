@@ -5,6 +5,7 @@ import Footer from './Footer/Footer.js';
 import Breadcrumb from '../Components/Breadcrumb/Breadcrumb.js';
 import ScrollToTop from '../Components/Button/ScrollButton/ScrollToTop.js';
 import Canonical from '../Components/Meta/Canonical.js';
+import StickyButton from '../Components/Button/ContactButtonSticky/StickyButton.js';
 
 
 const Layout = () => {
@@ -17,6 +18,7 @@ const Layout = () => {
             <main>
                 <Outlet />
                 <ScrollToTop />
+                <StickyButton />
             </main>
             <Footer />
         </div>

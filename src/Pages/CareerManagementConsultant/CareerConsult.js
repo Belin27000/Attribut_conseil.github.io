@@ -7,8 +7,8 @@ import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 
 const CareerConsult = () => {
-    const metaTitle = `Attribut Conseils - Formation consultant en gestion de carrières `
-    const metaDescription = `Vous souhaitez vous former aux métiers de consultant en gestion de carrières en Seine et Marne? Contactez-nous !`
+    const metaTitle = `Attribut Conseils - Formation consultant en gestion de carrières`
+    const metaDescription = `Vous souhaitez vous former aux métiers de consultant en bilan de compétences en Seine et Marne ou en visio? Contactez-nous !`
     return (
         <section className='CareerConsult'>
             <MetaTitleDes title={metaTitle} description={metaDescription} />

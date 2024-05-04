@@ -96,11 +96,13 @@ const NavBarTest = () => {
                     </li>
                     <li className="items" onMouseEnter={toggleTrainingNav} onMouseLeave={toggleTrainingNav} >Formation
                         {toggleTraining && (
+                            // {true && (
                             <ul className='sub-list'>
                                 <li><Link to="/formation_creation_entreprise " onClick={toggleNav}><div>Accompagnement à la création d’entreprise</div></Link></li>
                                 <li><Link to="/formation_metier_formateur_adultes" onClick={toggleNav}><div>Formation de formateur</div></Link></li>
                                 <li><Link to="/formation_metier_consultant_en_gestion_de_carrieres" onClick={toggleNav}><div>Formation consultant en bilan/conseiller emploi</div></Link></li>
-                                <li><Link to="/formation_co-developpement" onClick={toggleNav}><div>Formation Co-Développement</div></Link></li>
+                                <li><Link to="/groupe_analyse_de_pratiques" onClick={toggleNav}><div>Formation analyse de pratiques</div></Link></li>
+                                {/* <li><Link to="/formation_co-developpement" onClick={toggleNav}><div>Formation Co-Développement</div></Link></li> */}
                             </ul>
                         )}
                     </li>
@@ -114,6 +116,7 @@ const NavBarTest = () => {
                                     <FaAngleLeft />
                                     Entreprise
                                     {showEntrepriseSubMenu && (
+                                        // {true && (
                                         <ul className='sous-menu'>
                                             <li><Link to="/entretien_professionnel" onClick={toggleNav} ><div>entretiens professionnels</div></Link></li>
                                             <li><Link to="/gestion_RH_externalisee" onClick={toggleNav} ><div>gestion RH externalisée</div></Link></li>
@@ -125,6 +128,7 @@ const NavBarTest = () => {
                                     <FaAngleLeft />
                                     Organisme de formation
                                     {showOrganismeSubMenu && (
+                                        // {true && (
                                         <ul className='sous-menu'>
                                             <li><Link to="/gestion_Formation_externalisee" onClick={toggleNav} ><div>Gestion externalisée de la formation</div></Link></li>
                                             {/* <li><Link to="/qualiopi" onClick={toggleNav} ><div>Qualiopi</div></Link></li> */}

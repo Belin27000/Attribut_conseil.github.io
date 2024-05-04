@@ -39,11 +39,11 @@ nav {
     display: flex;
     flex-direction: column;
     top: 100%;
-    width: 100%;
-    left: 0;
+    width: 150%;
+    // left: 0;
     background: linear-gradient(45deg, var(--acYellow), var(--acDarkBlue));
     padding: 0 0 1rem 0;
-    font-size: .6rem;
+    font-size: .8rem;
     line-height: 2rem;
     border-radius: 0 0 15px 15px;
 
@@ -54,8 +54,9 @@ nav {
         background: linear-gradient(45deg, var(--acYellow), var(--acDarkBlue));
         position: absolute;
         right: 100%;
+        width: 50%;
         top: 0;
-        border-radius: 0 0 15px 15px;
+        // border-radius: 15px 0 0 15px;
 
 
         li a {
@@ -66,9 +67,10 @@ nav {
     li {
         padding: 0 .25rem;
         border-top: dashed 1px white;
+        position: relative;
 
         a {
-            font-size: .55rem;
+            font-size: .8rem;
             color: white;
             text-decoration: none;
 

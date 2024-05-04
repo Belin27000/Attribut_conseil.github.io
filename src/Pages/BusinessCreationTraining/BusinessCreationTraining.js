@@ -15,7 +15,7 @@ import CircleDot from '../../Components/CircleDot/CircleDot.js';
 const BusinessCreationTraining = () => {
 
     const metaTitle = `Attribut Conseils - Formation à la création d'entreprise `
-    const metaDescription = `Vous souhaitez être accompagné pour la création de votre entreprise ? Contactez Attribut conseils en Seine et Marne !`
+    const metaDescription = `Vous souhaitez être accompagné pour la création de votre entreprise ? Contactez Attribut conseils en Seine et Marne et Ile de France`
     return (
         <section className='bct'>
             <MetaTitleDes title={metaTitle} description={metaDescription} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Vae from '../Vae/Vae.js';
-import CoDev from '../CoDev/CoDev.js';
+// import CoDev from '../CoDev/CoDev.js';
 import About from '../Apropos/About.js';
 import Layout from '@/Layouts/Layout.js';
 import Home from '@/Pages/Acceuil/Home.js';
@@ -20,7 +20,7 @@ import ProfessionalMeeting from '../ProfessionalMeeting/ProfessionalMeeting.js';
 import ExternTrainManagement from '../ExternTrainManagement/ExternTrainManagement.js';
 import BusinessCreationTraining from '../BusinessCreationTraining/BusinessCreationTraining.js';
 // import BusinessCreationTraining2 from '../BusinessCreationTraining/BusinessCreationTraining2.js';
-// import PracticesAnalyse from '../PracticesAnalyse/PracticesAnalyse.js';
+import PracticesAnalyse from '../PracticesAnalyse/PracticesAnalyse.js';
 
 //SEO
 import Avon from '../SEO/Avon.js';
@@ -60,8 +60,8 @@ const PublicRouter = () => {
                 <Route path="/psychologie_du_travail" element={<PsyWork />} />
                 <Route path="/formation_metier_formateur_adultes" element={<TrainingTrainer />} />
                 <Route path="/formation_metier_consultant_en_gestion_de_carrieres" element={<CareerConsult />} />
-                {/* <Route path="/groupe_analyse_de_pratiques" element={<PracticesAnalyse />} /> */}
-                <Route path="/formation_co-developpement" element={<CoDev />} />
+                <Route path="/groupe_analyse_de_pratiques" element={<PracticesAnalyse />} />
+                {/* <Route path="/formation_co-developpement" element={<CoDev />} /> */}
                 <Route path="/entretien_professionnel" element={<ProfessionalMeeting />} />
                 <Route path="/gestion_RH_externalisee" element={<ExternRhManagment />} />
                 <Route path="/ingenierie_formation" element={<IngeTraining />} />

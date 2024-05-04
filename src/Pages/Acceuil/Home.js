@@ -1,5 +1,5 @@
 import React from 'react';
-import carouselService from '@/_Services/carousel.service.js';
+// import carouselService from '@/_Services/carousel.service.js';
 import PresAC from '@/Assets/video/Pres_AC.mp4'
 import '@/Pages/Acceuil/home.scss';
 import KeyNumber from '../../Components/KeyNumbers/KeyNumber.js';
@@ -10,11 +10,16 @@ import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 
 const Home = () => {
-    const pictures = carouselService.allPictures();
-    console.log(pictures.pictures);
+    // const pictures = carouselService.allPictures();
+    // console.log(pictures.pictures);
+    const metaTitle = `Cabinet conseils RH et formation`
+    const metaDescription = `Vous cherchez à réaliser un bilan de compétences ou une formation en seine et Marne ou en visio?`
+
+
+
     return (
         <div className='Home'>
-            <MetaTitleDes />
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
             <h1 className='sr-only'>Bilan de compétences en Seine et Marne</h1>
             <section className='topSideHome'>
                 <div translate="no" className='PunchLine'>"Le travail nous travaille, ensemble faisons en sorte qu'il nous travaille bien"</div>

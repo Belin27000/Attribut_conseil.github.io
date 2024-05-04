@@ -8,7 +8,7 @@ import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 const Vae = () => {
     const metaTitle = `Attribut Conseils - VAE`
-    const metaDescription = `Vous cherchez à réaliser une VAE en seine et marne? Contactez-nous !`
+    const metaDescription = `Vous cherchez à réaliser une VAE en Seine et Marne ou en visio? Contactez nous!`
 
 
     return (

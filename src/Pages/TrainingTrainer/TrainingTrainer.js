@@ -6,8 +6,8 @@ import allFiles from '../../_Services/fileToDownload.service.js';
 import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 
 const TrainingTrainer = () => {
-    const metaTitle = `Attribut Conseils - Formation aux métiers de la formation`
-    const metaDescription = `Vous souhaitez vous former aux métiers de la formation en Seine et Marne? Contactez-nous !`
+    const metaTitle = `Attribut Conseils - Formation aux métiers de formateur`
+    const metaDescription = `Vous souhaitez vous former aux métiers de la formation en Seine et Marne ou en visio? Contactez-nous !`
     return (
         <section section className='TrainingTrainer' >
             <MetaTitleDes title={metaTitle} description={metaDescription} />

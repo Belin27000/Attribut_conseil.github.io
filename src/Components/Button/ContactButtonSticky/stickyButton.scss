@@ -1,0 +1,28 @@
+.StickyButton {
+    background-color: var(--acYellow);
+    border-radius: 15px 0 0 15px;
+    padding: .6rem;
+    color: var(--acDarkBlue);
+    font-weight: bold;
+    letter-spacing: .1rem;
+    font-size: .75rem;
+    border: 2px solid var(--acDarkBlue);
+    cursor: pointer;
+    position: fixed;
+    top: 15%;
+    right: 0;
+    z-index: 21;
+    width: 15%;
+
+    &:hover {
+        color: var(--acYellow);
+        background-color: var(--acDarkBlue);
+        border: 2px solid var(--acYellow);
+        /* Ajout de la bordure jaune au survol */
+
+    }
+
+    svg {
+        font-size: 1.5rem;
+    }
+}
