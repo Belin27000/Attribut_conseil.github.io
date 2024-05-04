@@ -43,20 +43,20 @@ const Movie = ({ src, loop = false }) => {
         };
     }, []);
 
-    const togglePlayPause = () => {
-        if (videoRef.current) {
-            if (videoRef.current.paused || videoRef.current.ended) {
-                videoRef.current.play();
-                setIsPlaying(true);
-            } else {
-                videoRef.current.pause();
-                setIsPlaying(false);
-            }
-        }
-    };
+    // const togglePlayPause = () => {
+    //     if (videoRef.current) {
+    //         if (videoRef.current.paused || videoRef.current.ended) {
+    //             videoRef.current.play();
+    //             setIsPlaying(true);
+    //         } else {
+    //             videoRef.current.pause();
+    //             setIsPlaying(false);
+    //         }
+    //     }
+    // };
 
     return (
-        <div className='movie' onClick={togglePlayPause}>
+        <div className='movie'>
             <video className='responsive-video' muted ref={videoRef} autoPlay playsInline loop={loop ? true : undefined}>
                 <source src={src} type='video/mp4' />
             </video>

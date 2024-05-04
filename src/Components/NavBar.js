@@ -71,17 +71,18 @@ const NavBarTest = () => {
     }, [])
     return (
         <nav>
-            {(!toggleMenu || screenWidth > 500) && (
+            {(!toggleMenu || screenWidth > 1024) && (
                 <div className='ReviewMobile'>
                     {/* <GoogleMobile /> */}
                 </div>
             )}
-            {(toggleMenu || screenWidth > 500) && (
+            {(toggleMenu || screenWidth > 1024) && (
                 <ul className="list">
                     <li><Link to="/home" className="items" onClick={toggleNav}><div>Accueil</div></Link></li>
                     <li><Link to="/about" className="items" onClick={toggleNav}><div>Qui sommes nous</div></Link></li>
                     <li className="items" onMouseEnter={toggleCarrerNav} onMouseLeave={toggleCarrerNav}><div>Gestion emploi et carrière</div>
                         {toggleCarrer && (
+                            // {true && (
                             <ul className='sub-list' >
                                 <li><Link to="/bilan-de-competence" onClick={toggleNav}><div>Bilan de compétences</div></Link></li>
                                 <li><Link to="/vae" onClick={toggleNav}><div>VAE</div></Link></li>
@@ -99,14 +100,14 @@ const NavBarTest = () => {
                                 <li><Link to="/formation_creation_entreprise " onClick={toggleNav}><div>Accompagnement à la création d’entreprise</div></Link></li>
                                 <li><Link to="/formation_metier_formateur_adultes" onClick={toggleNav}><div>Formation de formateur</div></Link></li>
                                 <li><Link to="/formation_metier_consultant_en_gestion_de_carrieres" onClick={toggleNav}><div>Formation consultant en bilan/conseiller emploi</div></Link></li>
-                                <li><Link to="/groupe_analyse_de_pratiques" onClick={toggleNav}><div>Groupe analyse de pratiques</div></Link></li>
+                                <li><Link to="/formation_co-developpement" onClick={toggleNav}><div>Formation Co-Développement</div></Link></li>
                             </ul>
                         )}
                     </li>
                     <li className="items" onMouseEnter={toggleIngeNav} onMouseLeave={toggleIngeNav}>
                         Ingenierie et administration de la formation
-                        {/* toggleInge */}
                         {toggleInge && (
+                            // {true && (
                             <ul className='sub-list'>
                                 {/* <li onMouseEnter={toggleEntrepriseSubMenu} onMouseLeave={toggleEntrepriseSubMenu}> */}
                                 <li onMouseEnter={toggleEntrepriseSubMenu} onMouseLeave={toggleEntrepriseSubMenu}>
@@ -133,6 +134,8 @@ const NavBarTest = () => {
                             </ul>
                         )}
                     </li>
+                    <li><Link to="/about" className="items" onClick={toggleNav}><div>Conseils</div></Link></li>
+
 
                 </ul>
             )}

@@ -115,50 +115,60 @@ nav {
     }
 
     .items {
-        font-size: .5rem;
+        font-size: .75rem;
     }
 
     .sub-list {
-        font-size: .5rem;
+        li a {
+            font-size: .75rem;
 
-    }
-}
-
-@media screen and (max-width:769px) {
-    nav {
-        height: 70px;
-    }
-
-    nav .list {
-        margin: 0;
-        padding: 0;
-    }
-
-    .items {
-        font-size: .7rem;
-    }
-
-    .sub-list {
-        font-size: .45rem;
-        padding: 0 .2rem;
-
-        .sous-menu {
-            position: absolute;
-            right: 100%;
         }
-    }
 
-    .sub-list a:hover {
-        background-color: var(--acDarkBlue);
     }
-
-    .sub-list a:last-child:hover {
-        border-radius: 0 0 15px 15px;
-    }
-
 }
 
-@media screen and (max-width:500px) {
+// @media screen and (max-width:769px) {
+//     nav {
+//         height: 70px;
+//     }
+
+//     nav .list {
+//         margin: 0;
+//         padding: 0;
+
+//         li {
+//             font-size: .5rem;
+//         }
+//     }
+
+//     .items {
+//         font-size: .5rem;
+//     }
+
+//     .sub-list {
+//         top: 100%;
+//         width: 150%;
+//         left: initial;
+//         font-size: .45rem;
+//         padding: 0 .2rem;
+
+//         .sous-menu {
+//             position: absolute;
+//             right: 100%;
+//         }
+//     }
+
+//     .sub-list a:hover {
+//         background-color: var(--acDarkBlue);
+//     }
+
+//     .sub-list a:last-child:hover {
+//         border-radius: 0 0 15px 15px;
+//     }
+
+// }
+
+@media screen and (max-width:1024px) {
     nav {
         height: 50px;
         background: white;

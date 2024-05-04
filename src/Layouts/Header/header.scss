@@ -2,7 +2,7 @@ header {
     /* height: 200px; */
     position: relative;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 .headerContact {
@@ -44,10 +44,12 @@ header {
     margin: 1rem 0;
     position: absolute;
     bottom: 25%;
-    width: 100%;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
     color: var(--acWhite);
     font-weight: bold;
-    font-size: calc(2rem + 0.390625vw);
+    font-size: calc(1.5rem + 0.390625vw);
     text-transform: uppercase;
 
 }
@@ -55,7 +57,7 @@ header {
 .Logos {
     z-index: 1;
     position: absolute;
-    top: 0;
+    bottom: 15%;
     margin-top: .2rem;
     width: 100%;
     display: flex;
@@ -73,240 +75,161 @@ header {
 }
 
 .LogoAc {
-    width: 14%;
+    width: 70%;
+    position: relative;
+    top: 10%;
 }
 
-.LogoSun {
-    width: 35%;
-}
-
-@media screen and (max-width:2420px) {
-    .LogoAc {
-        width: 20%;
-    }
-}
-
-@media screen and (max-width:1750px) {
-    .LogoAc {
-        width: 45%;
-    }
-
-    .LogoSun {
-        width: 60%;
-    }
-
-    .headerContact {
-
-
-        .ContactButton {
-            font-size: .65rem;
-            background-color: var(--acDarkBlue);
-            color: var(--acYellow);
-        }
-    }
-}
-
-@media screen and (max-width:1024px) {
-
-
-    header {
-        /* height: 200px; */
-        /* position: relative; */
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .PictureFont {
-        width: 100%;
-        height: 200px;
-    }
-
-    .Bandeau {
-        width: 100%;
-        height: 100%;
-        left: 0;
-        transform: scaleX(-1);
-    }
-
+@media screen and (min-width:669px) {
     .HeaderText {
-        margin: 1rem 0;
-        position: absolute;
-        bottom: 25%;
-        width: 100%;
-        color: var(--acWhite);
-        font-weight: bold;
-        font-size: 1.5rem;
-
-    }
-
-    .Logos {
-        z-index: 1;
-        position: absolute;
-        top: 0;
-        width: 50%;
-        margin-top: .2rem;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .Logos .LogoContainerAc,
-    .Logos .LogoContainerSun {
-        width: 30%;
-    }
-
-    .LogoAc {
-        width: 61%;
-    }
-
-    .LogoSun {
-        width: 65%;
-    }
-}
-
-@media screen and (max-width:769px) {
-
-    header {
-        /* height: 200px; */
-        /* position: relative; */
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .headerContact {
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        top: 15%;
-        right: auto;
-        left: auto;
-
-        .ContactButton {
-            font-size: .65rem;
-            // background-color: var(--acDarkBlue);
-            // color: var(--acYellow);
-        }
-    }
-
-    .PictureFont {
-        width: 100%;
-        height: 200px;
-    }
-
-    .Bandeau {
-        width: 100%;
-        height: 100%;
-        left: 0;
-        transform: scaleX(-1);
-    }
-
-    .HeaderText {
-        margin: 1rem 0;
-        position: absolute;
-        width: 100%;
-        color: var(--acWhite);
-        font-weight: bold;
-
-    }
-
-    .Logos {
-        z-index: 1;
-        position: absolute;
-        top: 0;
-        width: 50%;
-        margin-top: .2rem;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .Logos .LogoContainerAc,
-    .Logos .LogoContainerSun {
-        width: 30%;
-    }
-
-    .LogoAc {
-        width: 90%;
-        position: relative;
-        bottom: 1.1rem;
-    }
-
-    .LogoSun {
-        width: 90%;
-    }
-
-}
-
-@media screen and (max-width:500px) {
-    header {
-        height: 200px;
-        /* position: relative; */
-        display: flex;
-        flex-direction: column;
-
-
-    }
-
-    .PictureFont {
-        width: 100%;
-        height: 150px;
-    }
-
-    .Bandeau {
-        width: 100%;
-        height: 100%;
-        left: 0;
-    }
-
-    .HeaderText {
-        margin: 1rem 0;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        color: var(--acWhite);
-        font-size: 1rem;
-
-    }
-
-    .Logos {
-        z-index: 1;
-        position: absolute;
-        top: 0;
-        width: 50%;
-
-        margin-left: 1rem;
-        margin-top: .5rem;
+        bottom: 0%;
     }
 
     .Logos .LogoContainerAc {
-        width: 40%;
-        position: relative;
-        top: 30%;
+        width: 25%;
+
+        .LogoAc {
+            width: 75%;
+            top: -20%;
+            left: 0%;
+        }
     }
-
-    .LogoAc {
-        width: 160%;
-        position: relative;
-        top: .1rem;
-    }
-
-    .LogoSun {
-        display: none;
-    }
-
-    .headerContact {
-        // position: absolute;
-        // z-index: 1;
-        width: 40%;
-        top: 30%;
-        right: 5%;
-        // left: 25%;
-
-        // .ContactButton {
-        //     font-size: .65rem;
-        //     background-color: var(--acDarkBlue);
-        //     color: var(--acYellow);
-        // }
-    }
-
 }
+
+@media screen and (min-width:769px) {
+    .HeaderText {
+        width: 50%;
+        // bottom: 0%;
+    }
+
+    .Logos .LogoContainerAc {
+        width: 30%;
+
+        .LogoAc {
+            width: 75%;
+            top: -100%;
+            left: 0%;
+        }
+    }
+}
+
+@media screen and (min-width:1025px) {
+    header {
+        flex-direction: column-reverse;
+    }
+
+    .Logos {
+
+        bottom: 50%;
+
+        .LogoContainerAc {
+            width: 20%;
+
+            .LogoAc {
+                top: -75%;
+            }
+        }
+    }
+}
+
+// @media screen and (min-width:2420px) {
+//     .LogoAc {
+//         width: 20%;
+//     }
+// }
+
+// @media screen and (min-width:1750px) {
+//     .LogoAc {
+//         width: 45%;
+//     }
+
+//     .headerContact {
+
+
+//         .ContactButton {
+//             font-size: .65rem;
+//             background-color: var(--acDarkBlue);
+//             color: var(--acYellow);
+//         }
+//     }
+// }
+
+// @media screen and (min-width:969px) {
+//     .LogoAc {
+//         bottom: 10%;
+//     }
+// }
+
+// @media screen and (min-width:1024px) {
+//     header {
+//         height: 200px;
+//         /* position: relative; */
+//         display: flex;
+//         flex-direction: column;
+
+
+//     }
+
+//     .PictureFont {
+//         width: 100%;
+//         height: 150px;
+//     }
+
+//     .Bandeau {
+//         width: 100%;
+//         height: 100%;
+//         left: 0;
+//     }
+
+//     .HeaderText {
+//         margin: 1rem 0;
+//         position: absolute;
+//         bottom: 0;
+//         width: 60%;
+//         color: var(--acWhite);
+//         font-size: 1.2rem;
+//         left: 50%;
+//         transform: translateX(-50%);
+
+//     }
+
+//     .Logos {
+//         z-index: 1;
+//         position: absolute;
+//         bottom: 0%;
+//         width: 50%;
+
+//         margin-left: 1rem;
+//         margin-top: .5rem;
+//     }
+
+//     .Logos .LogoContainerAc {
+//         width: 40%;
+//         position: relative;
+//         top: 75%;
+//     }
+
+//     .LogoAc {
+//         width: 120%;
+//         position: relative;
+//         left: 0%;
+//         // bottom: -5%;
+//     }
+
+
+//     .headerContact {
+//         // position: absolute;
+//         // z-index: 1;
+//         width: 40%;
+//         top: 30%;
+//         right: 5%;
+//         // left: 25%;
+
+//         // .ContactButton {
+//         //     font-size: .65rem;
+//         //     background-color: var(--acDarkBlue);
+//         //     color: var(--acYellow);
+//         // }
+//     }
+
+// }

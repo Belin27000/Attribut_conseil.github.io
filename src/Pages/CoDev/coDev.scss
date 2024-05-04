@@ -1,0 +1,30 @@
+.CoDev {
+    color: white;
+    margin: 0;
+    width: 100%;
+    position: relative;
+
+    h1 {
+        text-align: start;
+        width: 90%;
+        padding: 0 1rem;
+
+        span {
+            color: var(--acYellow);
+        }
+    }
+
+    &_p {
+        font-weight: bold;
+
+        &_Yellow {
+            font-weight: bold;
+            color: var(--acYellow);
+        }
+    }
+
+    .container-img {
+        position: absolute;
+        top: -1rem;
+    }
+}
