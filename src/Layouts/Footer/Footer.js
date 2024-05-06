@@ -13,6 +13,7 @@ import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import allFiles from '../../_Services/fileToDownload.service.js';
 import Handi from '../../Assets/Images/Handicapped.png'
 import { FaHeart } from 'react-icons/fa';
+import SocialNetwork from '../../Components/SocialNetwork/SocialNetwork.js';
 // import GoogleRate from '../../Components/Google/GlobalRate/GoogleRate.js';
 // import GoogleMobile from '../../Components/Google/MobileRate/GoogleMobile.js';
 
@@ -27,6 +28,8 @@ const Footer = () => {
 
     return (
         <footer className='Footer'>
+            <SocialNetwork />
+
             <div className='FooterLogoContainer'>
                 <div className='QualContainer'>
                     {/* <img className='QualContainer-Pic' width='634' height='339' src={Qualiopi} alt='Logo Qualiopi' /> */}
@@ -77,37 +80,8 @@ const Footer = () => {
                 </div>
 
                 <div className='LogoContainer'>
-                    <div className='CpfContainer'>
-                        {/* <img className='CpfContainer-Pic' width='2647' height='1559' src={Cpf} alt='Logo Mon compte formation' /> */}
-                        {/* <img className='CpfContainer-Pic'
-                            sizes="(max-width: 1400px) 100vw, 1400px"
-                            srcSet={`
-                        ${Cpf200} 200w,
-                        ${Cpf1400} 1400w
-                        `}
-                            width='2647'
-                            height='1559'
-                            src={Cpf1400}
-                            alt="Logo Mon compte formation" /> */}
-                    </div>
-                    <div className='CharteContainer'>
-                        {/* <img className='CharteContainer-Pic' width='800' height='676' src={Charte} alt='Logo Mon compte formation' /> */}
-                        {/* <img className='CharteContainer-Pic'
-                            sizes="(max-width: 800px) 100vw, 800px"
-                            srcSet={`
-                        ${Charte200} 200w,
-                        ${Charte800} 800w
-                        `}
-                            width='800'
-                            height='676'
-                            src={Charte800}
-                            alt="Logo Charte CPF" /> */}
-                    </div>
                 </div>
             </div>
-
-
-
 
             <div className='City_Link'>
                 <h2>
