@@ -59,7 +59,9 @@ const Fontainebleau = () => {
                 <h3>Qui peut faire un bilan de compétences ?</h3>
                 <div>
                     <p>Le cabinet ATTRIBUT CONSEILS spécialisé dans la gestion de carrière professionnelle réalisent des <b>bilans de compétences</b> pour tous types de profils. Que vous exerciez un métier dans le public ou le privé, quel que soit votre niveau, votre statut et votre secteur d’activité. </p>
-                    <Movie src={climb} />
+                    <div className="movie-container">
+                        <Movie src={climb} />
+                    </div>
                 </div>
             </article>
             <TelButton number="06 98 88 15 55" />
@@ -71,9 +73,12 @@ const Fontainebleau = () => {
                     <p>Un entretien de suivi est organisé 6 mois après la fin du bilan pour faire le point sur l’avancement du projet.</p>
                     <p>Un premier entretien gratuit et sans engagement permet, avant de démarrer la démarche, de faire connaissance avec le consultant, de poser des questions sur le processus, et d’exposer votre situation et vos attentes</p>
                 </div>
-                <Movie src={Basket} />
+                <div className="movie-container">
+
+                    <Movie src={Basket} />
+                </div>
             </article>
-            <article className="timeline left-container ">
+            <article className="timeline left-container last ">
                 <h3 className='text-centered'>Les étapes de votre accompagnement </h3>
                 <div>
                     <ul>
@@ -97,9 +102,10 @@ const Fontainebleau = () => {
                     <p>ATTRIBUT CONSEILS est tenu de respecter le caractère confidentiel des informations données et est soumis au <b>secret professionnel.</b>
                     </p>
                 </div>
-                <Movie src={Secret} />
+                <div className="movie-container">
+                    <Movie src={Secret} />
+                </div>
             </article>
-
 
             <div className="MobileHand-img">
                 <img className='Tree' src={MobileHand} alt="Logo arbre Attribut conseils" />
