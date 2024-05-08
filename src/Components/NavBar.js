@@ -138,7 +138,7 @@ const NavBarTest = () => {
                             </ul>
                         )}
                     </li>
-                    <li><Link to="/conseils/A_chacun_sa_question_qui_tue_en_entretien_d_embauche" className="items" onClick={toggleNav}><div>Conseils</div></Link></li>
+                    <li><Link to="/conseils/A_chacun_sa_question_qui_tue_en_entretien_d_embauche" className="items" onClick={toggleNav}><div>Blog</div></Link></li>
 
 
                 </ul>

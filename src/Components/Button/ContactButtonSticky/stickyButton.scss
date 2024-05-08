@@ -5,24 +5,77 @@
     color: var(--acDarkBlue);
     font-weight: bold;
     letter-spacing: .1rem;
-    font-size: .75rem;
     border: 2px solid var(--acDarkBlue);
     cursor: pointer;
     position: fixed;
-    top: 5%;
+    top: 10%;
     right: 0;
     z-index: 21;
     width: 15%;
+    transition: width .75s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    .textButton {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .75s ease-in-out;
+    }
 
     &:hover {
         color: var(--acYellow);
         background-color: var(--acDarkBlue);
         border: 2px solid var(--acYellow);
-        /* Ajout de la bordure jaune au survol */
+        width: 30%;
 
+        .textButton {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+        }
     }
 
     svg {
         font-size: 1.5rem;
     }
+}
+
+@media screen and (min-width: 768px) {
+    .StickyButton {
+        svg {
+            font-size: 2rem;
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 10%;
+
+
+        .textButton {
+            font-size: 1rem;
+            display: initial;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .StickyButton {
+        width: 5%;
+
+        .textButton {
+            font-size: 1.2rem;
+        }
+
+        // top: 20%;
+
+        // .textButton {
+        //     font-size: 1rem;
+        // }
+    }
+
 }

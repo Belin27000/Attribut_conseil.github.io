@@ -13,7 +13,7 @@ const StickyButton = ({ text }) => {
         <button translate="no" className='StickyButton' onClick={RouteChange}>
 
             <FaRegEnvelope />
-            <div>
+            <div className='textButton'>
                 {
 
                     text ? text : "Je contacte Attribut conseils"
