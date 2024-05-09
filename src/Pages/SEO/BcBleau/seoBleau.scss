@@ -1,0 +1,367 @@
+.SeoBleau {
+    margin: 0 2rem;
+    padding-bottom: 2rem;
+    color: white;
+    position: relative;
+    width: 100%;
+
+    .LogCpf {
+        background-color: white;
+    }
+
+    .container-img {
+        // width: 110%;
+        position: absolute;
+        top: -1rem;
+        left: -1.5rem;
+        right: -1.5rem;
+        z-index: 2;
+        margin: 0;
+
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+
+    h1 {
+
+        margin-top: 0;
+        text-align: left;
+        width: 100%;
+        font-size: 7vw;
+        z-index: 3;
+        position: relative;
+
+
+        &.Title,
+        .city {
+            text-transform: uppercase;
+        }
+
+        span {
+
+            color: var(--acYellow);
+        }
+
+    }
+
+    &_Yellow {
+        color: var(--acYellow);
+        font-size: 6vw;
+        font-weight: bold;
+        text-align: left;
+        position: relative;
+        z-index: 3;
+    }
+
+    &-article {
+        line-height: 1.5rem;
+        position: relative;
+        z-index: 3;
+
+        p {
+            font-size: 20px;
+            text-align: left;
+        }
+
+        ul li {
+            font-size: 1.2rem;
+            text-align: start;
+        }
+
+    }
+
+    .timeline {
+
+
+        .articleCertif {
+
+            &-pic {
+                width: 100%;
+
+                img {
+                    width: 10%;
+                }
+            }
+        }
+
+        position: relative;
+
+        .articleCertif-pic {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 4rem 0;
+
+            img {
+                width: 35%;
+            }
+        }
+
+        &.right-container {
+            text-align: start;
+
+            &.lastP::after {
+                height: calc(100%);
+
+            }
+        }
+
+        &.right-container::before {
+            content: "";
+            position: absolute;
+            /* positionner les ronds par rapport à chaque article */
+            top: .1rem;
+            /* positionner le rond au milieu de l'article */
+            left: -1.7rem;
+            /* ajustez la position du rond par rapport au côté gauche de l'article */
+            // transform: translateY(-50%);
+            /* centrez le rond verticalement */
+            width: 1.5rem;
+            /* largeur du rond */
+            height: 1.5rem;
+            /* hauteur du rond */
+            background-color: var(--acYellow);
+            /* couleur jaune */
+            border-radius: 50%;
+            /* pour obtenir un cercle */
+        }
+
+        &.right-container::after {
+            content: "";
+            position: absolute;
+            top: 1%;
+            /* positionner le trait à partir du centre du rond */
+            left: -1rem;
+            /* aligner le trait avec le bord gauche de l'article */
+            width: 3px;
+            /* épaisseur du trait */
+            height: calc(100% + 45px);
+            /* hauteur du trait, ajustée pour atteindre le bas de l'article */
+            background-color: var(--acYellow);
+            /* couleur jaune */
+        }
+
+        &.left-container {
+            text-align: end;
+            width: 100%;
+
+            &.lastP::after {
+                height: calc(100%);
+
+            }
+        }
+
+        &.left-container::before {
+            content: "";
+            position: absolute;
+            /* positionner les ronds par rapport à chaque article */
+            top: .1rem;
+            /* positionner le rond au milieu de l'article */
+            right: -1.7rem;
+            /* ajustez la position du rond par rapport au côté gauche de l'article */
+            // transform: translateY(-50%);
+            /* centrez le rond verticalement */
+            width: 1.5rem;
+            /* largeur du rond */
+            height: 1.5rem;
+            /* hauteur du rond */
+            background-color: var(--acYellow);
+            /* couleur jaune */
+            border-radius: 50%;
+            /* pour obtenir un cercle */
+        }
+
+        &.left-container::after {
+            content: "";
+            position: absolute;
+            top: .1rem;
+            /* positionner le trait à partir du centre du rond */
+            right: -1rem;
+            /* aligner le trait avec le bord gauche de l'article */
+            width: 3px;
+            /* épaisseur du trait */
+            height: calc(100% + 48px);
+            /* hauteur du trait, ajustée pour atteindre le bas de l'article */
+            background-color: var(--acYellow);
+            /* couleur jaune */
+        }
+    }
+
+    .text-end {
+        a {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+
+    .TelButton,
+    .ContactButton {
+
+        margin: 2rem 0;
+    }
+
+    .ContactButton {
+        text-decoration: underline;
+    }
+
+    .movie-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .movie {
+        align-self: center;
+        margin: 2.5rem 0;
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+    .SeoBleau {
+        h1 {
+            width: 75%;
+        }
+
+        &_Yellow {
+            font-size: 3.5vw;
+        }
+
+        display: flex;
+        flex-direction: column;
+
+        article,
+        .timeline.left-container {
+            width: 80%;
+            align-self: center;
+            padding: 0 4rem;
+
+            h2,
+            h3 {
+                margin: 0;
+                font-size: 2.5vw;
+            }
+        }
+
+        .timeline.right-container {
+            &::before {
+                width: 3.5vw;
+                height: 3.5vw;
+                left: -1.75vw;
+                top: -.51vw;
+            }
+
+            &::after {
+                left: -.05vw;
+                width: .25vw;
+            }
+        }
+
+        .timeline.left-container {
+            &::before {
+                width: 3.5vw;
+                height: 3.5vw;
+                right: -1.75vw;
+                top: -.51vw;
+            }
+
+            &::after {
+                right: -.25vw;
+                width: .25vw;
+            }
+        }
+
+        .TelButton,
+        .ContactButton {
+            width: 35%;
+            align-self: center;
+        }
+
+        .movie-container {
+            flex-direction: row;
+            justify-content: space-between;
+
+            p {
+                width: 75%;
+                font-size: 1.5vw;
+                margin-bottom: 5rem;
+            }
+
+            .movie {
+                width: 18vw;
+                height: 18vw;
+                position: absolute;
+                right: 1vw;
+                top: 0;
+                margin: 0;
+            }
+        }
+
+        .left-container {
+            p {
+                font-size: 1.5vw;
+                margin-top: 0;
+            }
+
+            &.firstP {
+
+                h2,
+                p {
+                    text-align: start;
+                }
+
+            }
+
+            .movie-container {
+                flex-direction: row-reverse;
+
+                p {
+                    margin-bottom: 0;
+                }
+
+                .movie {
+                    left: 0;
+                    top: 5rem;
+                }
+            }
+
+            &.lastP {
+                display: flex;
+                flex-direction: column;
+
+                .lastPinlastP {
+                    margin-top: 0;
+                    width: 75%;
+                    align-self: flex-end;
+                }
+            }
+        }
+
+        .articleCertif-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: stretch;
+
+            p {
+
+                font-size: 1.5vw;
+                margin: 0;
+            }
+
+            .articleCertif-pic {
+                justify-content: flex-start;
+                flex-direction: column;
+                gap: 1rem;
+                margin: 0;
+                align-items: center;
+            }
+
+        }
+    }
+}

@@ -31,7 +31,7 @@ import BcApec from '../SEO/BcApec/BcApec.js';
 import BcReco from '../SEO/BcReco/BcReco.js';
 import MontereauFy from '../SEO/MontereauFy.js';
 import BCinLine from '../SEO/BCinLine/BCinLine.js';
-import Fontainebleau from '../SEO/Fontainebleau.js';
+import Fontainebleau from '../SEO/BcBleau/Fontainebleau.js';
 import JobInterview from '../Advice/JobInterview.js';
 import LayoutAdvice from '../../Layouts/LayoutAdvice.js';
 import LandingPage from '../SEO/LandingPage/LandingPage.js';

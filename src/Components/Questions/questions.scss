@@ -13,7 +13,7 @@
     .clique {
         width: 100%;
         position: relative;
-        height: 125px;
+        height: 30vw;
         margin-top: 2rem;
 
         img {
@@ -120,11 +120,11 @@
         .clique {
             // width: 25%;
             position: relative;
-            height: 125px;
-            margin: 2rem 0 5rem 0;
+            height: 15vw;
+            // margin: 2rem 0 5rem 0;
 
             img {
-                width: 80%;
+                width: 50%;
                 position: absolute;
                 z-index: 1;
                 left: 0;
@@ -132,9 +132,11 @@
             }
 
             p {
-                font-size: 4vw;
+                width: 50%;
+                font-size: 2vw;
+                margin: 1vw 0 0 1.5vw;
                 // line-height: 4rem;
-                margin-left: 2.5rem;
+                // margin-left: 2.5rem;
                 // top: -40px;
 
                 // text-align: start;
@@ -156,37 +158,19 @@
                 margin: 0 2rem;
 
                 h3 {
-                    font-size: 2rem;
+                    font-size: 2vw;
                 }
 
             }
 
             p {
-                font-size: 1.5rem;
+                font-size: 2vw;
                 width: 90%;
                 margin: 0 2rem;
             }
 
             .toggle-button {
                 font-size: 3rem;
-            }
-        }
-    }
-}
-
-@media (min-width: 1024px) {
-    .questions {
-        .clique {
-            width: 550px;
-
-            p {
-                // width: 50%;
-                font-size: 2.5rem;
-            }
-
-            img {
-
-                width: 100%;
             }
         }
     }
