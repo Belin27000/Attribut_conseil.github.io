@@ -10,469 +10,549 @@
 
 
 
-.Seo {
-    .RecoStars {
-        font-weight: bold;
-        text-align: center;
+.SeoCPF {
+    color: white;
+    width: 100%;
+    position: relative;
+    font-size: 3vw;
+
+    .container-img {
+        width: 100%;
+        position: absolute;
+        top: -1rem;
+        z-index: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    h1 {
+        font-size: 10vw;
+        text-align: start;
+        margin: 0 0 0 1rem;
+        position: relative;
+        z-index: 5;
+    }
+
+    h2 {
+        margin: 2vw 0;
     }
 
     .timeline {
-        &.right-container::after {
-            height: 100%;
-        }
+        display: flex;
+        flex-direction: column;
 
-        position: relative;
+        .withMovieAndLogo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-        &.right-container-downDot::before {
-            content: "";
-            position: absolute;
-            left: -1rem;
-            top: 0;
-            width: 3px;
-            height: calc(100% + 5px);
-            background-color: var(--acYellow);
-
-        }
-
-        .downDot::after {
-            content: "";
-            position: absolute;
-            width: 1.5rem;
-            height: 1.5rem;
-            left: -1.7rem;
-            bottom: -1.7rem;
-            border-radius: 50%;
-            background-color: var(--acYellow);
+            .movie {
+                width: 50vw;
+                height: 50vw;
+            }
         }
     }
 
-    a {
-        .videoContainer {
-            right: -20%;
-            top: 0;
+    article {
+        margin: 0 1rem;
+    }
 
-            .movie {
-                width: 100px;
-                height: 100px;
+    .articleCertif-pic {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+
+        img {
+            width: 25%
+        }
+    }
+
+    .questions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2,
+        p {
+            margin: 0 5vw;
+        }
+
+        .clique {
+            width: 75%;
+
+            p {
+                margin-top: 2vw;
+                font-size: 5vw;
             }
         }
 
-        .allText {
-            left: 25%;
-            width: 200px;
-            height: 200px;
-            display: flex;
+        .questions-container {
+            .question {
+                width: 90%;
+            }
+        }
+    }
 
-            .mainText {
-                margin-top: 1rem;
-                width: 100%;
-                font-size: 1.52rem;
+    .light-pic {
+        display: none;
+    }
+
+    .fireworks {
+        display: flex;
+
+        .circleInFire {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-top: 2rem;
+
+            img {
+                width: 20vw;
             }
 
-            .circleDot {
-                img {
+            // margin-bottom: 20vw;
 
-                    width: 250px;
-                    height: 250px;
+            .yellowCircle {
+                position: relative !important;
+                @include circle-styles(25vw, var(--acYellow), 0, 50%);
+                transform: translate(-50%)
+            }
+
+            .whiteCircle {
+                // position: relative !important;
+                @include circle-styles(10vw, white, 85%, 50vw);
+                // transform: translate(-50%)
+            }
+        }
+    }
+
+    .Review,
+    .withoutTitle {
+        margin-top: 5vw;
+    }
+
+    .right-container {
+        margin-left: 12vw;
+        text-align: start;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 10vw;
+            height: 10vw;
+            border-radius: 50%;
+            background-color: var(--acYellow);
+            position: absolute;
+            left: -11vw;
+            z-index: 15;
+        }
+
+        &::after {
+            content: "";
+            width: 1vw;
+            height: calc(100% - 1vw);
+            background-color: var(--acYellow);
+            position: absolute;
+            left: -6.5vw;
+            top: 1vw;
+            z-index: 15;
+        }
+
+        .litleWhiteDot {
+            z-index: 15;
+            @include circle-styles(5vw, white, 5vw, -5vw)
+        }
+
+        &-downDot {
+            margin-left: 12vw;
+            position: relative;
+            margin-top: 5vw;
+
+            .downDot {
+                p {
+                    margin-top: 0;
                 }
             }
 
-            .yellowCircle {
-                display: none;
+            &::before {
+                content: "";
+                width: 10vw;
+                height: 10vw;
+                border-radius: 50%;
+                background-color: var(--acYellow);
+                position: absolute;
+                left: -11vw;
+                bottom: 0%;
+                z-index: 15;
+            }
+
+            &::after {
+                content: "";
+                width: 1vw;
+                height: calc(100% - 1vw);
+                background-color: var(--acYellow);
+                position: absolute;
+                left: -6.5vw;
+                top: 1vw;
+                z-index: 15;
+            }
+        }
+
+        .DownYellowDot {
+            &::before {
+                content: "";
+                width: 10vw;
+                height: 10vw;
+                border-radius: 50%;
+                background-color: var(--acYellow);
+                position: absolute;
+                left: -11vw;
+                bottom: 0%;
+                z-index: 15;
             }
         }
     }
-
-    .right-container-downDot {
-        text-align: start;
-    }
-
-    .light {
-        display: flex;
-        flex-direction: column-reverse;
-
-        &-text {
-            width: 100%;
-            text-align: start;
-
-            h2 {
-                font-size: 1.2rem;
-            }
-        }
-
-        &-pic {
-            display: none;
-        }
-    }
-
-    .text-start {
-        text-align: start;
-    }
-
-    .circleInFire {
-        position: relative;
-
-        .yellowCircle {
-            @include circle-styles(150px, var(--acYellow), 0, 50%);
-            transform: translateX(-50%);
-            position: relative;
-        }
-
-        .whiteCircle {
-            @include circle-styles(50px, white, 90%, 60%);
-            transform: translateX(-50%);
-            position: absolute;
-        }
-    }
-
 }
 
 @media screen and (min-width: 760px) {
-    .Seo {
-        a {
-            display: flex;
-            justify-content: center;
+    .SeoCPF {
+        font-size: 2.5vw;
 
-            .videoContainer {
-                right: 0;
+        &-article {
+            text-align: start;
+
+            p {
+                margin-bottom: 0;
+                margin-top: 0;
             }
         }
 
-        .timeline {
-            &.right-container {
-                .articleCertif-pic {
-                    flex-direction: row;
-                    justify-content: space-around;
+        .right-container {
+
+            .TextMovieLogo {
+                display: flex;
+
+                .withMovieAndLogo {
+                    padding-right: 2vw;
+
+                    .movie {
+                        width: 25vw;
+                        height: 25vw;
+                    }
+
                 }
 
-                &-downDot::before {
-                    left: 3%;
-                    width: 5px;
-                }
-            }
-
-
-            .downDot::after {
-                width: 4rem;
-                height: 4rem;
-                left: 0;
-                transform: translateX(-14%);
-            }
-
-
-        }
-
-        .simpleCont-leftPic {
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
-
-            div {
-
-                h2,
                 p {
-
                     margin: 0;
                 }
             }
 
-            a {
-                .allText {
-                    justify-content: center;
+            &::after {
+                width: .51vw;
+                left: -6vw;
+            }
+
+            &-downDot {
+                &::after {
+                    width: .51vw;
+                    left: -6vw;
                 }
 
-                .mainText {
-                    font-size: 1rem;
-                    text-align: center;
-                }
+            }
+        }
 
-                .videoContainer {
-                    top: 15%;
-                    right: -20%;
-                }
+        .articleCertif-container-text {
+            p {
+                margin: 0;
+            }
+        }
+
+        .articleCertif-pic {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .simpleCont-leftPic {
+            flex-direction: row-reverse;
+
+            .text {
+                text-align: start;
+            }
+
+            .circleDotCont {
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+
+        .downDot {
+            p {
+                text-align: start;
             }
         }
 
         .light {
             flex-direction: row;
 
-            h2 {
-                font-size: 2rem;
-            }
-
             &-text {
-                font-size: 1rem;
+                h2 {
+                    font-size: 3vw;
+                    margin-top: 0
+                }
+
+                p {
+                    font-size: 2vw;
+                    text-align: start;
+                    // margin: 0;
+
+                }
             }
 
-            &-pic {
-                // display: initial;
-                width: 15%;
-                display: flex;
+            .light-pic {
+                display: initial;
+                margin-left: 1rem;
 
+                img {
+
+                    width: 25vw;
+                }
+            }
+        }
+
+        .fireworks {
+            flex-direction: row-reverse;
+            position: relative;
+
+            .circleInFire {
+                width: 10%;
 
                 img {
                     width: 100%;
-                    // flex: 1;
-                    // align-self: stretch;
+
+                }
+
+                .yellowCircle {
+                    width: 10vw;
+                    height: 10vw;
+                }
+
+                justify-content: flex-end;
+
+                .whiteCircle {
+                    width: 5vw;
+                    height: 5vw;
+                    position: absolute;
+                    right: 0;
+                    top: 93%;
+                    left: initial;
                 }
             }
-        }
 
-        .circleInFire {
-            // width: 10%;
-            display: flex;
-            flex-direction: column;
-
-            img {
-                align-self: center;
-                width: 20%;
-
+            .text {
+                font-size: 2vw;
+                text-align: start;
             }
-        }
 
-        a {
-            .allText {
-                left: 0;
-                transform: translateX(0);
+            .circleDotCont {
+                padding-right: 2vw;
 
-                .mainText {
-                    p {
-                        margin-left: 0;
-                        margin-right: 0;
-                        font-size: 1.5rem;
-                        text-align: center;
+                .videoContainerV2 {
+                    top: -2vw;
+                    // right: 0;
+
+                    .movie {
+                        width: 8vw;
+                        height: 8vw;
+                    }
+
+                    // display: none;
+                }
+
+                .allTextV2 {
+                    .mainTextV2 {
+                        width: 15vw;
+                        height: 15vw;
+                        margin-right: 4vw;
+
+                        p {
+                            font-size: 2.5vw;
+                            // text-align: center;
+                        }
+                    }
+
+                    .circleDotV2 {
+                        top: -3vw;
+                        right: -.25vw;
+
+                        img {
+                            width: 25vw;
+                            height: 25vw;
+
+                        }
                     }
                 }
             }
+        }
 
-            .videoContainer {
-                right: 50%;
-                transform: translateX(125%);
-                top: 15%;
+        .questions {
+            .clique {
+                p {
+                    font-size: 3vw;
+                    margin-left: 1.5vw;
+                    margin-top: 1vw;
+                }
             }
         }
     }
+
 }
 
 @media screen and (min-width: 1024px) {
-    .Seo {
-        &-article {
-            margin: 2rem;
+    .SeoCPF {
+        font-size: 1.5rem;
+
+        h1 {
+            font-size: 7rem;
+            margin-bottom: 7rem;
         }
 
-        .timeline {
-            &.right-container {
-                margin-left: 2rem;
+        article {
+            margin: 0 7rem;
+            position: relative;
+        }
 
-                h2 {
+        .right-container {
+            .TextMovieLogo {
+                .withMovieAndLogo {
 
-                    &.litleWhiteDot::before {
-                        content: "";
-                        @include circle-styles(35px, white, 3%, 4%)
+                    .movie {
+                        width: 15vw;
+                        height: 15vw;
                     }
-                }
-
-                &.withMovie {
-                    .TextMovieLogo {
-                        flex-direction: row;
-                        align-items: center;
-
-                        // display: flex;
-                        .text-col {
-                            flex-direction: column;
-                        }
-
-                        .withMovieAndLogo {
-                            flex-direction: column;
-                        }
-                    }
-
-                }
-
-                &-downDot {
-                    margin-left: 2rem;
-                }
-
-                &-downDot::before {
-                    left: 2%;
                 }
             }
 
-            &.right-container::before {
-                width: 4rem;
-                height: 4rem;
-                left: -.7rem;
+            &::before {
+                width: 8vw;
+                height: 8vw;
+                left: -10vw;
+                // left: 5px;
             }
 
-            &.firstRight-container::before {
-                width: 6rem;
-                height: 6rem;
-                left: -1.5rem;
+            .litleWhiteDot {
+                width: 4vw;
+                height: 4vw;
+                top: 5vw;
             }
 
-            &.fireworks {
-                display: flex;
-                flex-direction: row-reverse;
-                position: relative;
-                width: 90%;
+            &::after {
+                width: .25vw;
+                left: -6vw;
+            }
 
-                h2 {
-                    margin-right: 0;
-                    font-size: 1.9rem;
+            .DownYellowDot {
+                &::before {
+                    width: 8vw;
+                    height: 8vw;
+                    left: -10vw;
+                    // border-radius: 50%;
+                    // background-color: var(--acYellow);
+                    // position: absolute;
+                    // bottom: 0%;
+                    // z-index: 15;
+                }
+            }
+
+            &-downDot {
+
+                &::before {
+                    width: 8vw;
+                    height: 8vw;
+                    left: -10vw;
                 }
 
-                .circleInFire {
-                    width: 15%;
-                    position: absolute;
-                    // bottom: -15%;
-                    // right: -5%;
-
-                    .yellowCircle {
-                        @include circle-styles(125px, var(--acYellow), 500px, 125px)
-                    }
-
-                    .whiteCircle {
-                        @include circle-styles(50px, white, 585px, 150px)
-                    }
-
-                    img {
-                        width: 75%;
-                        position: absolute;
-                        top: 400px;
-                        left: 100px;
-                    }
+                &::after {
+                    width: 0.25vw;
+                    left: -6vw;
                 }
 
-                a {
-                    .circleDot {
-                        left: -15%;
-                    }
-
-                    .videoContainer {
-                        top: 10%;
+                .downDot {
+                    p {
+                        margin-bottom: 0;
                     }
                 }
+            }
 
+            &.withoutTitle {
+                p {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
             }
         }
 
         .simpleCont-leftPic {
-            justify-content: space-between;
+            .text {
+                padding-left: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
-            div {
-                width: 65%;
+                // width: 75%;
+                h2,
+                p {
+                    width: 75%;
+                }
             }
 
-            a {
-                .allText {
-                    width: 200px;
-                    height: 200px;
+            .circleDotCont {
+                padding: 0;
+                justify-content: space-around;
 
-                    .circleDot {
-                        left: -1.5rem;
+                .allTextV2 {
+                    .mainTextV2 {
+                        width: 250px;
+                        height: 250px;
+
+                        p {
+                            font-size: 2rem;
+                        }
+                    }
+
+                    .circleDotV2 {
+                        top: -50px;
+
+                        img {
+                            width: 400px;
+                            height: 400px;
+                        }
                     }
                 }
 
-                .videoContainer {
-                    right: 40%;
+                .videoContainerV2 {
+                    align-self: flex-start;
+                    top: 0;
+                    right: -100px;
+
+                    .movie {
+                        width: 125px;
+                        height: 125px;
+                    }
                 }
             }
         }
 
         .light {
-            flex: 1;
-
-            &-text {
-
-                font-size: 1rem;
-            }
-
-            &-pic {
-                width: 35%;
-
-                img {
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 1224px) {
-    .Seo {
-        .timeline {
-
-            .withMovieAndLogo {
-                // width: 10%;
-
-                .articleCertif-pic {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    img {
-                        margin-top: 2rem;
-                    }
-                }
-            }
-
-            &.right-container {
-                &.withMovie {
-                    width: 95%;
-                    justify-content: space-between;
-                }
-
-                h2 {
-                    &.litleWhiteDot::before {
-                        top: 5%;
-                        left: 3%;
-                    }
-                }
-
-                &-downDot::before {
-                    left: 1%;
-                }
-            }
-
-            &.right-container::after {
-                left: 1%;
-            }
-
-            .light {
-                &-pic {
-                    width: 20%;
-                    // display: ruby;
-                    // font-size: 1.5rem;
-                }
-
-            }
-
-            &.fireworks {
-                .text {
-                    width: 80%;
-                }
-
-                .circleInFire {
-                    width: 10%;
-                    top: -40%;
-                }
-
-                a {
-                    .videoContainer {
-                        top: 0;
-                    }
-                }
+            h2 {
+                text-align: start
             }
         }
 
-        .simpleCont-leftPic {
-            justify-content: space-around;
-
-            a {
-                .videoContainer {
-                    top: 5%;
-                }
-            }
+        .circleDotCont {
+            align-self: center;
         }
     }
 }

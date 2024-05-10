@@ -4,24 +4,25 @@ import GrassGrow from '@/Assets/video/GrassGrow.mp4'
 import { Link } from 'react-router-dom';
 import CircleWithDot from '@/Assets/Images/CircleDot.png'
 
-import './circleDot.scss'
+import './circleDotV2.scss'
 
-const CircleDot = ({ displayAll = true }) => {
+const CircleDotV2 = ({ text, littleDot }) => {
 
+    const textDisplay = text ? text : ""
     return (
         <>
-            <Link to="/contact">
-                <div className="allText">
-                    <div className="mainText">
-                        {displayAll && <p>Obtenir un rendez-vous, un devis ou pour plus d’informations et concrétiser votre projet</p>}
+            <Link to="/contact" className='circleDotCont'>
+                <div className="allTextV2">
+                    <div className="mainTextV2">
+                        {text ? <p>{textDisplay}</p> : ""}
                         <p>Je contacte<br /><b>ATTRIBUT<br />CONSEILS</b> </p>
                     </div>
-                    <div className="circleDot">
+                    <div className="circleDotV2">
                         <img src={CircleWithDot} alt="cercle de petit point" />
                     </div>
-                    <div className="yellowCircle"></div>
+                    {littleDot ? <div className="yellowCircleV2"></div> : ""}
                 </div>
-                <div className="videoContainer">
+                <div className="videoContainerV2">
                     <Movie src={GrassGrow} />
                 </div>
             </Link>
@@ -29,4 +30,4 @@ const CircleDot = ({ displayAll = true }) => {
     );
 };
 
-export default CircleDot;
+export default CircleDotV2;

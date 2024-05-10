@@ -93,6 +93,10 @@ const Footer = () => {
                     <li><Link to="/bilan-de-competence/bilan-de-competence-montereau-fault-yonne" onClick={scrollToTop}>Bilan de competence à Montereau-Fault-Yonne</Link></li>
                     <li><Link to="/bilan-de-competence/bilan-de-competence-avon" onClick={scrollToTop}>Bilan de competence à Avon</Link></li>
                     <li><Link to="/bilan-de-competence/bilan-de-competence-provins" onClick={scrollToTop}>Bilan de competence à Provins</Link></li>
+                    <li><Link to="/bilan-de-competence/bilan-de-competence-en-ligne" onClick={scrollToTop}>Bilan de competence en ligne</Link></li>
+                    <li><Link to="/bilan-de-competence/bilan-de-competence-CPF" onClick={scrollToTop}>Bilan de competence "Mon compte Formation"</Link></li>
+                    <li><Link to="/bilan-de-competence/bilan-de-competence-reconversion" onClick={scrollToTop}>Bilan de competence "Reconversion"</Link></li>
+                    <li><Link to="/bilan-de-competence/bilan-de-competence-Apec" onClick={scrollToTop}>Bilan de competence "APEC"</Link></li>
                 </ul>
             </div>
             {/* <div className="Handi">
