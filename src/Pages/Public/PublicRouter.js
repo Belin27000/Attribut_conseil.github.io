@@ -35,6 +35,7 @@ import Fontainebleau from '../SEO/BcBleau/Fontainebleau.js';
 import JobInterview from '../Advice/JobInterview.js';
 import LayoutAdvice from '../../Layouts/LayoutAdvice.js';
 import LandingPage from '../SEO/LandingPage/LandingPage.js';
+import PageNotFound from '../404/PageNotFound.js';
 
 const PublicRouter = () => {
     return (
@@ -83,7 +84,7 @@ const PublicRouter = () => {
                 <Route path="/bilan-de-competence/bilan-de-competence-reconversion" element={<BcReco />} />
                 <Route path="/bilan-de-competence/bilan-de-competence-Apec" element={<BcApec />} />
 
-                <Route path='*' element={<Home />} />
+                <Route path='*' element={<PageNotFound />} />
 
             </Route>
             <Route element={<LayoutAdvice />}>

@@ -1,0 +1,43 @@
+.PnF {
+    width: 100%;
+
+    &-title {
+        color: var(--acYellow);
+        font-size: 5vw;
+    }
+
+    a {
+        color: white;
+    }
+
+    &-PIC {
+        width: 100%;
+        margin: 1rem 0;
+
+        img {
+            width: 50vw;
+            height: 50vw;
+            border-radius: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .PnF {
+        &-title {
+            font-size: 3rem;
+        }
+
+        &-PIC {
+
+
+            img {
+                width: 25rem;
+                height: 25rem;
+                border-radius: 50%;
+            }
+        }
+    }
+
+}
