@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const PageNotFound = () => {
     return (
         <div className='PnF'>
-            <h2 className='PnF-title'>Désolé, cette page n'existe plus</h2>
+            <h2 className='PnF-title'>Désolée, cette page n'existe plus</h2>
             <Link to={'/contact'}>
                 <div className="PnF-PIC">
                     <img src={ProfilPic} alt="Profil Daphne Battaglia" />
