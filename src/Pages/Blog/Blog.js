@@ -1,0 +1,65 @@
+import blogDatas from '@/_Services/blog.service.js'
+import verticalDots from '../../Assets/Images/verticalDots.png'
+import React, { useState } from 'react';
+import './blog.scss'
+import { Link } from 'react-router-dom';
+// import SocialNetwork from '../../Components/SocialNetwork/SocialNetwork.js';
+const Blog = () => {
+
+
+    const [selectedCategory, setSelectedCategory] = useState(null)
+
+    const handleCategoryClick = (category) => {
+        setSelectedCategory(category);
+    };
+    console.log(blogDatas);
+
+    return (
+        <div className='Blog'>
+            <div className='Blog-header'>
+                <div className='Blog-title'>
+                    <h1>BLOG</h1>
+                </div>
+                <div className='Blog-catList'>
+                    <img src={verticalDots} alt="ronds bleu et jaune superposés" />
+                    <ul>
+                        <li onClick={() => handleCategoryClick(null)}>CATÉGORIE</li>
+                        <li onClick={() => handleCategoryClick('évolution professionnelle')}>Évolution professionnelle</li>
+                        <li onClick={() => handleCategoryClick('Conseils recherche d\'emploi')}>Conseils recherche d'emploi</li>
+                        <li onClick={() => handleCategoryClick('Droit à la formation')}>Droit à la formation</li>
+                    </ul>
+                </div>
+            </div>
+            <div className="Blog-content">
+                {blogDatas.filter(article => selectedCategory ? article.categorie.includes(selectedCategory) : true)
+                    .map((article, index) => (
+                        <div key={index} className="Blog-article">
+                            <div className='pic-container'>
+                                <img src={article.picture} alt={article.pictureAlt} />
+                            </div>
+                            <div className="text-container">
+                                <h2 >{article.title}</h2>
+                                <p>{article.description}</p>
+                                <Link to={article.PageLink}>Lire l'article...</Link>
+                            </div>
+                        </div>
+
+                    ))
+                }
+            </div>
+            <div className="Blog-end">
+                <div className="text-container">
+                    <h2 className="title-end">Echangeons</h2>
+                    <ul>
+                        <Link to="/contact"><li>Nous Contacter</li></Link>
+                        <Link to="/formation_metier_consultant_en_gestion_de_carrieres"><li>Devenir consultant</li></Link>
+                        <li>Nous Suivre</li>
+                    </ul>
+                </div>
+                <img src={verticalDots} alt="ronds bleu et jaune superposés" />
+            </div>
+        </div>
+    );
+};
+
+export default Blog;

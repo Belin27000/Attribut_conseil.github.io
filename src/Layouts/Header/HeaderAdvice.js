@@ -8,7 +8,7 @@ const HeaderAdvice = () => {
 
     return (
         <div className='HeaderAdvice'>
-            <Link to={"/home"}>
+            <Link to={"/blog"}>
                 <p>home news</p>
                 <p>attribut conseils</p>
                 <p>{formattedDate}</p>

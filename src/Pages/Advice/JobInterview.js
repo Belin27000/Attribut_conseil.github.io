@@ -35,7 +35,7 @@ const JobInterview = () => {
                     <p>Vos réponses sont fluides, vous récitez les phrases sagement préparées que vous avez répétées des dizaines de fois devant le miroir en étant si à l’aise qu’elles paraissent spontanées!</p>
                     <p>Rien ne pourrait venir troubler votre paisible ascension vers le succès… </p>
                     <h3>Rien jusqu’à l’arrivée de .......</h3>
-                    <img src={ManHide} alt='homme caché derrière sa main' />
+                    <img src={ManHide} alt='homme caché derrière ses main' />
                     <h2>« LA question qui tue »!</h2>
                     <section className='double-col-split'>
                         <div className='right'>

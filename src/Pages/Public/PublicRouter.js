@@ -36,6 +36,7 @@ import JobInterview from '../Advice/JobInterview.js';
 import LayoutAdvice from '../../Layouts/LayoutAdvice.js';
 import LandingPage from '../SEO/LandingPage/LandingPage.js';
 import PageNotFound from '../404/PageNotFound.js';
+import Blog from '../Blog/Blog.js';
 
 const PublicRouter = () => {
     return (
@@ -83,6 +84,10 @@ const PublicRouter = () => {
                 <Route path="/bilan-de-competence/bilan-de-competence-CPF" element={<BcCPF />} />
                 <Route path="/bilan-de-competence/bilan-de-competence-reconversion" element={<BcReco />} />
                 <Route path="/bilan-de-competence/bilan-de-competence-Apec" element={<BcApec />} />
+
+                {/* PAGES - BLOG */}
+                <Route path="/blog" element={<Blog />} />
+
 
                 <Route path='*' element={<PageNotFound />} />
 
