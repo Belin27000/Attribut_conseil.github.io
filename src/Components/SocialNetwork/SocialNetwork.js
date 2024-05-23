@@ -1,7 +1,7 @@
 import './socialNetwork.scss'
 import React from 'react';
-import { FaInstagram, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { FaInstagram, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 // import insta from '../../Assets/Images/insta/v982-d3-04.jpg'

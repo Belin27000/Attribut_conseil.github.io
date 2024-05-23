@@ -100,12 +100,26 @@ main {
                 color: white;
                 font-weight: bold;
                 margin-bottom: 1rem;
+                display: flex;
+
+            }
+        }
+
+        .Blog-SocialNetwork {
+            display: flex;
+            gap: 1rem;
+            margin-left: 1rem;
+
+            :hover {
+                border-radius: 5px;
             }
         }
 
         img {
             display: none;
         }
+
+
     }
 
 }
