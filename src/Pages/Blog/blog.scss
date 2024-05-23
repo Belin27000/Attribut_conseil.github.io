@@ -85,6 +85,12 @@ main {
     }
 
     &-end {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+
         ul {
             list-style-type: none;
             padding: 0;
@@ -94,6 +100,7 @@ main {
                     color: var(--acYellow);
                     background-color: var(--acDarkBlue);
                 }
+
             }
 
             li {
@@ -107,6 +114,7 @@ main {
 
         .Blog-SocialNetwork {
             display: flex;
+            flex-direction: row;
             gap: 1rem;
             margin-left: 1rem;
 
