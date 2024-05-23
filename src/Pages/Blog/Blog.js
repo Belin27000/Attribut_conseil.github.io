@@ -31,7 +31,7 @@ const Blog = () => {
                 </div>
             </div>
             <div className="Blog-content">
-                {blogDatas.filter(article => selectedCategory ? article.categorie.includes(selectedCategory) : true)
+                {blogDatas.filter(article => (selectedCategory ? article.categorie.includes(selectedCategory) : true) && article.PageLink)
                     .map((article, index) => (
                         <div key={index} className="Blog-article">
                             <div className='pic-container'>
