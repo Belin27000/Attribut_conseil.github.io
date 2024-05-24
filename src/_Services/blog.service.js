@@ -20,7 +20,7 @@ const blogData = [
         description: 'L\'abondance de possibilités rend souvent les décisions plus difficiles.  Face à une multitude d\'options, nous sommes parfois paralysés.',
         picture: BlowMind,
         pictureAlt: 'à definir',
-        PageLink: '/conseils/Souffrez_vous_de_l\'hyperchoix',
+        PageLink: '/blog/Souffrez_vous_de_l\'hyperchoix',
         categorie: ['évolution professionnelle']
 
     },
@@ -38,7 +38,7 @@ const blogData = [
         description: 'Ça y est, vous y êtes! Vous êtes confiant puisque vous maîtrisez le b-a-ba de la parfaite préparation à l’entretien. Rien ne pourrait venir troubler votre paisible ascension vers le succès… Rien jusqu’à l’arrivée de .......',
         picture: ManHide,
         pictureAlt: 'à definir',
-        PageLink: '/conseils/A_chacun_sa_question_qui_tue_en_entretien_d_embauche',
+        PageLink: '/blog/A_chacun_sa_question_qui_tue_en_entretien_d_embauche',
         categorie: ['Conseils recherche d\'emploi']
 
     }
