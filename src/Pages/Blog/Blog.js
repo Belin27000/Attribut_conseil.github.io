@@ -3,7 +3,7 @@ import verticalDots from '../../Assets/Images/verticalDots.png'
 import React, { useState } from 'react';
 import './blog.scss'
 import { Link } from 'react-router-dom';
-import SocialNetwork from '../../Components/SocialNetwork/SocialNetwork.js';
+// import SocialNetwork from '../../Components/SocialNetwork/SocialNetwork.js';
 import { FaInstagram, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 const Blog = () => {

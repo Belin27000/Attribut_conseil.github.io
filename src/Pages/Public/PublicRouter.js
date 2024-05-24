@@ -37,6 +37,7 @@ import LayoutAdvice from '../../Layouts/LayoutAdvice.js';
 import LandingPage from '../SEO/LandingPage/LandingPage.js';
 import PageNotFound from '../404/PageNotFound.js';
 import Blog from '../Blog/Blog.js';
+import Hyperchoice from '../Advice/hyperchoice/hyperchoice.js';
 
 const PublicRouter = () => {
     return (
@@ -94,6 +95,7 @@ const PublicRouter = () => {
             </Route>
             <Route element={<LayoutAdvice />}>
                 <Route path="/conseils/A_chacun_sa_question_qui_tue_en_entretien_d_embauche" element={<JobInterview />} />
+                <Route path="/conseils/Souffrez_vous_de_l'hyperchoix" element={<Hyperchoice />} />
             </Route>
         </Routes>
     );

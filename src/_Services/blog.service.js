@@ -20,7 +20,7 @@ const blogData = [
         description: 'L\'abondance de possibilités rend souvent les décisions plus difficiles.  Face à une multitude d\'options, nous sommes parfois paralysés.',
         picture: BlowMind,
         pictureAlt: 'à definir',
-        PageLink: '',
+        PageLink: '/conseils/Souffrez_vous_de_l\'hyperchoix',
         categorie: ['évolution professionnelle']
 
     },
