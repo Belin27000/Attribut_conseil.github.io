@@ -16,7 +16,7 @@ const blogData = [
 
     },
     {
-        title: 'Souffrez vous l\'hyperchoix ?',
+        title: 'Souffrez vous de l\'hyperchoix ?',
         description: 'L\'abondance de possibilités rend souvent les décisions plus difficiles.  Face à une multitude d\'options, nous sommes parfois paralysés.',
         picture: BlowMind,
         pictureAlt: 'à definir',
@@ -40,7 +40,6 @@ const blogData = [
         pictureAlt: 'à definir',
         PageLink: '/blog/A_chacun_sa_question_qui_tue_en_entretien_d_embauche',
         categorie: ['Conseils recherche d\'emploi']
-
     }
 ]
 

@@ -8,9 +8,15 @@ import ClockMed from '@/Assets/Images/ClockMed.png'
 import PaperCheck from '@/Assets/Images/PaperCheck.png'
 import { Link } from 'react-router-dom';
 import HeaderAdvice from '../../Layouts/Header/HeaderAdvice.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
+
 const JobInterview = () => {
+    const metaTitle = `Surmonter “La Question Qui Tue” en Entretien`
+    const metaDescription = `Des conseils pratiques pour répondre à “la question qui tue” en entretien d’embauche. Préparez-vous à affronter les questions difficiles avec confiance.`
     return (
         <section className='JobInterview'>
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
+
             <header>
                 <div className='title-container'>
                     <h1>A CHACUN SA QUESTION QUI TUE EN ENTRETIEN D’EMBAUCHE....!</h1>

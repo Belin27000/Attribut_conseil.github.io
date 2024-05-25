@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 // import SocialNetwork from '../../Components/SocialNetwork/SocialNetwork.js';
 import { FaInstagram, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
 const Blog = () => {
 
     const insta = 'https://www.instagram.com/attribut_conseils/'
@@ -18,10 +19,15 @@ const Blog = () => {
     const handleCategoryClick = (category) => {
         setSelectedCategory(category);
     };
+    const metaTitle = `Attribut Conseils | Blog - Expert en Relation Homme/Travail`
+    const metaDescription = `Conseils sur l'évolution professionnelle, la recherche d'emploi et les droits à la formation par Attribut Conseils. Découvrez nos articles pratiques.`
+
     console.log(blogDatas);
 
     return (
         <div className='Blog'>
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
+
             <div className='Blog-header'>
                 <div className='Blog-title'>
                     <h1>BLOG</h1>

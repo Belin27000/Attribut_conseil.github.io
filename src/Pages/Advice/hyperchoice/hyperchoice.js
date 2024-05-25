@@ -5,12 +5,16 @@ import Wall from '@/Assets/Images/Wall.png'
 
 import './hyperchoice.scss'; // Assuming you will style this with CSS
 import { Link } from 'react-router-dom';
+import MetaTitleDes from '../../../Components/Meta/MetaTitleDes.js';
 
 const Hyperchoice = () => {
+    const metaTitle = `Souffrez-vous de l'Hyperchoix? Surmonter l'Indécision.`
+    const metaDescription = `L’hyperchoix paralyse votre prise de décision. Découvrez les symptômes et stratégies pour réduire le stress et atteindre vos objectifs.`
     return (
         <section className='Hyperchoice'>
+            <MetaTitleDes title={metaTitle} description={metaDescription} />
             <div className="main-title">
-                <h1>Souffrez vous l'hyperchoix ?</h1>
+                <h1>Souffrez vous de l'hyperchoix ?</h1>
                 <img src={BlowMind} alt="Hyperchoice illustration" />
             </div>
             <article className='content'>
@@ -52,7 +56,7 @@ const Hyperchoice = () => {
                         </ul>
                     </div>
                     <div className="Wall-content">
-                        <img src={Wall} alt="Femme avec plusieurs chapeaux sur la tête" />
+                        <img src={Wall} alt="mur en brique avec plusieurs porte blanche" />
                     </div>
                     <div className="prevention-content">
                         <h2>Comment prévenir ce syndrome ?</h2>
