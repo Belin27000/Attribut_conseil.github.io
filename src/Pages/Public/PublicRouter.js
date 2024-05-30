@@ -15,7 +15,7 @@ import Outplacement from '../Outplacement/Outplacement.js';
 import YouthGuidance from '../youthGuidance/YouthGuidance.js';
 import TrainingTrainer from '../TrainingTrainer/TrainingTrainer.js';
 import ExternRhManagment from '../ExternRhManagment/ExternRhManagment.js';
-import CareerConsult from '../CareerManagementConsultant/CareerConsult.js';
+import CareerConsult from '../CareerManagementConsultant/CareerConsultV2.js';
 import ProfessionalMeeting from '../ProfessionalMeeting/ProfessionalMeeting.js';
 import ExternTrainManagement from '../ExternTrainManagement/ExternTrainManagement.js';
 import BusinessCreationTraining from '../BusinessCreationTraining/BusinessCreationTraining.js';

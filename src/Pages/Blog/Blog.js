@@ -82,12 +82,12 @@ const Blog = () => {
                                     <li><FaLinkedin /></li>
                                 </Link>
                             </ul>
-                        </li>
-                    </ul>
-                </div>
+                        </li >
+                    </ul >
+                </div >
                 <img src={verticalDots} alt="ronds bleu et jaune superposés" />
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };
 
