@@ -4,6 +4,7 @@ import BlowMind from '@/Assets/Images/BlowMind.png'
 import BalancingAct from '@/Assets/Images/BalancingAct.png'
 import ManHide from '@/Assets/Images/ManHide.png'
 import Motivation from '@/Assets/Images/Motivation.png'
+import ForestSun from '@/Assets/Images/ForestSun.png'
 
 
 const blogData = [
@@ -35,20 +36,28 @@ const blogData = [
 
     },
     {
-        title: 'A CHACUN SA QUESTION QUI TUE EN ENTRETIEN D’EMBAUCHE....!',
-        description: 'Ça y est, vous y êtes! Vous êtes confiant puisque vous maîtrisez le b-a-ba de la parfaite préparation à l’entretien. Rien ne pourrait venir troubler votre paisible ascension vers le succès… Rien jusqu’à l’arrivée de .......',
-        picture: ManHide,
-        pictureAlt: 'à definir',
-        PageLink: '/blog/A_chacun_sa_question_qui_tue_en_entretien_d_embauche',
-        categorie: ['Conseils recherche d\'emploi']
-    }
-    ,
+        title: 'VISUALISER VOTRE CARRIÈRE IDÉALE POUR UNE RECONVERSION RÉUSSIE ',
+        description: 'Visualiser votre carrière idéale est fondamentale pour une reconversion réussie. Fixez un cap, renforcez votre motivation et élaborez une stratégie concrète pour atteindre vos objectifs',
+        picture: ForestSun,
+        pictureAlt: 'Forêt avec un soleil au dessus',
+        PageLink: '/blog/visualiser_votre_carriere_ideale_pour_une_reconversation_reussie',
+        categorie: ['évolution professionnelle']
+
+    },
     {
         title: 'Démotivation vs Amotivation ',
         description: 'Découvrez les différences entre démotivation et amotivation. Apprenez à identifier les causes de chaque état et comment les surmonter pour raviver votre motivation.',
         picture: Motivation,
         pictureAlt: 'femme avec sa main droite sur le front devant son ordinateur',
         PageLink: '/blog/Motivation_vs_amotivation',
+        categorie: ['évolution professionnelle']
+    },
+    {
+        title: 'A CHACUN SA QUESTION QUI TUE EN ENTRETIEN D’EMBAUCHE....!',
+        description: 'Ça y est, vous y êtes! Vous êtes confiant puisque vous maîtrisez le b-a-ba de la parfaite préparation à l’entretien. Rien ne pourrait venir troubler votre paisible ascension vers le succès… Rien jusqu’à l’arrivée de .......',
+        picture: ManHide,
+        pictureAlt: 'à definir',
+        PageLink: '/blog/A_chacun_sa_question_qui_tue_en_entretien_d_embauche',
         categorie: ['Conseils recherche d\'emploi']
     }
 ]

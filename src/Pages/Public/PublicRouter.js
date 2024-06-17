@@ -42,6 +42,7 @@ import Blog from '../Blog/Blog.js';
 import JobInterview from '../Advice/JobInterview.js';
 import Hyperchoice from '../Advice/hyperchoice/hyperchoice.js';
 import Motivation from '../Advice/Motivation/Motivation.js';
+import CareerView from '../Advice/CareerView/CareerView.js';
 
 const PublicRouter = () => {
     return (
@@ -102,6 +103,7 @@ const PublicRouter = () => {
                 <Route path="/blog/Motivation_vs_amotivation" element={<Motivation />} />
                 <Route path="/blog/Souffrez_vous_de_l'hyperchoix" element={<Hyperchoice />} />
                 <Route path="/blog/A_chacun_sa_question_qui_tue_en_entretien_d_embauche" element={<JobInterview />} />
+                <Route path="/blog/visualiser_votre_carriere_ideale_pour_une_reconversation_reussie" element={<CareerView />} />
             </Route>
         </Routes>
     );

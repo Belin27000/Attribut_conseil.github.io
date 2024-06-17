@@ -148,6 +148,7 @@ main {
 
             .Blog-article {
                 display: flex;
+                align-items: center;
                 padding: 2vw;
                 box-shadow: 0 -1.7rem 20px rgba(0, 0, 0, 0.2);
 
@@ -234,11 +235,13 @@ main {
 
                 .text-container {
                     h2 {
-                        font-size: 3.2rem;
+                        font-size: 2.8rem;
+                        margin-bottom: 0;
                     }
 
                     p,
                     a {
+                        margin-top: .5rem;
                         font-size: 1.7rem;
                     }
                 }
