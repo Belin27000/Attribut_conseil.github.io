@@ -1,12 +1,13 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FaXTwitter } from "react-icons/fa6";
 import blogDatas from '@/_Services/blog.service.js'
 import verticalDots from '../../Assets/Images/verticalDots.png'
-import React, { useState } from 'react';
-import './blog.scss'
-import { Link } from 'react-router-dom';
 // import SocialNetwork from '../../Components/SocialNetwork/SocialNetwork.js';
-import { FaInstagram, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
+import { FaInstagram, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+
+import './blog.scss'
 const Blog = () => {
 
     const insta = 'https://www.instagram.com/attribut_conseils/'

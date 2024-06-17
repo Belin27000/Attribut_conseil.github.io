@@ -3,6 +3,7 @@ import DogQuestion from '@/Assets/Images/DogQuestion.png'
 import BlowMind from '@/Assets/Images/BlowMind.png'
 import BalancingAct from '@/Assets/Images/BalancingAct.png'
 import ManHide from '@/Assets/Images/ManHide.png'
+import Motivation from '@/Assets/Images/Motivation.png'
 
 
 const blogData = [
@@ -10,7 +11,7 @@ const blogData = [
         title: 'La question qui tue....!',
         description: 'Comment décrire vos points forts et vos points faibles? L\'incontournable question dans un entretien d\'embauche! Cette demande peut être embarrassante, surtout si vous n\'avez pas bien réfléchi à la manière d\'y répondre. Pourtant, il s\'agit d\'une question souvent posée en entrevue.',
         picture: DogQuestion,
-        pictureAlt: 'Chien regardant u point d\'interrogation',
+        pictureAlt: 'Chien regardant un point d\'interrogation',
         PageLink: '',
         categorie: ['recherche d\'emploi']
 
@@ -39,6 +40,15 @@ const blogData = [
         picture: ManHide,
         pictureAlt: 'à definir',
         PageLink: '/blog/A_chacun_sa_question_qui_tue_en_entretien_d_embauche',
+        categorie: ['Conseils recherche d\'emploi']
+    }
+    ,
+    {
+        title: 'Démotivation vs Amotivation ',
+        description: 'Découvrez les différences entre démotivation et amotivation. Apprenez à identifier les causes de chaque état et comment les surmonter pour raviver votre motivation.',
+        picture: Motivation,
+        pictureAlt: 'femme avec sa main droite sur le front devant son ordinateur',
+        PageLink: '/blog/Motivation_vs_amotivation',
         categorie: ['Conseils recherche d\'emploi']
     }
 ]
