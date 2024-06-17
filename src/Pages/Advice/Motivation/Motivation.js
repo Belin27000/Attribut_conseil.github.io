@@ -4,6 +4,7 @@ import WomenMotiv from '@/Assets/Images/Motivation.png';
 import ArrowOnBoard from '@/Assets/Images/ArrowOnBoard.png'
 
 import './motivation.scss';
+import { Link } from 'react-router-dom';
 
 const Motivation = () => {
 
@@ -14,7 +15,7 @@ const Motivation = () => {
             <MetaTitleDes title={metaTitle} description={metaDescription} />
             <header className='Motiv-title'>
                 <div className="title-container">
-                    <h1>Démotivation vs Amotivation Comprendre les différences </h1>
+                    <h1>Démotivation VS Amotivation <br />Comprendre les différences </h1>
                 </div>
                 <div className="container">
                     <img src={WomenMotiv} alt="femme avec sa main droite sur le front devant son ordinateur" />
@@ -47,7 +48,9 @@ const Motivation = () => {
                     <p>Le "<b>manque de motivation</b>" est souvent perçu comme une absence totale de volonté, mais selon Ryan et Deci, il s'agit en réalité de différentes formes de <b>motivation : extrinsèque</b> (motivée par des récompenses externes), <b>intrinsèque</b> (motivée par l'intérêt personnel) et évitante (motivée par le désir d'éviter des conséquences négatives). Même lorsque la motivation semble absente, elle existe sous une autre forme. Dans le cadre d'un <b>bilan de compétences</b>, identifier ces sources de motivation permet de définir des objectifs de carrière alignés avec ses aspirations, réduisant ainsi la démotivation et prévenant l'amotivation.</p>
                     <blockquote>Nuttin, J. (1980). <b>Théorie de la motivation</b> humaine : perspectives des sciences du comportement**. Presses Universitaires de France.</blockquote>
                 </main>
-
+                <div className="news-Link last">
+                    <Link to={"/home"}>www.attribut-conseils.com</Link>
+                </div>
             </article>
 
         </section>
