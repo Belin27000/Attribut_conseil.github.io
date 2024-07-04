@@ -5,6 +5,7 @@ import BalancingAct from '@/Assets/Images/BalancingAct.png'
 import ManHide from '@/Assets/Images/ManHide.png'
 import Motivation from '@/Assets/Images/Motivation.png'
 import ForestSun from '@/Assets/Images/ForestSun.png'
+import Binoculars from '@/Assets/Images/Binoculars.png'
 
 
 const blogData = [
@@ -32,6 +33,15 @@ const blogData = [
         picture: BalancingAct,
         pictureAlt: 'à definir',
         PageLink: '',
+        categorie: ['évolution professionnelle']
+
+    },
+    {
+        title: 'TROUVER SA VOIE : UNE APPROCHE CONSTRUCTIVISTE',
+        description: 'Découvrez comment adopter une approche constructiviste pour trouver votre voie professionnelle. Apprenez à travers la réflexion personnelle, l\'exploration active, les rencontres, le développement continu, et l\'évaluation régulière. Construisez une carrière épanouissante et alignée avec vos aspirations.',
+        picture: Binoculars,
+        pictureAlt: 'femme regardant vers nous avec des jumelles',
+        PageLink: '/blog/Trouver_sa_Voie',
         categorie: ['évolution professionnelle']
 
     },

@@ -100,29 +100,16 @@
                 }
             }
 
-            ul li {
-
-                list-style-type: none;
-                color: red;
-            }
-
             a {
                 margin-bottom: .5rem;
                 color: white;
                 font-size: .7rem;
                 text-decoration: none;
 
-                :visited {
-                    color: red;
-                }
             }
         }
     }
 
-    // .Map {
-    //     display: none;
-
-    // }
     .City_Link {
         color: transparent;
 
@@ -147,16 +134,16 @@
 
         }
 
-        li:hover {
+        // li:hover {
 
-            margin: 0 .5rem;
-            // background-color: var(--acDarkBlue);
+        //     margin: 0 .5rem;
+        //     // background-color: var(--acDarkBlue);
 
-            a {
-                color: white;
-                // text-decoration: underline
-            }
-        }
+        //     a {
+        //         color: white;
+        //         // text-decoration: underline
+        //     }
+        // }
     }
 }
 
@@ -170,9 +157,9 @@
 
 @media screen and (min-width:768px) {
     .Footer {
-        .ReviewPad {
-            display: block;
-        }
+        // .ReviewPad {
+        //     display: block;
+        // }
 
         .FooterLogoContainer {
             width: 45%;
@@ -198,9 +185,9 @@
                     width: 10%;
                 }
 
-                ul li {
-                    list-style-type: none;
-                }
+                // ul li {
+                //     list-style-type: none;
+                // }
 
                 div {
                     width: 25%;
@@ -277,32 +264,32 @@
 
 @media screen and (min-width: 992px) {
     .Footer {
-        .ReviewPad {
-            display: none;
-        }
+        // .ReviewPad {
+        //     display: none;
+        // }
 
 
-        .Map {
-            // height: 100%;
-            width: 30%;
-            height: 75%;
-            // display: initial;
-            // position: absolute;
-            // top: 0;
-            // z-index: 1;
-            // right: 10%;
+        // .Map {
+        //     // height: 100%;
+        //     width: 30%;
+        //     height: 75%;
+        //     // display: initial;
+        //     // position: absolute;
+        //     // top: 0;
+        //     // z-index: 1;
+        //     // right: 10%;
 
-            h2 {
-                margin-bottom: 1rem;
-            }
+        //     h2 {
+        //         margin-bottom: 1rem;
+        //     }
 
-            iframe {
-                width: 100%;
-                height: 100%;
-                // height: fit-content;
-                // border-radius: 15px;
-            }
-        }
+        //     iframe {
+        //         width: 100%;
+        //         height: 100%;
+        //         // height: fit-content;
+        //         // border-radius: 15px;
+        //     }
+        // }
 
         .City_Link {
             h2 {
