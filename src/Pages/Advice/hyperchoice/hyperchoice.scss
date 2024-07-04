@@ -1,6 +1,8 @@
 .Hyperchoice {
     font-family: inter, sans-serif;
     font-size: 3.5vw;
+    box-shadow: 0 0 10px black;
+
 
     * {
         text-align: justify;
@@ -46,6 +48,10 @@
             .news-Link {
                 display: none;
             }
+
+            .text-content {
+                padding: 0 1rem;
+            }
         }
 
         .double-content {
@@ -62,6 +68,8 @@
         }
 
         .risk-content {
+            padding: 0 1rem;
+
             ul {
                 list-style-type: none;
                 padding: 0;
@@ -92,6 +100,7 @@
 
         .prevention-content {
             text-align: start;
+            padding: 0 1rem;
 
             ul {
                 list-style-type: none;

@@ -6,6 +6,7 @@ import Wall from '@/Assets/Images/Wall.png'
 import './hyperchoice.scss'; // Assuming you will style this with CSS
 import { Link } from 'react-router-dom';
 import MetaTitleDes from '../../../Components/Meta/MetaTitleDes.js';
+import HeaderAdvice from '../../../Layouts/Header/HeaderAdvice.js';
 
 const Hyperchoice = () => {
     const metaTitle = `Souffrez-vous de l'Hyperchoix? Surmonter l'Indécision.`
@@ -13,6 +14,7 @@ const Hyperchoice = () => {
     return (
         <section className='Hyperchoice'>
             <MetaTitleDes title={metaTitle} description={metaDescription} />
+            <HeaderAdvice />
             <div className="main-title">
                 <h1>Souffrez vous de l'hyperchoix ?</h1>
                 <img src={BlowMind} alt="Hyperchoice illustration" />

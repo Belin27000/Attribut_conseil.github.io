@@ -10,11 +10,11 @@ import Binoculars from '@/Assets/Images/Binoculars.png'
 
 const blogData = [
     {
-        title: 'La question qui tue....!',
+        title: 'LA QUESTION QUI TUE....!',
         description: 'Comment décrire vos points forts et vos points faibles? L\'incontournable question dans un entretien d\'embauche! Cette demande peut être embarrassante, surtout si vous n\'avez pas bien réfléchi à la manière d\'y répondre. Pourtant, il s\'agit d\'une question souvent posée en entrevue.',
         picture: DogQuestion,
         pictureAlt: 'Chien regardant un point d\'interrogation',
-        PageLink: '',
+        PageLink: '/blog/La_Question_qui_Tue',
         categorie: ['recherche d\'emploi']
 
     },

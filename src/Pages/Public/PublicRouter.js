@@ -44,6 +44,7 @@ import Hyperchoice from '../Advice/hyperchoice/hyperchoice.js';
 import Motivation from '../Advice/Motivation/Motivation.js';
 import CareerView from '../Advice/CareerView/CareerView.js';
 import FindYourWay from '../Advice/FindYourWay/FindYourWay.js';
+import KillingQuestion from '../Advice/KillingQuestion/KillingQuestion.js';
 
 const PublicRouter = () => {
     return (
@@ -101,6 +102,7 @@ const PublicRouter = () => {
 
             </Route>
             <Route element={<LayoutAdvice />}>
+                <Route path="/blog/La_Question_qui_Tue" element={<KillingQuestion />} />
                 <Route path="/blog/Motivation_vs_amotivation" element={<Motivation />} />
                 <Route path="/blog/Souffrez_vous_de_l'hyperchoix" element={<Hyperchoice />} />
                 <Route path="/blog/A_chacun_sa_question_qui_tue_en_entretien_d_embauche" element={<JobInterview />} />

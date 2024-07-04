@@ -6,6 +6,7 @@ import ForestSun from '@/Assets/Images/ForestSun.png'
 import { Link } from 'react-router-dom';
 
 import './careerView.scss'
+import HeaderAdvice from '../../../Layouts/Header/HeaderAdvice.js';
 const CareerView = () => {
 
     const metaTitle = `Visualiser Votre Carrière Idéale pour une Reconversion Réussie`
@@ -14,6 +15,7 @@ const CareerView = () => {
     return (
         <section className='CareerView'>
             <MetaTitleDes title={metaTitle} description={metaDescription} />
+            <HeaderAdvice />
             <header className='CareerView-title'>
                 <div className="title-container">
                     <h1>VISUALISER VOTRE CARRIÈRE IDÉALE POUR UNE RECONVERSION RÉUSSIE</h1>

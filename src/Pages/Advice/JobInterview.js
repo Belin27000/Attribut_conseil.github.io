@@ -16,48 +16,50 @@ const JobInterview = () => {
     return (
         <section className='JobInterview'>
             <MetaTitleDes title={metaTitle} description={metaDescription} />
-
-            <header>
-                <div className='title-container'>
-                    <h1>A CHACUN SA QUESTION QUI TUE EN ENTRETIEN D’EMBAUCHE....!</h1>
-                </div>
-                <div className="container">
-                    <img src={dice} alt='doigt poussant 3 dés empilés' />
-                </div>
-            </header>
-            <main className='article-news'>
-                <aside className='first-col'>
-                    <img src={BarbeMan} alt='doigt poussant 3 dés empilés' />
-                    <p>Ça y est, vous y êtes! Vous êtes face à l’employeur, celui ou celle qui a le pouvoir de vous faire accéder à l’emploi tant convoité. Vous êtes confiant puisque vous maîtrisez le b-a-ba de la parfaite préparation à l’entretien : vous êtes arrivé à l’heure (vous avez pris soin de vérifier le chemin la veille), vous êtes tiré à quatre épingles et en conformité avec le code vestimentaire de l’entreprise, les produits et services de la société n’ont plus de secrets pour vous, vous maîtrisez sur le bout des doigts l’offre d’emploi, la description de poste et le profil recherché, et vous avez à la portée de la main tous les documents susceptibles de vous être utiles (CV, lettres de recommandation, diplômes, etc.).
-                    </p>
-                    <h2>De plus, vous êtes irrésistible! </h2>
-                    <p>Au premier contact, vous en êtes certain, votre poignée de main chaleureuse et votre sourire éblouissant ont donné une première impression des plus remarquables à votre interlocuteur. </p>
-                    <div className="news-Link">
-                        <Link to={"/home"}>www.attribut-conseils.com</Link>
+            <div className="Page1">
+                <HeaderAdvice />
+                <header>
+                    <div className='title-container'>
+                        <h1>A CHACUN SA QUESTION QUI TUE EN ENTRETIEN D’EMBAUCHE....!</h1>
                     </div>
-                </aside>
-                <article className='double-col'>
-                    <h2>Vous êtes en contrôle total!</h2>
-                    <p>Vos réponses sont fluides, vous récitez les phrases sagement préparées que vous avez répétées des dizaines de fois devant le miroir en étant si à l’aise qu’elles paraissent spontanées!</p>
-                    <p>Rien ne pourrait venir troubler votre paisible ascension vers le succès… </p>
-                    <h3>Rien jusqu’à l’arrivée de .......</h3>
-                    <img src={ManHide} alt='homme caché derrière ses main' />
-                    <h2>« LA question qui tue »!</h2>
-                    <section className='double-col-split'>
-                        <div className='right'>
-                            <p>Le recruteur qui vous semblait jusque-là banal et prévisible s’est brusquement transformé en menace potentielle à votre réussite. Vos mains pourtant si sèches initialement sont désormais moites et vos doigts se tortillent à ne plus pouvoir dissocier votre main gauche de votre main droite!
-                            </p>
-                            <p>Qu’a-t-on bien pu vous demander?</p>
-                            <img src={QuestionMan} alt='homme caché derrière sa main' />
+                    <div className="container">
+                        <img src={dice} alt='doigt poussant 3 dés empilés' />
+                    </div>
+                </header>
+                <main className='article-news'>
+                    <aside className='first-col'>
+                        <img src={BarbeMan} alt='doigt poussant 3 dés empilés' />
+                        <p>Ça y est, vous y êtes! Vous êtes face à l’employeur, celui ou celle qui a le pouvoir de vous faire accéder à l’emploi tant convoité. Vous êtes confiant puisque vous maîtrisez le b-a-ba de la parfaite préparation à l’entretien : vous êtes arrivé à l’heure (vous avez pris soin de vérifier le chemin la veille), vous êtes tiré à quatre épingles et en conformité avec le code vestimentaire de l’entreprise, les produits et services de la société n’ont plus de secrets pour vous, vous maîtrisez sur le bout des doigts l’offre d’emploi, la description de poste et le profil recherché, et vous avez à la portée de la main tous les documents susceptibles de vous être utiles (CV, lettres de recommandation, diplômes, etc.).
+                        </p>
+                        <h2>De plus, vous êtes irrésistible! </h2>
+                        <p>Au premier contact, vous en êtes certain, votre poignée de main chaleureuse et votre sourire éblouissant ont donné une première impression des plus remarquables à votre interlocuteur. </p>
+                        <div className="news-Link">
+                            <Link to={"/home"}>www.attribut-conseils.com</Link>
                         </div>
-                        <div className='left'>
-                            <p>Au-delà de la populaire question « Quelles sont vos principaux points à améliorer? » (à laquelle vous avez évidemment déjà trouvé des réponses), plusieurs questions peuvent vous mettre dans l’embarras lors d’un entretien. En effet, un intervieweur expérimenté, bien que suivant un canevas bien structuré, saura cibler vos zones d’inconfort par le biais de questions spontanées auxquelles vous ne serez pas préparé.
-                            </p>
-                        </div>
-                    </section>
-                </article>
-            </main>
-            <div className='page'>
+                    </aside>
+                    <article className='double-col'>
+                        <h2>Vous êtes en contrôle total!</h2>
+                        <p>Vos réponses sont fluides, vous récitez les phrases sagement préparées que vous avez répétées des dizaines de fois devant le miroir en étant si à l’aise qu’elles paraissent spontanées!</p>
+                        <p>Rien ne pourrait venir troubler votre paisible ascension vers le succès… </p>
+                        <h3>Rien jusqu’à l’arrivée de .......</h3>
+                        <img src={ManHide} alt='homme caché derrière ses main' />
+                        <h2>« LA question qui tue »!</h2>
+                        <section className='double-col-split'>
+                            <div className='right'>
+                                <p>Le recruteur qui vous semblait jusque-là banal et prévisible s’est brusquement transformé en menace potentielle à votre réussite. Vos mains pourtant si sèches initialement sont désormais moites et vos doigts se tortillent à ne plus pouvoir dissocier votre main gauche de votre main droite!
+                                </p>
+                                <p>Qu’a-t-on bien pu vous demander?</p>
+                                <img src={QuestionMan} alt='homme caché derrière sa main' />
+                            </div>
+                            <div className='left'>
+                                <p>Au-delà de la populaire question « Quelles sont vos principaux points à améliorer? » (à laquelle vous avez évidemment déjà trouvé des réponses), plusieurs questions peuvent vous mettre dans l’embarras lors d’un entretien. En effet, un intervieweur expérimenté, bien que suivant un canevas bien structuré, saura cibler vos zones d’inconfort par le biais de questions spontanées auxquelles vous ne serez pas préparé.
+                                </p>
+                            </div>
+                        </section>
+                    </article>
+                </main>
+            </div>
+            <div className='Page2'>
 
                 <HeaderAdvice />
                 <main className='article-news'>

@@ -6,6 +6,7 @@ import MetaTitleDes from '@/Components/Meta/MetaTitleDes.js';
 
 import './findYourWay.scss'
 import { Link } from 'react-router-dom';
+import HeaderAdvice from '../../../Layouts/Header/HeaderAdvice.js';
 
 const FindYourWay = () => {
 
@@ -14,6 +15,7 @@ const FindYourWay = () => {
     return (
         <section className='FindYw'>
             <MetaTitleDes title={metaTitle} description={metaDescription} />
+            <HeaderAdvice />
             <header className='FindYw-title'>
                 <div className="title-container">
                     <h1>Trouver sa Voie : Une approche constructiviste

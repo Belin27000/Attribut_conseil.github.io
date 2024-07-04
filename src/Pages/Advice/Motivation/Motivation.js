@@ -5,6 +5,7 @@ import ArrowOnBoard from '@/Assets/Images/ArrowOnBoard.png'
 
 import './motivation.scss';
 import { Link } from 'react-router-dom';
+import HeaderAdvice from '../../../Layouts/Header/HeaderAdvice.js';
 
 const Motivation = () => {
 
@@ -13,6 +14,7 @@ const Motivation = () => {
     return (
         <section className='Motiv'>
             <MetaTitleDes title={metaTitle} description={metaDescription} />
+            <HeaderAdvice />
             <header className='Motiv-title'>
                 <div className="title-container">
                     <h1>Démotivation VS Amotivation <br />Comprendre les différences </h1>
