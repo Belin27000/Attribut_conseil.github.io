@@ -45,6 +45,8 @@ import Motivation from '../Advice/Motivation/Motivation.js';
 import CareerView from '../Advice/CareerView/CareerView.js';
 import FindYourWay from '../Advice/FindYourWay/FindYourWay.js';
 import KillingQuestion from '../Advice/KillingQuestion/KillingQuestion.js';
+import Podcasts from '../Podcasts/Podcasts.js';
+import Podcast1 from '../Podcasts/Podcast/Podcast1.js';
 
 const PublicRouter = () => {
     return (
@@ -96,6 +98,9 @@ const PublicRouter = () => {
 
                 {/* PAGES - BLOG */}
                 <Route path="/blog" element={<Blog />} />
+
+                <Route path="blog/podcasts" element={<Podcasts />} />
+                <Route path="blog/podcasts/:id" element={<Podcast1 />} />
 
 
                 <Route path='*' element={<PageNotFound />} />

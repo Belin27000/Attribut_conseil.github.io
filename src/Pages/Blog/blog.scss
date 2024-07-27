@@ -7,6 +7,11 @@ main {
     width: 100%;
     background-color: #5F9CBB;
 
+    h2 {
+        // font-family: garet;
+        font-size: 2.5rem;
+    }
+
     // background-color: black;
     &-header {
         display: flex;
@@ -70,7 +75,8 @@ main {
         .text-container {
             padding: 0 1rem 1rem 1rem;
 
-            h2 {
+            h2,
+            h3 {
                 font-family: garet;
                 font-size: 2rem;
             }
@@ -129,6 +135,65 @@ main {
         }
 
 
+    }
+
+    .Podcast {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &_container {
+            h2 {
+                font-size: 1.5rem;
+                margin-bottom: .5rem;
+            }
+
+            width: 75%;
+            border-bottom: solid 3px var(--acYellow);
+            margin-bottom: 1rem;
+        }
+
+        &_content {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 85%;
+
+            a {
+                background-color: white;
+                border-radius: 15px;
+                margin-bottom: 2rem;
+            }
+
+            .container {
+                padding: 1rem;
+
+                .Podcast_title,
+                .Podcast_date,
+                .Podcast_text {
+                    color: black;
+                    text-align: start;
+                }
+
+                .Podcast_text {
+                    // height: 3.5rem;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    line-clamp: 3;
+                    text-overflow: ellipsis;
+
+                }
+            }
+        }
+
+        .allPodcast {
+            color: black;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
 }
@@ -274,13 +339,36 @@ main {
                 // align-self: flex-end;
             }
         }
+
+        .Podcast {
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            &_container {
+                width: 40%;
+
+            }
+
+            &_content {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+
+
+                h3 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
     }
 }
 
 @media (min-width: 1700px) {
     .Blog {
 
-        .Blog-content {
+        .Blog-content,
+        .Podcast_content {
             grid-template-columns: repeat(3, 1fr);
 
         }

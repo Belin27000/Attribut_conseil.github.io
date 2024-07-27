@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaXTwitter } from "react-icons/fa6";
 import blogDatas from '@/_Services/blog.service.js'
+import podCastData from '@/_Services/podcasts.service.js'
 import verticalDots from '../../Assets/Images/verticalDots.png'
 // import SocialNetwork from '../../Components/SocialNetwork/SocialNetwork.js';
 import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
@@ -23,8 +24,6 @@ const Blog = () => {
     const metaTitle = `Attribut Conseils | Blog - Expert en Relation Homme/Travail`
     const metaDescription = `Conseils sur l'évolution professionnelle, la recherche d'emploi et les droits à la formation par Attribut Conseils. Découvrez nos articles pratiques.`
 
-    console.log(blogDatas);
-
     return (
         <div className='Blog'>
             <MetaTitleDes title={metaTitle} description={metaDescription} />
@@ -43,6 +42,7 @@ const Blog = () => {
                     </ul>
                 </div>
             </div>
+            <h2>Nos dernières actualités</h2>
             <div className="Blog-content">
                 {blogDatas.filter(article => (selectedCategory ? article.categorie.includes(selectedCategory) : true) && article.PageLink)
                     .map((article, index) => (
@@ -51,7 +51,7 @@ const Blog = () => {
                                 <img src={article.picture} alt={article.pictureAlt} />
                             </div>
                             <div className="text-container">
-                                <h2 >{article.title}</h2>
+                                <h3 >{article.title}</h3>
                                 <p>{article.description}</p>
                                 <Link to={article.PageLink}></Link>
                                 <Link to={article.PageLink}>Lire l'article...</Link>
@@ -60,6 +60,27 @@ const Blog = () => {
 
                     ))
                 }
+            </div>
+            <div className="Podcast">
+                <div className='Podcast_container'>
+                    <h2>La libre Antenne: Podcasts</h2>
+                    <div></div>
+                </div>
+                <div className="Podcast_content">
+                    {podCastData.map((article, index) => (
+                        <Link to={`podcasts/${article.link}`} >
+                            <div className="container">
+                                <h3 className='Podcast_title'>{article.title}</h3>
+                                <p className='Podcast_date'>{article.date}</p>
+                                <p className='Podcast_text'>{article.text}</p>
+                                <Link to={`podcasts/${article.link}`} >voir le podcast en vidéo...</Link>
+
+                            </div>
+                        </Link>
+
+                    ))}
+                </div>
+                <Link to='podcasts/' className='allPodcast'>Voir tous les podcasts</Link>
             </div>
             <div className="Blog-end">
                 <div className="text-container">

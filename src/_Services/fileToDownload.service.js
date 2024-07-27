@@ -16,6 +16,7 @@ import TrainingTrainerProg from '../Assets/FileToDownload/TrainingTrainer/Traini
 import TrainingTrainerPrice from '../Assets/FileToDownload/TrainingTrainer/TrainingTrainerPrice.pdf'
 import CGU from '../Assets/FileToDownload/CGU.pdf'
 import Handi from '../Assets/FileToDownload/Handi.pdf'
+import RegistreHandi from '../Assets/FileToDownload/registreHandi/registre.pdf'
 import RGPD from '../Assets/FileToDownload/RGPD.pdf'
 import careerConsultProg from '../Assets/FileToDownload/careerConsult/careerConsultProg.pdf'
 import careerConsultPrice from '../Assets/FileToDownload/careerConsult/careerConsultPrice.pdf'
@@ -109,6 +110,10 @@ const RGPDFile = [
     }
 ]
 const HandiFile = [
+    {
+        name: 'Registre d\'accessibilité',
+        pdfFile: RegistreHandi,
+    },
     {
         name: 'Personnes en situation de handicap',
         pdfFile: Handi,
