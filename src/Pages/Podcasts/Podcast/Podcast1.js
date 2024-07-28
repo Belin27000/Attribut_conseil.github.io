@@ -7,25 +7,35 @@ import logo_Attribut from '@/Assets/Images/logo_Attribut.png'
 
 import './podcast1.scss'
 import Podcasts from '../Podcasts.js';
+import MetaTitleDes from '../../../Components/Meta/MetaTitleDes.js';
 
 const Podcast1 = () => {
     const { id } = useParams();
     const [podcast, setPodcast] = useState(null)
+    const [titlePage, setTitlePage] = useState()
+    const [metades, setMetades] = useState()
 
-
-    // const podcast = data.find((article) => article.link === id)
 
     useEffect(() => {
         const foundPocast = podCastData.find((article) => article.link === id)
         setPodcast(foundPocast)
+        setTitlePage(foundPocast.titlePage)
+        setMetades(foundPocast.metades)
+        window.scrollTo(0, 150)
+
+
     }, [id])
 
+    // const podcastTitle = podCastData.find((article.titlePage) => article.link === id)
     if (!podcast) {
         return <div className='PodcastNotFind'>Podcast non trouvé</div>
     }
+    console.log(titlePage);
+    console.log(metades);
 
     return (
         <div className='PodcastPage'>
+            <MetaTitleDes title={titlePage} description={metades} />
             <div className='PodcastCont'>
                 <div className='Podcast1'>
                     <h1>{podcast.title}</h1>
@@ -37,7 +47,7 @@ const Podcast1 = () => {
                             title={podcast.title}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            referrerpolicy="strict-origin-when-cross-origin"
+                            referrerPolicy="strict-origin-when-cross-origin"
                             allowFullScreen
                         ></iframe>
                     </div>
@@ -56,7 +66,7 @@ const Podcast1 = () => {
                 </div>
             </div>
             <div className='seeAllPodcast'>
-                <Podcasts title='Nos autres podcasts' />
+                <Podcasts title='Nos autres podcasts' meta={false} />
                 <Link to='/blog/podcasts' >Voir tous les podcasts</Link>
             </div>
         </div>

@@ -53,8 +53,7 @@ const Blog = () => {
                             <div className="text-container">
                                 <h3 >{article.title}</h3>
                                 <p>{article.description}</p>
-                                <Link to={article.PageLink}></Link>
-                                <Link to={article.PageLink}>Lire l'article...</Link>
+                                <span>Lire l'article...</span>
                             </div>
                         </Link>
 
@@ -68,12 +67,12 @@ const Blog = () => {
                 </div>
                 <div className="Podcast_content">
                     {podCastData.map((article, index) => (
-                        <Link to={`podcasts/${article.link}`} >
+                        <Link to={`podcasts/${article.link}`} key={index} >
                             <div className="container">
                                 <h3 className='Podcast_title'>{article.title}</h3>
                                 <p className='Podcast_date'>{article.date}</p>
                                 <p className='Podcast_text'>{article.text}</p>
-                                <Link to={`podcasts/${article.link}`} >voir le podcast en vidéo...</Link>
+                                <span >voir le podcast en vidéo...</span>
 
                             </div>
                         </Link>

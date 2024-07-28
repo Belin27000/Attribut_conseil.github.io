@@ -25,8 +25,8 @@ const DownloadFile = (files) => {
         return (
             <ul className='Download-link'>
                 {fichiers.map((fichier, fileIndex) => (
-                    <li>
-                        <Link key={fileIndex} onClick={() => downloadFileURL(fileIndex)} >{fichier.name}</Link>
+                    <li key={fileIndex}>
+                        <Link onClick={() => downloadFileURL(fileIndex)} >{fichier.name}</Link>
                     </li>
                 ))}
             </ul>
