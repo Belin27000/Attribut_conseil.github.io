@@ -26,7 +26,7 @@ const DownloadFile = (files) => {
             <ul className='Download-link'>
                 {fichiers.map((fichier, fileIndex) => (
                     <li key={fileIndex}>
-                        <Link onClick={() => downloadFileURL(fileIndex)} >{fichier.name}</Link>
+                        <Link rel="preload" onClick={() => downloadFileURL(fileIndex)} >{fichier.name}</Link>
                     </li>
                 ))}
             </ul>

@@ -70,8 +70,8 @@ const NavBarTest = () => {
         <nav>
             {(toggleMenu || screenWidth > 500) && (
                 <ul className="list">
-                    <Link to="/home" onClick={toggleNav} className="items"><li >Accueil</li></Link>
-                    <Link to="/about" onClick={toggleNav} className="items"><li>Qui sommes nous</li></Link>
+                    <Link rel="preconnect" to="/home" onClick={toggleNav} className="items"><li >Accueil</li></Link>
+                    <Link rel="preconnect" to="/about" onClick={toggleNav} className="items"><li>Qui sommes nous</li></Link>
                     <li className="items" onClick={toggleCarrerNav}>Gestion emploi et carrière
                         {toggleCarrer && (
                             <ul className='sub-list' >

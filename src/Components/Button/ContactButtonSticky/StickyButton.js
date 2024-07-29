@@ -10,7 +10,11 @@ const StickyButton = ({ text }) => {
         navigate('/contact')
     }
     return (
-        <button translate="no" className='StickyButton' onClick={RouteChange}>
+        <button
+            translate="no"
+            className='StickyButton'
+            onClick={RouteChange}
+            aria-label={text ? text : "Je contacte Attribut conseils"}>
 
             <FaRegEnvelope />
             <div className='textButton'>

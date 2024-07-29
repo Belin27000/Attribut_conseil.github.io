@@ -15,22 +15,22 @@ const SocialNetwork = () => {
         <div className='Sn'>
             <h2 className="Sn-header">Nos réseaux sociaux</h2>
             <div className="Sn-imgContainer">
-                <Link to={insta} target="_blank">
+                <Link to={insta} target="_blank" aria-label="Visitez notre page Instagram">
                     <div className='insta'>
                         <FaInstagram />
                     </div>
                 </Link>
-                <Link to={Fb} target="_blank">
+                <Link to={Fb} target="_blank" aria-label="Visitez notre page Facebook">
                     <div className='facebook'>
                         <FaFacebookSquare />
                     </div>
                 </Link>
-                <Link to={Twitter} target="_blank">
+                <Link to={Twitter} target="_blank" aria-label="Visitez notre page Twitter">
                     <div className='twitter'>
                         <FaXTwitter />
                     </div>
                 </Link>
-                <Link to={Linkedin} target="_blank">
+                <Link to={Linkedin} target="_blank" aria-label="Visitez notre page LinkedIn">>
                     <div className='linkedin'>
                         <FaLinkedin />
                     </div>

@@ -7,6 +7,8 @@ const MetaTitleDes = ({ title = 'Attribut Conseils - Cabinet conseil en ressourc
     return (
         <Helmet>
             <title>{title}</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://elfsight.com" />
             <meta name='description' content={description} />
             {/* Balise Twitter */}
             <meta name="twitter:title" content={title} />

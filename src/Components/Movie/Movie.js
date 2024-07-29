@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import './movie.scss';
 
-const Movie = ({ src, loop = false }) => {
+const Movie = ({ src, loop = false, preload = 'auto' }) => {
     const videoRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
 
@@ -57,7 +57,7 @@ const Movie = ({ src, loop = false }) => {
 
     return (
         <div className='movie'>
-            <video className='responsive-video' muted ref={videoRef} autoPlay playsInline loop={loop ? true : undefined}>
+            <video className='responsive-video' muted ref={videoRef} autoPlay playsInline loop={loop ? true : undefined} preload={preload}>
                 <source src={src} type='video/mp4' />
             </video>
             {!isPlaying && (

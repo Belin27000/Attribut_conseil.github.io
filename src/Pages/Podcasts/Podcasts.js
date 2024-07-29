@@ -25,7 +25,7 @@ const Podcasts = ({ titleBloc = 'Le podcast Attribut Conseils', titlePage = 'Att
             {meta && (
                 <MetaTitleDes title={metaTitle} description={metaDescription} />
             )}
-            <h1 className='Podcasts_title'>{titleBloc}</h1>
+            {meta && <h1 className='Podcasts_title'>{titleBloc}</h1>}
             <div className="Podcasts_content">
                 {podCastData.map((article, index) => (
                     <div className="container" key={index} onClick={() => handlePodcastClick(article.link)}>
