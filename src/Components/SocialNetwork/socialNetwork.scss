@@ -54,6 +54,14 @@
             }
 
         }
+
+        .youtube svg {
+            &:hover {
+                cursor: pointer;
+                color: #FF0000;
+                background: white;
+            }
+        }
     }
 
     font-size: 3rem;

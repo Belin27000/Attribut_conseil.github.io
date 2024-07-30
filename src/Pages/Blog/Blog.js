@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaYoutube } from "react-icons/fa6";
 import blogDatas from '@/_Services/blog.service.js'
 import podCastData from '@/_Services/podcasts.service.js'
 import verticalDots from '../../Assets/Images/verticalDots.png'
@@ -15,6 +15,8 @@ const Blog = () => {
     const Fb = 'https://www.facebook.com/AttributConseils/'
     const Twitter = 'https://twitter.com/AttributConseil'
     const Linkedin = 'https://www.linkedin.com/company/attribut-conseils/?viewAsMember=true'
+    const Youtube = 'https://www.youtube.com/@attributconseils'
+
 
     const [selectedCategory, setSelectedCategory] = useState(null)
 
@@ -102,6 +104,9 @@ const Blog = () => {
                                 </Link>
                                 <Link to={Linkedin} target="_blank">
                                     <li><FaLinkedin /></li>
+                                </Link>
+                                <Link to={Youtube} target="_blank">
+                                    <li><FaYoutube /></li>
                                 </Link>
                             </ul>
                         </li >
