@@ -1,23 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FaHeart } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
-import Bandeau from '@/Assets/Images/Bandeau.webp'
-import Handi from '../../Assets/Images/Handicapped.png'
-import Cpf200 from '@/Assets/Images/logo_CPF/logo_CPF_200.webp'
-import Cpf1400 from '@/Assets/Images/logo_CPF/logo_CPF_1400.webp'
-import Charte800 from '@/Assets/Images/chartedeontologieCPF/charte800.webp'
-import Charte200 from '@/Assets/Images/chartedeontologieCPF/charte200.webp'
-import Qualiopi200 from '@/Assets/Images/Logo_Qualiopi/Logo_Qualiopi_200.webp'
-import Qualiopi634 from '@/Assets/Images/Logo_Qualiopi/Logo_Qualiopi_634.webp'
+import Bandeau from '@/Assets/Images/Bandeau.webp';
+import Charte200 from '@/Assets/Images/chartedeontologieCPF/charte200.webp';
+import Charte800 from '@/Assets/Images/chartedeontologieCPF/charte800.webp';
+import Cpf1400 from '@/Assets/Images/logo_CPF/logo_CPF_1400.webp';
+import Cpf200 from '@/Assets/Images/logo_CPF/logo_CPF_200.webp';
+import Qualiopi200 from '@/Assets/Images/Logo_Qualiopi/Logo_Qualiopi_200.webp';
+import Qualiopi634 from '@/Assets/Images/Logo_Qualiopi/Logo_Qualiopi_634.webp';
+import Handi from '../../Assets/Images/Handicapped.png';
 
 import allFiles from '../../_Services/fileToDownload.service.js';
 import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import SocialNetwork from '../../Components/SocialNetwork/SocialNetwork.js';
 // import GoogleRate from '../../Components/Google/GlobalRate/GoogleRate.js';
-import data from '../../Assets/data/data.json'
+import data from '../../Assets/data/data.json';
 // import GoogleMobile from '../../Components/Google/MobileRate/GoogleMobile.js';
-import '@/Layouts/Footer/footer.scss'
+import '@/Layouts/Footer/footer.scss';
 
 const Footer = () => {
     const QualiopiValidity = data.Qualiopi.validationDate
@@ -74,6 +74,9 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='QualContainer-Bloc'>
+                        <div className='Qualiopi_stats'>
+                            <DownloadFile file={allFiles.QualiopiFiles()} />
+                        </div>
                         <p className='QualContainer-Data'>Validé jusqu'au {QualiopiValidity}.</p>
                         <p className='QualContainer-Data'>La certification Qualiopi a été délivrée pour la catégorie d'action suivante :</p>
                         <p className='QualContainer-Data'>Actions de formation et Bilan de compétences</p>

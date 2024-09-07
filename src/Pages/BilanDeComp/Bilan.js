@@ -1,30 +1,32 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 // import { FaStar } from "react-icons/fa";
-
+import Calendar from '@/Assets/Images/Calendar.png';
+import Crown from '@/Assets/Images/Crown.png';
+import Euro from '@/Assets/Images/Euro.png';
+import Qualiopi from '@/Assets/Images/Logo_Qualiopi.png';
+import MobileHand from '@/Assets/Images/MobileHand.png';
+import LogoTree from '@/Assets/Images/Tree.png';
+import Visio from '@/Assets/Images/Visio.png';
+import Basket from '@/Assets/video/Basket.mp4';
+import climb from '@/Assets/video/Grimpeur.mp4';
+import Secret from '@/Assets/video/Secret.mp4';
+import ContactButton from '@/Components/Button/ContactButton.js';
+import ScrollToTop from '@/Components/Button/ScrollButton/ScrollToTop.js';
+import TelButton from '@/Components/Button/TelButton/TelButton.js';
+import GoogleWidget from '@/Components/Google/GoogleWidget/GoogleWidget.js';
+import MetaTitleDes from '@/Components/Meta/MetaTitleDes.js';
 import Movie from '@/Components/Movie/Movie.js';
 import Questions from '@/Components/Questions/Questions.js';
-import MetaTitleDes from '@/Components/Meta/MetaTitleDes.js';
-import ContactButton from '@/Components/Button/ContactButton.js';
-import TelButton from '@/Components/Button/TelButton/TelButton.js';
-import ScrollToTop from '@/Components/Button/ScrollButton/ScrollToTop.js';
-import GoogleWidget from '@/Components/Google/GoogleWidget/GoogleWidget.js';
-
-import Basket from '@/Assets/video/Basket.mp4';
-import Secret from '@/Assets/video/Secret.mp4';
-import climb from '@/Assets/video/Grimpeur.mp4'
-
-import Euro from '@/Assets/Images/Euro.png'
-import Crown from '@/Assets/Images/Crown.png'
-import Visio from '@/Assets/Images/Visio.png'
-import Calendar from '@/Assets/Images/Calendar.png'
-import Qualiopi from '@/Assets/Images/Logo_Qualiopi.png'
-
-
-import LogoTree from '@/Assets/Images/Tree.png';
-import MobileHand from '@/Assets/Images/MobileHand.png'
-
+import allFiles from '@/_Services/fileToDownload.service.js';
+import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import './bilan.scss';
+
+
+
+
+
+
 
 
 
@@ -170,6 +172,9 @@ const Fontainebleau = () => {
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div className='Qualiopi_stats'>
+                <DownloadFile file={allFiles.fileList()} />
             </div>
             <article className="timeline right-container topDot withMovie">
                 <h2>Comment financer mon bilan de compétences? </h2>

@@ -37,6 +37,34 @@
             display: flex;
         }
 
+        .Qualiopi_stats {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+
+            .Single-Link {
+                // background-color: var(--acYellow);
+                width: 45%;
+                padding: 0 0 1rem 0;
+                border-radius: 25px;
+                // margin: 1.5rem 0;
+
+                a {
+                    text-decoration: underline;
+                    color: black;
+
+                    &:hover {
+                        color: var(--acDarkBlue);
+                        background-color: var(--acYellow);
+                        padding: .5rem 1rem;
+                        border-radius: 15px;
+
+                    }
+                }
+            }
+        }
+
 
     }
 
@@ -162,6 +190,7 @@
     // font-weight: bold;
     margin: 0;
 }
+
 
 
 

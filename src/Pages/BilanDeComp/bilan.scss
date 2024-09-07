@@ -4,7 +4,29 @@
     color: white;
     position: relative;
 
+    .Qualiopi_stats {
+        width: 100%;
+        display: flex;
+        justify-content: center;
 
+
+        .Single-Link {
+            text-decoration: none;
+            background-color: var(--acYellow);
+            width: 50%;
+            padding: 1rem;
+            border-radius: 25px;
+
+            a {
+                color: white;
+
+                &:hover {
+                    color: var(--acDarkBlue);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 
     .LogCpf {
         background-color: white;

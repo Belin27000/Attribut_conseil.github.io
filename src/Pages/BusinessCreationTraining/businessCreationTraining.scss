@@ -21,6 +21,31 @@
     color: var(--acWhite);
     width: 100%;
 
+    .Qualiopi_stats {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+
+        .Single-Link {
+            text-decoration: none;
+            background-color: var(--acYellow);
+            width: 50%;
+            padding: 1rem;
+            border-radius: 25px;
+            margin: 1.5rem 0;
+
+            a {
+                color: white;
+
+                &:hover {
+                    color: var(--acDarkBlue);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
     .container {
         position: relative;
 

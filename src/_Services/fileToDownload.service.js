@@ -1,25 +1,22 @@
-import Prog from '../Assets/FileToDownload/BilanDeComp/PROG.pdf'
-import Stats from '../Assets/FileToDownload/BilanDeComp/Stats.pdf'
-import Price from '../Assets/FileToDownload/BilanDeComp/Price.pdf'
-import Ethique from '../Assets/FileToDownload/BilanDeComp/Ethique.pdf'
-
+import StatsBC from '../Assets/FileToDownload/Qualiopi/beforeAudit/StatsBc.pdf'
+import StatsCrea from '../Assets/FileToDownload/Qualiopi/beforeAudit/StatsCrea.pdf'
+import VaeEthique from '../Assets/FileToDownload/Vae/EthiqueVae.pdf'
 import VaeProg from '../Assets/FileToDownload/Vae/PROGVae.pdf'
 import VaePrice from '../Assets/FileToDownload/Vae/PriceVae.pdf'
-import VaeEthique from '../Assets/FileToDownload/Vae/EthiqueVae.pdf'
 
 import OrientationJeuneEthique from '../Assets/FileToDownload/OrientationJeune/EthiqueJeune.pdf'
 import OrientationJeuneProg from '../Assets/FileToDownload/OrientationJeune/ProgOrientationJeune.pdf'
 
 import OutplacementProg from '../Assets/FileToDownload/Outplacement/OutplacementProg.pdf'
 
-import CreaCompanyProg from '../Assets/FileToDownload/CreaCompany/CreaCompanyProg.pdf'
-import CreaCompanyPrice from '../Assets/FileToDownload/CreaCompany/CreaCompanyPrice.pdf'
+// import CreaCompanyPrice from '../Assets/FileToDownload/CreaCompany/CreaCompanyPrice.pdf'
+// import CreaCompanyProg from '../Assets/FileToDownload/CreaCompany/CreaCompanyProg.pdf'
 
-import CreaCompanyStats from '../Assets/FileToDownload/CreaCompany/CreaCompanyStats.pdf'
-import CreaCompanyEthique from '../Assets/FileToDownload/CreaCompany/CreaCompanyEthique.pdf'
+// import CreaCompanyEthique from '../Assets/FileToDownload/CreaCompany/CreaCompanyEthique.pdf'
+// import CreaCompanyStats from '../Assets/FileToDownload/CreaCompany/CreaCompanyStats.pdf'
 
-import TrainingTrainerProg from '../Assets/FileToDownload/TrainingTrainer/TrainingTrainerProg.pdf'
 import TrainingTrainerPrice from '../Assets/FileToDownload/TrainingTrainer/TrainingTrainerPrice.pdf'
+import TrainingTrainerProg from '../Assets/FileToDownload/TrainingTrainer/TrainingTrainerProg.pdf'
 
 import CGU from '../Assets/FileToDownload/CGU.pdf'
 import Handi from '../Assets/FileToDownload/Handi.pdf'
@@ -29,25 +26,17 @@ import RegistreHandi from '../Assets/FileToDownload/registreHandi/registre.pdf'
 
 import RGPD from '../Assets/FileToDownload/RGPD.pdf'
 
-import careerConsultProg from '../Assets/FileToDownload/careerConsult/careerConsultProg.pdf'
+import QualiopiCertif from '../Assets/FileToDownload/Qualiopi/QualiopiCertif.pdf'
+
 import careerConsultPrice from '../Assets/FileToDownload/careerConsult/careerConsultPrice.pdf'
+import careerConsultProg from '../Assets/FileToDownload/careerConsult/careerConsultProg.pdf'
+
 
 const bilanDeCompFiles = [
+
     {
-        name: 'Programme',
-        pdfFile: Prog,
-    },
-    {
-        name: 'Tarifs et conditions générales de vente',
-        pdfFile: Price,
-    },
-    {
-        name: 'Déontologie et étique',
-        pdfFile: Ethique,
-    },
-    {
-        name: 'Statistiques',
-        pdfFile: Stats,
+        name: 'Consultez nos statistiques de suivi sur 6 mois',
+        pdfFile: StatsBC,
     },
 ]
 const vaeFiles = [
@@ -81,21 +70,25 @@ const Outplacement = [
     },
 ]
 const CreaCompanyFile = [
+    // {
+    //     name: 'Programme',
+    //     pdfFile: CreaCompanyProg
+    // },
+    // {
+    //     name: 'Tarifs et conditions générales de vente',
+    //     pdfFile: CreaCompanyPrice
+    // },
+    // {
+    //     name: 'Déontologie et éthique',
+    //     pdfFile: CreaCompanyEthique
+    // },
+    // {
+    //     name: 'Chiffres clés de ma satisfaction clients 2023',
+    //     pdfFile: CreaCompanyStats
+    // },
     {
-        name: 'Programme',
-        pdfFile: CreaCompanyProg
-    },
-    {
-        name: 'Tarifs et conditions générales de vente',
-        pdfFile: CreaCompanyPrice
-    },
-    {
-        name: 'Déontologie et éthique',
-        pdfFile: CreaCompanyEthique
-    },
-    {
-        name: 'Chiffres clés de ma satisfaction clients 2023',
-        pdfFile: CreaCompanyStats
+        name: 'Consultez nos statistiques de suivi sur 6 mois',
+        pdfFile: StatsCrea,
     },
 ]
 const TrainingTrainerFile = [
@@ -118,6 +111,13 @@ const RGPDFile = [
     {
         name: 'RGPD',
         pdfFile: RGPD
+    }
+]
+const QualiopiFile = [
+    {
+        name: 'Notre certificat Qualiopi',
+        pdfFile: QualiopiCertif
+
     }
 ]
 const HandiFile = [
@@ -170,6 +170,9 @@ let CGUFiles = () => {
 let RGPDFiles = () => {
     return RGPDFile
 }
+let QualiopiFiles = () => {
+    return QualiopiFile
+}
 let HandiFiles = () => {
     return HandiFile
 }
@@ -186,6 +189,7 @@ export const allFiles = {
     TrainingTrainerFiles,
     CGUFiles,
     RGPDFiles,
+    QualiopiFiles,
     HandiFiles,
     careerConsultFiles,
 }

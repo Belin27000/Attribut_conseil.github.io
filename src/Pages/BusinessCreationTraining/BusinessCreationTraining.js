@@ -1,16 +1,17 @@
+import allFiles from '@/_Services/fileToDownload.service.js';
+import FlagCPF from '@/Assets/Images/CPF_France.png';
+import CPF_White from '@/Assets/Images/CPF_White.png';
+import success from '@/Assets/Images/success.png';
+import Tree from '@/Assets/Images/Tree.png';
+import TwoDesigner from '@/Assets/Images/TwoDesigner.png';
+import Visio2 from '@/Assets/Images/Visio2.png';
 import React from 'react';
-import Tree from '@/Assets/Images/Tree.png'
-import Visio2 from '@/Assets/Images/Visio2.png'
-import success from '@/Assets/Images/success.png'
-import CPF_White from '@/Assets/Images/CPF_White.png'
-import FlagCPF from '@/Assets/Images/CPF_France.png'
-import TwoDesigner from '@/Assets/Images/TwoDesigner.png'
-import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
-
-import './businessCreationTraining.scss';
 import TelButton from '../../Components/Button/TelButton/TelButton.js';
-import GoogleRate from '../../Components/Google/GlobalRate/GoogleRate.js';
 import CircleDot from '../../Components/CircleDot/CircleDot.js';
+import DownloadFile from '../../Components/FileLink/DownloadFile.js';
+import GoogleRate from '../../Components/Google/GlobalRate/GoogleRate.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
+import './businessCreationTraining.scss';
 
 const BusinessCreationTraining = () => {
 
@@ -97,6 +98,9 @@ const BusinessCreationTraining = () => {
                 <div className='whoCanDo-white-circle'></div>
                 <h3>Qui peut intégrer la formation création d’entreprise ?</h3>
                 <p>Le cabinet ATTRIBUT CONSEILS est là pour soutenir tous les porteurs de projets, qu'ils évoluent dans le secteur public ou privé, quel que soit leur niveau, leur statut ou leur domaine d'activité. Nous sommes là pour vous, que vous ayez simplement une idée en germe ou que vous cherchiez à développer vos compétences entrepreneuriales.</p>
+            </div>
+            <div className='Qualiopi_stats'>
+                <DownloadFile file={allFiles.CreaCompanyFiles()} />
             </div>
             <div className="howPay">
                 <div className="text">
