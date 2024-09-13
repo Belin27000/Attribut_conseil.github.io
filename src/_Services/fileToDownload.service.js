@@ -1,35 +1,26 @@
-import StatsBC from '../Assets/FileToDownload/Qualiopi/beforeAudit/StatsBc.pdf'
-import StatsCrea from '../Assets/FileToDownload/Qualiopi/beforeAudit/StatsCrea.pdf'
-import VaeEthique from '../Assets/FileToDownload/Vae/EthiqueVae.pdf'
-import VaeProg from '../Assets/FileToDownload/Vae/PROGVae.pdf'
-import VaePrice from '../Assets/FileToDownload/Vae/PriceVae.pdf'
-
-import OrientationJeuneEthique from '../Assets/FileToDownload/OrientationJeune/EthiqueJeune.pdf'
-import OrientationJeuneProg from '../Assets/FileToDownload/OrientationJeune/ProgOrientationJeune.pdf'
-
-import OutplacementProg from '../Assets/FileToDownload/Outplacement/OutplacementProg.pdf'
-
-// import CreaCompanyPrice from '../Assets/FileToDownload/CreaCompany/CreaCompanyPrice.pdf'
-// import CreaCompanyProg from '../Assets/FileToDownload/CreaCompany/CreaCompanyProg.pdf'
-
-// import CreaCompanyEthique from '../Assets/FileToDownload/CreaCompany/CreaCompanyEthique.pdf'
-// import CreaCompanyStats from '../Assets/FileToDownload/CreaCompany/CreaCompanyStats.pdf'
-
-import TrainingTrainerPrice from '../Assets/FileToDownload/TrainingTrainer/TrainingTrainerPrice.pdf'
-import TrainingTrainerProg from '../Assets/FileToDownload/TrainingTrainer/TrainingTrainerProg.pdf'
-
-import CGU from '../Assets/FileToDownload/CGU.pdf'
-import Handi from '../Assets/FileToDownload/Handi.pdf'
-
-import PSH from '../Assets/FileToDownload/registreHandi/LIVRET_ACCUEIL_PSH.pdf'
-import RegistreHandi from '../Assets/FileToDownload/registreHandi/registre.pdf'
-
-import RGPD from '../Assets/FileToDownload/RGPD.pdf'
-
-import QualiopiCertif from '../Assets/FileToDownload/Qualiopi/QualiopiCertif.pdf'
-
-import careerConsultPrice from '../Assets/FileToDownload/careerConsult/careerConsultPrice.pdf'
-import careerConsultProg from '../Assets/FileToDownload/careerConsult/careerConsultProg.pdf'
+import CGU from '@/Assets/FileToDownload/CGU.pdf'
+import Handi from '@/Assets/FileToDownload/Handi.pdf'
+import OrientationJeuneEthique from '@/Assets/FileToDownload/OrientationJeune/EthiqueJeune.pdf'
+import OrientationJeuneProg from '@/Assets/FileToDownload/OrientationJeune/ProgOrientationJeune.pdf'
+import OutplacementProg from '@/Assets/FileToDownload/Outplacement/OutplacementProg.pdf'
+import QualiopiCertif from '@/Assets/FileToDownload/Qualiopi/QualiopiCertif.pdf'
+import StatsBC from '@/Assets/FileToDownload/Qualiopi/beforeAudit/StatsBc.pdf'
+import StatsCrea from '@/Assets/FileToDownload/Qualiopi/beforeAudit/StatsCrea.pdf'
+import RGPD from '@/Assets/FileToDownload/RGPD.pdf'
+import TrainingTrainerPrice from '@/Assets/FileToDownload/TrainingTrainer/TrainingTrainerPrice.pdf'
+import TrainingTrainerProg from '@/Assets/FileToDownload/TrainingTrainer/TrainingTrainerProg.pdf'
+import VaeEthique from '@/Assets/FileToDownload/Vae/EthiqueVae.pdf'
+import VaeProg from '@/Assets/FileToDownload/Vae/PROGVae.pdf'
+import VaePrice from '@/Assets/FileToDownload/Vae/PriceVae.pdf'
+import careerConsultPrice from '@/Assets/FileToDownload/careerConsult/careerConsultPrice.pdf'
+import careerConsultProg from '@/Assets/FileToDownload/careerConsult/careerConsultProg.pdf'
+import Charte_PSH from '@/Assets/FileToDownload/registreHandi/Charte_PSH.pdf'
+import PSH from '@/Assets/FileToDownload/registreHandi/LIVRET_ACCUEIL_PSH.pdf'
+import RegistreHandi from '@/Assets/FileToDownload/registreHandi/registre.pdf'
+// import CreaCompanyStats from '@/Assets/FileToDownload/CreaCompany/CreaCompanyStats.pdf'
+// import CreaCompanyProg from '@/Assets/FileToDownload/CreaCompany/CreaCompanyProg.pdf'
+// import CreaCompanyPrice from '@/Assets/FileToDownload/CreaCompany/CreaCompanyPrice.pdf'
+// import CreaCompanyEthique from '@/Assets/FileToDownload/CreaCompany/CreaCompanyEthique.pdf'
 
 
 const bilanDeCompFiles = [
@@ -121,6 +112,10 @@ const QualiopiFile = [
     }
 ]
 const HandiFile = [
+    {
+        name: 'Charte d\'engagement PSH',
+        pdfFile: Charte_PSH
+    },
     {
         name: 'livret d\'accueil PSH',
         pdfFile: PSH,
