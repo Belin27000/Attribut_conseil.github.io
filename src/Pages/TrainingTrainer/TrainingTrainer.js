@@ -1,9 +1,10 @@
 import React from 'react';
-import './trainingTrainer.scss'
-import ContactButton from '../../Components/Button/ContactButton.js';
-import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import allFiles from '../../_Services/fileToDownload.service.js';
+import ContactButton from '../../Components/Button/ContactButton.js';
+import Dday from '../../Components/Dday/Dday.js';
+import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
+import './trainingTrainer.scss';
 
 const TrainingTrainer = () => {
     const metaTitle = `Attribut Conseils - Formation aux métiers de formateur`
@@ -118,6 +119,7 @@ const TrainingTrainer = () => {
                 <p><strong>Un certificat de compétences est remis au stagiaire en fin de formation. </strong></p>
                 <ContactButton />
             </article>
+            <Dday />
         </section >
     );
 };

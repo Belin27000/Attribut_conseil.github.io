@@ -1,9 +1,10 @@
 import React from 'react';
-import './outplacement.scss'
-import ContactButton from '../../Components/Button/ContactButton.js';
-import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import allFiles from '../../_Services/fileToDownload.service.js';
+import ContactButton from '../../Components/Button/ContactButton.js';
+import Dday from '../../Components/Dday/Dday.js';
+import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
+import './outplacement.scss';
 
 const Outplacement = () => {
     const metaTitle = `Attribut Conseils - Outplacement`
@@ -113,6 +114,7 @@ const Outplacement = () => {
                     </li>
                 </ul>
             </article>
+            <Dday />
         </section>
     );
 };

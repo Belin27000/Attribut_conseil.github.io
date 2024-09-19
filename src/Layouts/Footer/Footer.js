@@ -3,14 +3,13 @@ import Charte200 from '@/Assets/Images/chartedeontologieCPF/charte200.webp';
 import Charte800 from '@/Assets/Images/chartedeontologieCPF/charte800.webp';
 import Cpf1400 from '@/Assets/Images/logo_CPF/logo_CPF_1400.webp';
 import Cpf200 from '@/Assets/Images/logo_CPF/logo_CPF_200.webp';
-import Qualiopi200 from '@/Assets/Images/Logo_Qualiopi/Logo_Qualiopi_200.webp';
-import Qualiopi634 from '@/Assets/Images/Logo_Qualiopi/Logo_Qualiopi_634.webp';
+// import Qualiopi200 from '@/Assets/Images/Logo_Qualiopi/Logo_Qualiopi_200.webp';
+// import Qualiopi634 from '@/Assets/Images/Logo_Qualiopi/Logo_Qualiopi_634.webp';
 import '@/Layouts/Footer/footer.scss';
 import React from 'react';
 import { FaHeart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import allFiles from '../../_Services/fileToDownload.service.js';
-import data from '../../Assets/data/data.json';
 import Handi from '../../Assets/Images/Handicapped.png';
 import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import SocialNetwork from '../../Components/SocialNetwork/SocialNetwork.js';
@@ -20,7 +19,7 @@ import SocialNetwork from '../../Components/SocialNetwork/SocialNetwork.js';
 
 
 const Footer = () => {
-    const QualiopiValidity = data.Qualiopi.validationDate
+    // const QualiopiValidity = data.Qualiopi.validationDate
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -48,7 +47,7 @@ const Footer = () => {
                                 src={Cpf1400}
                                 alt="Logo Mon compte formation" />
                         </div>
-                        <div className='QualioContainer'>
+                        {/* <div className='QualioContainer'>
                             <img className='QualContainer-Pic'
                                 sizes="(max-width: 634px) 100vw, 634px"
                                 srcSet={`
@@ -59,7 +58,7 @@ const Footer = () => {
                                 height='339'
                                 src={Qualiopi634}
                                 alt="Logo Qualiopi" />
-                        </div>
+                        </div> */}
                         <div className='CharteContainer'>
                             <img className='QualContainer-Pic'
                                 sizes="(max-width: 800px) 100vw, 800px"
@@ -73,7 +72,7 @@ const Footer = () => {
                                 alt="Logo Charte CPF" />
                         </div>
                     </div>
-                    <div className='QualContainer-Bloc'>
+                    {/* <div className='QualContainer-Bloc'>
                         <div className='Qualiopi_stats'>
                             <DownloadFile file={allFiles.QualiopiFiles()} />
                         </div>
@@ -81,7 +80,7 @@ const Footer = () => {
                         <p className='QualContainer-Data'>La certification Qualiopi a été délivrée pour la catégorie d'action suivante :</p>
                         <p className='QualContainer-Data'>Actions de formation et Bilan de compétences</p>
                         <p className='QualContainer-Data'>Délais d'acces aux formations 10 jours maximum</p>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className='LogoContainer'>

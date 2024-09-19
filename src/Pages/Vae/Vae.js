@@ -1,10 +1,11 @@
 import React from 'react';
-import './vae.scss'
+import allFiles from '../../_Services/fileToDownload.service.js';
 import ContactButton from '../../Components/Button/ContactButton.js';
 import ScrollToTop from '../../Components/Button/ScrollButton/ScrollToTop.js';
+import Dday from '../../Components/Dday/Dday.js';
 import DownloadFile from '../../Components/FileLink/DownloadFile.js';
-import allFiles from '../../_Services/fileToDownload.service.js';
 import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
+import './vae.scss';
 
 const Vae = () => {
     const metaTitle = `Attribut Conseils - VAE`
@@ -103,6 +104,10 @@ const Vae = () => {
                     Tous nos consultants possèdent tous une vision claire et précise des problématiques actuelles dans une multiplicité de domaines. Experts bilan de compétences/VAE.
                 </p>
             </article>
+            <div className='Vae_stats'>
+                <DownloadFile file={allFiles.vaeStat()} />
+            </div>
+
             <article className="Vae-article">
                 <h3 className="Vae-article-title">Tarifs Validation des Acquis de l’Expérience (VAE)</h3>
                 <p>Le tarif d'une VAE se situe entre 1500€ et 5000€ net de taxes, en fonction des besoins exprimés et selon les modalités de prise en charge. Détail des tarifs (conditions générales de ventes)
@@ -119,6 +124,7 @@ const Vae = () => {
                 </ul> */}
                 <DownloadFile file={allFiles.vae()} />
             </article>
+            <Dday />
             <ScrollToTop />
         </section >
     );

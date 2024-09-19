@@ -57,6 +57,31 @@
             font-weight: bold;
         }
     }
+
+    .Vae_stats {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+
+
+        .Single-Link {
+            text-decoration: none;
+            background-color: var(--acYellow);
+            width: 75%;
+            padding: .5rem;
+            border-radius: 25px;
+
+            a {
+                color: white;
+
+                &:hover {
+                    color: var(--acDarkBlue);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 760px) {
@@ -96,6 +121,17 @@
 
             &_bgWhite p {
                 padding: 0 5rem;
+            }
+        }
+
+        .Vae_stats {
+            width: 100%;
+
+            .Single-Link {
+
+                width: 50rem;
+                font-size: 1.5rem;
+                padding: 1rem;
             }
         }
     }

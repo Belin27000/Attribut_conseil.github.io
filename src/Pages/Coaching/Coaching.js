@@ -1,7 +1,8 @@
 import React from 'react';
-import './coaching.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
+import Dday from '../../Components/Dday/Dday.js';
 import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
+import './coaching.scss';
 
 const Coaching = () => {
     const metaTitle = `Attribut Conseils - Accompagnement en coaching `
@@ -70,7 +71,7 @@ const Coaching = () => {
                 <h3 className="Coaching-article-title">Nos tarifs</h3>
                 <p>Le coût du coaching est évalué lors d'un entretien préliminaire et varie en fonction de la situation du client ainsi que des modalités de financement.</p>
             </article>
-
+            <Dday />
         </section>
     );
 };

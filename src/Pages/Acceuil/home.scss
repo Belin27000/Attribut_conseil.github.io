@@ -4,6 +4,10 @@
     flex-direction: column;
     align-items: center;
 
+    .dDay {
+        color: white;
+    }
+
     /* background-color: lightblue */
     .movie {
         width: 100%;
@@ -12,6 +16,33 @@
 
         .responsive-video {
             object-fit: contain;
+        }
+    }
+
+    .QualContainer {
+        width: 100%;
+        margin-bottom: 1rem;
+
+        &-Pic {
+            width: 17rem;
+            height: auto;
+        }
+
+        &-Bloc {
+            color: white;
+
+            .Qualiopi_stats {
+                margin-top: 1rem;
+
+                a {
+                    color: white;
+                }
+            }
+
+            .QualContainer-Data {
+                font-size: .8rem;
+                margin: .5rem 0;
+            }
         }
     }
 }
@@ -98,6 +129,16 @@
         height: 4rem;
         font-size: 1.5rem;
     }
+
+    // .QualContainer {
+    //     // width: 100%;
+    //     // margin-bottom: 1rem;
+
+    //     &-Pic {
+    //         width: 2rem;
+    //         height: auto;
+    //     }
+    // }
 }
 
 @media (max-width: 500px) {

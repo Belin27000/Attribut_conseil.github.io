@@ -1,17 +1,19 @@
-import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
-
-import timer from '@/Assets/Images/timer.png';
-import target from '@/Assets/Images/target.png';
-import LogoTree from '@/Assets/Images/Tree.png';
-import MobileHand from '@/Assets/Images/MobileHand.png';
-import touchTarget from '@/Assets/Images/touchTarget.png';
-import multiScreen from '@/Assets/Images/multiScreen.png';
 import CalendarSheet from '@/Assets/Images/CalendarSheet.png';
 import careerConsultpourcent from '@/Assets/Images/careerConsultpourcent.png';
+import MobileHand from '@/Assets/Images/MobileHand.png';
+import multiScreen from '@/Assets/Images/multiScreen.png';
 import simplecareerConsultpourcent from '@/Assets/Images/simplecareerConsultpourcent.png';
-
+import target from '@/Assets/Images/target.png';
+import timer from '@/Assets/Images/timer.png';
+import touchTarget from '@/Assets/Images/touchTarget.png';
+import LogoTree from '@/Assets/Images/Tree.png';
 import React from 'react';
-import './careerConsultV2.scss'
+import Dday from '../../Components/Dday/Dday.js';
+import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
+import './careerConsultV2.scss';
+
+
+
 
 const CareerConsultV2 = () => {
     const metaTitle = `Attribut Conseils - Formation consultant en gestion de carrières`
@@ -174,6 +176,7 @@ const CareerConsultV2 = () => {
                     </div>
                 </div>
             </a>
+            <Dday />
         </section>
     );
 };

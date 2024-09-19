@@ -1,7 +1,8 @@
 import React from 'react';
-import './findJob.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
+import Dday from '../../Components/Dday/Dday.js';
 import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
+import './findJob.scss';
 
 const FingJob = () => {
     const metaTitle = `Attribut Conseils - Accompagnement  à la recherche d‘emploi `
@@ -100,6 +101,7 @@ const FingJob = () => {
                 <p>Le premier entretien d’analyse du besoin est gratuit et sans engagement. Le coût de l’accompagnement est évalué lors de l’entretien préliminaire et varie en fonction de la situation du client ainsi que des modalités de financement.
                 </p>
             </article>
+            <Dday />
         </section>
     );
 };

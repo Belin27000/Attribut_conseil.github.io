@@ -8,6 +8,7 @@ import Visio2 from '@/Assets/Images/Visio2.png';
 import React from 'react';
 import TelButton from '../../Components/Button/TelButton/TelButton.js';
 import CircleDot from '../../Components/CircleDot/CircleDot.js';
+import Dday from '../../Components/Dday/Dday.js';
 import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import GoogleRate from '../../Components/Google/GlobalRate/GoogleRate.js';
 import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
@@ -137,6 +138,7 @@ const BusinessCreationTraining = () => {
                     <q>Excellent formateur ! J’ai réalisé avec Alain une formation création d’entreprise , et j’ai été très agréablement surpris de la qualité de prestation. A l’écoute, Alain , prend le temps de nous expliquer et de mettre en pratique. Suivi personnalisé et pédagogie ++++ Je recommande vivement</q>
                 </div>
             </div>
+            <Dday />
         </section>
     );
 };

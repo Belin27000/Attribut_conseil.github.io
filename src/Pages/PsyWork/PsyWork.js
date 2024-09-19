@@ -1,7 +1,8 @@
 import React from 'react';
-import './psyWork.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
+import Dday from '../../Components/Dday/Dday.js';
 import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
+import './psyWork.scss';
 
 const PsyWork = () => {
     const metaTitle = `Attribut Conseils - Psychologie du travail`
@@ -56,6 +57,7 @@ const PsyWork = () => {
                 <p><strong>Retrouvez votre équilibre. Contactez notre équipe diplômée, psychologues du travail et Thérapie brèves pour bénéficier de notre accompagnement.
                 </strong></p>
             </article>
+            <Dday />
         </section>
     );
 };

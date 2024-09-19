@@ -1,7 +1,7 @@
-import './App.scss';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import PublicRouter from './Pages/Public/PublicRouter.js';
 import { pdfjs } from 'react-pdf';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.scss';
+import PublicRouter from './Pages/Public/PublicRouter.js';
 
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(

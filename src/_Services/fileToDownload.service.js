@@ -12,6 +12,7 @@ import TrainingTrainerProg from '@/Assets/FileToDownload/TrainingTrainer/Trainin
 import VaeEthique from '@/Assets/FileToDownload/Vae/EthiqueVae.pdf'
 import VaeProg from '@/Assets/FileToDownload/Vae/PROGVae.pdf'
 import VaePrice from '@/Assets/FileToDownload/Vae/PriceVae.pdf'
+import vae_Stats from '@/Assets/FileToDownload/Vae/STATS_VAE_2025.pdf'
 import careerConsultPrice from '@/Assets/FileToDownload/careerConsult/careerConsultPrice.pdf'
 import careerConsultProg from '@/Assets/FileToDownload/careerConsult/careerConsultProg.pdf'
 import Charte_PSH from '@/Assets/FileToDownload/registreHandi/Charte_PSH.pdf'
@@ -42,6 +43,12 @@ const vaeFiles = [
     {
         name: 'Déontologie et étique',
         pdfFile: VaeEthique
+    },
+]
+const vaeStats = [
+    {
+        name: 'Consultez nos statistiques, critères prédéfinis pour juin 2025',
+        pdfFile: vae_Stats
     },
 ]
 const OrientationJeuneFiles = [
@@ -106,7 +113,7 @@ const RGPDFile = [
 ]
 const QualiopiFile = [
     {
-        name: 'Notre certificat Qualiopi',
+        name: 'Télécharger notre certificat Qualiopi',
         pdfFile: QualiopiCertif
 
     }
@@ -147,6 +154,9 @@ let fileList = () => {
 let vae = () => {
     return vaeFiles
 }
+let vaeStat = () => {
+    return vaeStats
+}
 let jeune = () => {
     return OrientationJeuneFiles
 }
@@ -178,6 +188,7 @@ let careerConsultFiles = () => {
 export const allFiles = {
     fileList,
     vae,
+    vaeStat,
     jeune,
     outplacementFile,
     CreaCompanyFiles,

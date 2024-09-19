@@ -1,0 +1,20 @@
+.Dday {
+    color: white;
+    width: 100%;
+    text-align: end;
+
+    p {
+        margin-right: 1rem;
+        font-size: .8rem;
+    }
+}
+
+@media (min-width: 760px) {
+
+    .Dday {
+        p {
+            font-size: 1.1rem !important
+        }
+    }
+
+}

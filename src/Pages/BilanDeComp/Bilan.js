@@ -19,6 +19,7 @@ import MetaTitleDes from '@/Components/Meta/MetaTitleDes.js';
 import Movie from '@/Components/Movie/Movie.js';
 import Questions from '@/Components/Questions/Questions.js';
 import allFiles from '@/_Services/fileToDownload.service.js';
+import Dday from '../../Components/Dday/Dday.js';
 import DownloadFile from '../../Components/FileLink/DownloadFile.js';
 import './bilan.scss';
 
@@ -188,6 +189,7 @@ const Fontainebleau = () => {
             <GoogleWidget />
             <TelButton number="06 98 88 15 55" />
             <Questions tag='all' ville='Fontainebleau' />
+            <Dday />
             <ScrollToTop />
         </section >
     );

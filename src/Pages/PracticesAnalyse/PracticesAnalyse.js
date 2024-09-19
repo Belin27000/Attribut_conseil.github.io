@@ -1,7 +1,8 @@
 import React from 'react';
-import './practicesAnalyse.scss'
 import ContactButton from '../../Components/Button/ContactButton.js';
+import Dday from '../../Components/Dday/Dday.js';
 import MetaTitleDes from '../../Components/Meta/MetaTitleDes.js';
+import './practicesAnalyse.scss';
 
 const PracticesAnalyse = () => {
     const metaTitle = `Attribut Conseils - Analyse de pratiques professionnelles`
@@ -72,6 +73,7 @@ const PracticesAnalyse = () => {
                 <p className='PracticesAnalyse-article_blue'>Personnalisez votre expérience de supervision et d'analyse de pratiques professionnelles selon vos besoins spécifiques. Contactez-nous dès maintenant pour discuter de vos attentes et élaborer un programme sur mesure.</p>
                 <ContactButton />
             </article>
+            <Dday />
         </section >
     );
 };
