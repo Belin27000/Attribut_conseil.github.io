@@ -1,21 +1,17 @@
-import Movie from '@/Components/Movie/Movie.js';
 import CircleDot from '@/Components/CircleDot/CircleDot.js';
+import Movie from '@/Components/Movie/Movie.js';
 // import Questions from '@/Components/Questions/Questions.js';
-import MetaTitleDes from '@/Components/Meta/MetaTitleDes.js';
-import TelButton from '@/Components/Button/TelButton/TelButton.js';
+import Boat from '@/Assets/Images/logo_AttributU.png';
+import LogoTree from '@/Assets/Images/Tree.png';
 import ContactButton from '@/Components/Button/ContactButton.js';
 import ScrollToTop from '@/Components/Button/ScrollButton/ScrollToTop.js';
 import GoogleWidget from '@/Components/Google/GoogleWidget/GoogleWidget.js';
-import Cpf from '@/Assets/Images/logo_CPF.webp'
-import LogoTree from '@/Assets/Images/Tree.png';
-import Qualiopi from '@/Assets/Images/Logo_Qualiopi.png'
+import MetaTitleDes from '@/Components/Meta/MetaTitleDes.js';
 
-import Arc from '@/Assets/video/Tir_Arc.mp4';
-import Tree from '@/Assets/video/Plante.mp4';
-import climb from '@/Assets/video/Grimpeur.mp4'
+import climb from '@/Assets/video/Grimpeur.mp4';
 import React from 'react';
 
-import './coDev.scss'
+import './coDev.scss';
 
 const CoDev = () => {
     const metaTitle = `Faire son bilan de compétences avec l’APEC`
@@ -30,43 +26,41 @@ const CoDev = () => {
             <div className="CoDev container-img">
                 <img className='Tree' src={LogoTree} alt="Logo arbre Attribut conseils" />
             </div>
-            <article className="CoDev-article">
-                <p>Bienvenue chez Attribut Conseils, votre cabinet de référence pour le bilan de compétences dans l'Essonne et en seine et marne. Conscients de l'impact décisif d'un bilan de compétences pour le parcours professionnel de chacun, nous nous engageons à vous accompagner dans votre quête d'évolution ou de reconversion. Que vous soyez en période de transition ou à la recherche d'une meilleure adéquation entre vos aspirations et votre métier, Attribut Conseils est à vos côtés. Examinons ensemble la valeur ajoutée d'un bilan de compétences réalisé avec l’APEC et comment Attribut Conseils peut vous accompagner dans ce domaine.
-                </p>
-                <div className="articleCertif-pic">
-                    < img src={Qualiopi} alt="Logo Qualiopi" />
-                    < img className='LogCpf' src={Cpf} alt="Logo Qualiopi" />
-                </div>
-            </article>
-            <article className="timeline right-container withMovie">
-                <h2>Qu’est ce qu’un bilan de compétences ?</h2>
-                <div>
-                    <p>Un bilan de compétences est un processus d'accompagnement personnalisé qui permet d'analyser vos compétences professionnelles, vos aptitudes et vos motivations. Il sert à définir un projet d'évolution ou de reconversion professionnelle. À travers des entretiens individuels, des tests et des exercices, vous pourrez construire ou valider un projet professionnel cohérent et réaliste, ou simplement mieux cerner vos aspirations pour donner un nouveau souffle à votre carrière.
-                    </p>
+            <article className="CoDev-article withMovie">
+                <p className='Welcom'>Bienvenue,</p>
+                <p className='Script'>Si vous êtes sur cette page, c'est que vous êtes à la recherche d'une approche de formation différente, qui valorise les connaissances individuelles pour les intégrer dans un processus d'apprentissage collectif.                    Le co-développement est une démarche de formation qui part de situations réelles et vécues par le professionnel, souvent problématiques, et questionnées par un collectif de pairs.
+                    L’intervenant contribue à faire émerger des apprentissages propres aux différents individus mais aussi, parallèlement, à construire des connaissances et de l’intelligence collective.
+                    Ces solutions issues du groupe deviennent des pistes de réponses à des problématiques jusque-là vécues de manière isolée.</p>
+                <div className='movie-cont'>
                     <Movie src={climb} />
                 </div>
             </article>
-            <article className="timeline right-container articleCertif">
-                <h2>Qu’est ce que l’APEC?</h2>
-                <div className='articleCertif-container'>
-                    <div className='articleCertif-container-text'>
-                        <p>L'APEC, ou Association pour l'Emploi des Cadres, est une organisation française qui offre des services et des conseils aux cadres dans leur gestion de carrière. Elle accompagne également les entreprises dans leurs recrutements et la définition de leurs besoins en compétences. L'APEC peut jouer un rôle dans le bilan de compétences en fournissant des informations sur le marché du travail, des conseils en évolution professionnelle et en facilitant l'accès aux offres d'emploi correspondant aux aspirations et compétences des cadres.</p>
-                    </div>
-                    {/* <div className="articleCertif-pic">
-                        < img src={Qualiopi} alt="Logo Qualiopi" />
-                        < img className='LogCpf' src={Cpf} alt="Logo Qualiopi" />
-                    </div> */}
+            <article className="Centrale-Text">
+                <div>
+                    <p>Cette recherche collective de sens et de solution participe à la reconnaissance d’une identité professionnelle, souvent en mouvement lorsqu’elle est interrogée dans les pratiques professionnelles quotidiennes ainsi qu’au renforcement de la cohésion d’équipe. </p>
                 </div>
             </article>
-            <TelButton number="06 98 88 15 55" />
-            <article className="timeline left-container">
-                <h2>L'expertise d'Attribut Conseils en bilan de compétences </h2>
-                <p>Avec plus de 16 ans d'expérience, Attribut Conseils se positionne comme un expert dans le domaine du bilan de compétences. Notre équipe de formateurs, consultants et coachs experts utilisent des méthodologies éprouvées et adaptées à chaque profil pour vous guider vers le succès.
-                </p>
-                <p>Notre cabinet se distingue par une approche humaine et personnalisée, prenant en compte la diversité des problématiques professionnelles. Nous travaillons ensemble vers des solutions qui respectent votre individualité et vos aspirations. La réussite d'un bilan de compétences repose également sur des données et des tendances du marché du travail actuel.
-                </p>
+            <article className="boat right-container articleCertif">
+                <div className='boat-container-text'>
+                    <p>Il s’agit donc d’un outil essentiel dans la prévention <span className='yellow'>des risques psycho-sociaux dans les métiers à forte composante relationnelle.</span></p>
+                </div>
+                <div className="boat-pic">
+                    < img src={Boat} alt="Logo Qualiopi" />
+                    {/* < img className='LogCpf' src={Cpf} alt="Logo Qualiopi" /> */}
+                </div>
             </article>
-            <article className="timeline left-container withMovie">
+            {/* <TelButton number="06 98 88 15 55" /> */}
+            <article className="timeline left-container center">
+                <div className='timeline-cont'>
+                    <h2>Quels sont les fondements du co développement?</h2>
+                    <p>Méthode venue d'outre-Atlantique, le co-développement s'est imposé comme une référence incontestable, dont nous sommes des ardents promoteurs ! Créée dans les années 80 par deux Canadiens, Claude Champagne et Adrien Payette, cette approche est définie comme <span className='Bold'>"un groupe de personnes désireuses d'améliorer leur pratique professionnelle, quel que soit leur domaine, et qui s'entraident mutuellement dans cette quête, convaincues qu'elles peuvent apprendre les unes des autres".</span></p>
+                </div>
+            </article>
+            {/* <article className="timeline left-container withMovie">
+                <div className="Arrow90percent-cont">
+                    < img src={Boat} alt="Logo Qualiopi" />
+                    < img className='LogCpf' src={Cpf} alt="Logo Qualiopi" />
+                </div>
                 <h3 className='text-centered'>Données chiffrées et tendances du marché du travail</h3>
                 <div className='multiplePAndMovie'>
                     <div className='text-cointainer'>
@@ -77,9 +71,15 @@ const CoDev = () => {
                     </div>
                     <Movie src={Arc} />
                 </div>
+            </article> */}
+            <article className="timeline left-container center">
+                <div className='timeline-cont'>
+                    <h2>Comment se déroule le co-développement?</h2>
+                    <p>L'espace de co-développement est un temps dédié où les collaborateurs confrontent leurs points de vue sur la manière de travailler et les différentes stratégies qu'ils ont développées pour composer avec la réalité professionnelle. La délibération implique l'explication des approches individuelles, exposant les limites et parfois les échecs. La confiance mutuelle est essentielle pour assumer ce risque. Cette intelligence délibérative redéfinit la responsabilité en la rendant collective et partagée entre les collègues. <span className='Bold'>La capacité d'inventer et de trouver des solutions est liée à la collaboration, elle prévient de l'isolement. </span></p>
+                </div>
             </article>
-            <ContactButton text="Je demande un entretien d’informations gratuit et sans engagement " />
-            <article className="timeline right-container">
+            {/* <ContactButton text="Je demande un entretien d’informations gratuit et sans engagement " /> */}
+            {/* <article className="timeline right-container">
                 <h3>Accompagnement personnalisé et cas pratiques
                 </h3>
                 <div>
@@ -112,7 +112,7 @@ const CoDev = () => {
                 </p>
                 <p>Choisir Attribut Conseils, c'est opter pour un partenaire engagé qui valorise votre parcours unique et qui vous propulse vers des opportunités alignées avec vos aspirations profondes. C'est l'assurance d'un accompagnement dédié et d'une expertise reconnue pour faire de votre bilan de compétences une étape décisive vers le succès.
                 </p>
-            </article>
+            </article> */}
             <GoogleWidget />
             <CircleDot displayAll={false} />
             <ContactButton text="Contactez-nous" />

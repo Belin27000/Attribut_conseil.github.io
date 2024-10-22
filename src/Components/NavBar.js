@@ -1,6 +1,6 @@
+import '@/Components/navBar.scss';
 import React, { useEffect, useState } from 'react';
-import '@/Components/navBar.scss'
-import { FaBars, FaTimes, FaAngleLeft } from "react-icons/fa";
+import { FaAngleLeft, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 // import GoogleMobile from './Google/MobileRate/GoogleMobile.js';
 
@@ -102,7 +102,7 @@ const NavBarTest = () => {
                                 <li><Link to="/formation_metier_formateur_adultes" onClick={toggleNav}><div>Formation de formateur</div></Link></li>
                                 <li><Link to="/formation_metier_consultant_en_gestion_de_carrieres" onClick={toggleNav}><div>Formation consultant en bilan/conseiller emploi</div></Link></li>
                                 <li><Link to="/groupe_analyse_de_pratiques" onClick={toggleNav}><div>Formation analyse de pratiques</div></Link></li>
-                                {/* <li><Link to="/formation_co-developpement" onClick={toggleNav}><div>Formation Co-Développement</div></Link></li> */}
+                                <li><Link to="/formation_co-developpement" onClick={toggleNav}><div>Formation Co-Développement</div></Link></li>
                             </ul>
                         )}
                     </li>

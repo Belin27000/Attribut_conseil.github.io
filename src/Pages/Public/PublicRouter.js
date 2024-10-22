@@ -1,14 +1,13 @@
-import React from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
-import Vae from '../Vae/Vae.js';
-// import CoDev from '../CoDev/CoDev.js';
 import Layout from '@/Layouts/Layout.js';
 import Home from '@/Pages/Acceuil/Home.js';
+import React from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import About from '../Apropos/About.js';
 import Bilan from '../BilanDeComp/Bilan.js';
 import BusinessCreationTraining from '../BusinessCreationTraining/BusinessCreationTraining.js';
 import CareerConsult from '../CareerManagementConsultant/CareerConsultV2.js';
 import Coaching from '../Coaching/Coaching.js';
+import CoDev from '../CoDev/CoDev.js';
 import Contact from '../Contact/Contact.js';
 import ExternRhManagment from '../ExternRhManagment/ExternRhManagment.js';
 import ExternTrainManagement from '../ExternTrainManagement/ExternTrainManagement.js';
@@ -19,6 +18,7 @@ import PracticesAnalyse from '../PracticesAnalyse/PracticesAnalyse.js';
 import ProfessionalMeeting from '../ProfessionalMeeting/ProfessionalMeeting.js';
 import PsyWork from '../PsyWork/PsyWork.js';
 import TrainingTrainer from '../TrainingTrainer/TrainingTrainer.js';
+import Vae from '../Vae/Vae.js';
 import YouthGuidance from '../youthGuidance/YouthGuidance.js';
 // import BusinessCreationTraining2 from '../BusinessCreationTraining/BusinessCreationTraining2.js';
 
@@ -79,7 +79,7 @@ const PublicRouter = () => {
                 <Route path="/formation_creation_entreprise" element={<BusinessCreationTraining />} />
                 <Route path="/formation_metier_consultant_en_gestion_de_carrieres" element={<CareerConsult />} />
 
-                {/* <Route path="/formation_co-developpement" element={<CoDev />} /> */}
+                <Route path="/formation_co-developpement" element={<CoDev />} />
                 {/* <Route path="/formation_creation_entreprise" element={<BusinessCreationTraining2 />} /> */}
 
                 <Route path="/contact" element={<Contact />} />

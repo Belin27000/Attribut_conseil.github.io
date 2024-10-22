@@ -8,6 +8,9 @@
         text-align: start;
         width: 90%;
         padding: 0 1rem;
+        z-index: 1;
+        position: relative;
+        font-size: 7.5vw;
 
         span {
             color: var(--acYellow);
@@ -15,16 +18,150 @@
     }
 
     &_p {
+        padding: 0 1rem;
+        font-size: 5vw;
         font-weight: bold;
+        position: relative;
+        z-index: 1;
+        text-align: start;
 
         &_Yellow {
+            font-size: 5vw;
+            padding: 0 1rem;
+            text-align: start;
+            position: relative;
             font-weight: bold;
             color: var(--acYellow);
+            z-index: 1;
         }
     }
 
     .container-img {
         position: absolute;
-        top: -1rem;
+        top: 0rem;
+        width: 100%;
+        z-index: 0;
+
+        .Tree {
+            width: 100%;
+        }
+    }
+
+    &-article {
+        position: relative;
+        z-index: 1;
+
+        .Welcom {
+            font-size: 8vw;
+            font-weight: bold;
+            padding: 0 1rem;
+            text-align: start;
+            text-align: start;
+        }
+
+        .Script {
+            padding: 0 1rem;
+            text-align: start;
+            font-size: 5vw;
+
+        }
+
+        .movie-cont {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .Centrale-Text {
+        font-size: 5vw;
+        text-align: start;
+        padding: 0 1rem;
+
+    }
+
+    .boat {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        &-container-text {
+            font-weight: bold;
+            width: 50%;
+            text-align: start;
+            padding-left: 1rem;
+            font-size: 3.9vw;
+
+            .yellow {
+                color: var(--acYellow);
+            }
+        }
+
+        &-pic {
+            width: 50%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .Arrow90percent-cont {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .timeline {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+
+        // width: 80%;
+        &-cont {
+            width: 90%;
+            text-align: start;
+
+            .Bold {
+                font-weight: bold;
+            }
+
+            ::before {
+                content: "";
+                position: absolute;
+                /* positionner les ronds par rapport à chaque article */
+                bottom: .1rem;
+                /* positionner le rond au milieu de l'article */
+                left: 2vw;
+                /* ajustez la position du rond par rapport au côté gauche de l'article */
+                // transform: translateY(-50%);
+                /* centrez le rond verticalement */
+                width: 6vw;
+                /* largeur du rond */
+                height: 6vw;
+                /* hauteur du rond */
+                background-color: var(--acYellow);
+                /* couleur jaune */
+                border-radius: 50%;
+                /* pour obtenir un cercle */
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 5%;
+                /* positionner le trait à partir du centre du rond */
+                left: 4.5vw;
+                /* aligner le trait avec le bord gauche de l'article */
+                width: 3px;
+                /* épaisseur du trait */
+                height: calc(90%);
+                /* hauteur du trait, ajustée pour atteindre le bas de l'article */
+                background-color: var(--acYellow);
+                /* couleur jaune */
+            }
+        }
     }
 }
