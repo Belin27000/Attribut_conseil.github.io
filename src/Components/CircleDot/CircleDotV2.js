@@ -1,33 +1,42 @@
-import React from 'react';
+import CircleWithDot from '@/Assets/Images/CircleDot.png';
+import GrassGrow from '@/Assets/video/GrassGrow.mp4';
 import Movie from '@/Components/Movie/Movie.js';
-import GrassGrow from '@/Assets/video/GrassGrow.mp4'
+import React from 'react';
 import { Link } from 'react-router-dom';
-import CircleWithDot from '@/Assets/Images/CircleDot.png'
 
-import './circleDotV2.scss'
+import './circleDotV2.scss';
 
-const CircleDotV2 = ({ text, littleDot }) => {
-
+const CircleDotV2 = ({ text, littleDot, video, phone }) => {
+    const phoneNumber = phone ? '06 98 88 15 55' : ""
     const textDisplay = text ? text : ""
-    return (
+
+    const Innercontent = (
         <>
-            <Link to="/contact" className='circleDotCont'>
-                <div className="allTextV2">
-                    <div className="mainTextV2">
-                        {text ? <p>{textDisplay}</p> : ""}
-                        <p>Je contacte<br /><b>ATTRIBUT<br />CONSEILS</b> </p>
-                    </div>
-                    <div className="circleDotV2">
-                        <img src={CircleWithDot} alt="cercle de petit point" />
-                    </div>
-                    {littleDot ? <div className="yellowCircleV2"></div> : ""}
+            <div className="allTextV2">
+                <div className="mainTextV2">
+                    {text ? <p className='textPerso'>{textDisplay}<br /><b>{phoneNumber}</b></p> : ""}
+                    <p className='textAuto'>Je contacte<br /><b>ATTRIBUT<br />CONSEILS</b> </p>
                 </div>
-                <div className="videoContainerV2">
-                    <Movie src={GrassGrow} />
+                <div className="circleDotV2">
+                    <img src={CircleWithDot} alt="cercle de petit point" />
                 </div>
-            </Link>
+                {littleDot ? <div className="yellowCircleV2"></div> : ""}
+            </div>
+            <div className="videoContainerV2">
+                <Movie src={video || GrassGrow} />
+            </div>
         </>
-    );
+    )
+    return phone ? (
+        <a href={`tel:${phoneNumber}`} className="circleDotCont">
+            {Innercontent}
+        </a>
+    ) : (
+        <Link to="/contact" className="circleDotCont">
+            {Innercontent}
+        </Link>
+    )
+
 };
 
 export default CircleDotV2;
